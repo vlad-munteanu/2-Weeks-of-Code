@@ -24,6 +24,7 @@ public class MainView: UIView {
     internal func intializeUI() {
         addSubview(hexLabel)
         addSubview(rgbLabel)
+        addSubview(randomButton)
     }
     
     //TODO: Create Constraints
