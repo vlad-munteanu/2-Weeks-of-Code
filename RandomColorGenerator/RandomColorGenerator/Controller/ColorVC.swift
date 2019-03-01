@@ -21,6 +21,7 @@ class ColorVC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.becomeFirstResponder()
         self.randomButton.addTarget(self, action: #selector(randomize), for: UIControl.Event.touchUpInside)
         
     }
@@ -28,6 +29,20 @@ class ColorVC: UIViewController {
     @objc private func randomize() {
         //TODO: add code to randomize from device getting shaken
         colorView.updateBackgroundColor() 
+    }
+    
+    override var canBecomeFirstResponder: Bool {
+        get {
+            return true
+        }
+    }
+    
+    // Enable detection of shake motion
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            print("Why are you shaking me?")
+            randomize()
+        }
     }
 
 }
