@@ -57,16 +57,22 @@ public class ColorView: UIView {
     }
     
     func updateBackgroundColor() {
-        let tempNewColor: UIColor = .random()
-       // hexLabel.text = "Hex Code: " + tempNewColor.toHexString()
-        hexLabel.text = tempNewColor.toHexString()
-        print(tempNewColor.toHexString())
+        let backColor: UIColor = .random()
+       
         
-       // rgbLabel.text = "RGB: " + tempNewColor.toRGB()
-        rgbLabel.text = tempNewColor.toRGB()
-        print(tempNewColor.toRGB())
+        //hexLabel.text = "Hex Code: " + tempNewColor.toHexString()
+        hexLabel.textColor = .random()
+        hexLabel.text = backColor.toHexString()
+        hexLabel.shadowColor = .random()
+        print(backColor.toHexString())
         
-        backgroundView.backgroundColor = tempNewColor
+        //rgbLabel.text = "RGB: " + tempNewColor.toRGB()
+        rgbLabel.textColor = .random()
+        rgbLabel.text = backColor.toRGB()
+        rgbLabel.shadowColor = .random()
+        print(backColor.toRGB())
+        
+        backgroundView.backgroundColor = backColor
         
     }
     
@@ -83,7 +89,13 @@ public class ColorView: UIView {
         let hexlabel = UILabel()
         
         //TODO: Make sure font scales
-        hexlabel.font = UIFont(name: "System", size: 40)
+        hexlabel.font = UIFont(name: "Futura", size: 40)
+        hexlabel.numberOfLines = 1
+        hexlabel.minimumScaleFactor = 0.5
+        hexlabel.shadowOffset = CGSize(width: -3, height: 2)
+        hexlabel.shadowColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        hexlabel.adjustsFontSizeToFitWidth = true
         hexlabel.textAlignment = .center
         hexlabel.translatesAutoresizingMaskIntoConstraints = false
         return hexlabel
@@ -91,7 +103,13 @@ public class ColorView: UIView {
     
     internal let rgbLabel: UILabel =  {
         let rgblabel = UILabel()
-        rgblabel.font = UIFont(name: "System", size: 35)
+        rgblabel.font = UIFont(name: "Futura", size: 40)
+        rgblabel.numberOfLines = 1
+        rgblabel.minimumScaleFactor = 0.5
+        rgblabel.shadowOffset = CGSize(width: -3, height: 2)
+        rgblabel.shadowColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        rgblabel.adjustsFontSizeToFitWidth = true
         rgblabel.textAlignment = .center
         rgblabel.translatesAutoresizingMaskIntoConstraints = false
         return rgblabel
