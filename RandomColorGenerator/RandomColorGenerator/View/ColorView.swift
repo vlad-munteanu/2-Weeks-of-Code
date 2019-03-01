@@ -13,8 +13,10 @@ public class ColorView: UIView {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         self.frame = CGRect.zero
+        
         intializeUI()
         createConstraints()
+        updateBackgroundColor()
     }
     
     public required init?(coder aDecoder: NSCoder) {
@@ -36,13 +38,13 @@ public class ColorView: UIView {
         }
         hexLabel.snp.makeConstraints{ make in
             make.height.equalToSuperview().multipliedBy(0.05)
-            make.width.equalToSuperview().multipliedBy(0.4)
+            make.width.equalToSuperview().multipliedBy(0.5)
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview().multipliedBy(0.75)
         }
         rgbLabel.snp.makeConstraints{ make in
             make.height.equalToSuperview().multipliedBy(0.05)
-            make.width.equalToSuperview().multipliedBy(0.4)
+            make.width.equalToSuperview().multipliedBy(0.5)
             make.centerX.equalToSuperview()
             make.top.equalTo(hexLabel.snp_bottom).offset(20)
         }
@@ -56,7 +58,9 @@ public class ColorView: UIView {
     
     func updateBackgroundColor() {
         let tempNewColor: UIColor = .random()
-        print(tempNewColor.rgba)
+        hexLabel.text = "Hex Code: " + tempNewColor.toHexString()
+        print(tempNewColor.toHexString())
+        
         backgroundView.backgroundColor = tempNewColor
         
     }
@@ -116,15 +120,27 @@ extension UIColor {
                        alpha: 1.0)
     }
     
-    var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat) {
-        var red: CGFloat = 0
-        var green: CGFloat = 0
-        var blue: CGFloat = 0
-        var alpha: CGFloat = 0
-        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+    func toHexString() -> String {
+        var r:CGFloat = 0
+        var g:CGFloat = 0
+        var b:CGFloat = 0
+        var a:CGFloat = 0
         
-        return (red, green, blue)
+        getRed(&r, green: &g, blue: &b, alpha: &a)
+        
+        let rgb:Int = (Int)(r*255)<<16 | (Int)(g*255)<<8 | (Int)(b*255)<<0
+        
+        return NSString(format:"#%06x", rgb) as String
     }
+    
+    convenience init(red: Int, green: Int, blue: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+        
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+    }
+
 }
 
 
