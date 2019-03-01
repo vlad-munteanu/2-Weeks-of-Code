@@ -7,16 +7,17 @@
 //
 
 import UIKit
+//import EZSwipeController
 
-class MainVC: UIViewController {
+class ColorVC: UIViewController {
     
     //main view
-    let main = MainView()
+    let colorView = ColorView()
     //random button
-    unowned var randomButton: UIButton {return main.randomButton}
+    unowned var randomButton: UIButton {return colorView.randomButton}
     
     public override func loadView() {
-        self.view = main
+        self.view = colorView
     }
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,7 +9,7 @@
 import Foundation
 import SnapKit
 
-public class MainView: UIView {
+public class ColorView: UIView {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         self.frame = CGRect.zero
