@@ -78,5 +78,6 @@ class PageVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewCo
         self.pageControl.widthAnchor.constraint(equalTo: self.view.widthAnchor, constant: -20).isActive = true
         self.pageControl.heightAnchor.constraint(equalToConstant: 20).isActive = true
         self.pageControl.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        pageControl.isHidden = true
     }
 }

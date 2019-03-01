@@ -30,7 +30,6 @@ public class ColorView: UIView {
         addSubview(randomButton)
     }
     
-    //TODO: Create Constraints
     internal func createConstraints(){
         backgroundView.snp.makeConstraints { make in
             make.height.equalToSuperview()
@@ -84,11 +83,11 @@ public class ColorView: UIView {
         return backgroundView
     }()
     
+    
     //Just Two Labels
     internal let hexLabel: UILabel = {
         let hexlabel = UILabel()
         
-        //TODO: Make sure font scales
         hexlabel.font = UIFont(name: "Futura", size: 40)
         hexlabel.numberOfLines = 1
         hexlabel.minimumScaleFactor = 0.5
@@ -120,8 +119,16 @@ public class ColorView: UIView {
         let randButton = UIButton()
         randButton.titleLabel?.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         randButton.titleLabel?.text = "New Color"
-        randButton.backgroundColor = #colorLiteral(red: 0.07459209753, green: 1, blue: 0.07377539981, alpha: 1)
+        randButton.backgroundColor = #colorLiteral(red: 0.01969533414, green: 0.01559982635, blue: 0.01971777529, alpha: 1)
         return randButton
+    }()
+    
+    public let saveButton: UIButton = {
+        let saveButton = UIButton()
+        saveButton.titleLabel?.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        saveButton.titleLabel?.text = "New Color"
+        saveButton.backgroundColor = #colorLiteral(red: 0.5960784314, green: 0.5960784314, blue: 0.6156862745, alpha: 1)
+        return saveButton
     }()
 }
 
@@ -133,7 +140,6 @@ extension CGFloat {
     }
 }
 
-//TODO: Return Hex number and rgb color of UIColor
 extension UIColor {
     static func random() -> UIColor {
       
