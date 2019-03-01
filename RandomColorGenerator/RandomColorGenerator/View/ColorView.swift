@@ -55,7 +55,10 @@ public class ColorView: UIView {
     }
     
     func updateBackgroundColor() {
-        backgroundView.backgroundColor = .random()
+        let tempNewColor: UIColor = .random()
+        print(tempNewColor.rgba)
+        backgroundView.backgroundColor = tempNewColor
+        
     }
     
     
@@ -106,9 +109,22 @@ extension CGFloat {
 //TODO: Return Hex number and rgb color of UIColor
 extension UIColor {
     static func random() -> UIColor {
+      
         return UIColor(red: .random(),
                        green: .random(),
                        blue: .random(),
                        alpha: 1.0)
     }
+    
+    var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat) {
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
+        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        
+        return (red, green, blue)
+    }
 }
+
+
