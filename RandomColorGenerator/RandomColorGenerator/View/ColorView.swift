@@ -35,22 +35,22 @@ public class ColorView: UIView {
             make.width.equalToSuperview()
         }
         hexLabel.snp.makeConstraints{ make in
-            make.height.equalToSuperview().multipliedBy(0.1)
+            make.height.equalToSuperview().multipliedBy(0.05)
             make.width.equalToSuperview().multipliedBy(0.4)
             make.centerX.equalToSuperview()
-            make.top.equalToSuperview().multipliedBy(0.5)
+            make.centerY.equalToSuperview().multipliedBy(0.75)
         }
         rgbLabel.snp.makeConstraints{ make in
-            make.height.equalToSuperview().multipliedBy(0.1)
+            make.height.equalToSuperview().multipliedBy(0.05)
             make.width.equalToSuperview().multipliedBy(0.4)
             make.centerX.equalToSuperview()
-            make.top.equalTo(hexLabel.snp_bottom).offset(40)
+            make.top.equalTo(hexLabel.snp_bottom).offset(20)
         }
         randomButton.snp.makeConstraints{ make in
-            make.height.equalToSuperview().multipliedBy(0.3)
-            make.width.equalToSuperview().multipliedBy(0.4)
+            make.height.equalToSuperview().multipliedBy(0.1)
+            make.width.equalToSuperview().multipliedBy(0.45)
             make.centerX.equalToSuperview()
-            make.top.equalTo(rgbLabel.snp_bottom).offset(40)
+            make.bottom.equalToSuperview().multipliedBy(0.8)
         }
     }
     
@@ -71,7 +71,7 @@ public class ColorView: UIView {
         let hexlabel = UILabel()
         
         //TODO: Make sure font scales
-        hexlabel.font = UIFont(name: "System", size: 35)
+        hexlabel.font = UIFont(name: "System", size: 40)
         hexlabel.text = "Hex Code = "
         hexlabel.translatesAutoresizingMaskIntoConstraints = false
         return hexlabel
@@ -88,7 +88,9 @@ public class ColorView: UIView {
     //Button
     public let randomButton: UIButton = {
         let randButton = UIButton()
+        randButton.titleLabel?.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         randButton.titleLabel?.text = "New Color"
+        randButton.backgroundColor = #colorLiteral(red: 0.07459209753, green: 1, blue: 0.07377539981, alpha: 1)
         return randButton
     }()
 }

@@ -10,6 +10,7 @@ import UIKit
 
 class SavedColorsVC: UIViewController {
     
+    //TODO: Make this a table view 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.red

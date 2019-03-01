@@ -26,7 +26,8 @@ class ColorVC: UIViewController {
     }
     
     @objc private func randomize() {
-        //TODO: add code to randomize from device getting shaken 
+        //TODO: add code to randomize from device getting shaken
+        colorView.updateBackgroundColor() 
     }
 
 }

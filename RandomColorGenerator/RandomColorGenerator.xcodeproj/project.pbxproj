@@ -93,8 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				B8BBECD32228FCBC0017FFB9 /* ColorVC.swift */,
-				B8BBECEC222919C10017FFB9 /* PageVC.swift */,
 				B8BBECEA2229195F0017FFB9 /* SavedColorsVC.swift */,
+				B8BBECEC222919C10017FFB9 /* PageVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
