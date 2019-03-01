@@ -7,73 +7,123 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B8CA940E222656A800A8E286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA940D222656A800A8E286 /* AppDelegate.swift */; };
-		B8CA9410222656A800A8E286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA940F222656A800A8E286 /* ViewController.swift */; };
-		B8CA9413222656A800A8E286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CA9411222656A800A8E286 /* Main.storyboard */; };
-		B8CA9415222656A900A8E286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8CA9414222656A900A8E286 /* Assets.xcassets */; };
-		B8CA9418222656A900A8E286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CA9416222656A900A8E286 /* LaunchScreen.storyboard */; };
+		7865688FDAB387D877E1394F /* Pods_RandomColorGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92448E565FD35770F612E27E /* Pods_RandomColorGenerator.framework */; };
+		B8BBECD22228FCBC0017FFB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECD12228FCBC0017FFB9 /* AppDelegate.swift */; };
+		B8BBECD42228FCBC0017FFB9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECD32228FCBC0017FFB9 /* MainVC.swift */; };
+		B8BBECD92228FCBD0017FFB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BBECD82228FCBD0017FFB9 /* Assets.xcassets */; };
+		B8BBECDC2228FCBD0017FFB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8BBECDA2228FCBD0017FFB9 /* LaunchScreen.storyboard */; };
+		B8BBECE42229037F0017FFB9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECE32229037F0017FFB9 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B8CA940A222656A800A8E286 /* RandomColorGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColorGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8CA940D222656A800A8E286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8CA940F222656A800A8E286 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B8CA9412222656A800A8E286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B8CA9414222656A900A8E286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B8CA9417222656A900A8E286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B8CA9419222656A900A8E286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88435EDB2AB470FCE7991768 /* Pods-RandomColorGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorGenerator.debug.xcconfig"; path = "Target Support Files/Pods-RandomColorGenerator/Pods-RandomColorGenerator.debug.xcconfig"; sourceTree = "<group>"; };
+		8D64021CDFF07521C26E9B92 /* Pods-RandomColorGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorGenerator.release.xcconfig"; path = "Target Support Files/Pods-RandomColorGenerator/Pods-RandomColorGenerator.release.xcconfig"; sourceTree = "<group>"; };
+		92448E565FD35770F612E27E /* Pods_RandomColorGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomColorGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BBECCE2228FCBC0017FFB9 /* RandomColorGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColorGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BBECD12228FCBC0017FFB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8BBECD32228FCBC0017FFB9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		B8BBECD82228FCBD0017FFB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8BBECDB2228FCBD0017FFB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8BBECDD2228FCBD0017FFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8BBECE32229037F0017FFB9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B8CA9407222656A800A8E286 /* Frameworks */ = {
+		B8BBECCB2228FCBC0017FFB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7865688FDAB387D877E1394F /* Pods_RandomColorGenerator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B8CA9401222656A800A8E286 = {
+		4240B508A2A4AB0CF571AF08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B8CA940C222656A800A8E286 /* RandomColorGenerator */,
-				B8CA940B222656A800A8E286 /* Products */,
+				92448E565FD35770F612E27E /* Pods_RandomColorGenerator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8BBECC52228FCBC0017FFB9 = {
+			isa = PBXGroup;
+			children = (
+				B8BBECD02228FCBC0017FFB9 /* RandomColorGenerator */,
+				B8BBECCF2228FCBC0017FFB9 /* Products */,
+				DC1FF1DEF2E4529315BA8AC1 /* Pods */,
+				4240B508A2A4AB0CF571AF08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		B8CA940B222656A800A8E286 /* Products */ = {
+		B8BBECCF2228FCBC0017FFB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B8CA940A222656A800A8E286 /* RandomColorGenerator.app */,
+				B8BBECCE2228FCBC0017FFB9 /* RandomColorGenerator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B8CA940C222656A800A8E286 /* RandomColorGenerator */ = {
+		B8BBECD02228FCBC0017FFB9 /* RandomColorGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				B8CA940D222656A800A8E286 /* AppDelegate.swift */,
-				B8CA940F222656A800A8E286 /* ViewController.swift */,
-				B8CA9411222656A800A8E286 /* Main.storyboard */,
-				B8CA9414222656A900A8E286 /* Assets.xcassets */,
-				B8CA9416222656A900A8E286 /* LaunchScreen.storyboard */,
-				B8CA9419222656A900A8E286 /* Info.plist */,
+				B8BBECE5222903840017FFB9 /* View */,
+				B8BBECE82229060D0017FFB9 /* Controller */,
+				B8BBECE9222906240017FFB9 /* Supporting Files */,
+				B8BBECDD2228FCBD0017FFB9 /* Info.plist */,
 			);
 			path = RandomColorGenerator;
+			sourceTree = "<group>";
+		};
+		B8BBECE5222903840017FFB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8BBECE32229037F0017FFB9 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B8BBECE82229060D0017FFB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B8BBECD32228FCBC0017FFB9 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B8BBECE9222906240017FFB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8BBECD12228FCBC0017FFB9 /* AppDelegate.swift */,
+				B8BBECD82228FCBD0017FFB9 /* Assets.xcassets */,
+				B8BBECDA2228FCBD0017FFB9 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC1FF1DEF2E4529315BA8AC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88435EDB2AB470FCE7991768 /* Pods-RandomColorGenerator.debug.xcconfig */,
+				8D64021CDFF07521C26E9B92 /* Pods-RandomColorGenerator.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B8CA9409222656A800A8E286 /* RandomColorGenerator */ = {
+		B8BBECCD2228FCBC0017FFB9 /* RandomColorGenerator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B8CA941C222656A900A8E286 /* Build configuration list for PBXNativeTarget "RandomColorGenerator" */;
+			buildConfigurationList = B8BBECE02228FCBD0017FFB9 /* Build configuration list for PBXNativeTarget "RandomColorGenerator" */;
 			buildPhases = (
-				B8CA9406222656A800A8E286 /* Sources */,
-				B8CA9407222656A800A8E286 /* Frameworks */,
-				B8CA9408222656A800A8E286 /* Resources */,
+				D776C87F0D49629A0FB22FC1 /* [CP] Check Pods Manifest.lock */,
+				B8BBECCA2228FCBC0017FFB9 /* Sources */,
+				B8BBECCB2228FCBC0017FFB9 /* Frameworks */,
+				B8BBECCC2228FCBC0017FFB9 /* Resources */,
+				4A2E895D20D0A5D1E59F99A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -81,25 +131,25 @@
 			);
 			name = RandomColorGenerator;
 			productName = RandomColorGenerator;
-			productReference = B8CA940A222656A800A8E286 /* RandomColorGenerator.app */;
+			productReference = B8BBECCE2228FCBC0017FFB9 /* RandomColorGenerator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B8CA9402222656A800A8E286 /* Project object */ = {
+		B8BBECC62228FCBC0017FFB9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Vlad Munteanu";
 				TargetAttributes = {
-					B8CA9409222656A800A8E286 = {
+					B8BBECCD2228FCBC0017FFB9 = {
 						CreatedOnToolsVersion = 10.2;
 					};
 				};
 			};
-			buildConfigurationList = B8CA9405222656A800A8E286 /* Build configuration list for PBXProject "RandomColorGenerator" */;
+			buildConfigurationList = B8BBECC92228FCBC0017FFB9 /* Build configuration list for PBXProject "RandomColorGenerator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,54 +157,93 @@
 				en,
 				Base,
 			);
-			mainGroup = B8CA9401222656A800A8E286;
-			productRefGroup = B8CA940B222656A800A8E286 /* Products */;
+			mainGroup = B8BBECC52228FCBC0017FFB9;
+			productRefGroup = B8BBECCF2228FCBC0017FFB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B8CA9409222656A800A8E286 /* RandomColorGenerator */,
+				B8BBECCD2228FCBC0017FFB9 /* RandomColorGenerator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B8CA9408222656A800A8E286 /* Resources */ = {
+		B8BBECCC2228FCBC0017FFB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8CA9418222656A900A8E286 /* LaunchScreen.storyboard in Resources */,
-				B8CA9415222656A900A8E286 /* Assets.xcassets in Resources */,
-				B8CA9413222656A800A8E286 /* Main.storyboard in Resources */,
+				B8BBECDC2228FCBD0017FFB9 /* LaunchScreen.storyboard in Resources */,
+				B8BBECD92228FCBD0017FFB9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A2E895D20D0A5D1E59F99A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomColorGenerator/Pods-RandomColorGenerator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RandomColorGenerator/Pods-RandomColorGenerator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D776C87F0D49629A0FB22FC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RandomColorGenerator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		B8CA9406222656A800A8E286 /* Sources */ = {
+		B8BBECCA2228FCBC0017FFB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8CA9410222656A800A8E286 /* ViewController.swift in Sources */,
-				B8CA940E222656A800A8E286 /* AppDelegate.swift in Sources */,
+				B8BBECD42228FCBC0017FFB9 /* MainVC.swift in Sources */,
+				B8BBECE42229037F0017FFB9 /* MainView.swift in Sources */,
+				B8BBECD22228FCBC0017FFB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B8CA9411222656A800A8E286 /* Main.storyboard */ = {
+		B8BBECDA2228FCBD0017FFB9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B8CA9412222656A800A8E286 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B8CA9416222656A900A8E286 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B8CA9417222656A900A8E286 /* Base */,
+				B8BBECDB2228FCBD0017FFB9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +251,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B8CA941A222656A900A8E286 /* Debug */ = {
+		B8BBECDE2228FCBD0017FFB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -213,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -223,7 +312,7 @@
 			};
 			name = Debug;
 		};
-		B8CA941B222656A900A8E286 /* Release */ = {
+		B8BBECDF2228FCBD0017FFB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -278,8 +367,9 @@
 			};
 			name = Release;
 		};
-		B8CA941D222656A900A8E286 /* Debug */ = {
+		B8BBECE12228FCBD0017FFB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88435EDB2AB470FCE7991768 /* Pods-RandomColorGenerator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,8 +386,9 @@
 			};
 			name = Debug;
 		};
-		B8CA941E222656A900A8E286 /* Release */ = {
+		B8BBECE22228FCBD0017FFB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D64021CDFF07521C26E9B92 /* Pods-RandomColorGenerator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -317,25 +408,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B8CA9405222656A800A8E286 /* Build configuration list for PBXProject "RandomColorGenerator" */ = {
+		B8BBECC92228FCBC0017FFB9 /* Build configuration list for PBXProject "RandomColorGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8CA941A222656A900A8E286 /* Debug */,
-				B8CA941B222656A900A8E286 /* Release */,
+				B8BBECDE2228FCBD0017FFB9 /* Debug */,
+				B8BBECDF2228FCBD0017FFB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B8CA941C222656A900A8E286 /* Build configuration list for PBXNativeTarget "RandomColorGenerator" */ = {
+		B8BBECE02228FCBD0017FFB9 /* Build configuration list for PBXNativeTarget "RandomColorGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8CA941D222656A900A8E286 /* Debug */,
-				B8CA941E222656A900A8E286 /* Release */,
+				B8BBECE12228FCBD0017FFB9 /* Debug */,
+				B8BBECE22228FCBD0017FFB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B8CA9402222656A800A8E286 /* Project object */;
+	rootObject = B8BBECC62228FCBC0017FFB9 /* Project object */;
 }

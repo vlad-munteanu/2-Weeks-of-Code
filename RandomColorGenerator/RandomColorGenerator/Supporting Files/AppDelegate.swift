@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  RandomColorGenerator
 //
-//  Created by Vlad Munteanu on 2/27/19.
+//  Created by Vlad Munteanu on 3/1/19.
 //  Copyright © 2019 Vlad Munteanu. All rights reserved.
 //
 
@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = MainVC()
         return true
     }
 
