@@ -58,8 +58,13 @@ public class ColorView: UIView {
     
     func updateBackgroundColor() {
         let tempNewColor: UIColor = .random()
-        hexLabel.text = "Hex Code: " + tempNewColor.toHexString()
+       // hexLabel.text = "Hex Code: " + tempNewColor.toHexString()
+        hexLabel.text = tempNewColor.toHexString()
         print(tempNewColor.toHexString())
+        
+       // rgbLabel.text = "RGB: " + tempNewColor.toRGB()
+        rgbLabel.text = tempNewColor.toRGB()
+        print(tempNewColor.toRGB())
         
         backgroundView.backgroundColor = tempNewColor
         
@@ -79,7 +84,7 @@ public class ColorView: UIView {
         
         //TODO: Make sure font scales
         hexlabel.font = UIFont(name: "System", size: 40)
-        hexlabel.text = "Hex Code = "
+        hexlabel.textAlignment = .center
         hexlabel.translatesAutoresizingMaskIntoConstraints = false
         return hexlabel
     }()
@@ -87,7 +92,7 @@ public class ColorView: UIView {
     internal let rgbLabel: UILabel =  {
         let rgblabel = UILabel()
         rgblabel.font = UIFont(name: "System", size: 35)
-        rgblabel.text = "RGB Code = "
+        rgblabel.textAlignment = .center
         rgblabel.translatesAutoresizingMaskIntoConstraints = false
         return rgblabel
     }()
@@ -131,6 +136,24 @@ extension UIColor {
         let rgb:Int = (Int)(r*255)<<16 | (Int)(g*255)<<8 | (Int)(b*255)<<0
         
         return NSString(format:"#%06x", rgb) as String
+    }
+    
+    func toRGB() -> String {
+        var r:CGFloat = 0
+        var g:CGFloat = 0
+        var b:CGFloat = 0
+        var a:CGFloat = 0
+        
+        getRed(&r, green: &g, blue: &b, alpha: &a)
+        
+        let red: String = String((Int)(r*255))
+        let green: String = "," + String((Int)(g*255))
+        let blue: String = "," + String((Int)(b*255))
+        
+        let rgb: String = red + green + blue
+        
+        
+        return rgb
     }
     
     convenience init(red: Int, green: Int, blue: Int) {
