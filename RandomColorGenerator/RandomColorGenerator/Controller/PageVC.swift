@@ -10,6 +10,7 @@ import UIKit
 
 class PageVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
+    //Delegate Methods
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         if let viewControllerIndex = self.pages.index(of: viewController) {
             if viewControllerIndex == 0 {
@@ -34,6 +35,16 @@ class PageVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewCo
             }
         }
         return nil
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+        // set the pageControl.currentPage to the index of the current viewController in pages
+        if let viewControllers = pageViewController.viewControllers {
+            if let viewControllerIndex = self.pages.index(of: viewControllers[0]) {
+                self.pageControl.currentPage = viewControllerIndex
+            }
+        }
     }
     
     

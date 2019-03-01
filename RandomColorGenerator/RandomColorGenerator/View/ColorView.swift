@@ -22,19 +22,49 @@ public class ColorView: UIView {
     }
     
     internal func intializeUI() {
+        addSubview(backgroundView)
         addSubview(hexLabel)
         addSubview(rgbLabel)
         addSubview(randomButton)
     }
     
     //TODO: Create Constraints
-    internal func createConstraints() {
-        
+    internal func createConstraints(){
+        backgroundView.snp.makeConstraints { make in
+            make.height.equalToSuperview()
+            make.width.equalToSuperview()
+        }
+        hexLabel.snp.makeConstraints{ make in
+            make.height.equalToSuperview().multipliedBy(0.1)
+            make.width.equalToSuperview().multipliedBy(0.4)
+            make.centerX.equalToSuperview()
+            make.top.equalToSuperview().multipliedBy(0.5)
+        }
+        rgbLabel.snp.makeConstraints{ make in
+            make.height.equalToSuperview().multipliedBy(0.1)
+            make.width.equalToSuperview().multipliedBy(0.4)
+            make.centerX.equalToSuperview()
+            make.top.equalTo(hexLabel.snp_bottom).offset(40)
+        }
+        randomButton.snp.makeConstraints{ make in
+            make.height.equalToSuperview().multipliedBy(0.3)
+            make.width.equalToSuperview().multipliedBy(0.4)
+            make.centerX.equalToSuperview()
+            make.top.equalTo(rgbLabel.snp_bottom).offset(40)
+        }
     }
     
     func updateBackgroundColor() {
-        self.backgroundColor = .random()
+        backgroundView.backgroundColor = .random()
     }
+    
+    
+    //Main Background Subview
+    public let backgroundView: UIView = {
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        return backgroundView
+    }()
     
     //Just Two Labels
     internal let hexLabel: UILabel = {
