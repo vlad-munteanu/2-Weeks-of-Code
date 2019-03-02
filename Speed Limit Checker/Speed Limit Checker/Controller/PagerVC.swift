@@ -53,8 +53,8 @@ class PagerVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewC
         self.dataSource = self
         self.delegate = self
         let initialPage = 0
-        let page1 = MapVC()
-        let page2 = MainVC()
+        let page1 = MainVC()
+        let page2 = MapVC()
         
         // add the individual viewControllers to the pageViewController
         self.pages.append(page1)

@@ -25,7 +25,7 @@ public class MainView: UIView {
     internal func intializeUI() {
         addSubview(backgroundView)
         addSubview(backgroundSubView)
-        addSubview(titleLabel)
+       // addSubview(titleLabel)
         addSubview(speedLabel)
     }
     
@@ -34,16 +34,17 @@ public class MainView: UIView {
             make.height.equalToSuperview()
             make.width.equalToSuperview()
         }
-        titleLabel.snp.makeConstraints { make in
-            make.height.equalToSuperview().multipliedBy(0.2)
-            make.left.equalToSuperview().multipliedBy(0.2)
-        }
         backgroundSubView.snp.makeConstraints { make in
-            make.height.equalToSuperview().multipliedBy(0.7)
-            make.width.equalToSuperview().multipliedBy(0.7)
+            make.height.equalToSuperview().multipliedBy(0.9)
+            make.width.equalToSuperview()
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview()
+            make.bottom.equalToSuperview()
         }
+//        titleLabel.snp.makeConstraints { make in
+//            make.height.equalToSuperview().multipliedBy(0.1)
+//            make.left.equalToSuperview().multipliedBy(0.2)
+//            make.bottom.equalTo(backgroundSubView.snp_top).multipliedBy(1.1)
+//        }
         speedLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview()
@@ -57,13 +58,15 @@ public class MainView: UIView {
     //Main Background Subview
     public let backgroundView: UIView = {
         let backgroundView = UIView()
-        backgroundView.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+        backgroundView.backgroundColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
         return backgroundView
     }()
     
     //BackgroundSubview
     public let backgroundSubView: UIView = {
         let backsubview = UIView()
+        backsubview.layer.cornerRadius = 10
+        backsubview.layer.masksToBounds = true
         backsubview.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8470588235)
         return backsubview
         //TODO: Add curved corners
@@ -72,8 +75,8 @@ public class MainView: UIView {
     //Title Label
     public let titleLabel: UILabel = {
         let titleLabel = UILabel()
-        titleLabel.font = UIFont(name: "Futura", size: 48)
-        titleLabel.text = "Speed Limit"
+        titleLabel.font = UIFont(name: "Futura", size: 32)
+        titleLabel.text = "speed limit"
         titleLabel.numberOfLines = 1
         titleLabel.minimumScaleFactor = 0.5
         titleLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
@@ -87,7 +90,7 @@ public class MainView: UIView {
     //Speed Label
     public let speedLabel: UILabel = {
         let speedlabel = UILabel()
-        speedlabel.font = UIFont(name: "Futura", size: 48)
+        speedlabel.font = UIFont(name: "Futura", size: 60)
         speedlabel.text = "25 MPH"
         speedlabel.numberOfLines = 1
         speedlabel.minimumScaleFactor = 0.5

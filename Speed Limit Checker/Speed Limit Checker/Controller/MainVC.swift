@@ -9,5 +9,15 @@
 import UIKit
 
 class MainVC: UIViewController {
+    //main view
+    let mainView = MainView()
+    
+    public override func loadView() {
+        self.view = mainView
+    }
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
 }

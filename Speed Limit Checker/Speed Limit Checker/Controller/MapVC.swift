@@ -9,5 +9,12 @@
 import UIKit
 
 class MapVC: UIViewController {
+    let mapView = MapView()
+    public override func loadView() {
+        self.view = mapView
+    }
     
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
