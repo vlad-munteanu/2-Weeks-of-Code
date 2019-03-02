@@ -37,14 +37,14 @@ public class ColorView: UIView {
             make.width.equalToSuperview()
         }
         hexLabel.snp.makeConstraints{ make in
-            make.height.equalToSuperview().multipliedBy(0.05)
-            make.width.equalToSuperview().multipliedBy(0.5)
+            make.height.equalToSuperview().multipliedBy(0.07)
+            make.width.equalToSuperview().multipliedBy(0.7)
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview().multipliedBy(0.75)
         }
         rgbLabel.snp.makeConstraints{ make in
-            make.height.equalToSuperview().multipliedBy(0.05)
-            make.width.equalToSuperview().multipliedBy(0.5)
+            make.height.equalToSuperview().multipliedBy(0.07)
+            make.width.equalToSuperview().multipliedBy(0.7)
             make.centerX.equalToSuperview()
             make.top.equalTo(hexLabel.snp_bottom).offset(20)
         }
@@ -95,7 +95,7 @@ public class ColorView: UIView {
     internal let hexLabel: UILabel = {
         let hexlabel = UILabel()
         
-        hexlabel.font = UIFont(name: "Futura", size: 40)
+        hexlabel.font = UIFont(name: "Futura", size: 48)
         hexlabel.numberOfLines = 1
         hexlabel.minimumScaleFactor = 0.5
         hexlabel.shadowOffset = CGSize(width: -3, height: 2)
@@ -109,7 +109,7 @@ public class ColorView: UIView {
     
     internal let rgbLabel: UILabel =  {
         let rgblabel = UILabel()
-        rgblabel.font = UIFont(name: "Futura", size: 40)
+        rgblabel.font = UIFont(name: "Futura", size: 48)
         rgblabel.numberOfLines = 1
         rgblabel.minimumScaleFactor = 0.5
         rgblabel.shadowOffset = CGSize(width: -3, height: 2)
