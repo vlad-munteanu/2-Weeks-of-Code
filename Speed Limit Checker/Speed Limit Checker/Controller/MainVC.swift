@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import MapKit
 
 class MainVC: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
@@ -19,25 +20,40 @@ class MainVC: UIViewController, CLLocationManagerDelegate {
         self.view = mainView
     }
     
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
-        locationManager.delegate = self
-        if NSString(string:UIDevice.current.systemVersion).doubleValue > 8 {
-            locationManager.requestAlwaysAuthorization()
-        }
-        locationManager.desiredAccuracy=kCLLocationAccuracyBest
-    }
-    
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        var speed: CLLocationSpeed = CLLocationSpeed()
-        speed = locationManager.location!.speed
-        print(speed)
-    }
-    
-    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        if status != CLAuthorizationStatus.denied{
+        
+        setupMap()
+        if CLLocationManager.locationServicesEnabled() == true {
+            
+            if CLLocationManager.authorizationStatus() == .restricted || CLLocationManager.authorizationStatus() == .denied ||  CLLocationManager.authorizationStatus() == .notDetermined {
+                locationManager.requestWhenInUseAuthorization()
+            }
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.delegate = self
             locationManager.startUpdatingLocation()
+        } else {
+            print("PLease turn on location services or GPS")
         }
+    }
+    
+    func setupMap() {
+        mainView.mapView.showsUserLocation = true
+        mainView.mapView.isScrollEnabled = false
+        mainView.mapView.isRotateEnabled = false
+        mainView.mapView.isPitchEnabled = false
+        mainView.mapView.isZoomEnabled = false
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        self.locationManager.stopUpdatingLocation()
+        let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude), span: MKCoordinateSpan(latitudeDelta: 0.008, longitudeDelta: 0.008))
+        self.mainView.mapView.setRegion(region, animated: true)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Unable to access your current location")
     }
     
 }

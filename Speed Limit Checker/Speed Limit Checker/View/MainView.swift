@@ -9,6 +9,7 @@
 import Foundation
 import SnapKit
 import MapKit
+import CoreLocation
 
 public class MainView: UIView {
     public override init(frame: CGRect) {
@@ -71,19 +72,9 @@ public class MainView: UIView {
         return backgroundView
     }()
     
-//    //BackgroundSubview
-//    public let backgroundSubView: UIView = {
-//        let backsubview = UIView()
-//        backsubview.layer.cornerRadius = 10
-//        backsubview.layer.masksToBounds = true
-//        backsubview.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.9372549057, blue: 0.9568627477, alpha: 0.5236025528)
-//        return backsubview
-//        //TODO: Add curved corners
-//    }()
-    
     //MapView
-    public let mapView: MKMapView = {
-        let mapView = MKMapView()
+    public var mapView: MKMapView = {
+        var mapView = MKMapView()
         mapView.layer.cornerRadius = 10
         mapView.layer.masksToBounds = true
         return mapView
@@ -119,7 +110,7 @@ public class MainView: UIView {
         speedlabel.numberOfLines = 1
         speedlabel.minimumScaleFactor = 0.5
         speedlabel.shadowOffset = CGSize(width: -3, height: 2)
-        speedlabel.textColor = colors[0] 
+        speedlabel.textColor = colors[0]
         speedlabel.shadowColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
         
         speedlabel.adjustsFontSizeToFitWidth = true
