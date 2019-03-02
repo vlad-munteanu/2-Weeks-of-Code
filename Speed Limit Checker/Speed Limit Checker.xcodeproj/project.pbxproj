@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		2FCEF86A3F7E9F4D6BDD6FA9 /* Pods_Speed_Limit_Checker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31838A58CE1A47C9FB5C8B8 /* Pods_Speed_Limit_Checker.framework */; };
 		B8BBECFE222A4C7F0017FFB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECFD222A4C7F0017FFB9 /* AppDelegate.swift */; };
-		B8BBED00222A4C7F0017FFB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECFF222A4C7F0017FFB9 /* ViewController.swift */; };
-		B8BBED03222A4C7F0017FFB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8BBED01222A4C7F0017FFB9 /* Main.storyboard */; };
+		B8BBED00222A4C7F0017FFB9 /* PagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECFF222A4C7F0017FFB9 /* PagerVC.swift */; };
 		B8BBED05222A4C800017FFB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BBED04222A4C800017FFB9 /* Assets.xcassets */; };
 		B8BBED08222A4C800017FFB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8BBED06222A4C800017FFB9 /* LaunchScreen.storyboard */; };
+		B8BBED10222AEEF50017FFB9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBED0F222AEEF50017FFB9 /* MainView.swift */; };
+		B8BBED17222AF2BF0017FFB9 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBED16222AF2BF0017FFB9 /* MapVC.swift */; };
+		B8BBED19222AF2D30017FFB9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBED18222AF2D30017FFB9 /* MapView.swift */; };
+		B8BBED1B222AF2DE0017FFB9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBED1A222AF2DE0017FFB9 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +23,14 @@
 		A31838A58CE1A47C9FB5C8B8 /* Pods_Speed_Limit_Checker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Speed_Limit_Checker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8BBECFA222A4C7F0017FFB9 /* Speed Limit Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speed Limit Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8BBECFD222A4C7F0017FFB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8BBECFF222A4C7F0017FFB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B8BBED02222A4C7F0017FFB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8BBECFF222A4C7F0017FFB9 /* PagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerVC.swift; sourceTree = "<group>"; };
 		B8BBED04222A4C800017FFB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8BBED07222A4C800017FFB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8BBED09222A4C800017FFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8BBED0F222AEEF50017FFB9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B8BBED16222AF2BF0017FFB9 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		B8BBED18222AF2D30017FFB9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B8BBED1A222AF2DE0017FFB9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		CFAC87B87A5CEAEE3CFADA0E /* Pods-Speed Limit Checker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speed Limit Checker.release.xcconfig"; path = "Target Support Files/Pods-Speed Limit Checker/Pods-Speed Limit Checker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +60,6 @@
 				1E7D768A7F587236C257F8B7 /* Pods-Speed Limit Checker.debug.xcconfig */,
 				CFAC87B87A5CEAEE3CFADA0E /* Pods-Speed Limit Checker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,14 +84,49 @@
 		B8BBECFC222A4C7F0017FFB9 /* Speed Limit Checker */ = {
 			isa = PBXGroup;
 			children = (
-				B8BBECFD222A4C7F0017FFB9 /* AppDelegate.swift */,
-				B8BBECFF222A4C7F0017FFB9 /* ViewController.swift */,
-				B8BBED01222A4C7F0017FFB9 /* Main.storyboard */,
-				B8BBED04222A4C800017FFB9 /* Assets.xcassets */,
-				B8BBED06222A4C800017FFB9 /* LaunchScreen.storyboard */,
+				B8BBED11222AEEFC0017FFB9 /* View */,
+				B8BBED12222AEF0C0017FFB9 /* Controller */,
+				B8BBED13222AEF7B0017FFB9 /* Supporting Files */,
+				B8BBED15222AEFA80017FFB9 /* Model */,
 				B8BBED09222A4C800017FFB9 /* Info.plist */,
 			);
 			path = "Speed Limit Checker";
+			sourceTree = "<group>";
+		};
+		B8BBED11222AEEFC0017FFB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8BBED0F222AEEF50017FFB9 /* MainView.swift */,
+				B8BBED18222AF2D30017FFB9 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B8BBED12222AEF0C0017FFB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B8BBECFF222A4C7F0017FFB9 /* PagerVC.swift */,
+				B8BBED16222AF2BF0017FFB9 /* MapVC.swift */,
+				B8BBED1A222AF2DE0017FFB9 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B8BBED13222AEF7B0017FFB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8BBECFD222A4C7F0017FFB9 /* AppDelegate.swift */,
+				B8BBED04222A4C800017FFB9 /* Assets.xcassets */,
+				B8BBED06222A4C800017FFB9 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8BBED15222AEFA80017FFB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +191,6 @@
 			files = (
 				B8BBED08222A4C800017FFB9 /* LaunchScreen.storyboard in Resources */,
 				B8BBED05222A4C800017FFB9 /* Assets.xcassets in Resources */,
-				B8BBED03222A4C7F0017FFB9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8BBED00222A4C7F0017FFB9 /* ViewController.swift in Sources */,
+				B8BBED00222A4C7F0017FFB9 /* PagerVC.swift in Sources */,
+				B8BBED1B222AF2DE0017FFB9 /* MainVC.swift in Sources */,
+				B8BBED17222AF2BF0017FFB9 /* MapVC.swift in Sources */,
+				B8BBED19222AF2D30017FFB9 /* MapView.swift in Sources */,
+				B8BBED10222AEEF50017FFB9 /* MainView.swift in Sources */,
 				B8BBECFE222A4C7F0017FFB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,14 +260,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B8BBED01222A4C7F0017FFB9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B8BBED02222A4C7F0017FFB9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B8BBED06222A4C800017FFB9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -342,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
