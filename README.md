@@ -14,6 +14,9 @@ An app that gives users random colors when they shake their device; displays the
 
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Day1.jpg)
 
+## Day 2: Speed Limit Checker
+An app that checks if user is going speed limit and alerts them if they are speeding or driving too slowly.
+
 ## App Ideas TO_DO 
 - [ ] App that allows users to send SSH command with the press of a button 
 - [ ] Text to speech app 
