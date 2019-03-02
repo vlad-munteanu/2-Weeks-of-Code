@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import SnapKit
+
+public class MapView: UIView {
+    
+}
+

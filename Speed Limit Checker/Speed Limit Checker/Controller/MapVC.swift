@@ -6,7 +6,7 @@
 //  Copyright © 2019 Vlad Munteanu. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class MapVC: UIViewController {
     

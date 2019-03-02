@@ -35,7 +35,7 @@ class PagerVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewC
         return nil
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted comple    ted: Bool) {
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         
         // set the pageControl.currentPage to the index of the current viewController in     pages
         if let viewControllers = pageViewController.viewControllers {
