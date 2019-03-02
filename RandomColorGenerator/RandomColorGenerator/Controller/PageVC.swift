@@ -63,7 +63,7 @@ class PageVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewCo
         
         // add the individual viewControllers to the pageViewController
         self.pages.append(page1)
-        self.pages.append(page2)
+        //self.pages.append(page2)
         setViewControllers([pages[initialPage]], direction: .forward, animated: false, completion: nil)
         
         // pageControl

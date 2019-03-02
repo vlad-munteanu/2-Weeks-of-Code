@@ -48,8 +48,9 @@ extension SavedColorsVC {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
     
+        //cell.textLabel?.text = savedColors[Int(indexPath)]
+        
         //cell.textLabel?.text = savedColors[0]
-        cell.textLabel?.text = "Hello World"
         //cell.backgroundColor = UIColor(
         //Convert from Hex Code to UIColor
         
