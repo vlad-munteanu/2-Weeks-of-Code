@@ -51,7 +51,7 @@ public class ColorView: UIView {
             make.height.equalToSuperview().multipliedBy(0.1)
             make.width.equalToSuperview().multipliedBy(0.45)
             make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().multipliedBy(0.8)
+            make.bottom.equalToSuperview().multipliedBy(0.9)
         }
     }
     
@@ -117,9 +117,16 @@ public class ColorView: UIView {
     //Button
     public let randomButton: UIButton = {
         let randButton = UIButton()
-        randButton.titleLabel?.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        randButton.titleLabel?.text = "New Color"
-        randButton.backgroundColor = #colorLiteral(red: 0.01969533414, green: 0.01559982635, blue: 0.01971777529, alpha: 1)
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 5.0
+        
+        randButton.setTitle("Randomize", for: UIControl.State.normal)
+        randButton.setTitleColor(UIColor.white, for: UIControl.State.normal)
+        randButton.backgroundColor = UIColor.clear
+        randButton.layer.borderWidth = 1.0
+        randButton.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+        randButton.layer.cornerRadius = cornerRadius
+        
         return randButton
     }()
     
