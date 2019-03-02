@@ -9,11 +9,16 @@
 import UIKit
 import CoreLocation
 import MapKit
+import SwiftSoup
 
 class MainVC: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     
     var currentStreet: String = ""
+    var roadtype: String = ""
+    
+    var newSpeed = 0
+    
     
     //main view
     let mainView = MainView()
@@ -60,9 +65,10 @@ class MainVC: UIViewController, CLLocationManagerDelegate {
         var speed: CLLocationSpeed = CLLocationSpeed()
         //This is in Miles per hour
         speed = locationManager.location!.speed * 2.236936284
-        var newSpeed = Int(locationManager.location!.speed * 2.236936284)
+        newSpeed = Int(locationManager.location!.speed * 2.236936284)
         if (newSpeed < 0) {newSpeed = 0}
         amISpeeding(lat: locations[0].coordinate.latitude, long: locations[0].coordinate.longitude)
+        
         
         print(speed)
         mainView.speedLabel.text = "\(newSpeed) MPH"
@@ -74,9 +80,36 @@ class MainVC: UIViewController, CLLocationManagerDelegate {
     func amISpeeding(lat: Double,long: Double) {
         if let url = URL(string: "https://www.openstreetmap.org/way/175868403#map=19/" + String(lat) + "/" + String(long)) {
             
+            if let html = try? String(contentsOf: url)  {
+                print(html)
+                if html.contains("highway=residential") {
+                    print("residential")
+                    roadtype = "residential"
+                } else {
+                    roadtype = "highway"
+                }
+            }
         }
         else {
             print("error")
+        }
+        
+        if roadtype == "residential" {
+            if newSpeed <= 25 {
+                mainView.backgroundView.backgroundColor = colors[0]
+            } else if newSpeed >= 35 {
+                mainView.backgroundView.backgroundColor = colors[1]
+            } else {
+                mainView.backgroundView.backgroundColor = colors[2]
+            }
+        } else {
+            if newSpeed <= 55 {
+                mainView.backgroundView.backgroundColor = colors[0]
+            } else if newSpeed >= 65 {
+                mainView.backgroundView.backgroundColor = colors[1]
+            } else {
+                mainView.backgroundView.backgroundColor = colors[2]
+            }
         }
     }
     
