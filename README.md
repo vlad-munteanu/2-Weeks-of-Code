@@ -19,12 +19,14 @@ An app that checks if user is going speed limit and alerts them if they are spee
 
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Day2.jpg) 
 
+## Day 3: SSH Command Sender 
+An app that sends SSH command from iPhone to Mac with the press of a button.
+
 ## App Ideas TO_DO 
 - [ ] App that allows users to send SSH command with the press of a button 
 - [ ] Text to speech app 
 - [ ] App to connect to Deauth hardware I have 
 - [ ] Snow day chance calculator 
-- [ ] App that checks if you're going the speed limit 
 - [ ] Pomodoro Technique (25 mins study, 3-5 min break four times, then 15-20 min) 
 - [ ] Restaurant chooser (for lunch)
 
