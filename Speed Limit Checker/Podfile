@@ -7,4 +7,5 @@ target 'Speed Limit Checker' do
 
   # Pods for Speed Limit Checker
   pod 'SnapKit'
+  pod 'SwiftSoup'
 end

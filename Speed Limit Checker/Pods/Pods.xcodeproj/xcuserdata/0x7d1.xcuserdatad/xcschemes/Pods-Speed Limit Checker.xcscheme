@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2DE064D8337D6660EE434C9B0A104603"
+               BlueprintIdentifier = "703B729389E16FA7D98A24D2D8E8B92C"
                BuildableName = "Pods_Speed_Limit_Checker.framework"
                BlueprintName = "Pods-Speed Limit Checker"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2DE064D8337D6660EE434C9B0A104603"
+            BlueprintIdentifier = "703B729389E16FA7D98A24D2D8E8B92C"
             BuildableName = "Pods_Speed_Limit_Checker.framework"
             BlueprintName = "Pods-Speed Limit Checker"
             ReferencedContainer = "container:Pods.xcodeproj">
