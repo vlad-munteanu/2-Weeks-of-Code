@@ -28,6 +28,7 @@ public class ColorView: UIView {
         addSubview(hexLabel)
         addSubview(rgbLabel)
         addSubview(randomButton)
+        addSubview(saveButton)
     }
     
     internal func createConstraints(){
@@ -52,6 +53,12 @@ public class ColorView: UIView {
             make.width.equalToSuperview().multipliedBy(0.45)
             make.centerX.equalToSuperview()
             make.bottom.equalToSuperview().multipliedBy(0.9)
+        }
+        saveButton.snp.makeConstraints { make in
+            make.height.equalToSuperview().multipliedBy(0.05)
+            make.width.equalToSuperview().multipliedBy(0.2)
+            make.right.equalToSuperview().multipliedBy(0.95)
+            make.centerY.equalToSuperview().multipliedBy(0.2)
         }
     }
     
@@ -132,9 +139,16 @@ public class ColorView: UIView {
     
     public let saveButton: UIButton = {
         let saveButton = UIButton()
-        saveButton.titleLabel?.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        saveButton.titleLabel?.text = "New Color"
-        saveButton.backgroundColor = #colorLiteral(red: 0.5960784314, green: 0.5960784314, blue: 0.6156862745, alpha: 1)
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 5.0
+        
+        saveButton.setTitle("Save", for: UIControl.State.normal)
+        saveButton.setTitleColor(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1), for: UIControl.State.normal)
+        saveButton.backgroundColor = UIColor.clear
+        saveButton.layer.borderWidth = 1.0
+        saveButton.layer.borderColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
+        saveButton.layer.cornerRadius = cornerRadius
+        
         return saveButton
     }()
 }

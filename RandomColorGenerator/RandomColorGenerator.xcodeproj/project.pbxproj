@@ -73,6 +73,7 @@
 		B8BBECD02228FCBC0017FFB9 /* RandomColorGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				B8BBECEE2229FF970017FFB9 /* Helper Classes */,
 				B8BBECE5222903840017FFB9 /* View */,
 				B8BBECE82229060D0017FFB9 /* Controller */,
 				B8BBECE9222906240017FFB9 /* Supporting Files */,
@@ -107,6 +108,13 @@
 				B8BBECDA2228FCBD0017FFB9 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8BBECEE2229FF970017FFB9 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Helper Classes";
 			sourceTree = "<group>";
 		};
 		DC1FF1DEF2E4529315BA8AC1 /* Pods */ = {
