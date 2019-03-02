@@ -60,7 +60,10 @@ class MainVC: UIViewController, CLLocationManagerDelegate {
         var speed: CLLocationSpeed = CLLocationSpeed()
         //This is in Miles per hour
         speed = locationManager.location!.speed * 2.236936284
-        let newSpeed = Int(locationManager.location!.speed * 2.236936284)
+        var newSpeed = Int(locationManager.location!.speed * 2.236936284)
+        if (newSpeed < 0) {newSpeed = 0}
+        amISpeeding(lat: locations[0].coordinate.latitude, long: locations[0].coordinate.longitude)
+        
         print(speed)
         mainView.speedLabel.text = "\(newSpeed) MPH"
     }
@@ -68,8 +71,13 @@ class MainVC: UIViewController, CLLocationManagerDelegate {
     
     
   
-    func amISpeeding(currentSpeed speed:CLLocationSpeed) -> Int {
-        return 0
+    func amISpeeding(lat: Double,long: Double) {
+        if let url = URL(string: "https://www.openstreetmap.org/way/175868403#map=19/" + String(lat) + "/" + String(long)) {
+            
+        }
+        else {
+            print("error")
+        }
     }
     
     
@@ -118,6 +126,7 @@ class MainVC: UIViewController, CLLocationManagerDelegate {
                                     // Street address
                                     if let thoroughfare = placeMark?.addressDictionary!["Thoroughfare"] as? NSString {
                                         print("Thoroughfare :- \(thoroughfare)")
+                                        self.mainView.streetLabel.text = "Current Street: \(thoroughfare)"
                                         
                                     }
                                 }

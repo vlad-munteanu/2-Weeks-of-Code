@@ -58,7 +58,7 @@ public class MainView: UIView {
             
         }
         streetLabel.snp.makeConstraints { make in
-            make.centerY.equalToSuperview().multipliedBy(1.8)
+            make.centerY.equalToSuperview().multipliedBy(1.85)
             make.left.equalToSuperview()
             make.width.equalToSuperview()
             
@@ -90,14 +90,14 @@ public class MainView: UIView {
     //Title Label
     public let streetLabel: UILabel = {
         let streetLabel = UILabel()
-        streetLabel.font = UIFont(name: "Futura", size: 20)
+        streetLabel.font = UIFont(name: "Futura", size: 26)
         streetLabel.text = "Current Street:"
         streetLabel.numberOfLines = 2
         streetLabel.minimumScaleFactor = 0.5
         streetLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
         streetLabel.adjustsFontSizeToFitWidth = true
-        streetLabel.textAlignment = .left
+        streetLabel.textAlignment = .center
         streetLabel.translatesAutoresizingMaskIntoConstraints = false
         return streetLabel
     }()
