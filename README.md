@@ -9,6 +9,10 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 3. Commit MVP of each app to GitHub by 11:59PM each day\
 4. Rinse & Repeat
 
+## Day 1: Random Color Generator 
+An app that gives users random colors when they shake their device; displays the color, hex value, and RGB value. Also allows users to store their favorite colors for later use. 
+
+
 ## App Ideas TO_DO 
 - [ ] App that allows users to send SSH command with the press of a button 
 - [ ] Text to speech app 
@@ -17,10 +21,6 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 - [ ] App that checks if you're going the speed limit 
 - [ ] Pomodoro Technique (25 mins study, 3-5 min break four times, then 15-20 min) 
 - [ ] Restaurant chooser (for lunch)
-
-## Day 1: Random Color Generator 
-An app that gives users random colors when they shake their device; displays the color, hex value, and RGB value. Also allows users to store their favorite colors for later use. 
-
 
 ## License
 
