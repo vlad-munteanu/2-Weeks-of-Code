@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.main.bounds)
         if let window = self.window {
-            window.rootViewController = PagerVC()
+            window.rootViewController = MainVC()
             window.makeKeyAndVisible()
         }
         return true
