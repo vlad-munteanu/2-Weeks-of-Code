@@ -15,7 +15,9 @@ An app that gives users random colors when they shake their device; displays the
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Day1.jpg)
 
 ## Day 2: Speed Limit Checker
-An app that checks if user is going speed limit and alerts them if they are speeding or driving too slowly.
+An app that checks if user is going speed limit and alerts them if they are speeding by changing color of background. Only works on VA streets because the way the data parsing is set up, it only checks speed aganist VA laws. I was not able to find a free API to check speed limits everywhere.
+
+![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Day2.jpg) 
 
 ## App Ideas TO_DO 
 - [ ] App that allows users to send SSH command with the press of a button 
