@@ -30,6 +30,7 @@ public class MainView: UIView {
        // addSubview(titleLabel)
         addSubview(speedLabelSubview)
         addSubview(speedLabel)
+        addSubview(streetLabel)
     }
     
     internal func createConstraints() {
@@ -38,7 +39,7 @@ public class MainView: UIView {
             make.width.equalToSuperview()
         }
         mapView.snp.makeConstraints { make in
-            make.height.equalToSuperview().multipliedBy(0.9)
+            make.height.equalToSuperview().multipliedBy(0.85)
             make.width.equalToSuperview()
             make.centerX.equalToSuperview()
             make.bottom.equalToSuperview()
@@ -56,9 +57,15 @@ public class MainView: UIView {
             make.height.equalToSuperview().multipliedBy(0.13)
             
         }
+        streetLabel.snp.makeConstraints { make in
+            make.centerY.equalToSuperview().multipliedBy(1.8)
+            make.left.equalToSuperview()
+            make.width.equalToSuperview()
+            
+        }
         speedLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().multipliedBy(1.85)
+            make.centerY.equalToSuperview().multipliedBy(0.2)
             
         }
         
@@ -81,18 +88,18 @@ public class MainView: UIView {
     }()
     
     //Title Label
-    public let titleLabel: UILabel = {
-        let titleLabel = UILabel()
-        titleLabel.font = UIFont(name: "Futura", size: 32)
-        titleLabel.text = "speed limit"
-        titleLabel.numberOfLines = 1
-        titleLabel.minimumScaleFactor = 0.5
-        titleLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+    public let streetLabel: UILabel = {
+        let streetLabel = UILabel()
+        streetLabel.font = UIFont(name: "Futura", size: 20)
+        streetLabel.text = "Current Street:"
+        streetLabel.numberOfLines = 2
+        streetLabel.minimumScaleFactor = 0.5
+        streetLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
-        titleLabel.adjustsFontSizeToFitWidth = true
-        titleLabel.textAlignment = .left
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        return titleLabel
+        streetLabel.adjustsFontSizeToFitWidth = true
+        streetLabel.textAlignment = .left
+        streetLabel.translatesAutoresizingMaskIntoConstraints = false
+        return streetLabel
     }()
     
     //Speed Label Subview
@@ -110,7 +117,7 @@ public class MainView: UIView {
         speedlabel.numberOfLines = 1
         speedlabel.minimumScaleFactor = 0.5
         speedlabel.shadowOffset = CGSize(width: -3, height: 2)
-        speedlabel.textColor = colors[0]
+        speedlabel.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         speedlabel.shadowColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
         
         speedlabel.adjustsFontSizeToFitWidth = true
