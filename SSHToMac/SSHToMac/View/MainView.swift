@@ -28,6 +28,7 @@ public class MainView: UIView {
         addSubview(cmdTextfield)
         addSubview(sendCommandButton)
         terminalView.addSubview(commandLabel)
+        addSubview(settingsButton)
     }
     
     func createConstraints() {
@@ -36,26 +37,35 @@ public class MainView: UIView {
             make.width.equalToSuperview()
         }
         terminalView.snp.makeConstraints{ make in
-            make.height.equalToSuperview().multipliedBy(0.4)
-            make.width.equalToSuperview().multipliedBy(0.9)
+            make.height.equalToSuperview().multipliedBy(0.3)
+            make.width.equalToSuperview().multipliedBy(0.95)
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().multipliedBy(0.6)
+            make.centerY.equalToSuperview().multipliedBy(0.55)
         }
         commandLabel.snp.makeConstraints{ make in
-            make.width.equalTo(terminalView.snp_width).multipliedBy(0.9)
+            make.top.bottom.equalTo(terminalView)
+            make.left.right.equalTo(terminalView)
+            make.width.equalTo(terminalView)
         }
         
         cmdTextfield.snp.makeConstraints{ make in
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().multipliedBy(1.1)
+            make.centerY.equalToSuperview().multipliedBy(0.95)
             make.width.equalToSuperview().multipliedBy(0.95)
-            make.height.equalToSuperview().multipliedBy(0.05)
+            make.height.equalToSuperview().multipliedBy(0.04)
         }
         sendCommandButton.snp.makeConstraints{ make in
             make.height.equalToSuperview().multipliedBy(0.07)
             make.width.equalToSuperview().multipliedBy(0.3)
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().multipliedBy(1.3)
+            make.centerY.equalToSuperview().multipliedBy(1.1)
+            
+        }
+        settingsButton.snp.makeConstraints{ make in
+            make.height.equalToSuperview().multipliedBy(0.05)
+            make.width.equalTo(settingsButton.snp_height)
+            make.right.equalToSuperview().inset(10)
+            make.top.equalToSuperview().inset(50)
             
         }
         
@@ -87,7 +97,7 @@ public class MainView: UIView {
     public let commandLabel: UILabel = {
         let cmdLabel = UILabel()
         cmdLabel.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
-        cmdLabel.font = UIFont(name: "System", size: 14)
+        cmdLabel.font = UIFont(name: "System", size: 12)
         cmdLabel.numberOfLines = 0
         cmdLabel.minimumScaleFactor = 0.5
         cmdLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -119,6 +129,20 @@ public class MainView: UIView {
         cmdButton.translatesAutoresizingMaskIntoConstraints = false
         
         return cmdButton
+    }()
+    
+    //TODO: Change to Settings icon
+    public let settingsButton: UIButton = {
+        let settingsBttn = UIButton()
+      
+        
+        settingsBttn.setImage(#imageLiteral(resourceName: "settings"), for: UIControl.State.normal)
+    
+        settingsBttn.backgroundColor = UIColor.clear
+        
+        settingsBttn.translatesAutoresizingMaskIntoConstraints = false
+        
+        return settingsBttn
     }()
     
 }

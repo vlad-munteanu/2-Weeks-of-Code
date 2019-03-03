@@ -79,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				B8BBED40222B99C80017FFB9 /* MainView.swift */,
-				B8BBED46222BA8230017FFB9 /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,9 +86,8 @@
 		B8BBED3E222B996F0017FFB9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B8BBED48222BADB70017FFB9 /* OldFiles */,
 				B8BBED2D222B99440017FFB9 /* MainVC.swift */,
-				B8BBED42222BA78E0017FFB9 /* PageVC.swift */,
-				B8BBED44222BA7FB0017FFB9 /* SettingsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -102,6 +100,16 @@
 				B8BBED2B222B99440017FFB9 /* AppDelegate.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8BBED48222BADB70017FFB9 /* OldFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B8BBED46222BA8230017FFB9 /* SettingsView.swift */,
+				B8BBED44222BA7FB0017FFB9 /* SettingsVC.swift */,
+				B8BBED42222BA78E0017FFB9 /* PageVC.swift */,
+			);
+			path = OldFiles;
 			sourceTree = "<group>";
 		};
 		CBFA84208EA7232B4E1DB0B3 /* Frameworks */ = {
