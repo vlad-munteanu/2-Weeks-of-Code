@@ -10,6 +10,11 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 3. Commit MVP of each app to GitHub by 11:59PM each day
 4. Rinse & Repeat
 
+## Lines of Code Written So Far This Month: 
+```
+1243
+```
+
 ## Day 1: Random Color Generator 
 An app that gives users random colors when they shake their device; displays the color, hex value, and RGB value. ~Also allows users to store their favorite colors for later use.~ 
 
@@ -35,11 +40,6 @@ An app aimed at helping users study better, based on the Pomodoro technique. Not
 - [ ] Snow day chance calculator 
 - [ ] Pomodoro Technique (25 mins study, 3-5 min break four times, then 15-20 min) 
 - [ ] Restaurant chooser (for lunch)
-
-## Lines of Code Written So Far This Month: 
-```
-1243
-```
 
 ## License
 
