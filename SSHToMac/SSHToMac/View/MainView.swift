@@ -36,22 +36,26 @@ public class MainView: UIView {
             make.width.equalToSuperview()
         }
         terminalView.snp.makeConstraints{ make in
-            make.height.equalToSuperview().multipliedBy(0.6)
+            make.height.equalToSuperview().multipliedBy(0.4)
             make.width.equalToSuperview().multipliedBy(0.9)
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().multipliedBy(0.8)
+            make.centerY.equalToSuperview().multipliedBy(0.6)
         }
         commandLabel.snp.makeConstraints{ make in
             make.width.equalTo(terminalView.snp_width).multipliedBy(0.9)
         }
+        
         cmdTextfield.snp.makeConstraints{ make in
-            make.top.equalTo(terminalView.snp_bottom)
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview().multipliedBy(1.1)
+            make.width.equalToSuperview().multipliedBy(0.9)
+            make.height.equalToSuperview().multipliedBy(0.05)
         }
         sendCommandButton.snp.makeConstraints{ make in
-            make.height.equalToSuperview().multipliedBy(0.1)
-            make.width.equalToSuperview().multipliedBy(0.45)
+            make.height.equalToSuperview().multipliedBy(0.07)
+            make.width.equalToSuperview().multipliedBy(0.3)
             make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().multipliedBy(0.45)
+            make.centerY.equalToSuperview().multipliedBy(1.3)
             
         }
         
@@ -90,7 +94,8 @@ public class MainView: UIView {
     //Textfield
     public let cmdTextfield: UITextField = {
         let cmdTF = UITextField()
-        cmdTF.translatesAutoresizingMaskIntoConstraints = false
+        cmdTF.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        //cmdTF.translatesAutoresizingMaskIntoConstraints = false
         return cmdTF
     }()
     
@@ -100,7 +105,7 @@ public class MainView: UIView {
         let borderAlpha : CGFloat = 0.7
         let cornerRadius : CGFloat = 5.0
         
-        cmdButton.setTitle("Randomize", for: UIControl.State.normal)
+        cmdButton.setTitle("Send", for: UIControl.State.normal)
         cmdButton.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: UIControl.State.normal)
         cmdButton.backgroundColor = UIColor.clear
         cmdButton.layer.borderWidth = 1.0
