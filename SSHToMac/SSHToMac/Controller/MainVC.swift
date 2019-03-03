@@ -89,7 +89,12 @@ class MainVC: UIViewController, UITextFieldDelegate {
         let shell = Shell(host: myHost, port: 22)
         // ...
         shell!.withCallback { (string: String?, error: String?) in
+            let command = string ?? error!
+            self.longStringOfCommands = self.longStringOfCommands + "\n" + command
+            self.mainView.commandLabel.text = self.longStringOfCommands
             print("\(string ?? error!)")
+            
+            
             }
             .connect()
             .authenticate(.byPassword(username: myUsername, password: myPassword))

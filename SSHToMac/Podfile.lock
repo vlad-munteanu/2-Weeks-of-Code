@@ -1,0 +1,24 @@
+PODS:
+  - SnapKit (4.2.0)
+  - SwiftSH (0.1.2):
+    - SwiftSH/Libssh2 (= 0.1.2)
+  - SwiftSH/Core (0.1.2)
+  - SwiftSH/Libssh2 (0.1.2):
+    - SwiftSH/Core
+
+DEPENDENCIES:
+  - SnapKit
+  - SwiftSH
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SnapKit
+    - SwiftSH
+
+SPEC CHECKSUMS:
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftSH: 5d3c95b23093106d18c527ce9c175a5733e3e86e
+
+PODFILE CHECKSUM: 223153f509d0244ea98f7ea7baf07b5e27285691
+
+COCOAPODS: 1.6.1
