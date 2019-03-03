@@ -25,9 +25,9 @@ public class MainView: UIView {
     func intializeUI() {
         addSubview(backgroundView)
         addSubview(terminalView)
-        terminalView.addSubview(commandLabel)
         addSubview(cmdTextfield)
         addSubview(sendCommandButton)
+        terminalView.addSubview(commandLabel)
     }
     
     func createConstraints() {
@@ -40,6 +40,9 @@ public class MainView: UIView {
             make.width.equalToSuperview().multipliedBy(0.9)
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview().multipliedBy(0.8)
+        }
+        commandLabel.snp.makeConstraints{ make in
+            make.width.equalTo(terminalView.snp_width).multipliedBy(0.9)
         }
         cmdTextfield.snp.makeConstraints{ make in
             make.top.equalTo(terminalView.snp_bottom)
@@ -81,7 +84,6 @@ public class MainView: UIView {
         cmdLabel.translatesAutoresizingMaskIntoConstraints = false
         cmdLabel.textColor = #colorLiteral(red: 0.07459209753, green: 1, blue: 0.07377539981, alpha: 1)
         cmdLabel.text = "internal func createConstraints( backgroundView.snp.makeConstraints { make in 38             make.height.equalToSuperview() 39             make.width.equalToSuperview() 40         } hexLabel.snp.makeConstraints{ make in           make.height.equalToSuperview().multipliedBy(0.07) make.width.equalToSuperview().multipliedBy(0.7) make.centerX.equalToSuperview() make.centerY.equalToSuperview().multipliedBy(0.75)"
-        
         return cmdLabel
     }()
     
