@@ -90,7 +90,9 @@ class MainVC: UIViewController, UITextFieldDelegate, NMSSHChannelDelegate {
     func newConnect(commandToRun: String) {
         
         
-      
+        let host = ""
+        let username = ""
+        let password = ""
         let session = NMSSHSession(host: host, andUsername: username)
         print("Trying to connect now..")
         session?.connect()
