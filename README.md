@@ -20,12 +20,17 @@ An app that checks if user is going speed limit and alerts them if they are spee
 
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day2.gif) 
 
-## Day 3: SSH Command Sender 
-An app that sends SSH command from iPhone to Mac with the press of a button.
+## Day 3: SSH Shell
+An app that allows the user to open an SSH shell, using the NMSSH library. This app is really just a proof of concept because it can sucessfully open a shell but is quite buggy: users have to enter credentials in the XCode workspace, the shell freezes a lot, and the text formatting is all over the place. I had a lot of school stuff to finish today so I wasn't able to perfect it completely, but still a cool app regardless.  
+
+![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day3.gif)
+
+## Day 4: Study App (Pomodoro Technique) 
+An app aimed at helping users study better, based on the Pomodoro technique. Not only acts as a study timer, but also forces users to enable airplane mode to focus. 
 
 ## App Ideas TO_DO 
-- [ ] App that allows users to send SSH command with the press of a button 
 - [ ] Text to speech app 
+- [ ] Raspberry PI App 
 - [ ] App to connect to Deauth hardware I have 
 - [ ] Snow day chance calculator 
 - [ ] Pomodoro Technique (25 mins study, 3-5 min break four times, then 15-20 min) 
