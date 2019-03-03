@@ -6,6 +6,7 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 ## Rules
 1. Fresh Xcode Project created after 12AM of each day 
 2. Re-use as little code as possible 
+3. No storyboards: everything must be 100% in code
 3. Commit MVP of each app to GitHub by 11:59PM each day
 4. Rinse & Repeat
 
