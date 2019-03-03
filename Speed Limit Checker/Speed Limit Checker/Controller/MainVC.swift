@@ -66,7 +66,10 @@ class MainVC: UIViewController, CLLocationManagerDelegate {
         //This is in Miles per hour
         speed = locationManager.location!.speed * 2.236936284
         newSpeed = Int(locationManager.location!.speed * 2.236936284)
-        if (newSpeed < 0) {newSpeed = 0}
+//        if (newSpeed < 0) {
+//            newSpeed = 0
+//
+//        }
         amISpeeding(lat: locations[0].coordinate.latitude, long: locations[0].coordinate.longitude)
         
         
