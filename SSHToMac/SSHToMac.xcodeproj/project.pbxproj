@@ -13,6 +13,9 @@
 		B8BBED33222B99460017FFB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BBED32222B99460017FFB9 /* Assets.xcassets */; };
 		B8BBED36222B99460017FFB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8BBED34222B99460017FFB9 /* LaunchScreen.storyboard */; };
 		B8BBED41222B99C80017FFB9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBED40222B99C80017FFB9 /* MainView.swift */; };
+		B8BBED43222BA78E0017FFB9 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBED42222BA78E0017FFB9 /* PageVC.swift */; };
+		B8BBED45222BA7FB0017FFB9 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBED44222BA7FB0017FFB9 /* SettingsVC.swift */; };
+		B8BBED47222BA8230017FFB9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBED46222BA8230017FFB9 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		B8BBED35222B99460017FFB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8BBED37222B99460017FFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8BBED40222B99C80017FFB9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B8BBED42222BA78E0017FFB9 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
+		B8BBED44222BA7FB0017FFB9 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		B8BBED46222BA8230017FFB9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F6F77D6F6ECFB4C6D5D62CF5 /* Pods-SSHToMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSHToMac.release.xcconfig"; path = "Target Support Files/Pods-SSHToMac/Pods-SSHToMac.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				B8BBED40222B99C80017FFB9 /* MainView.swift */,
+				B8BBED46222BA8230017FFB9 /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -81,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				B8BBED2D222B99440017FFB9 /* MainVC.swift */,
+				B8BBED42222BA78E0017FFB9 /* PageVC.swift */,
+				B8BBED44222BA7FB0017FFB9 /* SettingsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -109,7 +118,6 @@
 				1203E94E565CA7DA7D11776A /* Pods-SSHToMac.debug.xcconfig */,
 				F6F77D6F6ECFB4C6D5D62CF5 /* Pods-SSHToMac.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -233,8 +241,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8BBED2E222B99440017FFB9 /* MainVC.swift in Sources */,
+				B8BBED43222BA78E0017FFB9 /* PageVC.swift in Sources */,
 				B8BBED41222B99C80017FFB9 /* MainView.swift in Sources */,
+				B8BBED47222BA8230017FFB9 /* SettingsView.swift in Sources */,
 				B8BBED2C222B99440017FFB9 /* AppDelegate.swift in Sources */,
+				B8BBED45222BA7FB0017FFB9 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
