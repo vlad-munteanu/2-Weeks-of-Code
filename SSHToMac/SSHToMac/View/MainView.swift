@@ -48,7 +48,7 @@ public class MainView: UIView {
         cmdTextfield.snp.makeConstraints{ make in
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview().multipliedBy(1.1)
-            make.width.equalToSuperview().multipliedBy(0.9)
+            make.width.equalToSuperview().multipliedBy(0.95)
             make.height.equalToSuperview().multipliedBy(0.05)
         }
         sendCommandButton.snp.makeConstraints{ make in
@@ -71,7 +71,12 @@ public class MainView: UIView {
     
     public let terminalView: UIScrollView = {
         let termView = UIScrollView()
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 5.0
         termView.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        termView.layer.borderWidth = 1.0
+        termView.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
+        termView.layer.cornerRadius = cornerRadius
         termView.translatesAutoresizingMaskIntoConstraints = false
         return termView
     }()
