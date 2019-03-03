@@ -13,7 +13,7 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 ## Day 1: Random Color Generator 
 An app that gives users random colors when they shake their device; displays the color, hex value, and RGB value. ~Also allows users to store their favorite colors for later use.~ 
 
-![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Day1.jpg)
+![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day1.gif)
 
 ## Day 2: Speed Limit Checker
 An app that checks if user is going speed limit and alerts them if they are speeding by changing color of background. Only works on VA streets because the way the data parsing is set up, it only checks speed aganist VA laws. I was not able to find a free API to check speed limits everywhere.
