@@ -36,6 +36,11 @@ An app aimed at helping users study better, based on the Pomodoro technique. Not
 - [ ] Pomodoro Technique (25 mins study, 3-5 min break four times, then 15-20 min) 
 - [ ] Restaurant chooser (for lunch)
 
+## Lines of Code Written So Far This Month: 
+```
+1243
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
