@@ -10,6 +10,7 @@ import UIKit
 
 class MainVC: UIViewController, UITextFieldDelegate {
     
+    var longStringOfCommands = ""
     //Main View
     let mainView = MainView()
     
@@ -61,7 +62,34 @@ class MainVC: UIViewController, UITextFieldDelegate {
     }
     
     @objc func sendCommand() {
+        self.view.endEditing(true)
+        if mainView.cmdTextfield.text == "" {
+            notValidCommand(alertMessage: "Command Not Valid")
+        } else {
+            let command = mainView.cmdTextfield.text!
+            longStringOfCommands = longStringOfCommands + command
+            mainView.commandLabel.text = longStringOfCommands
+        }
+        print("send command")
+    }
+    
+    func notValidCommand(alertMessage: String) {
+        let alert = UIAlertController(title: "Error", message: alertMessage, preferredStyle: .alert)
         
+        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+                
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+                
+                
+            }}))
+        self.present(alert, animated: true, completion: nil)
     }
     
     //dismisses keyboard when user touches screen elsewhere
