@@ -18,7 +18,7 @@ An app that gives users random colors when they shake their device; displays the
 ## Day 2: Speed Limit Checker
 An app that checks if user is going speed limit and alerts them if they are speeding by changing color of background. Only works on VA streets because the way the data parsing is set up, it only checks speed aganist VA laws. I was not able to find a free API to check speed limits everywhere.
 
-![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Day2.jpg) 
+![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day2.gif) 
 
 ## Day 3: SSH Command Sender 
 An app that sends SSH command from iPhone to Mac with the press of a button.
