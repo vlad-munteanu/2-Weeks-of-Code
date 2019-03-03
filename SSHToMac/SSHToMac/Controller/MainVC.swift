@@ -79,7 +79,7 @@ class MainVC: UIViewController, UITextFieldDelegate {
         } else {
             connect()
             let command = mainView.cmdTextfield.text!
-            longStringOfCommands = longStringOfCommands + command
+            longStringOfCommands = longStringOfCommands + "\n" + command
             mainView.commandLabel.text = longStringOfCommands
             connect()
         }
