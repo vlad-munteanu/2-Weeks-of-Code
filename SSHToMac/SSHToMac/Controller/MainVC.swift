@@ -7,17 +7,15 @@
 //
 
 import UIKit
-import SwiftSH
+import PVPMikrotikSSH
 
-class MainVC: UIViewController, UITextFieldDelegate {
+class MainVC: UIViewController, UITextFieldDelegate, NMSSHChannelDelegate {
     
     var longStringOfCommands = ""
     //Main View
     let mainView = MainView()
     
-    var myUsername = ""
-    var myPassword = ""
-    var myHost = ""
+    var sessionCurrentlyConnected = false
     
     unowned var settingsButton: UIButton {return mainView.settingsButton}
     unowned var sendButton: UIButton {return mainView.sendCommandButton}
@@ -27,7 +25,10 @@ class MainVC: UIViewController, UITextFieldDelegate {
     public override func loadView() {
         self.view = mainView
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -37,39 +38,38 @@ class MainVC: UIViewController, UITextFieldDelegate {
         self.sendButton.addTarget(self, action: #selector(sendCommand), for: UIControl.Event.touchUpInside)
     }
     
+    
+    func channel(_ channel: NMSSHChannel!, didReadRawData data: Data!) {
+        let str = String(data: data, encoding: .isoLatin1)!
+        print("hello")
+        print(str)
+        longStringOfCommands = longStringOfCommands + "\n" + str
+        mainView.commandLabel.text = longStringOfCommands
+        let bottomOffset = CGPoint(x: 0, y: mainView.terminalView.contentSize.height - mainView.terminalView.bounds.size.height)
+        mainView.terminalView.setContentOffset(bottomOffset, animated: true)
+        
+    }
+
+    
     //TODO: Fix alertView to allow users to input credentials
     @objc func setup() {
-        let alert = UIAlertController(title: "Login", message: "Need to login to SSH", preferredStyle: .alert)
-        let ipTF = UITextField()
-        let passTF = UITextField()
-        let hostTF = UITextField()
+        var alert = UIAlertController(title: "Login to SSH", message: "", preferredStyle: .alert)
+        var ipTF: UITextField!
+        var passTF: UITextField!
+        var hostTF: UITextField!
         
-        alert.addTextField(configurationHandler: { (textField) in
-            ipTF.placeholder = "Enter Username"
-            
-        })
-        alert.addTextField(configurationHandler: { (textField) in
-            hostTF.placeholder = "Enter Hostname"
-        })
-        alert.addTextField(configurationHandler: { (textField) in
-            passTF.placeholder = "Enter Password"
-        })
+        func configurationTextField(uTF: UITextField!, pTF: UITextField!, hTF: UITextField) {
+            print("generating the TextField")
+            uTF.placeholder = "Username"
+            pTF.placeholder = "Password"
+            hTF.placeholder = "Host"
+        }
         
-        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: { action in
-            switch action.style{
-            case .default:
-                print("default")
-                
-                
-            case .cancel:
-                print("cancel")
-                
-            case .destructive:
-                print("destructive")
-                
-                
-            }}))
+        //alert.addTextFieldsWithConfigurationHandler(configurationTextField)
+        
+       
         self.present(alert, animated: true, completion: nil)
+        
     }
     
     @objc func sendCommand() {
@@ -77,68 +77,55 @@ class MainVC: UIViewController, UITextFieldDelegate {
         if mainView.cmdTextfield.text == "" {
             notValidCommand(alertMessage: "Command Not Valid")
         } else {
-            connect()
             let command = mainView.cmdTextfield.text!
             longStringOfCommands = longStringOfCommands + "\n" + command
             mainView.commandLabel.text = longStringOfCommands
-            connect()
+            //connect()
+            newConnect(commandToRun: command)
+            
         }
         print("send command")
     }
-    func connect() {
-        let shell = Shell(host: myHost, port: 22)
-        // ...
-        shell!.withCallback { (string: String?, error: String?) in
-            let command = string ?? error!
-            self.longStringOfCommands = self.longStringOfCommands + "\n" + command
-            self.mainView.commandLabel.text = self.longStringOfCommands
-            print("\(string ?? error!)")
-            
-            
-            }
-            .connect()
-            .authenticate(.byPassword(username: myUsername, password: myPassword))
-            .open { (error) in
-                if let error = error {
-                    print("\(error)")
-                }
-        }
-        // ...
-        shell!.write("Say 'yuh'") { (error) in
-            if let error = error {
-                print("error")
-                print("\(error)")
-            }
-        }
+    
+    func newConnect(commandToRun: String) {
         
-//        let command = Command(host: "localhost", port: 22)
-//        // ...
-//        command!.connect().authenticate(.byPassword(username: "username", password: "password")).execute(command) { (command, result: String?, error) in
-//                if let result = result {
-//                    print("\(result)")
-//                } else {
-//                    print("ERROR: \(error)")
-//                }
-//        }
         
+        let host = ""
+        let username = ""
+        let password = ""
+        let session = NMSSHSession(host: host, andUsername: username)
+        print("Trying to connect now..")
+        session?.connect()
+        if session?.isConnected == true
+        {
+            print("Session connected")
+            session?.channel.delegate = self
+            session?.channel.ptyTerminalType = .vanilla
+            session?.channel.requestPty = true
+            session?.authenticate(byPassword:password)
+            
+            do{
+                try session?.channel.startShell()
+                let a = try session?.channel.write(commandToRun + "\n")
+                print(a)
+                print(session?.channel.lastResponse ?? "no respone of last command")
+                longStringOfCommands = longStringOfCommands + "\n" + String(session?.channel.lastResponse ?? "no respone of last command")
+                mainView.commandLabel.text = longStringOfCommands
+            }catch{
+                print("Error ocurred!!")
+            }
+            
+            //For other types
+            //session.authenticateByPassword(password)
+        }
+        //session?.disconnect()
     }
+    
     
     func notValidCommand(alertMessage: String) {
         let alert = UIAlertController(title: "Error", message: alertMessage, preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: { action in
-            switch action.style{
-            case .default:
-                print("default")
-                
-            case .cancel:
-                print("cancel")
-                
-            case .destructive:
-                print("destructive")
-                
-                
-            }}))
+        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: { action in }))
         self.present(alert, animated: true, completion: nil)
     }
     

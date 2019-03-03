@@ -7,5 +7,5 @@ target 'SSHToMac' do
 
   # Pods for SSHToMac
   pod 'SnapKit'
-  pod 'SwiftSH'
+  pod 'PVPMikrotikSSH', :git => 'https://github.com/BlindDev/PVPMikrotikSSH.git’
 end
