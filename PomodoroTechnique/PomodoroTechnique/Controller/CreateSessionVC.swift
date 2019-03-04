@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import CDAlertView
 
+
 class CreateSessionVC: UIViewController {
     let newSessionView = NewSessionView()
     unowned var newSession: UIButton{return newSessionView.newSessionButton}
@@ -30,6 +31,8 @@ class CreateSessionVC: UIViewController {
         alert.alertBackgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         alert.isTextFieldHidden = false
         let okAction = CDAlertViewAction(title: "Ok 👍🏼")
+        okAction.buttonTextColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        
         alert.add(action: okAction)
         //alert.circleFillColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
         alert.show() { (alert) in
