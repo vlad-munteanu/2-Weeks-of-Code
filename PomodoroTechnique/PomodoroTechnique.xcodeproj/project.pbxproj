@@ -13,6 +13,7 @@
 		B8DC9871222CE924008DA5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DC9870222CE924008DA5EB /* Assets.xcassets */; };
 		B8DC9874222CE924008DA5EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DC9872222CE924008DA5EB /* LaunchScreen.storyboard */; };
 		B8DC9880222CEA6E008DA5EB /* MainTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC987F222CEA6E008DA5EB /* MainTimerView.swift */; };
+		B8DC9882222CFC48008DA5EB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC9881222CFC48008DA5EB /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		B8DC9873222CE924008DA5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8DC9875222CE924008DA5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8DC987F222CEA6E008DA5EB /* MainTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTimerView.swift; sourceTree = "<group>"; };
+		B8DC9881222CFC48008DA5EB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D68B5A258D0C544FE8A4C8E3 /* Pods-PomodoroTechnique.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomodoroTechnique.debug.xcconfig"; path = "Target Support Files/Pods-PomodoroTechnique/Pods-PomodoroTechnique.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 		B8DC987C222CEA29008DA5EB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B8DC9881222CFC48008DA5EB /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				B8DC986C222CE923008DA5EB /* MainVC.swift in Sources */,
 				B8DC986A222CE923008DA5EB /* AppDelegate.swift in Sources */,
 				B8DC9880222CEA6E008DA5EB /* MainTimerView.swift in Sources */,
+				B8DC9882222CFC48008DA5EB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
