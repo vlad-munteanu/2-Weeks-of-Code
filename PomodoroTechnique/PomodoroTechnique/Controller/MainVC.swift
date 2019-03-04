@@ -18,6 +18,7 @@ class MainVC: UIViewController {
     
     //buttons
     unowned var startPausebutton: UIButton{return timerView.startPauseButton}
+    unowned var cancelButton: UIButton{return timerView.cancelButton}
     
     
     
@@ -30,10 +31,15 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.startPausebutton.addTarget(self, action: #selector(startTimer), for: UIControl.Event.touchUpInside)
+        self.cancelButton.addTarget(self, action: #selector(cancelSession), for: UIControl.Event.touchUpInside)
     }
     
     @objc func startTimer() {
         studySession.runTimer()
+    }
+    
+    @objc func cancelSession() {
+        //popup to cancel 
     }
     
     @objc func pauseTimer() {
