@@ -43,7 +43,9 @@ class CreateSessionVC: UIViewController {
     }
     
     func createSession(sessionName: String) {
-    
+        let vc =  MainVC()
+        vc.studySession.taskName = sessionName
+        self.present(vc, animated: true, completion: nil)
     }
     
 }

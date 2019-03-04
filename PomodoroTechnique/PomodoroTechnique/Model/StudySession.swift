@@ -15,6 +15,8 @@ class StudySession {
     var timerIsRunning = false
     var timerIsPaused = false
     var timer = Timer()
+    var taskName = String()
+    
     
     
     init() {
