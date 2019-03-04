@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.main.bounds)
         if let window = self.window {
-            window.rootViewController = MainVC()
+            window.rootViewController = CreateSessionVC()
             window.makeKeyAndVisible()
         }
         registerForPushNotifications()

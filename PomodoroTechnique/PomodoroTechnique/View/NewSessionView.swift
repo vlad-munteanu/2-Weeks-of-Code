@@ -24,7 +24,7 @@ public class NewSessionView: UIView {
     
     internal func intializeUI() {
         addSubview(backgroundView)
-        addSubview(newButton)
+        addSubview(newSessionButton)
         
     }
     
@@ -33,10 +33,10 @@ public class NewSessionView: UIView {
             make.width.height.equalToSuperview()
             make.centerX.centerY.equalToSuperview()
         }
-        newButton.snp.makeConstraints{ make in
+        newSessionButton.snp.makeConstraints{ make in
             make.centerY.centerX.equalToSuperview()
             make.height.equalToSuperview().multipliedBy(0.2)
-            make.width.equalTo(newButton.snp_height)
+            make.width.equalTo(newSessionButton.snp_height)
             
         }
     }
@@ -51,7 +51,7 @@ public class NewSessionView: UIView {
     }()
     
     //Main Button
-    public let newButton: UIButton = {
+    public let newSessionButton: UIButton = {
         let newBttn = UIButton()
         
         //newBttn.setTitle("Start", for: UIControl.State.normal)

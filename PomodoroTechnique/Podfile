@@ -7,4 +7,5 @@ target 'PomodoroTechnique' do
 
   # Pods for PomodoroTechnique
   pod 'SnapKit'
+  pod "CDAlertView"
 end

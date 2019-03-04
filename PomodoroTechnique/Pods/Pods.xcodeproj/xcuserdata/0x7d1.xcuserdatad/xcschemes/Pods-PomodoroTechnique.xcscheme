@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "720E4382CB3C5232484E5BA6D8B1F66A"
+               BlueprintIdentifier = "175474BAB5DDA4580740EA793C719594"
                BuildableName = "Pods_PomodoroTechnique.framework"
                BlueprintName = "Pods-PomodoroTechnique"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "720E4382CB3C5232484E5BA6D8B1F66A"
+            BlueprintIdentifier = "175474BAB5DDA4580740EA793C719594"
             BuildableName = "Pods_PomodoroTechnique.framework"
             BlueprintName = "Pods-PomodoroTechnique"
             ReferencedContainer = "container:Pods.xcodeproj">

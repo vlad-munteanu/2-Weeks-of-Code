@@ -16,6 +16,7 @@
 		B8DC9882222CFC48008DA5EB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC9881222CFC48008DA5EB /* Constants.swift */; };
 		B8DC9884222CFF17008DA5EB /* StudySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC9883222CFF17008DA5EB /* StudySession.swift */; };
 		B8DC9887222D8B89008DA5EB /* NewSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC9886222D8B89008DA5EB /* NewSessionView.swift */; };
+		B8DC9889222D8F83008DA5EB /* CreateSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC9888222D8F83008DA5EB /* CreateSessionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B8DC9883222CFF17008DA5EB /* StudySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySession.swift; sourceTree = "<group>"; };
 		B8DC9885222D01B3008DA5EB /* PomodoroTechnique.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PomodoroTechnique.entitlements; sourceTree = "<group>"; };
 		B8DC9886222D8B89008DA5EB /* NewSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionView.swift; sourceTree = "<group>"; };
+		B8DC9888222D8F83008DA5EB /* CreateSessionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionVC.swift; sourceTree = "<group>"; };
 		D68B5A258D0C544FE8A4C8E3 /* Pods-PomodoroTechnique.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomodoroTechnique.debug.xcconfig"; path = "Target Support Files/Pods-PomodoroTechnique/Pods-PomodoroTechnique.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 		B8DC987D222CEA2E008DA5EB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B8DC9888222D8F83008DA5EB /* CreateSessionVC.swift */,
 				B8DC986B222CE923008DA5EB /* MainVC.swift */,
 			);
 			path = Controller;
@@ -216,12 +219,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PomodoroTechnique/Pods-PomodoroTechnique-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CDAlertView/CDAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CDAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +267,7 @@
 				B8DC986C222CE923008DA5EB /* MainVC.swift in Sources */,
 				B8DC986A222CE923008DA5EB /* AppDelegate.swift in Sources */,
 				B8DC9880222CEA6E008DA5EB /* MainTimerView.swift in Sources */,
+				B8DC9889222D8F83008DA5EB /* CreateSessionVC.swift in Sources */,
 				B8DC9882222CFC48008DA5EB /* Constants.swift in Sources */,
 				B8DC9884222CFF17008DA5EB /* StudySession.swift in Sources */,
 			);
