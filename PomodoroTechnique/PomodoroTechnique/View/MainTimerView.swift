@@ -24,10 +24,10 @@ public class MainTimerView: UIView {
     
     internal func intializeUI() {
         addSubview(backgroundView)
-        addSubview(startButton)
-        addSubview(pauseButton)
-        //addSubview(currentModeLabel)
+        addSubview(startPauseButton)
+        addSubview(currentModeLabel)
         addSubview(tasknameLabel)
+        addSubview(timerLabel)
     }
     
     internal func createConstraints() {
@@ -37,9 +37,21 @@ public class MainTimerView: UIView {
         }
         tasknameLabel.snp.makeConstraints{ make in
             make.left.equalToSuperview().inset(20)
-            make.centerY.equalToSuperview().multipliedBy(0.15)
-            make.width.equalToSuperview().multipliedBy(0.9)
-            make.height.equalToSuperview().multipliedBy(0.1)
+            make.centerY.equalToSuperview().multipliedBy(0.2)
+            make.width.equalToSuperview().multipliedBy(0.8)
+            make.height.equalToSuperview().multipliedBy(0.06)
+        }
+        currentModeLabel.snp.makeConstraints{ make in
+            make.height.equalToSuperview().multipliedBy(0.05)
+            make.width.equalTo(tasknameLabel.snp_width)
+            make.left.equalTo(tasknameLabel.snp_left)
+            make.top.equalTo(tasknameLabel.snp.bottom)
+        }
+        timerLabel.snp.makeConstraints{ make in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview().multipliedBy(0.9)
+            make.width.equalToSuperview()
+            make.height.equalToSuperview().multipliedBy(0.6)
             
         }
     }
@@ -54,7 +66,7 @@ public class MainTimerView: UIView {
     }()
     
     //Buttons
-    public let startButton: UIButton = {
+    public let startPauseButton: UIButton = {
         let startBttn = UIButton()
         let borderAlpha : CGFloat = 0.7
         let cornerRadius : CGFloat = 5.0
@@ -68,24 +80,27 @@ public class MainTimerView: UIView {
         return startBttn
     }()
     
-    public let pauseButton: UIButton = {
-        let pauseBttn = UIButton()
-        let borderAlpha : CGFloat = 0.7
-        let cornerRadius : CGFloat = 5.0
+    //Timer Label
+    public let timerLabel: UILabel = {
+        let timerLbl = UILabel()
+        timerLbl.font = UIFont(name: "Futura", size: 90)
+        timerLbl.numberOfLines = 1
+        timerLbl.minimumScaleFactor = 0.8
+        timerLbl.textColor = #colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)
+        timerLbl.text = "21:00"
         
-        pauseBttn.setTitle("Pause", for: UIControl.State.normal)
-        pauseBttn.setTitleColor(UIColor.white, for: UIControl.State.normal)
-        pauseBttn.backgroundColor = UIColor.clear
-        pauseBttn.layer.borderWidth = 1.0
-        pauseBttn.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
-        pauseBttn.layer.cornerRadius = cornerRadius
-        return pauseBttn
+        timerLbl.adjustsFontSizeToFitWidth = true
+        timerLbl.textAlignment = .center
+        timerLbl.translatesAutoresizingMaskIntoConstraints = false
+        
+        return timerLbl
     }()
+    
     
     //Label
     public let tasknameLabel: UILabel = {
         let tasknameLbl = UILabel()
-        tasknameLbl.font = UIFont(name: "Futura", size: 40)
+        tasknameLbl.font = UIFont(name: "Futura", size: 38)
         tasknameLbl.numberOfLines = 1
         tasknameLbl.minimumScaleFactor = 0.3
         tasknameLbl.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
@@ -101,16 +116,14 @@ public class MainTimerView: UIView {
     //TODO: Check if I want to use this font or not
     public let currentModeLabel: UILabel = {
         let currentModeLbl = UILabel()
-        currentModeLbl.font = UIFont(name: "Futura", size: 48)
+        currentModeLbl.font = UIFont(name: "Futura", size: 28)
         currentModeLbl.numberOfLines = 1
-        currentModeLbl.minimumScaleFactor = 0.5
-        currentModeLbl.shadowOffset = CGSize(width: -3, height: 2)
-        currentModeLbl.textColor = #colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)
-        currentModeLbl.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        currentModeLbl.minimumScaleFactor = 0.3
+        currentModeLbl.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
         currentModeLbl.text = "Study Mode"
         
         currentModeLbl.adjustsFontSizeToFitWidth = true
-        currentModeLbl.textAlignment = .center
+        currentModeLbl.textAlignment = .left
         currentModeLbl.translatesAutoresizingMaskIntoConstraints = false
         
         return currentModeLbl
