@@ -17,11 +17,13 @@ class MainVC: UIViewController {
     //model
     let studySession = StudySession()
     
+    
     //buttons
     unowned var startPausebutton: UIButton{return timerView.startPauseButton}
     unowned var cancelButton: UIButton{return timerView.cancelButton}
     
-    
+    //wifi stuff
+    let internetReach = InternetReachability()!
     
     
     public override func loadView() {
@@ -33,6 +35,19 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         self.startPausebutton.addTarget(self, action: #selector(startTimer), for: UIControl.Event.touchUpInside)
         self.cancelButton.addTarget(self, action: #selector(cancelSession), for: UIControl.Event.touchUpInside)
+    }
+    
+    
+    
+    func airplaneAlert(wifiLabel: String) {
+        let alert = CDAlertView(title: "\(wifiLabel) Enabled", message: "Turn on airplane mode to focus better.",type: .warning)
+        alert.alertBackgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        
+        let yesAction = CDAlertViewAction(title: "Ok 👍🏼")
+        yesAction.buttonTextColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        alert.add(action: yesAction)
+        
+        alert.show()
     }
     
     @objc func startTimer() {

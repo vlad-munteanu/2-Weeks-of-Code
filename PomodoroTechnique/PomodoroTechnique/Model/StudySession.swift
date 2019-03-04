@@ -11,16 +11,22 @@ import Foundation
 class StudySession {
     
     var numberOfStudySessionsLeft = 4
+    
     var secondsPerSession = 1500
+    var secondsPerNormalBreak = 300
+    var secondsPerLastBreak = 1500
+    
     var timerIsRunning = false
     var timerIsPaused = false
     var timer = Timer()
     var taskName = String()
     
+    var airplaneMode = true
+    
     
     
     init() {
-        
+        checkifAirplaneMode()
     }
     
     func changeMode() {
@@ -39,5 +45,30 @@ class StudySession {
     
     func pauseTimer() {
         timer.invalidate()
+    }
+    
+    func checkifAirplaneMode() -> String {
+        let reachability =  InternetReachability()!
+        var returnValue = ""
+        
+        if reachability.connection != .none {
+            airplaneMode = false
+            if reachability.connection == .wifi {
+                DispatchQueue.main.async {
+                    print("wifi connected")
+                    returnValue = "Wifi"
+                }
+            } else {
+                DispatchQueue.main.async {
+                    print("Cellular connected")
+                    returnValue = "Cellular Data"
+                }
+            }
+        } else {
+            print("No Internet connection!")
+            returnValue = ""
+        }
+        
+        return returnValue
     }
 }

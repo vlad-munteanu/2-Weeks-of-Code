@@ -34,7 +34,6 @@ class CreateSessionVC: UIViewController {
         okAction.buttonTextColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
         alert.add(action: okAction)
-        //alert.circleFillColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
         alert.show() { (alert) in
             print("completed")
             print(alert.textFieldText)
