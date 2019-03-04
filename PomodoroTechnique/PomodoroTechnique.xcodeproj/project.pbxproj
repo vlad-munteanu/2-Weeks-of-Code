@@ -91,8 +91,8 @@
 		B8DC987B222CEA23008DA5EB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B8DC987F222CEA6E008DA5EB /* MainTimerView.swift */,
 				B8DC9886222D8B89008DA5EB /* NewSessionView.swift */,
+				B8DC987F222CEA6E008DA5EB /* MainTimerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

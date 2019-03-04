@@ -25,6 +25,7 @@ class MainVC: UIViewController {
     
     public override func loadView() {
         self.view = timerView
+        timerView.tasknameLabel.text = studySession.taskName
     }
     
     override func viewDidLoad() {

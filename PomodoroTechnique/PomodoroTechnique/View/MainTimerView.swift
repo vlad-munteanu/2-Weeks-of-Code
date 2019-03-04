@@ -26,13 +26,21 @@ public class MainTimerView: UIView {
         addSubview(backgroundView)
         addSubview(startButton)
         addSubview(pauseButton)
-        addSubview(currentModeLabel)
+        //addSubview(currentModeLabel)
+        addSubview(tasknameLabel)
     }
     
     internal func createConstraints() {
         backgroundView.snp.makeConstraints{ make in
             make.width.height.equalToSuperview()
             make.centerX.centerY.equalToSuperview()
+        }
+        tasknameLabel.snp.makeConstraints{ make in
+            make.left.equalToSuperview().inset(20)
+            make.centerY.equalToSuperview().multipliedBy(0.15)
+            make.width.equalToSuperview().multipliedBy(0.9)
+            make.height.equalToSuperview().multipliedBy(0.1)
+            
         }
     }
     
@@ -75,6 +83,21 @@ public class MainTimerView: UIView {
     }()
     
     //Label
+    public let tasknameLabel: UILabel = {
+        let tasknameLbl = UILabel()
+        tasknameLbl.font = UIFont(name: "Futura", size: 40)
+        tasknameLbl.numberOfLines = 1
+        tasknameLbl.minimumScaleFactor = 0.3
+        tasknameLbl.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        tasknameLbl.text = "Study Mode"
+        
+        tasknameLbl.adjustsFontSizeToFitWidth = true
+        tasknameLbl.textAlignment = .left
+        tasknameLbl.translatesAutoresizingMaskIntoConstraints = false
+        
+        return tasknameLbl
+    }()
+    
     //TODO: Check if I want to use this font or not
     public let currentModeLabel: UILabel = {
         let currentModeLbl = UILabel()
