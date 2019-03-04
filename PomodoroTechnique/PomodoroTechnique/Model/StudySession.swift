@@ -10,9 +10,10 @@ import Foundation
 
 class StudySession {
     
-    var numberOfStudySessions = 4
+    var numberOfStudySessionsLeft = 4
     var secondsPerSession = 1500
     var timerIsRunning = false
+    var timerIsPaused = false
     var timer = Timer()
     
     
@@ -29,7 +30,12 @@ class StudySession {
     }
     
     @objc func updateTimer() {
+        secondsPerSession -= 1
+        //TODO: Update timer label
         
     }
     
+    func pauseTimer() {
+        timer.invalidate()
+    }
 }

@@ -10,9 +10,39 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    //main View
+    let timerView = MainTimerView()
+    
+    //model
+    let studySession = StudySession()
+    
+    //buttons
+    unowned var startbutton: UIButton{return timerView.startButton}
+    unowned var pauseButton: UIButton{return timerView.pauseButton}
+    
+    
+    
+    
+    public override func loadView() {
+        self.view = timerView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.startbutton.addTarget(self, action: #selector(startTimer), for: UIControl.Event.touchUpInside)
+        self.startbutton.addTarget(self, action: #selector(pauseTimer), for: UIControl.Event.touchUpInside)
+    }
+    
+    @objc func startTimer() {
+        studySession.runTimer()
+    }
+    
+    @objc func pauseTimer() {
+        if(studySession.timerIsPaused == true) {
+             studySession.pauseTimer()
+        } else {
+            
+        }
     }
 
 

@@ -163,6 +163,9 @@
 					B8DC9865222CE923008DA5EB = {
 						CreatedOnToolsVersion = 10.2;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
