@@ -20,7 +20,6 @@ class StudySession {
     
     var timerIsRunning = false
     var timerIsPaused = false
-    var timer = Timer()
     var taskName = String()
     
     var airplaneMode = true
@@ -35,18 +34,7 @@ class StudySession {
         
     }
     
-    func runTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
-    }
     
-    @objc func updateTimer() {
-        secondsPerSession -= 1
-        
-    }
-    
-    func pauseTimer() {
-        timer.invalidate()
-    }
     
     func checkifAirplaneMode() {
         let reachability =  InternetReachability()!

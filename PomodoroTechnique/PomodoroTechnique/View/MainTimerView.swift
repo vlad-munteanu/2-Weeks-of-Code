@@ -29,6 +29,7 @@ public class MainTimerView: UIView {
         addSubview(cancelButton)
         addSubview(tasknameLabel)
         addSubview(timerLabel)
+        addSubview(sessionNumberLabel)
     }
     
     internal func createConstraints() {
@@ -53,6 +54,12 @@ public class MainTimerView: UIView {
             make.width.equalTo(tasknameLabel.snp_width)
             make.left.equalTo(tasknameLabel.snp_left)
             make.top.equalTo(tasknameLabel.snp.bottom)
+        }
+        sessionNumberLabel.snp.makeConstraints{ make in
+            make.height.equalToSuperview().multipliedBy(0.05)
+            make.width.equalTo(tasknameLabel.snp_width)
+            make.left.equalTo(tasknameLabel.snp_left)
+            make.top.equalTo(currentModeLabel.snp.bottom).inset(10)
         }
         timerLabel.snp.makeConstraints{ make in
             make.centerX.equalToSuperview()
@@ -128,7 +135,7 @@ public class MainTimerView: UIView {
         tasknameLbl.numberOfLines = 1
         tasknameLbl.minimumScaleFactor = 0.3
         tasknameLbl.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-        tasknameLbl.text = "Study Mode"
+        tasknameLbl.text = ""
         
         tasknameLbl.adjustsFontSizeToFitWidth = true
         tasknameLbl.textAlignment = .left
@@ -136,6 +143,9 @@ public class MainTimerView: UIView {
         
         return tasknameLbl
     }()
+    
+    
+    
     
     //TODO: Check if I want to use this font or not
     public let currentModeLabel: UILabel = {
@@ -151,6 +161,21 @@ public class MainTimerView: UIView {
         currentModeLbl.translatesAutoresizingMaskIntoConstraints = false
         
         return currentModeLbl
+    }()
+    
+    public let sessionNumberLabel: UILabel = {
+        let sessionNumberLbl = UILabel()
+        sessionNumberLbl.font = UIFont(name: "Futura", size: 28)
+        sessionNumberLbl.numberOfLines = 1
+        sessionNumberLbl.minimumScaleFactor = 0.3
+        sessionNumberLbl.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        sessionNumberLbl.text = "# of Sessions Left: "
+        
+        sessionNumberLbl.adjustsFontSizeToFitWidth = true
+        sessionNumberLbl.textAlignment = .left
+        sessionNumberLbl.translatesAutoresizingMaskIntoConstraints = false
+        
+        return sessionNumberLbl
     }()
    
 }

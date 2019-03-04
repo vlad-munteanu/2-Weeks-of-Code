@@ -22,9 +22,13 @@ class MainVC: UIViewController {
     unowned var startPausebutton: UIButton{return timerView.startPauseButton}
     unowned var cancelButton: UIButton{return timerView.cancelButton}
     
+    //timer
+    var timer = Timer()
+    
     public override func loadView() {
         self.view = timerView
         timerView.tasknameLabel.text = studySession.taskName
+        timerView.sessionNumberLabel.text = "# of Sessions Left: \(studySession.numberOfStudySessionsLeft)"
     }
     
     override func viewDidLoad() {
@@ -41,20 +45,21 @@ class MainVC: UIViewController {
         if timerView.startPauseButton.titleLabel!.text == "Start" {
             timerView.startPauseButton.setTitle("Pause", for: UIControl.State.normal)
             studySession.timerIsPaused = false
+            runTimer()
         } else {
             timerView.startPauseButton.setTitle("Start", for: UIControl.State.normal)
             studySession.timerIsPaused = true
+            timer.invalidate()
         }
-        
-        //studySession.runTimer()
     }
     
-    @objc func pauseTimer() {
-        if(studySession.timerIsPaused == true) {
-            studySession.pauseTimer()
-        } else {
-            
-        }
+    func runTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(updateTimer)), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateTimer() {
+        studySession.secondsPerSession -= 1
+        timerView.timerLabel.text = String(studySession.secondsPerSession)
     }
     
     @objc func cancelSession() {
