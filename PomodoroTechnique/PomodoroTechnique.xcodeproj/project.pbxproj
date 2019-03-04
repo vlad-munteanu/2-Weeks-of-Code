@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		280B56EB71CF3F9B62B30171 /* Pods_PomodoroTechnique.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D30BB5DCFCD5E103D8F50F /* Pods_PomodoroTechnique.framework */; };
 		B8DC986A222CE923008DA5EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC9869222CE923008DA5EB /* AppDelegate.swift */; };
-		B8DC986C222CE923008DA5EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC986B222CE923008DA5EB /* ViewController.swift */; };
-		B8DC986F222CE923008DA5EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DC986D222CE923008DA5EB /* Main.storyboard */; };
+		B8DC986C222CE923008DA5EB /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC986B222CE923008DA5EB /* MainVC.swift */; };
 		B8DC9871222CE924008DA5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DC9870222CE924008DA5EB /* Assets.xcassets */; };
 		B8DC9874222CE924008DA5EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DC9872222CE924008DA5EB /* LaunchScreen.storyboard */; };
+		B8DC9880222CEA6E008DA5EB /* MainTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC987F222CEA6E008DA5EB /* MainTimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +20,11 @@
 		510757EDD60FB3BF49236591 /* Pods-PomodoroTechnique.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomodoroTechnique.release.xcconfig"; path = "Target Support Files/Pods-PomodoroTechnique/Pods-PomodoroTechnique.release.xcconfig"; sourceTree = "<group>"; };
 		B8DC9866222CE923008DA5EB /* PomodoroTechnique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroTechnique.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DC9869222CE923008DA5EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8DC986B222CE923008DA5EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B8DC986E222CE923008DA5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8DC986B222CE923008DA5EB /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B8DC9870222CE924008DA5EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8DC9873222CE924008DA5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8DC9875222CE924008DA5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8DC987F222CEA6E008DA5EB /* MainTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTimerView.swift; sourceTree = "<group>"; };
 		D68B5A258D0C544FE8A4C8E3 /* Pods-PomodoroTechnique.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomodoroTechnique.debug.xcconfig"; path = "Target Support Files/Pods-PomodoroTechnique/Pods-PomodoroTechnique.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,14 +69,46 @@
 		B8DC9868222CE923008DA5EB /* PomodoroTechnique */ = {
 			isa = PBXGroup;
 			children = (
-				B8DC9869222CE923008DA5EB /* AppDelegate.swift */,
-				B8DC986B222CE923008DA5EB /* ViewController.swift */,
-				B8DC986D222CE923008DA5EB /* Main.storyboard */,
-				B8DC9870222CE924008DA5EB /* Assets.xcassets */,
-				B8DC9872222CE924008DA5EB /* LaunchScreen.storyboard */,
+				B8DC987B222CEA23008DA5EB /* View */,
+				B8DC987D222CEA2E008DA5EB /* Controller */,
+				B8DC987C222CEA29008DA5EB /* Model */,
+				B8DC987E222CEA35008DA5EB /* Supporting Files */,
 				B8DC9875222CE924008DA5EB /* Info.plist */,
 			);
 			path = PomodoroTechnique;
+			sourceTree = "<group>";
+		};
+		B8DC987B222CEA23008DA5EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8DC987F222CEA6E008DA5EB /* MainTimerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B8DC987C222CEA29008DA5EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8DC987D222CEA2E008DA5EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B8DC986B222CE923008DA5EB /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B8DC987E222CEA35008DA5EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8DC9869222CE923008DA5EB /* AppDelegate.swift */,
+				B8DC9872222CE924008DA5EB /* LaunchScreen.storyboard */,
+				B8DC9870222CE924008DA5EB /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		E65A53FE751B8E8D806C8464 /* Pods */ = {
@@ -85,7 +117,6 @@
 				D68B5A258D0C544FE8A4C8E3 /* Pods-PomodoroTechnique.debug.xcconfig */,
 				510757EDD60FB3BF49236591 /* Pods-PomodoroTechnique.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -151,7 +182,6 @@
 			files = (
 				B8DC9874222CE924008DA5EB /* LaunchScreen.storyboard in Resources */,
 				B8DC9871222CE924008DA5EB /* Assets.xcassets in Resources */,
-				B8DC986F222CE923008DA5EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,22 +239,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8DC986C222CE923008DA5EB /* ViewController.swift in Sources */,
+				B8DC986C222CE923008DA5EB /* MainVC.swift in Sources */,
 				B8DC986A222CE923008DA5EB /* AppDelegate.swift in Sources */,
+				B8DC9880222CEA6E008DA5EB /* MainTimerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B8DC986D222CE923008DA5EB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B8DC986E222CE923008DA5EB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B8DC9872222CE924008DA5EB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -342,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
