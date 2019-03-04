@@ -111,7 +111,7 @@ public class MainTimerView: UIView {
         timerLbl.numberOfLines = 1
         timerLbl.minimumScaleFactor = 0.8
         timerLbl.textColor = #colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)
-        timerLbl.text = "21:00"
+        timerLbl.text = "25:00"
         
         timerLbl.adjustsFontSizeToFitWidth = true
         timerLbl.textAlignment = .center
@@ -152,9 +152,5 @@ public class MainTimerView: UIView {
         
         return currentModeLbl
     }()
-    
-    
-    
-    
-    
+   
 }

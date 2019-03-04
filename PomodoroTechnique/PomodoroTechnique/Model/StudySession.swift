@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+import CDAlertView
 
 class StudySession {
     
@@ -39,7 +41,6 @@ class StudySession {
     
     @objc func updateTimer() {
         secondsPerSession -= 1
-        //TODO: Update timer label
         
     }
     
@@ -47,28 +48,36 @@ class StudySession {
         timer.invalidate()
     }
     
-    func checkifAirplaneMode() -> String {
+    func checkifAirplaneMode() {
         let reachability =  InternetReachability()!
-        var returnValue = ""
         
         if reachability.connection != .none {
             airplaneMode = false
             if reachability.connection == .wifi {
                 DispatchQueue.main.async {
                     print("wifi connected")
-                    returnValue = "Wifi"
+                    self.airplaneAlert(wifiLabel: "Wifi")
                 }
             } else {
                 DispatchQueue.main.async {
                     print("Cellular connected")
-                    returnValue = "Cellular Data"
+                    self.airplaneAlert(wifiLabel: "Cellular Data")
                 }
             }
         } else {
             print("No Internet connection!")
-            returnValue = ""
         }
-        
-        return returnValue
     }
+    
+    func airplaneAlert(wifiLabel: String) {
+        let alert = CDAlertView(title: "\(wifiLabel) Enabled", message: "Turn on airplane mode to focus better.",type: .warning)
+        alert.alertBackgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        
+        let yesAction = CDAlertViewAction(title: "Ok 👍🏼")
+        yesAction.buttonTextColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        alert.add(action: yesAction)
+        
+        alert.show()
+    }
+    
 }
