@@ -55,7 +55,7 @@ public class NewSessionView: UIView {
         let newBttn = UIButton()
         
         //newBttn.setTitle("Start", for: UIControl.State.normal)
-        newBttn.setImage(#imageLiteral(resourceName: "325963-48"), for: UIControl.State.normal)
+        newBttn.setImage(#imageLiteral(resourceName: "addButton"), for: UIControl.State.normal)
         newBttn.setTitleColor(UIColor.white, for: UIControl.State.normal)
         newBttn.backgroundColor = UIColor.clear
 

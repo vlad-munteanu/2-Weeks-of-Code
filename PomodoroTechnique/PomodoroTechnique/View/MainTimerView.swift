@@ -26,6 +26,7 @@ public class MainTimerView: UIView {
         addSubview(backgroundView)
         addSubview(startPauseButton)
         addSubview(currentModeLabel)
+        addSubview(cancelButton)
         addSubview(tasknameLabel)
         addSubview(timerLabel)
     }
@@ -41,6 +42,12 @@ public class MainTimerView: UIView {
             make.width.equalToSuperview().multipliedBy(0.8)
             make.height.equalToSuperview().multipliedBy(0.06)
         }
+        cancelButton.snp.makeConstraints{ make in
+            make.centerY.equalToSuperview().multipliedBy(0.2)
+            make.right.equalToSuperview().inset(10)
+            make.width.equalToSuperview().multipliedBy(0.09)
+            make.height.equalTo(cancelButton.snp_width)
+        }
         currentModeLabel.snp.makeConstraints{ make in
             make.height.equalToSuperview().multipliedBy(0.05)
             make.width.equalTo(tasknameLabel.snp_width)
@@ -52,6 +59,12 @@ public class MainTimerView: UIView {
             make.centerY.equalToSuperview().multipliedBy(0.9)
             make.width.equalToSuperview()
             make.height.equalToSuperview().multipliedBy(0.6)
+        }
+        startPauseButton.snp.makeConstraints{ make in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview().multipliedBy(1.7)
+            make.width.equalToSuperview().multipliedBy(0.5)
+            make.height.equalToSuperview().multipliedBy(0.1)
             
         }
     }
@@ -78,6 +91,17 @@ public class MainTimerView: UIView {
         startBttn.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
         startBttn.layer.cornerRadius = cornerRadius
         return startBttn
+    }()
+    
+    //Stop Button
+    public let cancelButton: UIButton = {
+        let cancelBttn = UIButton()
+        
+    
+        cancelBttn.setImage(#imageLiteral(resourceName: "cancelButton"), for: UIControl.State.normal)
+        cancelBttn.backgroundColor = UIColor.clear
+       
+        return cancelBttn
     }()
     
     //Timer Label
@@ -128,6 +152,8 @@ public class MainTimerView: UIView {
         
         return currentModeLbl
     }()
+    
+    
     
     
     
