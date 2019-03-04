@@ -1,0 +1,6 @@
+framework module Pods_PomodoroTechnique {
+  umbrella header "Pods-PomodoroTechnique-umbrella.h"
+
+  export *
+  module * { export * }
+}
