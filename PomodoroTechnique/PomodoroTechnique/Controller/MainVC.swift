@@ -12,6 +12,7 @@ class MainVC: UIViewController {
 
     //main View
     let timerView = MainTimerView()
+    let newSessionView = NewSessionView()
     
     //model
     let studySession = StudySession()
@@ -24,7 +25,8 @@ class MainVC: UIViewController {
     
     
     public override func loadView() {
-        self.view = timerView
+        //self.view = timerView
+        self.view = newSessionView
     }
     
     override func viewDidLoad() {
