@@ -14,6 +14,7 @@
 		B8DC9874222CE924008DA5EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DC9872222CE924008DA5EB /* LaunchScreen.storyboard */; };
 		B8DC9880222CEA6E008DA5EB /* MainTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC987F222CEA6E008DA5EB /* MainTimerView.swift */; };
 		B8DC9882222CFC48008DA5EB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC9881222CFC48008DA5EB /* Constants.swift */; };
+		B8DC9884222CFF17008DA5EB /* StudySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC9883222CFF17008DA5EB /* StudySession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		B8DC9875222CE924008DA5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8DC987F222CEA6E008DA5EB /* MainTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTimerView.swift; sourceTree = "<group>"; };
 		B8DC9881222CFC48008DA5EB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B8DC9883222CFF17008DA5EB /* StudySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySession.swift; sourceTree = "<group>"; };
+		B8DC9885222D01B3008DA5EB /* PomodoroTechnique.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PomodoroTechnique.entitlements; sourceTree = "<group>"; };
 		D68B5A258D0C544FE8A4C8E3 /* Pods-PomodoroTechnique.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomodoroTechnique.debug.xcconfig"; path = "Target Support Files/Pods-PomodoroTechnique/Pods-PomodoroTechnique.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +74,7 @@
 		B8DC9868222CE923008DA5EB /* PomodoroTechnique */ = {
 			isa = PBXGroup;
 			children = (
+				B8DC9885222D01B3008DA5EB /* PomodoroTechnique.entitlements */,
 				B8DC987B222CEA23008DA5EB /* View */,
 				B8DC987D222CEA2E008DA5EB /* Controller */,
 				B8DC987C222CEA29008DA5EB /* Model */,
@@ -92,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				B8DC9881222CFC48008DA5EB /* Constants.swift */,
+				B8DC9883222CFF17008DA5EB /* StudySession.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,6 +162,11 @@
 				TargetAttributes = {
 					B8DC9865222CE923008DA5EB = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -246,6 +256,7 @@
 				B8DC986A222CE923008DA5EB /* AppDelegate.swift in Sources */,
 				B8DC9880222CEA6E008DA5EB /* MainTimerView.swift in Sources */,
 				B8DC9882222CFC48008DA5EB /* Constants.swift in Sources */,
+				B8DC9884222CFF17008DA5EB /* StudySession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +395,7 @@
 			baseConfigurationReference = D68B5A258D0C544FE8A4C8E3 /* Pods-PomodoroTechnique.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PomodoroTechnique/PomodoroTechnique.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8C8RXSHKT;
 				INFOPLIST_FILE = PomodoroTechnique/Info.plist;
@@ -403,6 +415,7 @@
 			baseConfigurationReference = 510757EDD60FB3BF49236591 /* Pods-PomodoroTechnique.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PomodoroTechnique/PomodoroTechnique.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8C8RXSHKT;
 				INFOPLIST_FILE = PomodoroTechnique/Info.plist;
