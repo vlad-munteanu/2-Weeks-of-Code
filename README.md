@@ -16,7 +16,7 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 ```
 
 ## Day 1: Random Color Generator 
-An app that gives users random colors when they shake their device; displays the color, hex value, and RGB value. ~Also allows users to store their favorite colors for later use.~ 
+An app that gives users random colors when they shake their device: displays the color, hex value, and RGB value. ~Also allows users to store their favorite colors for later use.~ 
 
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day1.gif)
 
@@ -33,12 +33,20 @@ An app that allows the user to open an SSH shell, using the NMSSH library. This 
 ## Day 4: Study App (Pomodoro Technique) 
 An app aimed at helping users study better, based on the Pomodoro technique. Not only acts as a study timer, but also forces users to enable airplane mode to focus. Created UI to be completely dark, in order to perserve battery on iPhones with OLED displays. Used CDAlertView for custom alert views and Reachability for detecting if wifi/LTE is enabled.
 
+![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day4.gif)
+
 ## App Ideas TO_DO 
 - [ ] Text to speech app 
 - [ ] Raspberry PI App 
 - [ ] App to connect to Deauth hardware I have 
 - [ ] Snow day chance calculator 
 - [ ] Restaurant chooser (for lunch)
+
+## Apps I Might Do Further Development On 
+- Day 4: Study App 
+  - Add Push notifications 
+
+
 
 ## License
 
