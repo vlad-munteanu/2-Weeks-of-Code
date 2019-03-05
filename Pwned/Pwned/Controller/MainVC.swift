@@ -25,8 +25,23 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         sendWifiBttn.addTarget(self, action: #selector(sendWifi), for: UIControl.Event.touchUpInside)
-        print(SSID.printCurrentWifiInfo())
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        checkWifiStatus()
+    }
+    func checkWifiStatus() {
+        if SSID.amIPwned() == false {
+            showWifiAlert()
+        }
+    }
+    
+    func showWifiAlert() {
+        let alert = UIAlertController(title: "Not Connected", message: "Connect to Pwned wifi to continue", preferredStyle: UIAlertController.Style.alert)
         
+        alert.addAction(UIAlertAction(title: "Ok 👍🏼", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc func sendWifi() {
