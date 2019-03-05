@@ -16,7 +16,7 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 ```
 
 ## Day 1: Random Color Generator 
-An app that gives users random colors when they shake their device; displays the color, hex value, and RGB value. ~Also allows users to store their favorite colors for later use.~ 
+An app that gives users random colors when they shake their device: displays the color, hex value, and RGB value. ~Also allows users to store their favorite colors for later use.~ 
 
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day1.gif)
 
