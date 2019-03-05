@@ -13,6 +13,7 @@
 		B8DC98A1222EB1A5008DA5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DC98A0222EB1A5008DA5EB /* Assets.xcassets */; };
 		B8DC98A4222EB1A5008DA5EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DC98A2222EB1A5008DA5EB /* LaunchScreen.storyboard */; };
 		B8DC98B0222EB4B4008DA5EB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC98AF222EB4B4008DA5EB /* MainView.swift */; };
+		B8DC98B3222EC37A008DA5EB /* InternetReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC98B2222EC37A008DA5EB /* InternetReachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		B8DC98A3222EB1A5008DA5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8DC98A5222EB1A5008DA5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8DC98AF222EB4B4008DA5EB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B8DC98B2222EC37A008DA5EB /* InternetReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetReachability.swift; sourceTree = "<group>"; };
 		B93B98DF8287DAD205BEC56B /* Pods-Pwned.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pwned.release.xcconfig"; path = "Target Support Files/Pods-Pwned/Pods-Pwned.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 				B8DC98AD222EB3E3008DA5EB /* Controller */,
 				B8DC98AC222EB3CC008DA5EB /* Model */,
 				B8DC98AE222EB3EB008DA5EB /* Supporting Files */,
+				B8DC98B1222EB7F4008DA5EB /* Extra Libraries */,
 				B8DC98A5222EB1A5008DA5EB /* Info.plist */,
 			);
 			path = Pwned;
@@ -101,6 +104,14 @@
 				B8DC98A2222EB1A5008DA5EB /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8DC98B1222EB7F4008DA5EB /* Extra Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B8DC98B2222EC37A008DA5EB /* InternetReachability.swift */,
+			);
+			path = "Extra Libraries";
 			sourceTree = "<group>";
 		};
 		BAADA532974D55739DF06DA2 /* Pods */ = {
@@ -242,6 +253,7 @@
 				B8DC989C222EB1A4008DA5EB /* MainVC.swift in Sources */,
 				B8DC98B0222EB4B4008DA5EB /* MainView.swift in Sources */,
 				B8DC989A222EB1A4008DA5EB /* AppDelegate.swift in Sources */,
+				B8DC98B3222EC37A008DA5EB /* InternetReachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
