@@ -40,7 +40,10 @@ class MainVC: UIViewController {
     func showWifiAlert() {
         let alert = UIAlertController(title: "Not Connected", message: "Connect to Pwned wifi to continue", preferredStyle: UIAlertController.Style.alert)
         
-        alert.addAction(UIAlertAction(title: "Ok 👍🏼", style: UIAlertAction.Style.default, handler: nil))
+//        alert.addAction(UIAlertAction(title: "Ok 👍🏼", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Ok 👍🏼", style: .default, handler: { (action) -> Void in
+            self.checkWifiStatus()
+        }))
         self.present(alert, animated: true, completion: nil)
     }
     
