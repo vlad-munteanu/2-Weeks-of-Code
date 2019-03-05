@@ -42,6 +42,12 @@ An app aimed at helping users study better, based on the Pomodoro technique. Not
 - [ ] Snow day chance calculator 
 - [ ] Restaurant chooser (for lunch)
 
+## Apps I Might Do Further Development On 
+- Day 4: Study App 
+  - Add Push notifications 
+
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
