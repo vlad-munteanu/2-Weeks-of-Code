@@ -14,14 +14,15 @@ class TabBarController: UITabBarController {
     {
         super.viewDidLoad()
         
-        
+        tabBar.isTranslucent = false
+        UITabBar.appearance().barTintColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
        
         let attackVC = AttackVC()
-        attackVC.tabBarItem.title = "Attack"
+        attackVC.tabBarItem.title = ""
         attackVC.tabBarItem.image = UIImage(named: "wifi")
         
        let scanVC = ScanVC()
-        scanVC.tabBarItem.title = "Scan"
+        scanVC.tabBarItem.title = ""
         scanVC.tabBarItem.image = UIImage(named: "scan")
         
         

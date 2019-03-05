@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = TabBarController()
         self.window?.makeKeyAndVisible()
         
-        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-            UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+            UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)]
         return true
     }
 
