@@ -9,7 +9,7 @@
 import Foundation
 import SnapKit
 
-public class MainView: UIView {
+public class AttackView: UIView {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         self.frame = CGRect.zero
@@ -94,5 +94,10 @@ public class MainView: UIView {
         sendWifiBttn.translatesAutoresizingMaskIntoConstraints = false
         
         return sendWifiBttn
+    }()
+    
+    public let wifiTableView: UITableView = {
+        let wifiTV = UITableView()
+        return wifiTV
     }()
 }

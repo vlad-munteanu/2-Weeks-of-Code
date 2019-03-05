@@ -8,23 +8,37 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+class AttackVC: UIViewController {
 
+    //TODO: Fix Wifi Alert when app enters foreground
     //Main View
-    let mainView = MainView()
+    let attackView = AttackView()
     
     //buttons
-    unowned var sendWifiBttn: UIButton{return mainView.sendWifiButton}
+    unowned var sendWifiBttn: UIButton{return attackView.sendWifiButton}
     
     
     //Load dat VIEW
     public override func loadView() {
-        self.view = mainView
+        self.view = attackView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         sendWifiBttn.addTarget(self, action: #selector(sendWifi), for: UIControl.Event.touchUpInside)
+        setupView()
+       
+    }
+    
+    func setupView() {
+        self.title = "Hack That Wifi ☠️"
+        self.navigationController?.navigationBar.layer.masksToBounds = false
+        self.navigationController?.navigationBar.layer.shadowColor = UIColor.lightGray.cgColor
+        self.navigationController?.navigationBar.layer.shadowOpacity = 0.8
+        self.navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        self.navigationController?.navigationBar.layer.shadowRadius = 8
+        //self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log Out", style: .done, target: self, action: #selector(logOut))
+        //self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "menu"), style: .done, target: self, action: #selector(hamburgerMenuPressed))
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -48,7 +62,7 @@ class MainVC: UIViewController {
     }
     
     @objc func sendWifi() {
-    
+        
     }
 
 

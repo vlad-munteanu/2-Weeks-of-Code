@@ -6,5 +6,5 @@ target 'Pwned' do
   use_frameworks!
 
   # Pods for Pwned
-
+  pod 'SnapKit'
 end

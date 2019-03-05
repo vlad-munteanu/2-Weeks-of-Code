@@ -7,4 +7,5 @@ target 'Pwned' do
 
   # Pods for Pwned
   pod 'SnapKit'
+  pod 'WKZombie'
 end
