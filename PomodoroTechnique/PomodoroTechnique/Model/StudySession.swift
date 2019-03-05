@@ -18,6 +18,8 @@ class StudySession {
     var secondsPerNormalBreak = 300
     var secondsPerLastBreak = 1500
     
+    var currentMode = "Study"
+    
     var timerIsRunning = false
     var timerIsPaused = false
     var taskName = String()
@@ -31,7 +33,12 @@ class StudySession {
     }
     
     func changeMode() {
-        
+        if currentMode == "Study" {
+            currentMode = "Break"
+            numberOfStudySessionsLeft -= 1
+        } else if currentMode == "Break" {
+            currentMode = "Study"
+        }
     }
     
     
@@ -66,6 +73,12 @@ class StudySession {
         alert.add(action: yesAction)
         
         alert.show()
+    }
+    
+    func timeString(time:TimeInterval) -> String {
+        let minutes = Int(time) / 60 % 60
+        let seconds = Int(time) % 60
+        return String(format:"%02i:%02i", minutes, seconds)
     }
     
 }

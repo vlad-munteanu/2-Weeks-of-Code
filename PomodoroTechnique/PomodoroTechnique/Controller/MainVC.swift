@@ -58,8 +58,31 @@ class MainVC: UIViewController {
     }
     
     @objc func updateTimer() {
-        studySession.secondsPerSession -= 1
-        timerView.timerLabel.text = String(studySession.secondsPerSession)
+        if(studySession.numberOfStudySessionsLeft > 0) {
+            if(studySession.currentMode == "Study") {
+                if(studySession.secondsPerSession > 1) {
+                    studySession.secondsPerSession -= 1
+                    timerView.timerLabel.text = studySession.timeString(time: TimeInterval(studySession.secondsPerSession))
+                } else {
+                    studySession.changeMode()
+                    timerView.currentModeLabel.text = studySession.currentMode + " Mode"
+                }
+            } else if(studySession.currentMode == "Break") {
+                studySession.secondsPerNormalBreak -= 1
+                 timerView.timerLabel.text = studySession.timeString(time: TimeInterval(studySession.secondsPerNormalBreak))
+            }
+            studySession.secondsPerSession = 1500
+            studySession.secondsPerNormalBreak = 300
+        } else (studySession.numberOfStudySessionsLeft == 0) {
+            studySession.secondsPerLastBreak -= 1
+            timerView.timerLabel.text = studySession.timeString(time: TimeInterval(studySession.secondsPerLastBreak))
+        }
+        
+        continueAlert()
+    }
+    
+    func continueAlert() {
+        
     }
     
     @objc func cancelSession() {
