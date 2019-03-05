@@ -36,12 +36,24 @@ class StudySession {
         if currentMode == "Study" {
             currentMode = "Break"
             numberOfStudySessionsLeft -= 1
+            secondsPerSession = 1500
         } else if currentMode == "Break" {
+            checkifAirplaneMode()
             currentMode = "Study"
+            secondsPerNormalBreak = 300
         }
     }
     
     
+    func reset() {
+        numberOfStudySessionsLeft = 4
+        
+        secondsPerSession = 1500
+        secondsPerNormalBreak = 300
+        secondsPerLastBreak = 1500
+        
+        currentMode = "Study"
+    }
     
     func checkifAirplaneMode() {
         let reachability =  InternetReachability()!

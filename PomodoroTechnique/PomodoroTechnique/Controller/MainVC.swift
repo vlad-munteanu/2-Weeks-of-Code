@@ -68,21 +68,45 @@ class MainVC: UIViewController {
                     timerView.currentModeLabel.text = studySession.currentMode + " Mode"
                 }
             } else if(studySession.currentMode == "Break") {
-                studySession.secondsPerNormalBreak -= 1
-                 timerView.timerLabel.text = studySession.timeString(time: TimeInterval(studySession.secondsPerNormalBreak))
+                if(studySession.secondsPerNormalBreak > 1) {
+                    studySession.secondsPerNormalBreak -= 1
+                    timerView.timerLabel.text = studySession.timeString(time: TimeInterval(studySession.secondsPerNormalBreak))
+                } else {
+                    studySession.changeMode()
+                    timerView.currentModeLabel.text = studySession.currentMode + " Mode"
+                }
             }
-            studySession.secondsPerSession = 1500
-            studySession.secondsPerNormalBreak = 300
-        } else (studySession.numberOfStudySessionsLeft == 0) {
-            studySession.secondsPerLastBreak -= 1
-            timerView.timerLabel.text = studySession.timeString(time: TimeInterval(studySession.secondsPerLastBreak))
+        } else if (studySession.numberOfStudySessionsLeft == 0) {
+            if(studySession.secondsPerLastBreak > 1) {
+                studySession.secondsPerLastBreak -= 1
+                timerView.currentModeLabel.text = studySession.currentMode + " Mode"
+                timerView.timerLabel.text = studySession.timeString(time: TimeInterval(studySession.secondsPerLastBreak))
+            } else {
+                continueAlert()
+            }
         }
-        
-        continueAlert()
     }
     
     func continueAlert() {
+        let alert = CDAlertView(title: "", message: "Do you want to continue working on this task?",type: .notification)
+        alert.alertBackgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         
+        let yesAction = CDAlertViewAction(title: "Yes",
+                                          font: UIFont.systemFont(ofSize: 17),
+                                          textColor: #colorLiteral(red: 0.1294117719, green: 0.2156862766, blue: 0.06666667014, alpha: 1),
+                                          backgroundColor: nil,
+                                          handler: { action in
+                                            self.studySession.reset()
+                                            return true
+        })
+        
+        alert.add(action: yesAction)
+        
+        let noAction = CDAlertViewAction(title: "No")
+        noAction.buttonTextColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        alert.add(action: noAction)
+        
+        alert.show()
     }
     
     @objc func cancelSession() {
