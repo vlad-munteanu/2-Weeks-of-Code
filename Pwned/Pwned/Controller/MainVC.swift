@@ -10,9 +10,27 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    //Main View
+    let mainView = MainView()
+    
+    //buttons
+    unowned var sendWifiBttn: UIButton{return mainView.sendWifiButton}
+    
+    
+    //Load dat VIEW
+    public override func loadView() {
+        self.view = mainView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        sendWifiBttn.addTarget(self, action: #selector(sendWifi), for: UIControl.Event.touchUpInside)
+        print(SSID.printCurrentWifiInfo())
+        
+    }
+    
+    @objc func sendWifi() {
+    
     }
 
 

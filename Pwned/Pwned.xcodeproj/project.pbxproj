@@ -14,6 +14,7 @@
 		B8DC98A4222EB1A5008DA5EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DC98A2222EB1A5008DA5EB /* LaunchScreen.storyboard */; };
 		B8DC98B0222EB4B4008DA5EB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC98AF222EB4B4008DA5EB /* MainView.swift */; };
 		B8DC98B3222EC37A008DA5EB /* InternetReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC98B2222EC37A008DA5EB /* InternetReachability.swift */; };
+		B8DC98B5222ECCA6008DA5EB /* SSID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC98B4222ECCA6008DA5EB /* SSID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		B8DC98A5222EB1A5008DA5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8DC98AF222EB4B4008DA5EB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B8DC98B2222EC37A008DA5EB /* InternetReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetReachability.swift; sourceTree = "<group>"; };
+		B8DC98B4222ECCA6008DA5EB /* SSID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSID.swift; sourceTree = "<group>"; };
+		B8DC98B6222ECF4A008DA5EB /* Pwned.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pwned.entitlements; sourceTree = "<group>"; };
 		B93B98DF8287DAD205BEC56B /* Pods-Pwned.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pwned.release.xcconfig"; path = "Target Support Files/Pods-Pwned/Pods-Pwned.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +66,7 @@
 		B8DC9898222EB1A4008DA5EB /* Pwned */ = {
 			isa = PBXGroup;
 			children = (
+				B8DC98B6222ECF4A008DA5EB /* Pwned.entitlements */,
 				B8DC98AB222EB3BA008DA5EB /* View */,
 				B8DC98AD222EB3E3008DA5EB /* Controller */,
 				B8DC98AC222EB3CC008DA5EB /* Model */,
@@ -84,6 +88,7 @@
 		B8DC98AC222EB3CC008DA5EB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B8DC98B4222ECCA6008DA5EB /* SSID.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +170,11 @@
 				TargetAttributes = {
 					B8DC9895222EB1A4008DA5EB = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -254,6 +264,7 @@
 				B8DC98B0222EB4B4008DA5EB /* MainView.swift in Sources */,
 				B8DC989A222EB1A4008DA5EB /* AppDelegate.swift in Sources */,
 				B8DC98B3222EC37A008DA5EB /* InternetReachability.swift in Sources */,
+				B8DC98B5222ECCA6008DA5EB /* SSID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +403,7 @@
 			baseConfigurationReference = 4BB6B47D5B8C998CB3DDC316 /* Pods-Pwned.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pwned/Pwned.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8C8RXSHKT;
 				INFOPLIST_FILE = Pwned/Info.plist;
@@ -411,6 +423,7 @@
 			baseConfigurationReference = B93B98DF8287DAD205BEC56B /* Pods-Pwned.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pwned/Pwned.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8C8RXSHKT;
 				INFOPLIST_FILE = Pwned/Info.plist;
