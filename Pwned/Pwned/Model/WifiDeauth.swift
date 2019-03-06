@@ -29,7 +29,7 @@ public class WifiDeauth {
     
     let webView: UIWebView = UIWebView()
     
-    static func attackNetwork(_ url: URL, jvrSrpt: String) {
+    class func attackNetwork(_ url: URL) {
         open(url)
            // >>* get(by: .name("deauth"))
             >>> execute("""
@@ -44,4 +44,30 @@ document.getElementById("deauth").click()
     }
     
     
+    class func refreshWIFI(_ url: URL) {
+    open(url)
+//        >>> execute("""
+//                    scan(0)
+//                    """)
+        >>> execute("""
+                    load()
+                    """)
+        === myOutput
+        
+    }
+    
+    class func refreshGetItems(_ url: URL) {
+        open(url)
+            
+            >>* get(by: .name("form2"))
+            >>> submit
+            >>* get(by: .contains("href", "/account/"))
+            >>> click(then: .wait(2.5))
+            >>* getAll(by: .contains("class=\"ssid\"", ""))
+            === myWifiOutput
+    }
+    
+    class func myWifiOutput(result: [HTMLTableColumn]?) {
+        items = result
+    }
 }

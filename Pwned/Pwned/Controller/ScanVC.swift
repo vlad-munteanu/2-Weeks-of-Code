@@ -10,9 +10,9 @@
 import UIKit
 import WKZombie
 
+var items : [HTMLTableColumn]?
+
 class ScanVC: UITableViewController {
-    
-    var items : [HTMLTableColumn]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,8 @@ class ScanVC: UITableViewController {
     }
     
     @objc func refresh() {
-        //items = WifiDeauth.refreshGetItems()
+        WifiDeauth.refreshWIFI(URL(string: "http://192.168.4.1/ssids.html")!)
+        self.tableView.reloadData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
