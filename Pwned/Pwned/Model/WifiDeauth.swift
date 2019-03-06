@@ -9,7 +9,7 @@
 import Foundation
 import WKZombie
 
-class WifiDeauth {
+public class WifiDeauth {
     
     /*WorkFlow for Deauthing a network
      1. Go to http://192.168.4.1/ssids.html
@@ -26,6 +26,28 @@ class WifiDeauth {
     let attackUrl = URL(string: "http://192.168.4.1/attack.html")!
     var snapshots = [Snapshot]()
     
+    
+    static func attackNetwork(_ url: URL) {
+        open(url)
+            >>* get(by: .contains("button id=\"deauth\"", "onclick=\"start(0)\""))
+            >>> click(then: .wait(2.5))
+            >>* getAll(by: .contains("class", "row-"))
+            === myOutput
+    }
+    
+    class func myOutput(result: [HTMLTableColumn]?) {
+        // handle result
+    }
+    
+//    class func refreshGetItems() -> [HTMLTableColumn] {
+//        let hanlderBlock: (Bool) -> Void = {
+//            doneWork in
+//
+//            if doneWork {
+//                print("We've finished working, bruh")
+//            }
+//        }
+//    }
     
     
 }

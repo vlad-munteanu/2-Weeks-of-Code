@@ -78,6 +78,13 @@ public class AttackView: UIView {
         return actIndi
     }()
     
+    //Button
+    public let activityIndicator: UIActivityIndicatorView = {
+        let actIndi = UIActivityIndicatorView()
+        actIndi.color = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        return actIndi
+    }()
+    
    
     
 }
