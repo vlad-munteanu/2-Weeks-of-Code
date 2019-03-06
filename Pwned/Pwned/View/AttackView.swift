@@ -24,9 +24,8 @@ public class AttackView: UIView {
     
     func intializeUI() {
         addSubview(backgroundView)
-        addSubview(networkView)
-        networkView.addSubview(networksLabel)
-        addSubview(networkTF)
+        addSubview(networkLabel)
+        
         
     }
     
@@ -34,6 +33,13 @@ public class AttackView: UIView {
         backgroundView.snp.makeConstraints{ make in
             make.centerX.centerY.equalToSuperview()
             make.height.width.equalToSuperview()
+            
+        }
+        networkLabel.snp.makeConstraints{ make in
+            make.width.equalToSuperview().multipliedBy(0.9)
+            make.left.equalToSuperview().inset(20)
+            make.centerY.equalToSuperview().multipliedBy(0.3)
+            make.height.equalToSuperview().multipliedBy(0.2)
             
         }
     }
@@ -59,14 +65,13 @@ public class AttackView: UIView {
     }()
     
     //Label
-    public let networksLabel: UILabel = {
+    public let networkLabel: UILabel = {
         let netLbl = UILabel()
-        netLbl.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
-        netLbl.font = UIFont(name: "System", size: 12)
-        netLbl.numberOfLines = 0
+        netLbl.font = UIFont(name: "Futura", size: 30)
+        netLbl.numberOfLines = 1
         netLbl.minimumScaleFactor = 0.5
         netLbl.translatesAutoresizingMaskIntoConstraints = false
-        netLbl.textColor = #colorLiteral(red: 0.07459209753, green: 1, blue: 0.07377539981, alpha: 1)
+        netLbl.textColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
         netLbl.text = "Not Connected Yet..."
         return netLbl
     }()
@@ -100,4 +105,7 @@ public class AttackView: UIView {
         let wifiTV = UITableView()
         return wifiTV
     }()
+    
+   
+    
 }

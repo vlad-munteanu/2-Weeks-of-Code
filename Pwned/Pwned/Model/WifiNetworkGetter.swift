@@ -9,7 +9,7 @@
 import Foundation
 import SystemConfiguration.CaptiveNetwork
 
-public class SSID {
+public class WifiNetworkGetter {
     
     class func amIPwned() -> Bool {
         if let interface = CNCopySupportedInterfaces() {

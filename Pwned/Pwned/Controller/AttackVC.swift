@@ -15,7 +15,7 @@ class AttackVC: UIViewController {
     let attackView = AttackView()
     
     //buttons
-    unowned var sendWifiBttn: UIButton{return attackView.sendWifiButton}
+    //unowned var sendWifiBttn: UIButton{return attackView.sendWifiButton}
     
     
     //Load dat VIEW
@@ -25,7 +25,7 @@ class AttackVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sendWifiBttn.addTarget(self, action: #selector(sendWifi), for: UIControl.Event.touchUpInside)
+       // sendWifiBttn.addTarget(self, action: #selector(sendWifi), for: UIControl.Event.touchUpInside)
         setupView()
        
     }
@@ -46,7 +46,7 @@ class AttackVC: UIViewController {
         checkWifiStatus()
     }
     func checkWifiStatus() {
-        if SSID.amIPwned() == false {
+        if WifiNetworkGetter.amIPwned() == false {
             showWifiAlert()
         }
     }
