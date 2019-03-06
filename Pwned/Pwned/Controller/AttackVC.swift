@@ -62,6 +62,7 @@ class AttackVC: UIViewController {
     
     @objc func attackDatWifi() {
         WifiDeauth.attackNetwork(URL(string: "http://192.168.4.1/attack.html")!)
+        attackView.networkLabel.text = "Attacking Selected Wifi"
     }
 
 

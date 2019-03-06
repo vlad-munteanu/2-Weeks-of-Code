@@ -47,10 +47,10 @@ public class AttackView: UIView {
             make.centerY.centerX.equalToSuperview()
         }
         attackButton.snp.makeConstraints{ make in
-            make.height.equalToSuperview().multipliedBy(0.1)
-            make.width.equalToSuperview().multipliedBy(0.45)
+            make.height.equalToSuperview().multipliedBy(0.2)
+            make.width.equalToSuperview().multipliedBy(0.6)
             make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().multipliedBy(0.9)
+            make.centerY.equalToSuperview().multipliedBy(1.2)
         }
     }
     
@@ -71,7 +71,7 @@ public class AttackView: UIView {
         netLbl.minimumScaleFactor = 0.5
         netLbl.translatesAutoresizingMaskIntoConstraints = false
         netLbl.textColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
-        netLbl.text = "No Wifi Selected..."
+        netLbl.text = "No Attack Running"
         return netLbl
     }()
     
