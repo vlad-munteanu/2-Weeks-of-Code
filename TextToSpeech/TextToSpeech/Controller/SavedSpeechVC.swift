@@ -14,6 +14,7 @@ class SavedSpeechVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
         
         let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
         let displayWidth: CGFloat = self.view.frame.width
@@ -24,6 +25,14 @@ class SavedSpeechVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         myTableView.dataSource = self
         myTableView.delegate = self
         self.view.addSubview(myTableView)
+    }
+    
+    func setupView() {
+        self.title = "Saved"
+        self.navigationController?.navigationBar.layer.masksToBounds = false
+        
+        //self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log Out", style: .done, target: self, a    ction: #selector(logOut))
+        //self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "menu"), style: .done    , target: self, action: #selector(hamburgerMenuPressed))
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

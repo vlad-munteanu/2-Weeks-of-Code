@@ -38,7 +38,7 @@ public class InputView: UIView {
     //Main Background Subview
     public let backgroundView: UIView = {
         let backgroundView = UIView()
-        backgroundView.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        backgroundView.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
         return backgroundView
     }()
     

@@ -61,8 +61,10 @@ class PageVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewCo
         let page2 = SavedSpeechVC()
         
         // add the individual viewControllers to the pageViewController
-        self.pages.append(page1)
-        self.pages.append(page2)
+//        self.pages.append(page1)
+//        self.pages.append(page2)
+        pages = [UINavigationController(rootViewController: page1), UINavigationController(rootViewController: page2)]
+        //viewControllers = pages.map { UINavigationController(rootViewController: $0) }
         setViewControllers([pages[initialPage]], direction: .forward, animated: false, completion: nil)
         
         // pageControl
