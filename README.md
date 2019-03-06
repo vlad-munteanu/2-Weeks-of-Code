@@ -36,8 +36,12 @@ An app aimed at helping users study better, based on the Pomodoro technique. Not
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day4.gif)
 
 ## Day 5: Pwned  
-An app that connects to the ESP8266 Deauther 2.0 interface for network pen-testing. Only meant for use on personal networks. Uses WKZombie to run JS code to interact with the web interface for the Deauther. Wasn't able to finish in time so I opted to use a webview for the scan view.  
+An app that connects to the ESP8266 Deauther 2.0 interface for network pen-testing. Only meant for use on personal networks. Uses WKZombie to run JS code to interact with the web interface for the Deauther. Wasn't able to finish in time so I opted to use a webview for the scan view. Works with any devices thaat use 802.11 Wi-Fi standard. 
 
+![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day5.gif)
+
+## Day 6: Text to speech
+An app that converts text to speech. 
 
 
 ## App Ideas TO_DO 
@@ -50,6 +54,8 @@ An app that connects to the ESP8266 Deauther 2.0 interface for network pen-testi
 ## Apps I Might Do Further Development On 
 - Day 4: Study App 
   - Add Push notifications 
+- Day 5: Pwned
+  - Get rid of webkit view
 
 
 
