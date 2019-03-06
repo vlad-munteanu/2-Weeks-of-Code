@@ -21,7 +21,7 @@ class TabBarController: UITabBarController {
         attackVC.tabBarItem.title = ""
         attackVC.tabBarItem.image = UIImage(named: "wifi")
         
-       let scanVC = ScanVC()
+       let scanVC = ScanWKVC()
         scanVC.tabBarItem.title = ""
         scanVC.tabBarItem.image = UIImage(named: "scan")
         

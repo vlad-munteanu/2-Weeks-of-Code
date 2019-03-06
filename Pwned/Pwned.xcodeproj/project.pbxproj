@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		99D8861DBD4B231A171EF2C3 /* Pods_Pwned.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD05F60011440FF56EF29AFC /* Pods_Pwned.framework */; };
+		B84FB06F222F87B100A328A0 /* ScanWKVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FB06E222F87B100A328A0 /* ScanWKVC.swift */; };
 		B8D60C39222F091900A3B72A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D60C38222F091900A3B72A /* TabBarController.swift */; };
 		B8D60C3B222F09D100A3B72A /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D60C3A222F09D100A3B72A /* ScanVC.swift */; };
 		B8D60C3D222F09DA00A3B72A /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D60C3C222F09DA00A3B72A /* ScanView.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		4BB6B47D5B8C998CB3DDC316 /* Pods-Pwned.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pwned.debug.xcconfig"; path = "Target Support Files/Pods-Pwned/Pods-Pwned.debug.xcconfig"; sourceTree = "<group>"; };
 		AD05F60011440FF56EF29AFC /* Pods_Pwned.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pwned.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B84FB06E222F87B100A328A0 /* ScanWKVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanWKVC.swift; sourceTree = "<group>"; };
 		B8D60C38222F091900A3B72A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B8D60C3A222F09D100A3B72A /* ScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
 		B8D60C3C222F09DA00A3B72A /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				B8D60C38222F091900A3B72A /* TabBarController.swift */,
 				B8DC989B222EB1A4008DA5EB /* AttackVC.swift */,
 				B8D60C3A222F09D100A3B72A /* ScanVC.swift */,
+				B84FB06E222F87B100A328A0 /* ScanWKVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				B8D60C39222F091900A3B72A /* TabBarController.swift in Sources */,
 				B8D60C3D222F09DA00A3B72A /* ScanView.swift in Sources */,
 				B8D60C3B222F09D100A3B72A /* ScanVC.swift in Sources */,
+				B84FB06F222F87B100A328A0 /* ScanWKVC.swift in Sources */,
 				B8DC98B3222EC37A008DA5EB /* InternetReachability.swift in Sources */,
 				B8DC98B5222ECCA6008DA5EB /* WifiNetworkGetter.swift in Sources */,
 			);

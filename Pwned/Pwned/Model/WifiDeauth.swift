@@ -47,27 +47,26 @@ document.getElementById("deauth").click()
     class func refreshWIFI(_ url: URL) {
     open(url)
 //        >>> execute("""
-//                    scan(0)
+//                    scan()
 //                    """)
         >>> execute("""
                     load()
                     """)
         === myOutput
         
+        refreshGetItems(url)
     }
     
     class func refreshGetItems(_ url: URL) {
         open(url)
-            
-            >>* get(by: .name("form2"))
-            >>> submit
-            >>* get(by: .contains("href", "/account/"))
-            >>> click(then: .wait(2.5))
-            >>* getAll(by: .contains("class=\"ssid\"", ""))
+        
+            //>>* getAll(by: .contains("class=\"ssid\"", ""))
+            >>* getAll(by: .contains("class", "ssid"))
             === myWifiOutput
     }
     
     class func myWifiOutput(result: [HTMLTableColumn]?) {
+        print(result)
         items = result
     }
 }
