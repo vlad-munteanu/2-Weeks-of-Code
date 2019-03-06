@@ -8,11 +8,16 @@
 
 import UIKit
 
-class InputSpeech: UIViewController {
+class InputSpeechVC: UIViewController {
 
+    let inputSpeechView = InputView()
+    
+    public override func loadView() {
+        self.view = inputSpeechView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
