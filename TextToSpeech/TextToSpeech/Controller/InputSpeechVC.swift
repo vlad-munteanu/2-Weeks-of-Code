@@ -25,7 +25,11 @@ class InputSpeechVC: UIViewController {
         self.title = "Text 2 Speech"
         self.navigationController?.navigationBar.layer.masksToBounds = false
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log Out", style: .done, target: self, action: #selector(saveSpeech))
+        let rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(saveSpeech))
+        rightBarButtonItem.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        
         //self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "menu"), style: .done    , target: self, action: #selector(hamburgerMenuPressed))
     }
     

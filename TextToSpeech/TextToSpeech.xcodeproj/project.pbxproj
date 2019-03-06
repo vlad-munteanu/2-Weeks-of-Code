@@ -15,6 +15,7 @@
 		B84FB093222F8F3A00A328A0 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FB092222F8F3A00A328A0 /* PageVC.swift */; };
 		B84FB095222F8F5D00A328A0 /* SavedSpeechVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FB094222F8F5D00A328A0 /* SavedSpeechVC.swift */; };
 		B84FB097222F8FB300A328A0 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FB096222F8FB300A328A0 /* InputView.swift */; };
+		B84FB09922302AC100A328A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FB09822302AC100A328A0 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		B84FB092222F8F3A00A328A0 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		B84FB094222F8F5D00A328A0 /* SavedSpeechVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSpeechVC.swift; sourceTree = "<group>"; };
 		B84FB096222F8FB300A328A0 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		B84FB09822302AC100A328A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C01A654C6157873C6FF29C31 /* Pods-TextToSpeech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextToSpeech.debug.xcconfig"; path = "Target Support Files/Pods-TextToSpeech/Pods-TextToSpeech.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +60,6 @@
 				C01A654C6157873C6FF29C31 /* Pods-TextToSpeech.debug.xcconfig */,
 				029DA8A22AB595430E4CF600 /* Pods-TextToSpeech.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -123,6 +124,7 @@
 				B84FB07C222F8E6300A328A0 /* AppDelegate.swift */,
 				B84FB083222F8E6400A328A0 /* Assets.xcassets */,
 				B84FB085222F8E6400A328A0 /* LaunchScreen.storyboard */,
+				B84FB09822302AC100A328A0 /* Constants.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -251,6 +253,7 @@
 				B84FB097222F8FB300A328A0 /* InputView.swift in Sources */,
 				B84FB095222F8F5D00A328A0 /* SavedSpeechVC.swift in Sources */,
 				B84FB07D222F8E6300A328A0 /* AppDelegate.swift in Sources */,
+				B84FB09922302AC100A328A0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
