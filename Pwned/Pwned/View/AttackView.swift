@@ -26,6 +26,7 @@ public class AttackView: UIView {
         addSubview(backgroundView)
         addSubview(networkLabel)
         addSubview(activityIndicator)
+        addSubview(attackButton)
         
         
     }
@@ -39,18 +40,24 @@ public class AttackView: UIView {
         networkLabel.snp.makeConstraints{ make in
             make.width.equalToSuperview().multipliedBy(0.9)
             make.left.equalToSuperview().inset(20)
-            make.centerY.equalToSuperview().multipliedBy(0.3)
+            make.centerY.equalToSuperview().multipliedBy(0.4)
             make.height.equalToSuperview().multipliedBy(0.2)
         }
         activityIndicator.snp.makeConstraints{ make in
             make.centerY.centerX.equalToSuperview()
+        }
+        attackButton.snp.makeConstraints{ make in
+            make.height.equalToSuperview().multipliedBy(0.1)
+            make.width.equalToSuperview().multipliedBy(0.45)
+            make.centerX.equalToSuperview()
+            make.bottom.equalToSuperview().multipliedBy(0.9)
         }
     }
     
     //Main Background
     public let backgroundView: UIView = {
         let backgroundView = UIView()
-        backgroundView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        backgroundView.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         return backgroundView
     }()
     
@@ -64,7 +71,7 @@ public class AttackView: UIView {
         netLbl.minimumScaleFactor = 0.5
         netLbl.translatesAutoresizingMaskIntoConstraints = false
         netLbl.textColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
-        netLbl.text = "Not Connected Yet..."
+        netLbl.text = "No Wifi Selected..."
         return netLbl
     }()
     
@@ -79,10 +86,19 @@ public class AttackView: UIView {
     }()
     
     //Button
-    public let activityIndicator: UIActivityIndicatorView = {
-        let actIndi = UIActivityIndicatorView()
-        actIndi.color = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        return actIndi
+    public let attackButton: UIButton = {
+        let attackBttn = UIButton()
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 5.0
+        
+        attackBttn.setTitle("Start Attack", for: UIControl.State.normal)
+        attackBttn.setTitleColor(UIColor.white, for: UIControl.State.normal)
+        attackBttn.backgroundColor = UIColor.clear
+        attackBttn.layer.borderWidth = 1.0
+        attackBttn.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+        attackBttn.layer.cornerRadius = cornerRadius
+        
+        return attackBttn
     }()
     
    

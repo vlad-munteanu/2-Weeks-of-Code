@@ -22,32 +22,26 @@ public class WifiDeauth {
     
     //Disclaimer: Does not work on devices with 802.11w-2009 standard.
     
-    let scanUrl = URL(string: "http://192.168.4.1/ssids.html")!
+    //let scanUrl = URL(string: "http://192.168.4.1/ssids.html")!
     let attackUrl = URL(string: "http://192.168.4.1/attack.html")!
     var snapshots = [Snapshot]()
     
     
-    static func attackNetwork(_ url: URL) {
+    let webView: UIWebView = UIWebView()
+    
+    static func attackNetwork(_ url: URL, jvrSrpt: String) {
         open(url)
-            >>* get(by: .contains("button id=\"deauth\"", "onclick=\"start(0)\""))
-            >>> click(then: .wait(2.5))
-            >>* getAll(by: .contains("class", "row-"))
+           // >>* get(by: .name("deauth"))
+            >>> execute("""
+document.getElementById("deauth").click()
+""")
+            //>>> inspect()
             === myOutput
     }
     
-    class func myOutput(result: [HTMLTableColumn]?) {
+    class func myOutput(result: JavaScriptResult?) {
         // handle result
     }
-    
-//    class func refreshGetItems() -> [HTMLTableColumn] {
-//        let hanlderBlock: (Bool) -> Void = {
-//            doneWork in
-//
-//            if doneWork {
-//                print("We've finished working, bruh")
-//            }
-//        }
-//    }
     
     
 }

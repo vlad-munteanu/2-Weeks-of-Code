@@ -15,7 +15,7 @@ class AttackVC: UIViewController {
     let attackView = AttackView()
     
     //buttons
-    //unowned var sendWifiBttn: UIButton{return attackView.sendWifiButton}
+    unowned var attackBttn: UIButton{return attackView.attackButton}
     
     
     //Load dat VIEW
@@ -25,7 +25,7 @@ class AttackVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // sendWifiBttn.addTarget(self, action: #selector(sendWifi), for: UIControl.Event.touchUpInside)
+       attackBttn.addTarget(self, action: #selector(attackDatWifi), for: UIControl.Event.touchUpInside)
         setupView()
         attackView.activityIndicator.startAnimating()
        
@@ -34,10 +34,7 @@ class AttackVC: UIViewController {
     func setupView() {
         self.title = "Hack That Wifi ☠️"
         self.navigationController?.navigationBar.layer.masksToBounds = false
-        self.navigationController?.navigationBar.layer.shadowColor = UIColor.lightGray.cgColor
-        self.navigationController?.navigationBar.layer.shadowOpacity = 0.8
-        self.navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-        self.navigationController?.navigationBar.layer.shadowRadius = 8
+        
         //self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log Out", style: .done, target: self, action: #selector(logOut))
         //self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "menu"), style: .done, target: self, action: #selector(hamburgerMenuPressed))
     }
@@ -47,6 +44,7 @@ class AttackVC: UIViewController {
         checkWifiStatus()
     }
     func checkWifiStatus() {
+        attackView.activityIndicator.removeFromSuperview()
         if WifiNetworkGetter.amIPwned() == false {
             showWifiAlert()
         }
@@ -62,8 +60,8 @@ class AttackVC: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    @objc func sendWifi() {
-        
+    @objc func attackDatWifi() {
+        WifiDeauth.attackNetwork(URL(string: "http://192.168.4.1/attack.html")!)
     }
 
 
