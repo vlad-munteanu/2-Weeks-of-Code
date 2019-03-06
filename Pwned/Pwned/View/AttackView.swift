@@ -25,6 +25,7 @@ public class AttackView: UIView {
     func intializeUI() {
         addSubview(backgroundView)
         addSubview(networkLabel)
+        addSubview(activityIndicator)
         
         
     }
@@ -40,7 +41,9 @@ public class AttackView: UIView {
             make.left.equalToSuperview().inset(20)
             make.centerY.equalToSuperview().multipliedBy(0.3)
             make.height.equalToSuperview().multipliedBy(0.2)
-            
+        }
+        activityIndicator.snp.makeConstraints{ make in
+            make.centerY.centerX.equalToSuperview()
         }
     }
     
@@ -51,18 +54,7 @@ public class AttackView: UIView {
         return backgroundView
     }()
     
-    //Scroll View
-    public let networkView: UIScrollView = {
-        let netView = UIScrollView()
-        let borderAlpha : CGFloat = 0.7
-        let cornerRadius : CGFloat = 5.0
-        netView.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        netView.layer.borderWidth = 1.0
-        netView.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
-        netView.layer.cornerRadius = cornerRadius
-        netView.translatesAutoresizingMaskIntoConstraints = false
-        return netView
-    }()
+   
     
     //Label
     public let networkLabel: UILabel = {
@@ -76,34 +68,14 @@ public class AttackView: UIView {
         return netLbl
     }()
     
-    //Textfield
-    public let networkTF: UITextField = {
-        let netTF = UITextField()
-        netTF.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        return netTF
-    }()
+   
     
     //MARK: Probably going to use an alert for this
     //Button
-    public let sendWifiButton: UIButton = {
-        let sendWifiBttn = UIButton()
-        let borderAlpha : CGFloat = 0.7
-        let cornerRadius : CGFloat = 5.0
-        
-        sendWifiBttn.setTitle("Send", for: UIControl.State.normal)
-        sendWifiBttn.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: UIControl.State.normal)
-        sendWifiBttn.backgroundColor = UIColor.clear
-        sendWifiBttn.layer.borderWidth = 1.0
-        sendWifiBttn.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        sendWifiBttn.layer.cornerRadius = cornerRadius
-        sendWifiBttn.translatesAutoresizingMaskIntoConstraints = false
-        
-        return sendWifiBttn
-    }()
-    
-    public let wifiTableView: UITableView = {
-        let wifiTV = UITableView()
-        return wifiTV
+    public let activityIndicator: UIActivityIndicatorView = {
+        let actIndi = UIActivityIndicatorView()
+        actIndi.color = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        return actIndi
     }()
     
    

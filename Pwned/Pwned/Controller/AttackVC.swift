@@ -27,6 +27,7 @@ class AttackVC: UIViewController {
         super.viewDidLoad()
        // sendWifiBttn.addTarget(self, action: #selector(sendWifi), for: UIControl.Event.touchUpInside)
         setupView()
+        attackView.activityIndicator.startAnimating()
        
     }
     

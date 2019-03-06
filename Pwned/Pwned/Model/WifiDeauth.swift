@@ -22,6 +22,10 @@ class WifiDeauth {
     
     //Disclaimer: Does not work on devices with 802.11w-2009 standard.
     
+    let scanUrl = URL(string: "http://192.168.4.1/ssids.html")!
+    let attackUrl = URL(string: "http://192.168.4.1/attack.html")!
+    var snapshots = [Snapshot]()
+    
     
     
 }
