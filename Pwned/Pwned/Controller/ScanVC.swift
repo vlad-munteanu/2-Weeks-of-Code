@@ -48,5 +48,4 @@ class ScanVC: UITableViewController {
         cell.textLabel?.text = item?.text
         return cell
     }
-    
 }

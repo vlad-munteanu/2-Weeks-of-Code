@@ -100,7 +100,4 @@ public class AttackView: UIView {
         
         return attackBttn
     }()
-    
-   
-    
 }

@@ -12,7 +12,7 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 
 ## Lines of Code Written So Far This Month: 
 ```
-1,741
+2,126
 ```
 
 ## Day 1: Random Color Generator 
@@ -36,7 +36,7 @@ An app aimed at helping users study better, based on the Pomodoro technique. Not
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day4.gif)
 
 ## Day 5: Pwned  
-An app that connects to the ESP8266 Deauther 2.0 interface for network pen-testing. Only meant for use on personal networks. 
+An app that connects to the ESP8266 Deauther 2.0 interface for network pen-testing. Only meant for use on personal networks. Uses WKZombie to run JS code to interact with the web interface for the Deauther. Wasn't able to finish in time so I opted to use a webview for the scan view.  
 
 
 

@@ -33,6 +33,4 @@ public class WifiNetworkGetter {
         }
         return false
     }
-
-    
 }
