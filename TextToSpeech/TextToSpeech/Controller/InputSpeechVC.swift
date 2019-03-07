@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InputSpeechVC: UIViewController {
+class InputSpeechVC: UIViewController, UITextFieldDelegate {
 
     let inputSpeechView = InputView()
     
@@ -32,6 +32,7 @@ class InputSpeechVC: UIViewController {
     func setupView() {
         self.title = "Text 2 Speech"
         self.navigationController?.navigationBar.layer.masksToBounds = false
+        textfield.delegate = self
         
         let rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(saveSpeech))
         rightBarButtonItem.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
@@ -54,6 +55,16 @@ class InputSpeechVC: UIViewController {
             SpeakerModel.speak(stringToSpeak: sentence)
         }
         textfield.text = ""
+    }
+    
+    //dismisses keyboard when user touches screen elsewhere
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 
 }
