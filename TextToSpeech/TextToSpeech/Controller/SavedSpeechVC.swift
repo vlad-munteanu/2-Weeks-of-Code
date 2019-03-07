@@ -9,7 +9,6 @@
 import UIKit
 class SavedSpeechVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    private let myArray: NSArray = ["First","Second","Third"]
     private var myTableView: UITableView!
     
     override func viewDidLoad() {
@@ -25,6 +24,15 @@ class SavedSpeechVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         myTableView.dataSource = self
         myTableView.delegate = self
         self.view.addSubview(myTableView)
+        refresh()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        refresh()
+    }
+    
+    func refresh() {
+        self.myTableView.reloadData()
     }
     
     func setupView() {

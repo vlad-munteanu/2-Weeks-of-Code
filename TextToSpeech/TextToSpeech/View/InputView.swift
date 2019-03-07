@@ -38,7 +38,7 @@ public class InputView: UIView {
         }
         textTF.snp.makeConstraints{ make in
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().multipliedBy(0.6)
+            make.centerY.equalToSuperview().multipliedBy(0.8)
             make.width.equalToSuperview().multipliedBy(0.95)
         }
         speakButton.snp.makeConstraints{ make in
