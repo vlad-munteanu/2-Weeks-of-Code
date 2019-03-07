@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B84FB0AD223158F700A328A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FB0AC223158F700A328A0 /* AppDelegate.swift */; };
-		B84FB0B3223158F700A328A0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FB0B2223158F700A328A0 /* GameScene.swift */; };
-		B84FB0B5223158F700A328A0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FB0B4223158F700A328A0 /* GameViewController.swift */; };
-		B84FB0BA223158F800A328A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84FB0B9223158F800A328A0 /* Assets.xcassets */; };
-		B84FB0BD223158F800A328A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84FB0BB223158F800A328A0 /* LaunchScreen.storyboard */; };
+		B8313AF02231A30900BEAB89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8313AEF2231A30900BEAB89 /* AppDelegate.swift */; };
+		B8313AF22231A30900BEAB89 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B8313AF12231A30900BEAB89 /* GameScene.sks */; };
+		B8313AF42231A30900BEAB89 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B8313AF32231A30900BEAB89 /* Actions.sks */; };
+		B8313AF62231A30900BEAB89 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8313AF52231A30900BEAB89 /* GameScene.swift */; };
+		B8313AF82231A30900BEAB89 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8313AF72231A30900BEAB89 /* GameViewController.swift */; };
+		B8313AFB2231A30900BEAB89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8313AF92231A30900BEAB89 /* Main.storyboard */; };
+		B8313AFD2231A30A00BEAB89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8313AFC2231A30A00BEAB89 /* Assets.xcassets */; };
+		B8313B002231A30A00BEAB89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8313AFE2231A30A00BEAB89 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B84FB0A9223158F700A328A0 /* TheDengsterV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheDengsterV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B84FB0AC223158F700A328A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B84FB0B2223158F700A328A0 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		B84FB0B4223158F700A328A0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		B84FB0B9223158F800A328A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B84FB0BC223158F800A328A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B84FB0BE223158F800A328A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8313AEC2231A30900BEAB89 /* DengsterV2.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DengsterV2.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8313AEF2231A30900BEAB89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8313AF12231A30900BEAB89 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		B8313AF32231A30900BEAB89 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		B8313AF52231A30900BEAB89 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B8313AF72231A30900BEAB89 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B8313AFA2231A30900BEAB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8313AFC2231A30A00BEAB89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8313AFF2231A30A00BEAB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8313B012231A30A00BEAB89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B84FB0A6223158F700A328A0 /* Frameworks */ = {
+		B8313AE92231A30900BEAB89 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,71 +41,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B84FB0A0223158F700A328A0 = {
+		B8313AE32231A30900BEAB89 = {
 			isa = PBXGroup;
 			children = (
-				B84FB0AB223158F700A328A0 /* TheDengsterV2 */,
-				B84FB0AA223158F700A328A0 /* Products */,
+				B8313AEE2231A30900BEAB89 /* DengsterV2.1 */,
+				B8313AED2231A30900BEAB89 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B84FB0AA223158F700A328A0 /* Products */ = {
+		B8313AED2231A30900BEAB89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B84FB0A9223158F700A328A0 /* TheDengsterV2.app */,
+				B8313AEC2231A30900BEAB89 /* DengsterV2.1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B84FB0AB223158F700A328A0 /* TheDengsterV2 */ = {
+		B8313AEE2231A30900BEAB89 /* DengsterV2.1 */ = {
 			isa = PBXGroup;
 			children = (
-				B84FB0AC223158F700A328A0 /* AppDelegate.swift */,
-				B84FB0B2223158F700A328A0 /* GameScene.swift */,
-				B84FB0B4223158F700A328A0 /* GameViewController.swift */,
-				B84FB0B9223158F800A328A0 /* Assets.xcassets */,
-				B84FB0BB223158F800A328A0 /* LaunchScreen.storyboard */,
-				B84FB0BE223158F800A328A0 /* Info.plist */,
+				B8313AEF2231A30900BEAB89 /* AppDelegate.swift */,
+				B8313AF12231A30900BEAB89 /* GameScene.sks */,
+				B8313AF32231A30900BEAB89 /* Actions.sks */,
+				B8313AF52231A30900BEAB89 /* GameScene.swift */,
+				B8313AF72231A30900BEAB89 /* GameViewController.swift */,
+				B8313AF92231A30900BEAB89 /* Main.storyboard */,
+				B8313AFC2231A30A00BEAB89 /* Assets.xcassets */,
+				B8313AFE2231A30A00BEAB89 /* LaunchScreen.storyboard */,
+				B8313B012231A30A00BEAB89 /* Info.plist */,
 			);
-			path = TheDengsterV2;
+			path = DengsterV2.1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B84FB0A8223158F700A328A0 /* TheDengsterV2 */ = {
+		B8313AEB2231A30900BEAB89 /* DengsterV2.1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B84FB0C1223158F800A328A0 /* Build configuration list for PBXNativeTarget "TheDengsterV2" */;
+			buildConfigurationList = B8313B042231A30A00BEAB89 /* Build configuration list for PBXNativeTarget "DengsterV2.1" */;
 			buildPhases = (
-				B84FB0A5223158F700A328A0 /* Sources */,
-				B84FB0A6223158F700A328A0 /* Frameworks */,
-				B84FB0A7223158F700A328A0 /* Resources */,
+				B8313AE82231A30900BEAB89 /* Sources */,
+				B8313AE92231A30900BEAB89 /* Frameworks */,
+				B8313AEA2231A30900BEAB89 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TheDengsterV2;
-			productName = TheDengsterV2;
-			productReference = B84FB0A9223158F700A328A0 /* TheDengsterV2.app */;
+			name = DengsterV2.1;
+			productName = DengsterV2.1;
+			productReference = B8313AEC2231A30900BEAB89 /* DengsterV2.1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B84FB0A1223158F700A328A0 /* Project object */ = {
+		B8313AE42231A30900BEAB89 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Vlad Munteanu";
 				TargetAttributes = {
-					B84FB0A8223158F700A328A0 = {
+					B8313AEB2231A30900BEAB89 = {
 						CreatedOnToolsVersion = 10.2;
 					};
 				};
 			};
-			buildConfigurationList = B84FB0A4223158F700A328A0 /* Build configuration list for PBXProject "TheDengsterV2" */;
+			buildConfigurationList = B8313AE72231A30900BEAB89 /* Build configuration list for PBXProject "DengsterV2.1" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,46 +116,57 @@
 				en,
 				Base,
 			);
-			mainGroup = B84FB0A0223158F700A328A0;
-			productRefGroup = B84FB0AA223158F700A328A0 /* Products */;
+			mainGroup = B8313AE32231A30900BEAB89;
+			productRefGroup = B8313AED2231A30900BEAB89 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B84FB0A8223158F700A328A0 /* TheDengsterV2 */,
+				B8313AEB2231A30900BEAB89 /* DengsterV2.1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B84FB0A7223158F700A328A0 /* Resources */ = {
+		B8313AEA2231A30900BEAB89 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B84FB0BA223158F800A328A0 /* Assets.xcassets in Resources */,
-				B84FB0BD223158F800A328A0 /* LaunchScreen.storyboard in Resources */,
+				B8313AFB2231A30900BEAB89 /* Main.storyboard in Resources */,
+				B8313AF22231A30900BEAB89 /* GameScene.sks in Resources */,
+				B8313AFD2231A30A00BEAB89 /* Assets.xcassets in Resources */,
+				B8313B002231A30A00BEAB89 /* LaunchScreen.storyboard in Resources */,
+				B8313AF42231A30900BEAB89 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B84FB0A5223158F700A328A0 /* Sources */ = {
+		B8313AE82231A30900BEAB89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B84FB0B3223158F700A328A0 /* GameScene.swift in Sources */,
-				B84FB0B5223158F700A328A0 /* GameViewController.swift in Sources */,
-				B84FB0AD223158F700A328A0 /* AppDelegate.swift in Sources */,
+				B8313AF62231A30900BEAB89 /* GameScene.swift in Sources */,
+				B8313AF82231A30900BEAB89 /* GameViewController.swift in Sources */,
+				B8313AF02231A30900BEAB89 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B84FB0BB223158F800A328A0 /* LaunchScreen.storyboard */ = {
+		B8313AF92231A30900BEAB89 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B84FB0BC223158F800A328A0 /* Base */,
+				B8313AFA2231A30900BEAB89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B8313AFE2231A30A00BEAB89 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8313AFF2231A30A00BEAB89 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -154,7 +174,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B84FB0BF223158F800A328A0 /* Debug */ = {
+		B8313B022231A30A00BEAB89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -215,7 +235,7 @@
 			};
 			name = Debug;
 		};
-		B84FB0C0223158F800A328A0 /* Release */ = {
+		B8313B032231A30A00BEAB89 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -260,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,36 +290,36 @@
 			};
 			name = Release;
 		};
-		B84FB0C2223158F800A328A0 /* Debug */ = {
+		B8313B052231A30A00BEAB89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8C8RXSHKT;
-				INFOPLIST_FILE = TheDengsterV2/Info.plist;
+				INFOPLIST_FILE = DengsterV2.1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.TheDengsterV2;
+				PRODUCT_BUNDLE_IDENTIFIER = "LesGarcons.DengsterV2-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B84FB0C3223158F800A328A0 /* Release */ = {
+		B8313B062231A30A00BEAB89 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8C8RXSHKT;
-				INFOPLIST_FILE = TheDengsterV2/Info.plist;
+				INFOPLIST_FILE = DengsterV2.1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.TheDengsterV2;
+				PRODUCT_BUNDLE_IDENTIFIER = "LesGarcons.DengsterV2-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,25 +329,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B84FB0A4223158F700A328A0 /* Build configuration list for PBXProject "TheDengsterV2" */ = {
+		B8313AE72231A30900BEAB89 /* Build configuration list for PBXProject "DengsterV2.1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B84FB0BF223158F800A328A0 /* Debug */,
-				B84FB0C0223158F800A328A0 /* Release */,
+				B8313B022231A30A00BEAB89 /* Debug */,
+				B8313B032231A30A00BEAB89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B84FB0C1223158F800A328A0 /* Build configuration list for PBXNativeTarget "TheDengsterV2" */ = {
+		B8313B042231A30A00BEAB89 /* Build configuration list for PBXNativeTarget "DengsterV2.1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B84FB0C2223158F800A328A0 /* Debug */,
-				B84FB0C3223158F800A328A0 /* Release */,
+				B8313B052231A30A00BEAB89 /* Debug */,
+				B8313B062231A30A00BEAB89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B84FB0A1223158F700A328A0 /* Project object */;
+	rootObject = B8313AE42231A30900BEAB89 /* Project object */;
 }
