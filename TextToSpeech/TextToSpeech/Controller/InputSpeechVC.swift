@@ -15,6 +15,11 @@ class InputSpeechVC: UIViewController {
     
     //button
     unowned var speakBttn: UIButton { return inputSpeechView.speakButton}
+    
+    
+    //textfield
+    unowned var textfield: UITextField { return inputSpeechView.textTF}
+    
     public override func loadView() {
         self.view = inputSpeechView
     }
@@ -37,11 +42,17 @@ class InputSpeechVC: UIViewController {
     }
     
     @objc func saveSpeech() {
-        
+        if let sentence = textfield.text {
+            savedStrings.append(sentence)
+        }
+        print(savedStrings)
     }
     
     @objc func speakText() {
-        SpeakerModel.speak()
+        if let sentence = textfield.text {
+            SpeakerModel.speak(stringToSpeak: sentence)
+        }
+        textfield.text = ""
     }
 
 }

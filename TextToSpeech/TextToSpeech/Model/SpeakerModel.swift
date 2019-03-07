@@ -10,13 +10,25 @@ import Foundation
 import AVFoundation
 
 public class SpeakerModel {
-    class func speak() {
-        let string = "Hello World"
-        let utterance = AVSpeechUtterance(string: string)
+    
+    static var speakerVoice = "en-GB"
+    
+    class func speak(stringToSpeak: String) {
+        
+        let utterance = AVSpeechUtterance(string: stringToSpeak)
         utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
         
         let synth = AVSpeechSynthesizer()
         synth.speak(utterance)
+    }
+    
+    class func setVoice(name: String) {
+        //en-AU: Karen (Australia)
+        //en-GB: Daniel (UK)
+        //en-IE: Moira (Ireland)
+        //en-US: Siri (US)
+        //en-ZA: Tessa (South Africa)
+        
     }
     
 }
