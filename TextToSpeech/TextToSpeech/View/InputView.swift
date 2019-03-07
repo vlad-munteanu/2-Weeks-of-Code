@@ -76,7 +76,7 @@ public class InputView: UIView {
         speakBttn.setTitleColor(UIColor.white, for: UIControl.State.normal)
         speakBttn.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
         speakBttn.layer.borderWidth = 1.0
-        speakBttn.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+        speakBttn.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         speakBttn.layer.cornerRadius = cornerRadius
         
         return speakBttn
