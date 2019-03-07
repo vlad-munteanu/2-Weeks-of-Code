@@ -15,6 +15,8 @@ class InputSpeechVC: UIViewController, UITextFieldDelegate {
     
     var menuArray: [HSMenu] = []
     
+    var voiceStrings = ["Karen (Australia)", "Daniel (UK)", "Moira (Ireland)", "Tessa (S Africa)","Siri (US)"]
+    
     
     //button
     unowned var speakBttn: UIButton { return inputSpeechView.speakButton}
@@ -99,6 +101,7 @@ class InputSpeechVC: UIViewController, UITextFieldDelegate {
 extension InputSpeechVC: HSPopupMenuDelegate {
     func popupMenu(_ popupMenu: HSPopupMenu, didSelectAt index: Int) {
         print("selected index is: " + "\(index)")
+        SpeakerModel.setVoice(name: voiceStrings[index])
     }
 }
 
