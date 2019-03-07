@@ -9,11 +9,14 @@
 import Foundation
 import AVFoundation
 
-func speak() {
-    let string = "Hello, World!"
-    let utterance = AVSpeechUtterance(string: string)
-    utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+public class SpeakerModel {
+    class func speak() {
+        let string = "Hello World"
+        let utterance = AVSpeechUtterance(string: string)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+        
+        let synth = AVSpeechSynthesizer()
+        synth.speak(utterance)
+    }
     
-    let synth = AVSpeechSynthesizer()
-    synth.speak(utterance)
 }

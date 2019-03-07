@@ -12,6 +12,9 @@ class InputSpeechVC: UIViewController {
 
     let inputSpeechView = InputView()
     
+    
+    //button
+    unowned var speakBttn: UIButton { return inputSpeechView.speakButton}
     public override func loadView() {
         self.view = inputSpeechView
     }
@@ -29,12 +32,16 @@ class InputSpeechVC: UIViewController {
         rightBarButtonItem.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        speakBttn.addTarget(self, action: #selector(speakText), for: UIControl.Event.touchUpInside)
         
-        //self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage(named: "menu"), style: .done    , target: self, action: #selector(hamburgerMenuPressed))
     }
     
     @objc func saveSpeech() {
         
+    }
+    
+    @objc func speakText() {
+        SpeakerModel.speak()
     }
 
 }

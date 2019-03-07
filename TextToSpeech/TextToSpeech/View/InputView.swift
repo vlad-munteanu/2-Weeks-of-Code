@@ -28,6 +28,7 @@ public class InputView: UIView {
     internal func intializeUI() {
         addSubview(backgroundView)
         addSubview(textTF)
+        addSubview(speakButton)
     }
     
     internal func createConstraints(){
@@ -39,6 +40,13 @@ public class InputView: UIView {
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview().multipliedBy(0.6)
             make.width.equalToSuperview().multipliedBy(0.95)
+        }
+        speakButton.snp.makeConstraints{ make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(textTF.snp_bottom).offset(20)
+            make.width.equalToSuperview().multipliedBy(0.3)
+            make.height.equalToSuperview().multipliedBy(0.2)
+                
         }
     }
     
@@ -56,6 +64,22 @@ public class InputView: UIView {
         tf.floatingLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         tf.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         return tf
+    }()
+    
+    //button
+    public let speakButton: UIButton = {
+        let speakBttn = UIButton()
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 5.0
+        
+        speakBttn.setTitle("Convert to Speech", for: UIControl.State.normal)
+        speakBttn.setTitleColor(UIColor.white, for: UIControl.State.normal)
+        speakBttn.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        speakBttn.layer.borderWidth = 1.0
+        speakBttn.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+        speakBttn.layer.cornerRadius = cornerRadius
+        
+        return speakBttn
     }()
     
 }
