@@ -1,0 +1,25 @@
+PODS:
+  - HSPopupMenu (0.1.1):
+    - SnapKit (~> 4.0.0)
+  - JVFloatLabeledTextField (1.2.1)
+  - SnapKit (4.0.1)
+
+DEPENDENCIES:
+  - HSPopupMenu
+  - JVFloatLabeledTextField
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - HSPopupMenu
+    - JVFloatLabeledTextField
+    - SnapKit
+
+SPEC CHECKSUMS:
+  HSPopupMenu: ca8c0f872cdbc8fc7d9c8098c2aa6e6a0027d201
+  JVFloatLabeledTextField: cfc44e3c4d493b2ed92ede8035e8e89c2912ba64
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+
+PODFILE CHECKSUM: e0bb3a55c574bdc83b7198a75e237a47c91ea950
+
+COCOAPODS: 1.6.1

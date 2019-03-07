@@ -42,7 +42,7 @@ class InputSpeechVC: UIViewController, UITextFieldDelegate {
         let menu4 = HSMenu(icon: nil, title: "Tessa (S Africa)")
         let menu5 = HSMenu(icon: nil, title: "Siri (US)")
         
-        menuArray = [menu1, menu2, menu3, menu4]
+        menuArray = [menu1, menu2, menu3, menu4, menu5]
     }
     
     func setupView() {
