@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import HSPopupMenu
 
 class InputSpeechVC: UIViewController, UITextFieldDelegate {
 
     let inputSpeechView = InputView()
+    
+    var menuArray: [HSMenu] = []
     
     
     //button
@@ -27,6 +30,17 @@ class InputSpeechVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        setupMenu()
+    }
+    
+    func setupMenu() {
+        let menu1 = HSMenu(icon: nil, title: "Karen (Australia)")
+        let menu2 = HSMenu(icon: nil, title: "Daniel (UK)")
+        let menu3 = HSMenu(icon: nil, title: "Moira (Ireland)")
+        let menu4 = HSMenu(icon: nil, title: "Tessa (S Africa)")
+        let menu5 = HSMenu(icon: nil, title: "Siri (US)")
+        
+        menuArray = [menu1, menu2, menu3, menu4]
     }
     
     func setupView() {
@@ -34,14 +48,26 @@ class InputSpeechVC: UIViewController, UITextFieldDelegate {
         self.navigationController?.navigationBar.layer.masksToBounds = false
         textfield.delegate = self
         
-        let rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(saveSpeech))
+        let rightBarButtonItem = UIBarButtonItem(title: "Set Voice", style: .plain, target: self, action: #selector(presentNameMenu))
+
         rightBarButtonItem.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
+
+        let leftBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(saveSpeech))
+        leftBarButtonItem.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        self.navigationItem.leftBarButtonItem = leftBarButtonItem
+        
         speakBttn.addTarget(self, action: #selector(speakText), for: UIControl.Event.touchUpInside)
         
     }
     
+    @objc func presentNameMenu() {
+        let popupMenu = HSPopupMenu(menuArray: menuArray, arrowPoint: CGPoint(x: UIScreen.main.bounds.width-35, y: 60))
+        popupMenu.popUp()
+        popupMenu.delegate = self
+    }
     @objc func saveSpeech() {
         if let sentence = textfield.text {
             savedStrings.append(sentence)
@@ -64,8 +90,15 @@ class InputSpeechVC: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
+        speakText()
         return false
     }
 
+}
+
+extension InputSpeechVC: HSPopupMenuDelegate {
+    func popupMenu(_ popupMenu: HSPopupMenu, didSelectAt index: Int) {
+        print("selected index is: " + "\(index)")
+    }
 }
 
