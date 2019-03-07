@@ -44,8 +44,8 @@ public class InputView: UIView {
         speakButton.snp.makeConstraints{ make in
             make.centerX.equalToSuperview()
             make.top.equalTo(textTF.snp_bottom).offset(20)
-            make.width.equalToSuperview().multipliedBy(0.3)
-            make.height.equalToSuperview().multipliedBy(0.2)
+            make.width.equalToSuperview().multipliedBy(0.5)
+            make.height.equalToSuperview().multipliedBy(0.1)
                 
         }
     }

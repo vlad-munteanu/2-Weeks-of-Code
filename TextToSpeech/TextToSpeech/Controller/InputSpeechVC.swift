@@ -45,6 +45,7 @@ class InputSpeechVC: UIViewController {
         if let sentence = textfield.text {
             savedStrings.append(sentence)
         }
+        textfield.text = ""
         print(savedStrings)
     }
     
