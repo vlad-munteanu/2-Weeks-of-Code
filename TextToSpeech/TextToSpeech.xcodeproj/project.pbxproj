@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B437FF06B929ABA7B0CA948A /* Pods_TextToSpeech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905B33E16EA06E0210D2B05A /* Pods_TextToSpeech.framework */; };
+		B8313B482232BD1200BEAB89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8313B462232BD1200BEAB89 /* LaunchScreen.storyboard */; };
 		B84FB07D222F8E6300A328A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FB07C222F8E6300A328A0 /* AppDelegate.swift */; };
 		B84FB07F222F8E6300A328A0 /* InputSpeechVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FB07E222F8E6300A328A0 /* InputSpeechVC.swift */; };
 		B84FB084222F8E6400A328A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84FB083222F8E6400A328A0 /* Assets.xcassets */; };
-		B84FB087222F8E6400A328A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84FB085222F8E6400A328A0 /* LaunchScreen.storyboard */; };
 		B84FB093222F8F3A00A328A0 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FB092222F8F3A00A328A0 /* PageVC.swift */; };
 		B84FB095222F8F5D00A328A0 /* SavedSpeechVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FB094222F8F5D00A328A0 /* SavedSpeechVC.swift */; };
 		B84FB097222F8FB300A328A0 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84FB096222F8FB300A328A0 /* InputView.swift */; };
@@ -22,11 +22,11 @@
 /* Begin PBXFileReference section */
 		029DA8A22AB595430E4CF600 /* Pods-TextToSpeech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextToSpeech.release.xcconfig"; path = "Target Support Files/Pods-TextToSpeech/Pods-TextToSpeech.release.xcconfig"; sourceTree = "<group>"; };
 		905B33E16EA06E0210D2B05A /* Pods_TextToSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextToSpeech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8313B472232BD1200BEAB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../BACCalc/BACCalc/Supporting Files/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		B84FB079222F8E6300A328A0 /* TextToSpeech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextToSpeech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84FB07C222F8E6300A328A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B84FB07E222F8E6300A328A0 /* InputSpeechVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSpeechVC.swift; sourceTree = "<group>"; };
 		B84FB083222F8E6400A328A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B84FB086222F8E6400A328A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B84FB088222F8E6400A328A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B84FB092222F8F3A00A328A0 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		B84FB094222F8F5D00A328A0 /* SavedSpeechVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSpeechVC.swift; sourceTree = "<group>"; };
@@ -124,9 +124,9 @@
 		B84FB091222F8ECC00A328A0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B8313B462232BD1200BEAB89 /* LaunchScreen.storyboard */,
 				B84FB07C222F8E6300A328A0 /* AppDelegate.swift */,
 				B84FB083222F8E6400A328A0 /* Assets.xcassets */,
-				B84FB085222F8E6400A328A0 /* LaunchScreen.storyboard */,
 				B84FB09822302AC100A328A0 /* Constants.swift */,
 			);
 			path = "Supporting Files";
@@ -192,8 +192,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B84FB087222F8E6400A328A0 /* LaunchScreen.storyboard in Resources */,
 				B84FB084222F8E6400A328A0 /* Assets.xcassets in Resources */,
+				B8313B482232BD1200BEAB89 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +268,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B84FB085222F8E6400A328A0 /* LaunchScreen.storyboard */ = {
+		B8313B462232BD1200BEAB89 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B84FB086222F8E6400A328A0 /* Base */,
+				B8313B472232BD1200BEAB89 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

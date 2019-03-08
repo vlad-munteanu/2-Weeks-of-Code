@@ -13,11 +13,11 @@
 		B8313AF62231A30900BEAB89 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8313AF52231A30900BEAB89 /* GameScene.swift */; };
 		B8313AF82231A30900BEAB89 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8313AF72231A30900BEAB89 /* GameViewController.swift */; };
 		B8313AFD2231A30A00BEAB89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8313AFC2231A30A00BEAB89 /* Assets.xcassets */; };
-		B8313B002231A30A00BEAB89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8313AFE2231A30A00BEAB89 /* LaunchScreen.storyboard */; };
 		B8313B082232091D00BEAB89 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B8313B072232091D00BEAB89 /* Actions.sks */; };
 		B8313B0A2232154C00BEAB89 /* boolChris.png in Resources */ = {isa = PBXBuildFile; fileRef = B8313B092232154C00BEAB89 /* boolChris.png */; };
 		B8313B0C2232167B00BEAB89 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8313B0B2232167B00BEAB89 /* MainView.swift */; };
 		B8313B1122321D0100BEAB89 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8313B1022321D0100BEAB89 /* Constants.swift */; };
+		B8313B362232BB1200BEAB89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8313B342232BB1200BEAB89 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +29,12 @@
 		B8313AF52231A30900BEAB89 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		B8313AF72231A30900BEAB89 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		B8313AFC2231A30A00BEAB89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B8313AFF2231A30A00BEAB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8313B012231A30A00BEAB89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8313B072232091D00BEAB89 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		B8313B092232154C00BEAB89 /* boolChris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boolChris.png; sourceTree = "<group>"; };
 		B8313B0B2232167B00BEAB89 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B8313B1022321D0100BEAB89 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B8313B352232BB1200BEAB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../BACCalc/BACCalc/Supporting Files/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		D21394039A7A2B65702A755B /* Pods-DengsterV2.1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DengsterV2.1.debug.xcconfig"; path = "Target Support Files/Pods-DengsterV2.1/Pods-DengsterV2.1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,8 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				B8313AEF2231A30900BEAB89 /* AppDelegate.swift */,
-				B8313AFE2231A30A00BEAB89 /* LaunchScreen.storyboard */,
 				B8313B092232154C00BEAB89 /* boolChris.png */,
+				B8313B342232BB1200BEAB89 /* LaunchScreen.storyboard */,
 				B8313AF12231A30900BEAB89 /* GameScene.sks */,
 				B8313B072232091D00BEAB89 /* Actions.sks */,
 				B8313AFC2231A30A00BEAB89 /* Assets.xcassets */,
@@ -190,7 +190,7 @@
 				B8313AF22231A30900BEAB89 /* GameScene.sks in Resources */,
 				B8313AFD2231A30A00BEAB89 /* Assets.xcassets in Resources */,
 				B8313B0A2232154C00BEAB89 /* boolChris.png in Resources */,
-				B8313B002231A30A00BEAB89 /* LaunchScreen.storyboard in Resources */,
+				B8313B362232BB1200BEAB89 /* LaunchScreen.storyboard in Resources */,
 				B8313B082232091D00BEAB89 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,10 +260,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B8313AFE2231A30A00BEAB89 /* LaunchScreen.storyboard */ = {
+		B8313B342232BB1200BEAB89 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B8313AFF2231A30A00BEAB89 /* Base */,
+				B8313B352232BB1200BEAB89 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

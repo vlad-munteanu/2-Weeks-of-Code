@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		280B56EB71CF3F9B62B30171 /* Pods_PomodoroTechnique.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D30BB5DCFCD5E103D8F50F /* Pods_PomodoroTechnique.framework */; };
+		B8313B392232BB7800BEAB89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8313B372232BB7800BEAB89 /* LaunchScreen.storyboard */; };
 		B8DC986A222CE923008DA5EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC9869222CE923008DA5EB /* AppDelegate.swift */; };
 		B8DC986C222CE923008DA5EB /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC986B222CE923008DA5EB /* MainVC.swift */; };
 		B8DC9871222CE924008DA5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DC9870222CE924008DA5EB /* Assets.xcassets */; };
-		B8DC9874222CE924008DA5EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DC9872222CE924008DA5EB /* LaunchScreen.storyboard */; };
 		B8DC9880222CEA6E008DA5EB /* MainTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC987F222CEA6E008DA5EB /* MainTimerView.swift */; };
 		B8DC9882222CFC48008DA5EB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC9881222CFC48008DA5EB /* Constants.swift */; };
 		B8DC9884222CFF17008DA5EB /* StudySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC9883222CFF17008DA5EB /* StudySession.swift */; };
@@ -23,11 +23,11 @@
 /* Begin PBXFileReference section */
 		40D30BB5DCFCD5E103D8F50F /* Pods_PomodoroTechnique.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PomodoroTechnique.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		510757EDD60FB3BF49236591 /* Pods-PomodoroTechnique.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomodoroTechnique.release.xcconfig"; path = "Target Support Files/Pods-PomodoroTechnique/Pods-PomodoroTechnique.release.xcconfig"; sourceTree = "<group>"; };
+		B8313B382232BB7800BEAB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../BACCalc/BACCalc/Supporting Files/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		B8DC9866222CE923008DA5EB /* PomodoroTechnique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroTechnique.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DC9869222CE923008DA5EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8DC986B222CE923008DA5EB /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B8DC9870222CE924008DA5EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B8DC9873222CE924008DA5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8DC9875222CE924008DA5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8DC987F222CEA6E008DA5EB /* MainTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTimerView.swift; sourceTree = "<group>"; };
 		B8DC9881222CFC48008DA5EB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				B8DC9869222CE923008DA5EB /* AppDelegate.swift */,
-				B8DC9872222CE924008DA5EB /* LaunchScreen.storyboard */,
+				B8313B372232BB7800BEAB89 /* LaunchScreen.storyboard */,
 				B8DC9870222CE924008DA5EB /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
@@ -213,8 +213,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8DC9874222CE924008DA5EB /* LaunchScreen.storyboard in Resources */,
 				B8DC9871222CE924008DA5EB /* Assets.xcassets in Resources */,
+				B8313B392232BB7800BEAB89 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,10 +288,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B8DC9872222CE924008DA5EB /* LaunchScreen.storyboard */ = {
+		B8313B372232BB7800BEAB89 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B8DC9873222CE924008DA5EB /* Base */,
+				B8313B382232BB7800BEAB89 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

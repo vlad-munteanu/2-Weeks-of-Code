@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7865688FDAB387D877E1394F /* Pods_RandomColorGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92448E565FD35770F612E27E /* Pods_RandomColorGenerator.framework */; };
+		B8313B3F2232BCB200BEAB89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8313B3D2232BCB200BEAB89 /* LaunchScreen.storyboard */; };
 		B8BBECD22228FCBC0017FFB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECD12228FCBC0017FFB9 /* AppDelegate.swift */; };
 		B8BBECD42228FCBC0017FFB9 /* ColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECD32228FCBC0017FFB9 /* ColorVC.swift */; };
 		B8BBECD92228FCBD0017FFB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BBECD82228FCBD0017FFB9 /* Assets.xcassets */; };
-		B8BBECDC2228FCBD0017FFB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8BBECDA2228FCBD0017FFB9 /* LaunchScreen.storyboard */; };
 		B8BBECE42229037F0017FFB9 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECE32229037F0017FFB9 /* ColorView.swift */; };
 		B8BBECEB2229195F0017FFB9 /* SavedColorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECEA2229195F0017FFB9 /* SavedColorsVC.swift */; };
 		B8BBECED222919C10017FFB9 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECEC222919C10017FFB9 /* PageVC.swift */; };
@@ -22,11 +22,11 @@
 		88435EDB2AB470FCE7991768 /* Pods-RandomColorGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorGenerator.debug.xcconfig"; path = "Target Support Files/Pods-RandomColorGenerator/Pods-RandomColorGenerator.debug.xcconfig"; sourceTree = "<group>"; };
 		8D64021CDFF07521C26E9B92 /* Pods-RandomColorGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColorGenerator.release.xcconfig"; path = "Target Support Files/Pods-RandomColorGenerator/Pods-RandomColorGenerator.release.xcconfig"; sourceTree = "<group>"; };
 		92448E565FD35770F612E27E /* Pods_RandomColorGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomColorGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8313B3E2232BCB200BEAB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../BACCalc/BACCalc/Supporting Files/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		B8BBECCE2228FCBC0017FFB9 /* RandomColorGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColorGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8BBECD12228FCBC0017FFB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8BBECD32228FCBC0017FFB9 /* ColorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorVC.swift; sourceTree = "<group>"; };
 		B8BBECD82228FCBD0017FFB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B8BBECDB2228FCBD0017FFB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8BBECDD2228FCBD0017FFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8BBECE32229037F0017FFB9 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		B8BBECEA2229195F0017FFB9 /* SavedColorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedColorsVC.swift; sourceTree = "<group>"; };
@@ -106,9 +106,9 @@
 		B8BBECE9222906240017FFB9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B8313B3D2232BCB200BEAB89 /* LaunchScreen.storyboard */,
 				B8BBECD12228FCBC0017FFB9 /* AppDelegate.swift */,
 				B8BBECD82228FCBD0017FFB9 /* Assets.xcassets */,
-				B8BBECDA2228FCBD0017FFB9 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -189,8 +189,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8BBECDC2228FCBD0017FFB9 /* LaunchScreen.storyboard in Resources */,
 				B8BBECD92228FCBD0017FFB9 /* Assets.xcassets in Resources */,
+				B8313B3F2232BCB200BEAB89 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,10 +260,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B8BBECDA2228FCBD0017FFB9 /* LaunchScreen.storyboard */ = {
+		B8313B3D2232BCB200BEAB89 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B8BBECDB2228FCBD0017FFB9 /* Base */,
+				B8313B3E2232BCB200BEAB89 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
