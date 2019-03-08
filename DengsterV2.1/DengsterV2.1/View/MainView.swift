@@ -119,8 +119,5 @@ public class MainView: SKView {
         fadeLbl.textAlignment = .left
         fadeLbl.translatesAutoresizingMaskIntoConstraints = false
         return fadeLbl
-    }()
-    
-    
-    
+    }() 
 }
