@@ -12,7 +12,7 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 
 ## Lines of Code Written So Far This Month: 
 ```
-2,476
+2,770
 ```
 
 ## Day 1: Random Color Generator 
@@ -46,7 +46,12 @@ An app that converts text to speech. Allows users to choose different voices and
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day6.gif)
 
 ## Day 7: The Dengster
-A spritekit based app that allows users to draw on the screen with an uploaded photo of a given person's face. App is named after and was originally inspired by a close friend in my IB Computer Science class. 
+A spritekit based app that allows users to draw on the screen with an uploaded photo of my friend's face. App is named after and was originally inspired by a close friend in my IB Computer Science class. 
+
+![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day7.gif) 
+
+## Day 8: BAC Calculator 
+Allows user to calculate approximate blood alcohol concentration (BAC). 
 
 ## App Ideas TO_DO 
 - [ ] Raspberry PI App 
