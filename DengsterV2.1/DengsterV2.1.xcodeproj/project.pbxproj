@@ -17,6 +17,7 @@
 		B8313B082232091D00BEAB89 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B8313B072232091D00BEAB89 /* Actions.sks */; };
 		B8313B0A2232154C00BEAB89 /* boolChris.png in Resources */ = {isa = PBXBuildFile; fileRef = B8313B092232154C00BEAB89 /* boolChris.png */; };
 		B8313B0C2232167B00BEAB89 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8313B0B2232167B00BEAB89 /* MainView.swift */; };
+		B8313B1122321D0100BEAB89 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8313B1022321D0100BEAB89 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		B8313B072232091D00BEAB89 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		B8313B092232154C00BEAB89 /* boolChris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boolChris.png; sourceTree = "<group>"; };
 		B8313B0B2232167B00BEAB89 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B8313B1022321D0100BEAB89 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D21394039A7A2B65702A755B /* Pods-DengsterV2.1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DengsterV2.1.debug.xcconfig"; path = "Target Support Files/Pods-DengsterV2.1/Pods-DengsterV2.1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 				B8313B0E2232190B00BEAB89 /* Controller */,
 				B8313B0D2232190900BEAB89 /* Extra Files */,
 				B8313B012231A30A00BEAB89 /* Info.plist */,
+				B8313B1022321D0100BEAB89 /* Constants.swift */,
 			);
 			path = DengsterV2.1;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8313B1122321D0100BEAB89 /* Constants.swift in Sources */,
 				B8313AF62231A30900BEAB89 /* GameScene.swift in Sources */,
 				B8313B0C2232167B00BEAB89 /* MainView.swift in Sources */,
 				B8313AF82231A30900BEAB89 /* GameViewController.swift in Sources */,

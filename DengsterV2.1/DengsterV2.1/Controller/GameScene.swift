@@ -17,7 +17,7 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         
-        self.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        self.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
         
         // Create shape node to use during mouse interaction
         let w = (self.size.width + self.size.height) * 0.08
@@ -25,9 +25,9 @@ class GameScene: SKScene {
         
         if let spinnyNode = self.spinnyNode {
             
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
+            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: spinDuration)))
             spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 5.0),
-                                              SKAction.fadeOut(withDuration: 5.0),
+                                              SKAction.fadeOut(withDuration: fadeOutTime),
                                               SKAction.removeFromParent()]))
         }
     }
