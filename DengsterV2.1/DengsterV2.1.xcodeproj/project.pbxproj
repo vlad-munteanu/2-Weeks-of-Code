@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BB64EDD3FA32474F80C8DC6 /* Pods_DengsterV2_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3455BA3BAC7661B3757F708D /* Pods_DengsterV2_1.framework */; };
 		B8313AF02231A30900BEAB89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8313AEF2231A30900BEAB89 /* AppDelegate.swift */; };
 		B8313AF22231A30900BEAB89 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B8313AF12231A30900BEAB89 /* GameScene.sks */; };
 		B8313AF62231A30900BEAB89 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8313AF52231A30900BEAB89 /* GameScene.swift */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3455BA3BAC7661B3757F708D /* Pods_DengsterV2_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DengsterV2_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		465B2878452D73D2BD0C5180 /* Pods-DengsterV2.1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DengsterV2.1.release.xcconfig"; path = "Target Support Files/Pods-DengsterV2.1/Pods-DengsterV2.1.release.xcconfig"; sourceTree = "<group>"; };
 		B8313AEC2231A30900BEAB89 /* DengsterV2.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DengsterV2.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8313AEF2231A30900BEAB89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8313AF12231A30900BEAB89 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		B8313B072232091D00BEAB89 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		B8313B092232154C00BEAB89 /* boolChris.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boolChris.png; sourceTree = "<group>"; };
 		B8313B0B2232167B00BEAB89 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D21394039A7A2B65702A755B /* Pods-DengsterV2.1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DengsterV2.1.debug.xcconfig"; path = "Target Support Files/Pods-DengsterV2.1/Pods-DengsterV2.1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BB64EDD3FA32474F80C8DC6 /* Pods_DengsterV2_1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43C244BD682775AFDCB63F67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3455BA3BAC7661B3757F708D /* Pods_DengsterV2_1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B8313AE32231A30900BEAB89 = {
 			isa = PBXGroup;
 			children = (
 				B8313AEE2231A30900BEAB89 /* DengsterV2.1 */,
 				B8313AED2231A30900BEAB89 /* Products */,
+				C3907637AF2F329C9DEC9817 /* Pods */,
+				43C244BD682775AFDCB63F67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,18 +77,51 @@
 		B8313AEE2231A30900BEAB89 /* DengsterV2.1 */ = {
 			isa = PBXGroup;
 			children = (
-				B8313AEF2231A30900BEAB89 /* AppDelegate.swift */,
-				B8313AF12231A30900BEAB89 /* GameScene.sks */,
-				B8313AF52231A30900BEAB89 /* GameScene.swift */,
-				B8313B072232091D00BEAB89 /* Actions.sks */,
-				B8313B092232154C00BEAB89 /* boolChris.png */,
-				B8313AF72231A30900BEAB89 /* GameViewController.swift */,
-				B8313AFC2231A30A00BEAB89 /* Assets.xcassets */,
-				B8313AFE2231A30A00BEAB89 /* LaunchScreen.storyboard */,
+				B8313B0F2232190D00BEAB89 /* View */,
+				B8313B0E2232190B00BEAB89 /* Controller */,
+				B8313B0D2232190900BEAB89 /* Extra Files */,
 				B8313B012231A30A00BEAB89 /* Info.plist */,
-				B8313B0B2232167B00BEAB89 /* MainView.swift */,
 			);
 			path = DengsterV2.1;
+			sourceTree = "<group>";
+		};
+		B8313B0D2232190900BEAB89 /* Extra Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8313AEF2231A30900BEAB89 /* AppDelegate.swift */,
+				B8313AFE2231A30A00BEAB89 /* LaunchScreen.storyboard */,
+				B8313B092232154C00BEAB89 /* boolChris.png */,
+				B8313AF12231A30900BEAB89 /* GameScene.sks */,
+				B8313B072232091D00BEAB89 /* Actions.sks */,
+				B8313AFC2231A30A00BEAB89 /* Assets.xcassets */,
+			);
+			path = "Extra Files";
+			sourceTree = "<group>";
+		};
+		B8313B0E2232190B00BEAB89 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B8313AF52231A30900BEAB89 /* GameScene.swift */,
+				B8313AF72231A30900BEAB89 /* GameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B8313B0F2232190D00BEAB89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8313B0B2232167B00BEAB89 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3907637AF2F329C9DEC9817 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D21394039A7A2B65702A755B /* Pods-DengsterV2.1.debug.xcconfig */,
+				465B2878452D73D2BD0C5180 /* Pods-DengsterV2.1.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8313B042231A30A00BEAB89 /* Build configuration list for PBXNativeTarget "DengsterV2.1" */;
 			buildPhases = (
+				2C17D20877D8540B771C5ADA /* [CP] Check Pods Manifest.lock */,
 				B8313AE82231A30900BEAB89 /* Sources */,
 				B8313AE92231A30900BEAB89 /* Frameworks */,
 				B8313AEA2231A30900BEAB89 /* Resources */,
+				FBD60F363E1E69E603974876 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +193,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C17D20877D8540B771C5ADA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DengsterV2.1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBD60F363E1E69E603974876 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DengsterV2.1/Pods-DengsterV2.1-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DengsterV2.1/Pods-DengsterV2.1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B8313AE82231A30900BEAB89 /* Sources */ = {
@@ -288,6 +385,7 @@
 		};
 		B8313B052231A30A00BEAB89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D21394039A7A2B65702A755B /* Pods-DengsterV2.1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +404,7 @@
 		};
 		B8313B062231A30A00BEAB89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465B2878452D73D2BD0C5180 /* Pods-DengsterV2.1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
