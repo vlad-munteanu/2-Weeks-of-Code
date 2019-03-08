@@ -26,7 +26,7 @@ class GameScene: SKScene {
         if let spinnyNode = self.spinnyNode {
             
             spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: spinDuration)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 5.0),
+            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: fadeOutTime),
                                               SKAction.fadeOut(withDuration: fadeOutTime),
                                               SKAction.removeFromParent()]))
         }
