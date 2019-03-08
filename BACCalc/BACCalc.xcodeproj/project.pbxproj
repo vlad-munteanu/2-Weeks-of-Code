@@ -12,6 +12,7 @@
 		B8313B212232A46F00BEAB89 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8313B202232A46F00BEAB89 /* MainVC.swift */; };
 		B8313B262232A47000BEAB89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8313B252232A47000BEAB89 /* Assets.xcassets */; };
 		B8313B292232A47000BEAB89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8313B272232A47000BEAB89 /* LaunchScreen.storyboard */; };
+		B8313B4A2232ECBD00BEAB89 /* BACCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8313B492232ECBD00BEAB89 /* BACCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		B8313B252232A47000BEAB89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8313B282232A47000BEAB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8313B2A2232A47000BEAB89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8313B492232ECBD00BEAB89 /* BACCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BACCalculator.swift; sourceTree = "<group>"; };
 		CA689352CEA19E6C616F84C0 /* Pods_BACCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BACCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -44,7 +46,6 @@
 				34C26D040109D85F74A35759 /* Pods-BACCalc.debug.xcconfig */,
 				9CFDCFD77D9520AC566AC526 /* Pods-BACCalc.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -89,6 +90,7 @@
 		B8313B312232A4B800BEAB89 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B8313B492232ECBD00BEAB89 /* BACCalculator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,12 +219,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BACCalc/Pods-BACCalc-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8313B4A2232ECBD00BEAB89 /* BACCalculator.swift in Sources */,
 				B8313B212232A46F00BEAB89 /* MainVC.swift in Sources */,
 				B8313B1F2232A46F00BEAB89 /* AppDelegate.swift in Sources */,
 			);
