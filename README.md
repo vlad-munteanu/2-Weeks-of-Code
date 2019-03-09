@@ -51,7 +51,7 @@ A spritekit based app that allows users to draw on the screen with an uploaded p
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day7.gif) 
 
 ## Day 8: BAC Calculator 
-Allows user to calculate approximate blood alcohol concentration (BAC) using the Widmark formula. Used eureka to create form view. 
+Allows user to calculate approximate blood alcohol concentration (BAC) using the Widmark formula. Used Eureka to create form view. Also created a new sick launchscreen for my future apps.
 
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day8.gif)
 
