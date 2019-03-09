@@ -36,9 +36,9 @@ class MainVC: UIViewController {
     
     func setupImage() {
         for i in 1...11 {
-            var strImageName : String = "coin\(i)"
-            var image = UIImage(named:strImageName)
-            imgListArray.add(image)
+            let strImageName : String = "coin\(i)"
+            let image = UIImage(named:strImageName)
+            imgListArray.add(image as Any)
         }
     }
     
@@ -52,23 +52,25 @@ class MainVC: UIViewController {
     
     func flipImage(headsOrTails: Int) {
         
-        flipButton.imageView!.animationImages = imgListArray as! [UIImage]
+        flipButton.imageView!.animationImages = (imgListArray as! [UIImage])
         flipButton.imageView!.animationDuration = 2.0
         flipButton.imageView!.startAnimating()
+        flipLabel.text = ""
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {  self.flipButton.imageView!.stopAnimating()
+            if headsOrTails == 1 {
+                self.coinString = "Heads"
+                self.flipButton.setImage(UIImage(named: "coin10"), for: .normal)
+                self.flipLabel.text = "Heads"
+            } else {
+                self.coinString = "Tails"
+                self.flipButton.imageView!.stopAnimating()
+                self.flipButton.setImage(UIImage(named: "coin5"), for: .normal)
+                self.flipLabel.text = "Tails"
+            }
+            
         }
         
-        if headsOrTails == 1 {
-            coinString = "Heads"
-            flipButton.setImage(UIImage(named: "coin10"), for: .normal)
-            flipLabel.text = "Heads"
-        } else {
-            coinString = "Tails"
-            flipButton.imageView!.stopAnimating()
-            flipButton.setImage(UIImage(named: "coin5"), for: .normal)
-            flipLabel.text = "Tails"
-        }
         
         
     }
