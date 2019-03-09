@@ -18,7 +18,14 @@ class MainVC: FormViewController {
     }
     
     func setUpTable() {
-        form +++ Section("Drinks")
+        
+        form +++ Section("Gender")
+            <<< SwitchRow(){ row in
+                //beers
+                row.title = "Male"
+               
+            }
+            +++ Section("Drinks")
             <<< PhoneRow(){ row in
                 //beers
                 row.title = "Beers (12 fl oz)"
@@ -33,13 +40,12 @@ class MainVC: FormViewController {
                 $0.placeholder = ""
             }
             +++ Section("Other Variables")
-            <<< DateRow(){
+            <<< PhoneRow(){
                 $0.title = "Over How Many Hours"
-                $0.value = Date(timeIntervalSinceReferenceDate: 0)
             }
-            <<< TextRow(){
-                $0.title = "Your Weight"
-                $0.placeholder = "Enter text here"
+            <<< PhoneRow(){
+                $0.title = "Your Weight (lbs)"
+                $0.placeholder = ""
         }
     }
 
