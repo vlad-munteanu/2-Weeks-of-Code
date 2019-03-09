@@ -45,7 +45,7 @@ public class MainView: UIView {
             make.height.equalToSuperview().multipliedBy(0.3)
             make.width.equalToSuperview().multipliedBy(0.9)
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().multipliedBy(1.4)
+            make.centerY.equalToSuperview().multipliedBy(1.6)
             
         }
     }
