@@ -12,7 +12,7 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 
 ## Lines of Code Written So Far This Month: 
 ```
-2,896
+3,052
 ```
 
 ## Day 1: Random Color Generator 
@@ -56,7 +56,9 @@ Allows user to calculate approximate blood alcohol concentration (BAC) using the
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day8.gif)
 
 ## Day 9: Coin Flip 
-An app that makes decisions for the user by the flip of the coin. Also has an Apple Watch companion app. 
+An app that makes decisions for the user by the flip of the coin. Has a cool flip animation. ~Also has an Apple Watch companion app.~ 
+
+![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day9.gif)
 
 ## App Ideas TO_DO 
 - [ ] Raspberry PI App 
