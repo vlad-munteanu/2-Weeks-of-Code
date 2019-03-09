@@ -63,34 +63,36 @@ class MainVC: FormViewController {
     
     func doWork() {
         let genderrow: SegmentedRow<String>? = form.rowBy(tag: "Gender")
-        let gender = genderrow!.value
+        let gender = genderrow!.value!
          print("gender \(gender)")
         
         let beerrow: PhoneRow? = form.rowBy(tag: "Beers")
-        let beer = beerrow!.value
+        let beer = Int(beerrow!.value!)
          print("beer \(beer)")
         
         let winerow: PhoneRow? = form.rowBy(tag: "Wine")
-        let wine = winerow!.value
+        let wine = Int(winerow!.value!)
          print("wine \(wine)")
 
         let liqourrow: PhoneRow? = form.rowBy(tag: "Liquour")
-        let liqour = liqourrow!.value
+        let liqour = Int(liqourrow!.value!)
          print("liqour \(liqour)")
 
         let hoursrow: PhoneRow? = form.rowBy(tag: "Hours")
-        let hours = hoursrow!.value
+        let hours = Int(hoursrow!.value!)
         print("hours \(hours)")
 
         let weightrow: PhoneRow? = form.rowBy(tag: "Weight")
-        let weight = weightrow!.value
+        let weight = Int(weightrow!.value!)
         print("weight \(weight)")
         
         
+        BAC = BACCalculator.calculate(beers: beer!, wine: wine!, shots: liqour!, hours: hours!, weight: weight!, gender: gender)
+        showAlert()
         
     }
     func showAlert() {
-        let alertController = UIAlertController(title: "OnCellSelection", message: "Button Row Action", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "BAC", message: String(BAC), preferredStyle: .alert)
         let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(defaultAction)
         present(alertController, animated: true)

@@ -11,7 +11,7 @@ import Foundation
 public class BACCalculator {
     
     //use double in order to ensure
-    func calculate(beers: Int, wine: Int, shots: Int, hours: Int, weight: Int, gender: Bool) -> Double {
+    class func calculate(beers: Int, wine: Int, shots: Int, hours: Int, weight: Int, gender: String) -> Double {
         var BAC: Double = 0
         
         return BAC
