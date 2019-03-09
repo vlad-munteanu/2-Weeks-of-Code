@@ -12,9 +12,11 @@
 		B81F8F4D22338A83008CA309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F4C22338A83008CA309 /* Assets.xcassets */; };
 		B81F8F5D22338B0C008CA309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F5B22338B0C008CA309 /* LaunchScreen.storyboard */; };
 		B81F8F5F22338B6F008CA309 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8F5E22338B6F008CA309 /* MainView.swift */; };
+		E1B618BBAE756AA066838B8C /* Pods_FlipCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85B320BC6D330FBCA5ECC38 /* Pods_FlipCoin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58092A3F194A1FA0F056CB24 /* Pods-FlipCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipCoin.debug.xcconfig"; path = "Target Support Files/Pods-FlipCoin/Pods-FlipCoin.debug.xcconfig"; sourceTree = "<group>"; };
 		B81F8F4222338A82008CA309 /* FlipCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81F8F4522338A82008CA309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B81F8F4722338A82008CA309 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		B81F8F5122338A83008CA309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B81F8F5C22338B0C008CA309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../BACCalc/BACCalc/Supporting Files/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		B81F8F5E22338B6F008CA309 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C707EE122DA457B4B710D229 /* Pods-FlipCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipCoin.release.xcconfig"; path = "Target Support Files/Pods-FlipCoin/Pods-FlipCoin.release.xcconfig"; sourceTree = "<group>"; };
+		D85B320BC6D330FBCA5ECC38 /* Pods_FlipCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlipCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B618BBAE756AA066838B8C /* Pods_FlipCoin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D9552ECB4FD635D5BAB8CEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D85B320BC6D330FBCA5ECC38 /* Pods_FlipCoin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B81F8F3922338A82008CA309 = {
 			isa = PBXGroup;
 			children = (
 				B81F8F4422338A82008CA309 /* FlipCoin */,
 				B81F8F4322338A82008CA309 /* Products */,
+				F82267FF36593A61BB0E3498 /* Pods */,
+				6D9552ECB4FD635D5BAB8CEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +111,16 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F82267FF36593A61BB0E3498 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58092A3F194A1FA0F056CB24 /* Pods-FlipCoin.debug.xcconfig */,
+				C707EE122DA457B4B710D229 /* Pods-FlipCoin.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B81F8F5422338A83008CA309 /* Build configuration list for PBXNativeTarget "FlipCoin" */;
 			buildPhases = (
+				CD647E50921B6809E174ADD5 /* [CP] Check Pods Manifest.lock */,
 				B81F8F3E22338A82008CA309 /* Sources */,
 				B81F8F3F22338A82008CA309 /* Frameworks */,
 				B81F8F4022338A82008CA309 /* Resources */,
+				AFCD5F41FFB2E10048E6E07E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +187,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFCD5F41FFB2E10048E6E07E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlipCoin/Pods-FlipCoin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlipCoin/Pods-FlipCoin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD647E50921B6809E174ADD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlipCoin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B81F8F3E22338A82008CA309 /* Sources */ = {
@@ -304,6 +378,7 @@
 		};
 		B81F8F5522338A83008CA309 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58092A3F194A1FA0F056CB24 /* Pods-FlipCoin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +397,7 @@
 		};
 		B81F8F5622338A83008CA309 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C707EE122DA457B4B710D229 /* Pods-FlipCoin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
