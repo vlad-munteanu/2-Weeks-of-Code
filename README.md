@@ -12,7 +12,7 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 
 ## Lines of Code Written So Far This Month: 
 ```
-2,770
+2,896
 ```
 
 ## Day 1: Random Color Generator 
