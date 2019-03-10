@@ -60,6 +60,9 @@ An app that makes decisions for the user by the flip of the coin. Has a cool fli
 
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day9.gif)
 
+## Day 10: Apple Watch SSH
+An app that lets users send an SSH command from their Apple Watch with the press of a button.
+
 ## App Ideas TO_DO 
 - [ ] Raspberry PI App 
 - [ ] Snow day chance calculator 
