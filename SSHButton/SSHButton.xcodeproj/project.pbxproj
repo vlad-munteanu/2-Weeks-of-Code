@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B81F8F6F22355C52008CA309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8F6E22355C52008CA309 /* AppDelegate.swift */; };
+		B81F8F7122355C52008CA309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8F7022355C52008CA309 /* ViewController.swift */; };
+		B81F8F7422355C52008CA309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F7222355C52008CA309 /* Main.storyboard */; };
+		B81F8F7622355C53008CA309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F7522355C53008CA309 /* Assets.xcassets */; };
+		B81F8F7922355C53008CA309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F7722355C53008CA309 /* LaunchScreen.storyboard */; };
+		B81F8F7E22355C53008CA309 /* SSHButton WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B81F8F7D22355C53008CA309 /* SSHButton WatchKit App.app */; };
+		B81F8F8422355C53008CA309 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F8222355C53008CA309 /* Interface.storyboard */; };
+		B81F8F8622355C54008CA309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F8522355C54008CA309 /* Assets.xcassets */; };
+		B81F8F8D22355C54008CA309 /* SSHButton WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B81F8F8C22355C54008CA309 /* SSHButton WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B81F8F9222355C54008CA309 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8F9122355C54008CA309 /* InterfaceController.swift */; };
+		B81F8F9422355C54008CA309 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8F9322355C54008CA309 /* ExtensionDelegate.swift */; };
+		B81F8F9622355C54008CA309 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8F9522355C54008CA309 /* NotificationController.swift */; };
+		B81F8F9822355C54008CA309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F9722355C54008CA309 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B81F8F7F22355C53008CA309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B81F8F6322355C52008CA309 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B81F8F7C22355C53008CA309;
+			remoteInfo = "SSHButton WatchKit App";
+		};
+		B81F8F8E22355C54008CA309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B81F8F6322355C52008CA309 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B81F8F8B22355C54008CA309;
+			remoteInfo = "SSHButton WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B81F8FA022355C55008CA309 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B81F8F8D22355C54008CA309 /* SSHButton WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81F8FA422355C55008CA309 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B81F8F7E22355C53008CA309 /* SSHButton WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B81F8F6B22355C52008CA309 /* SSHButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSHButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81F8F6E22355C52008CA309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B81F8F7022355C52008CA309 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B81F8F7322355C52008CA309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B81F8F7522355C53008CA309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B81F8F7822355C53008CA309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B81F8F7A22355C53008CA309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B81F8F7D22355C53008CA309 /* SSHButton WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSHButton WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81F8F8322355C53008CA309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B81F8F8522355C54008CA309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B81F8F8722355C54008CA309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B81F8F8C22355C54008CA309 /* SSHButton WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SSHButton WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81F8F9122355C54008CA309 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B81F8F9322355C54008CA309 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B81F8F9522355C54008CA309 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B81F8F9722355C54008CA309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B81F8F9922355C55008CA309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B81F8F9A22355C55008CA309 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B81F8F6822355C52008CA309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81F8F8922355C54008CA309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B81F8F6222355C52008CA309 = {
+			isa = PBXGroup;
+			children = (
+				B81F8F6D22355C52008CA309 /* SSHButton */,
+				B81F8F8122355C53008CA309 /* SSHButton WatchKit App */,
+				B81F8F9022355C54008CA309 /* SSHButton WatchKit Extension */,
+				B81F8F6C22355C52008CA309 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B81F8F6C22355C52008CA309 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B81F8F6B22355C52008CA309 /* SSHButton.app */,
+				B81F8F7D22355C53008CA309 /* SSHButton WatchKit App.app */,
+				B81F8F8C22355C54008CA309 /* SSHButton WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B81F8F6D22355C52008CA309 /* SSHButton */ = {
+			isa = PBXGroup;
+			children = (
+				B81F8F6E22355C52008CA309 /* AppDelegate.swift */,
+				B81F8F7022355C52008CA309 /* ViewController.swift */,
+				B81F8F7222355C52008CA309 /* Main.storyboard */,
+				B81F8F7522355C53008CA309 /* Assets.xcassets */,
+				B81F8F7722355C53008CA309 /* LaunchScreen.storyboard */,
+				B81F8F7A22355C53008CA309 /* Info.plist */,
+			);
+			path = SSHButton;
+			sourceTree = "<group>";
+		};
+		B81F8F8122355C53008CA309 /* SSHButton WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B81F8F8222355C53008CA309 /* Interface.storyboard */,
+				B81F8F8522355C54008CA309 /* Assets.xcassets */,
+				B81F8F8722355C54008CA309 /* Info.plist */,
+			);
+			path = "SSHButton WatchKit App";
+			sourceTree = "<group>";
+		};
+		B81F8F9022355C54008CA309 /* SSHButton WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B81F8F9122355C54008CA309 /* InterfaceController.swift */,
+				B81F8F9322355C54008CA309 /* ExtensionDelegate.swift */,
+				B81F8F9522355C54008CA309 /* NotificationController.swift */,
+				B81F8F9722355C54008CA309 /* Assets.xcassets */,
+				B81F8F9922355C55008CA309 /* Info.plist */,
+				B81F8F9A22355C55008CA309 /* PushNotificationPayload.apns */,
+			);
+			path = "SSHButton WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B81F8F6A22355C52008CA309 /* SSHButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B81F8FA522355C55008CA309 /* Build configuration list for PBXNativeTarget "SSHButton" */;
+			buildPhases = (
+				B81F8F6722355C52008CA309 /* Sources */,
+				B81F8F6822355C52008CA309 /* Frameworks */,
+				B81F8F6922355C52008CA309 /* Resources */,
+				B81F8FA422355C55008CA309 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B81F8F8022355C53008CA309 /* PBXTargetDependency */,
+			);
+			name = SSHButton;
+			productName = SSHButton;
+			productReference = B81F8F6B22355C52008CA309 /* SSHButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B81F8F7C22355C53008CA309 /* SSHButton WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B81F8FA122355C55008CA309 /* Build configuration list for PBXNativeTarget "SSHButton WatchKit App" */;
+			buildPhases = (
+				B81F8F7B22355C53008CA309 /* Resources */,
+				B81F8FA022355C55008CA309 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B81F8F8F22355C54008CA309 /* PBXTargetDependency */,
+			);
+			name = "SSHButton WatchKit App";
+			productName = "SSHButton WatchKit App";
+			productReference = B81F8F7D22355C53008CA309 /* SSHButton WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B81F8F8B22355C54008CA309 /* SSHButton WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B81F8F9D22355C55008CA309 /* Build configuration list for PBXNativeTarget "SSHButton WatchKit Extension" */;
+			buildPhases = (
+				B81F8F8822355C54008CA309 /* Sources */,
+				B81F8F8922355C54008CA309 /* Frameworks */,
+				B81F8F8A22355C54008CA309 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SSHButton WatchKit Extension";
+			productName = "SSHButton WatchKit Extension";
+			productReference = B81F8F8C22355C54008CA309 /* SSHButton WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B81F8F6322355C52008CA309 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Vlad Munteanu";
+				TargetAttributes = {
+					B81F8F6A22355C52008CA309 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					B81F8F7C22355C53008CA309 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					B81F8F8B22355C54008CA309 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = B81F8F6622355C52008CA309 /* Build configuration list for PBXProject "SSHButton" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B81F8F6222355C52008CA309;
+			productRefGroup = B81F8F6C22355C52008CA309 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B81F8F6A22355C52008CA309 /* SSHButton */,
+				B81F8F7C22355C53008CA309 /* SSHButton WatchKit App */,
+				B81F8F8B22355C54008CA309 /* SSHButton WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B81F8F6922355C52008CA309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81F8F7922355C53008CA309 /* LaunchScreen.storyboard in Resources */,
+				B81F8F7622355C53008CA309 /* Assets.xcassets in Resources */,
+				B81F8F7422355C52008CA309 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81F8F7B22355C53008CA309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81F8F8622355C54008CA309 /* Assets.xcassets in Resources */,
+				B81F8F8422355C53008CA309 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81F8F8A22355C54008CA309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81F8F9822355C54008CA309 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B81F8F6722355C52008CA309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81F8F7122355C52008CA309 /* ViewController.swift in Sources */,
+				B81F8F6F22355C52008CA309 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81F8F8822355C54008CA309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81F8F9622355C54008CA309 /* NotificationController.swift in Sources */,
+				B81F8F9422355C54008CA309 /* ExtensionDelegate.swift in Sources */,
+				B81F8F9222355C54008CA309 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B81F8F8022355C53008CA309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B81F8F7C22355C53008CA309 /* SSHButton WatchKit App */;
+			targetProxy = B81F8F7F22355C53008CA309 /* PBXContainerItemProxy */;
+		};
+		B81F8F8F22355C54008CA309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B81F8F8B22355C54008CA309 /* SSHButton WatchKit Extension */;
+			targetProxy = B81F8F8E22355C54008CA309 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B81F8F7222355C52008CA309 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B81F8F7322355C52008CA309 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B81F8F7722355C53008CA309 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B81F8F7822355C53008CA309 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B81F8F8222355C53008CA309 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B81F8F8322355C53008CA309 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B81F8F9B22355C55008CA309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B81F8F9C22355C55008CA309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B81F8F9E22355C55008CA309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = "SSHButton WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.SSHButton.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		B81F8F9F22355C55008CA309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = "SSHButton WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.SSHButton.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		B81F8FA222355C55008CA309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				IBSC_MODULE = SSHButton_WatchKit_Extension;
+				INFOPLIST_FILE = "SSHButton WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.SSHButton.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		B81F8FA322355C55008CA309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				IBSC_MODULE = SSHButton_WatchKit_Extension;
+				INFOPLIST_FILE = "SSHButton WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.SSHButton.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		B81F8FA622355C55008CA309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = SSHButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.SSHButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B81F8FA722355C55008CA309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = SSHButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.SSHButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B81F8F6622355C52008CA309 /* Build configuration list for PBXProject "SSHButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81F8F9B22355C55008CA309 /* Debug */,
+				B81F8F9C22355C55008CA309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B81F8F9D22355C55008CA309 /* Build configuration list for PBXNativeTarget "SSHButton WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81F8F9E22355C55008CA309 /* Debug */,
+				B81F8F9F22355C55008CA309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B81F8FA122355C55008CA309 /* Build configuration list for PBXNativeTarget "SSHButton WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81F8FA222355C55008CA309 /* Debug */,
+				B81F8FA322355C55008CA309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B81F8FA522355C55008CA309 /* Build configuration list for PBXNativeTarget "SSHButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81F8FA622355C55008CA309 /* Debug */,
+				B81F8FA722355C55008CA309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B81F8F6322355C52008CA309 /* Project object */;
+}
