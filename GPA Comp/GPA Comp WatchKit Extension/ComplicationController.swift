@@ -34,11 +34,25 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         switch complication.family {
         case .modularLarge:
-            let template = CLKComplicationTemplateModularLargeTallBody()
-            template.headerTextProvider = CLKSimpleTextProvider(text: "Testing Title")
+            let template = CLKComplicationTemplateModularLargeColumns()
             
-            template.bodyTextProvider = CLKSimpleTextProvider(text: "Some random text, lets see how much text we can fit in here. ")
+            //GPA
+            template.row1Column1TextProvider = CLKSimpleTextProvider(text: "GPA")
+            template.row1Column2TextProvider = CLKSimpleTextProvider(text: "")
+            //Absences
+            template.row2Column1TextProvider = CLKSimpleTextProvider(text: "Absences")
+            template.row2Column2TextProvider = CLKSimpleTextProvider(text: "")
+            //Tardies
+            template.row3Column1TextProvider = CLKSimpleTextProvider(text: "Tardies")
+            template.row3Column2TextProvider = CLKSimpleTextProvider(text: "")
+            
             //template.textProvider = CLKSimpleTextProvider(text: "\(ApplicationDatas.sharedInstance.todayDataCount ?? 0)")
+            
+            let timelineEntry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+            handler(timelineEntry)
+        case .modularSmall:
+            let template = CLKComplicationTemplateModularSmallSimpleText()
+            template.textProvider = CLKSimpleTextProvider(text: "")
             
             let timelineEntry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
             handler(timelineEntry)
