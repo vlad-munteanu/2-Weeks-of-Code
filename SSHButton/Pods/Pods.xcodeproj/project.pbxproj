@@ -1,0 +1,1531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C2A1A5FBBB9FBFC8FD1DE64C711A525 /* NMSSHConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = A10E9A83D2E14F656971DC7F41C9313D /* NMSSHConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E1BFEE90CE865B2DBDDB820B6974771 /* NMSSHSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AE09AAEE72D6A6F2300AC3489365EA /* NMSSHSession.m */; };
+		13FBE45B034E4677593DC2F43D8F36F1 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A7129D1B39F0D74B1D29C0B4730F08 /* ConstraintMakerRelatable.swift */; };
+		1453E7CF9C5A9E2ACB569E8FB20DDAF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2282B9115B20129ABD2BE1193FF0DC1A /* Foundation.framework */; };
+		17249EA6686D157E1FA9A86BEC49410E /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449FA71E9F4A0B2C8F8EF9EA80DF314A /* ConstraintDSL.swift */; };
+		1A602E74C4D12FBEEB05DD308D31888B /* NMSSHChannelDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 332E4BE288F14292E8150BF7BF01C226 /* NMSSHChannelDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C56F5E3287D7D74F0FDFB162118B936 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56BA902957C18F6E457467D73C03602 /* ConstraintMakerEditable.swift */; };
+		1E6967B731FFCD1734391B269D4EC244 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5709E7EA637CD205E621029B5D451E4 /* ConstraintLayoutSupport.swift */; };
+		26C1C0E2DDE064F2CD8CB8062B1FA527 /* libssh2_publickey.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F307B9805C8157E7BE71788CCE5D1BB /* libssh2_publickey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		271701785DA437FD1B7C27191E78FCF8 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD280DE3518CE0D4B28B2A957E341DB /* ConstraintPriorityTarget.swift */; };
+		281376BF2238DC1C7B0E493F3A99D5DF /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EE2976D83C9CABA865E977D2A57660 /* ConstraintLayoutSupportDSL.swift */; };
+		28DF63516BF4CC70245E16EC0C6034A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459438BFFA842C74DD5014C501423B39 /* Foundation.framework */; };
+		3497CE0BED53A019895C7735F60FF26E /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F532877AB8153E374AC333D1020E1 /* ConstraintRelation.swift */; };
+		35890190F88D371A547BCA1CD937F744 /* socket_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 76F400B2B80DF29B846B40D0102BD70B /* socket_helper.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3B40A5D2AD87D73AC9A966698666C4D4 /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931ABA13657F8C9819992BFA5857EF17 /* NMSSH.framework */; };
+		414B3E1827CAAE7FE55534F486ABFB14 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765FDCBDA63D28C332D7F0C23449E2E5 /* ConstraintMakerExtendable.swift */; };
+		42DE578186DD80D640E0FAFE14622FDC /* PVPMikrotikSSH.h in Headers */ = {isa = PBXBuildFile; fileRef = 176BB8CE1CBF88FBEE36C98B87BCE3CD /* PVPMikrotikSSH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47347249023A60CA118CAAAC5D5075D0 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84B4AE0DD7B89F5D32DAE3AE0B2C02E /* ConstraintMultiplierTarget.swift */; };
+		4C62EE70E37570AF7875E097362C5ED6 /* PVPSSHSecure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BBC268D9B40F433A3EE82D27D782C8 /* PVPSSHSecure.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4E4622150E5FFFCEE7A9C1FF35A42AE8 /* NMSSHLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B19C731F042A475874E030FFCFB96F /* NMSSHLogger.m */; };
+		54F3B621B8463D85E0CD9566F075E4A5 /* NMSFTPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 75700E819CA88FDCB37E71481D403C9D /* NMSFTPFile.m */; };
+		58D207A1AF7EF565B08C773C47A9D3E7 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F733CFADDCF0A02532E59D37547CBE /* ConstraintMakerPriortizable.swift */; };
+		5AEF8CF2D9662CC57FA3B4CEC1AB9A6C /* Pods-SSHButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB828483F6BB32BC6C675D17F068E585 /* Pods-SSHButton-dummy.m */; };
+		6393F931F882C14DEB2D8B7D1D537CDE /* libssh2.h in Headers */ = {isa = PBXBuildFile; fileRef = 823E31E77EFFDCB110C33969BE23FC6C /* libssh2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66E92830836DFC67BE2A77E1E892C75E /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6AAD57DCE65AB0BA3FEF5D45CBB37 /* ConstraintAttributes.swift */; };
+		688E5833526EF29F02C9591FACDC1014 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EEF4AD55AAEA5B429BAAE09AF85A6 /* ConstraintRelatableTarget.swift */; };
+		6A6A1D8CD2E448236AD039C71841B88A /* NMSSH.h in Headers */ = {isa = PBXBuildFile; fileRef = BA25C1F49C952A79991954E1750F5194 /* NMSSH.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6E99DF083EAFDCC1AF2E9CF9A35E8E34 /* PVPMikrotikSSH-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEF40CDDA6417448560B18C0307B2B /* PVPMikrotikSSH-dummy.m */; };
+		7071C614BA76F5A267E861B8591184E7 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E727F825F85A793278377960BCDE9D82 /* LayoutConstraintItem.swift */; };
+		73ADC775B7E4432E67E17DD946D38B74 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFE762020EB7B388CF7E666148192F2 /* ConstraintMakerFinalizable.swift */; };
+		763652823F2D8901055DBD4BDFE535BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459438BFFA842C74DD5014C501423B39 /* Foundation.framework */; };
+		7A21EEB8F8A87F0C5C581722519FE3C0 /* NMSSH-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4074F2899012D3FC889543B7C9988E /* NMSSH-dummy.m */; };
+		7A5DA1130BD5FF054D2E59DE6A8C7E84 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBD8BEA29327CB1CBD6EE2AD70FF3FD /* ConstraintInsets.swift */; };
+		7D7A35A7979C2B321C455F68F527D3EE /* NMSSHSession.h in Headers */ = {isa = PBXBuildFile; fileRef = A6DB9B1F526EB2BFB7E043BE2D17949E /* NMSSHSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F5BFEFED25B277BF330F48BBD1C4769 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479145DAEF8258BDD26D5F9A1014DABB /* Typealiases.swift */; };
+		826DAD8A12C146CD9806732E20B03E28 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE036973AB439BA4D35A79BBF427E1 /* ConstraintConfig.swift */; };
+		82B7FDF84E0A334B34C04082CFF243FA /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8CB80018C55B1E0CD59FFCA97ECD5AD /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		832695AD3BB75D2F465172711531EB6C /* NMSSHConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B0928D3CCA5EC0FBADC27C34667DB7FB /* NMSSHConfig.m */; };
+		8AF8EEF4044EFC483C2C448F53A52ECD /* NMSSHLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CD80B41F18EB02B9F02F8220DEC478 /* NMSSHLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BA5575FBD7FC88FB42646734B9D29EC /* NMSSHHostConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6DA29F17A66F85B0A3005DCA2755B3 /* NMSSHHostConfig.m */; };
+		90BECFDF43BF09F04E07EDA5C1E4CA7C /* PVPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA09D4AABECE0E3ADF06017D0FFA198 /* PVPError.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		93DEACB88110CBC9F9E1468B30A26442 /* libssh2_sftp.h in Headers */ = {isa = PBXBuildFile; fileRef = D2722EF5157803DF8835AC6AEBA5DA56 /* libssh2_sftp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4D487A93D12D1FF972386AF1B097946 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459438BFFA842C74DD5014C501423B39 /* Foundation.framework */; };
+		A9AD28A391E9618574F55D12F0CF1C5C /* PVPMikrotikSSH-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F8AA47A1119D6A760D726FF6F987BC /* PVPMikrotikSSH-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE858211FF10CE539E8DE4A309DC43F1 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25591E506D5C0896CE3C3EF32AFA8F9 /* ConstraintItem.swift */; };
+		B1114C946D033184A7C95CA1BD63E562 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B46758361172E24468EEE596FC19813 /* ConstraintDescription.swift */; };
+		BA1F90C1EB6044502C7F79A57CE45402 /* Pods-SSHButton WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43081853BE697BD659565E347A7A3FC2 /* Pods-SSHButton WatchKit Extension-dummy.m */; };
+		BC90EC62A31EEA26C35CD996BD0B971A /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FB4A4381321D96066A71B02066B60D /* UILayoutSupport+Extensions.swift */; };
+		BF3D681CBE9D3684F6F3E03BABD3D41F /* PVPSSHManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B46EA54657E06E9625B5350A3030CCE /* PVPSSHManager.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C05696CD96727BB0F683AAEB3B066D79 /* NMSSHChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = B327D9EA6C3EB6334364F58292B7C428 /* NMSSHChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C156AA8EA07D3623D156FE5484D2A892 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D568DE6A3A416B61EB242F948A24607 /* CFNetwork.framework */; };
+		C354AAF589F50125BA6865521A5DC5A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459438BFFA842C74DD5014C501423B39 /* Foundation.framework */; };
+		C38713B94251E44D683F1D0DAD2ADD4B /* Pods-SSHButton WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 502EEF10413CA63145301037FDB7DC02 /* Pods-SSHButton WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81DC3B059A9258E7571F520D91EB46C /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FE64971DDBE4A2304A56DB4C59156E /* ConstraintInsetTarget.swift */; };
+		C9EE512D1B54FE8F73457B3B4D977D05 /* NMSSH+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FE7C225F9E0263F3A7CB33C91C687B /* NMSSH+Protected.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CA02FA8341D7F6A45E2B0FC7FB0737FB /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E0088DF43B7E1049DEC5F485E96A4 /* ConstraintMaker.swift */; };
+		CB085F80EBE330E515D7CA508BBC22A1 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F701EC6837746AE8DD3EF14FB49EAF /* ConstraintViewDSL.swift */; };
+		CD48E0593BD867F81B1A1EA19F6EFA51 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E199A562F4950EC6E7A6C777A1C6140E /* LayoutConstraint.swift */; };
+		CF87BA03FF053EC2C9E4E8634216AB32 /* NMSSH.h in Headers */ = {isa = PBXBuildFile; fileRef = 551D9CCC1593B121D864C33A708E5FB5 /* NMSSH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0A72BBC291AAA8A2826DA306CF6114F /* Pods-SSHButton WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8455D9CF3FADEBBC48A26714ECA2F182 /* Pods-SSHButton WatchKit App-dummy.m */; };
+		D1668ED971DFB69F97BA6C65CC95D572 /* NMSSH-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15287560C4AA4EF938FC04D4A0A2492D /* NMSSH-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8BFC6AC5E0F79C022EE3B52738ACEAD /* NMSFTPFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 172EC8A4A54B97545CE0672F30ECA384 /* NMSFTPFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAE3ED39954C6935ECB798DD2DA25015 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F9805932EC4E43FC0ADC5654830D97 /* ConstraintView+Extensions.swift */; };
+		DC08640D9E34ECA70472FECD9F9C375C /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD28353CFD48A43E0E75ABF4654A78 /* Debugging.swift */; };
+		DC4688D923983993B3BBC8C01E610F97 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8257A451AE4085B93DEBFFB2DB534725 /* SnapKit-dummy.m */; };
+		DF52E3BAAF20922AF5E986EC2CA7DDD4 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF32834AB288198D41C1A768855FA04F /* ConstraintLayoutGuide+Extensions.swift */; };
+		DF7370D7194472D8EAA742BB4227B81E /* Pods-SSHButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C07B0F8390FE88C12D2038122587F669 /* Pods-SSHButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFC37DD8A79EEC4B67ED240FF79FE50D /* NMSSHChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A80ED10795F1AF987949C9A3637A2 /* NMSSHChannel.m */; };
+		E3048A413AA84F55A78E2B16A56A0926 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228F0F9FDE137F8C8E192C10C3BD34B5 /* ConstraintPriority.swift */; };
+		E64E3CB97C94449253B1D496D45250FD /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2608E112C80BBAF6CE428993AA6E9 /* ConstraintLayoutGuide.swift */; };
+		EB55FCEE8D2FC261D8502455C16BCE2F /* socket_helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A2B724F26C07CC09B4D352AD05F4EA /* socket_helper.m */; };
+		EC21C3EC1B6DFCDD4E4B4CEF2A4B022B /* NMSFTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 2805EEE0ADDF15BD56920F8AB4C564B0 /* NMSFTP.m */; };
+		F1DD16566C72DAD0D3F5A24A0CA2741C /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8E020C8CC0C0C2DF30A5FE5B361EC /* Constraint.swift */; };
+		F36C4ED62947D6369F62A68AAA6B3D74 /* NMSSHHostConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5C761D44C49334F8CE7F2DEF4177E2 /* NMSSHHostConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5A1AFB5E3679BCB5FD9C1AB1E5B6331 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3965C2D71844EB8AD19CBCD09399FD /* ConstraintView.swift */; };
+		FC153CF6CFB4373CDB5320CBD14E9A41 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428DD11A858FEE03FC21F4FF8ED5B88 /* ConstraintOffsetTarget.swift */; };
+		FCA1109C478E60169F2B5D44222AF28A /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD681024D4C2A4B27F5B6AD3A730EFE9 /* ConstraintConstantTarget.swift */; };
+		FE88B84045F101F0100DE09880AD7011 /* NMSFTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 94EFDE1F02F6EEDF5A5BA561313B60D1 /* NMSFTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF0E7DC39EF346395F682207D1D1AA6D /* NMSSHSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 23AABBF238DE3131C69AF85A72690CD0 /* NMSSHSessionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF2F2E077471A4ACDFDBE692B106548E /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24905F767C5DDEFDFA13A034735A6286 /* ConstraintLayoutGuideDSL.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25846AC22A4740865CA14AC62EC1E631 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4C38B058AD33DE1FABFEE379CF95262;
+			remoteInfo = NMSSH;
+		};
+		3D6E66CCDF6D1A59FDA688EA6F540E63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 841EDF880EA3C4278E87D833CDCE36CA;
+			remoteInfo = SnapKit;
+		};
+		74178245EF649A340CD529E9DB2DD018 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4C38B058AD33DE1FABFEE379CF95262;
+			remoteInfo = NMSSH;
+		};
+		744A6C93EE6051C44EFACCE8B7F525A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 589CABD4F2AB8B2CB523DFBB6457CE9B;
+			remoteInfo = PVPMikrotikSSH;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006B81FF0E3A8FDA608F077DE4E53ED3 /* Pods-SSHButton WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSHButton WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		02CD80B41F18EB02B9F02F8220DEC478 /* NMSSHLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHLogger.h; path = NMSSH/Config/NMSSHLogger.h; sourceTree = "<group>"; };
+		040F532877AB8153E374AC333D1020E1 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		09AE09AAEE72D6A6F2300AC3489365EA /* NMSSHSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHSession.m; path = NMSSH/NMSSHSession.m; sourceTree = "<group>"; };
+		0A56E36DCC1F5BBA81EB1347FE4CDB87 /* NMSSH-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMSSH-prefix.pch"; sourceTree = "<group>"; };
+		0BC2608E112C80BBAF6CE428993AA6E9 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		0E3965C2D71844EB8AD19CBCD09399FD /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		14FE64971DDBE4A2304A56DB4C59156E /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		15287560C4AA4EF938FC04D4A0A2492D /* NMSSH-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMSSH-umbrella.h"; sourceTree = "<group>"; };
+		168877D3656A729C4D18A2E9B8D91BFF /* PVPMikrotikSSH-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PVPMikrotikSSH-prefix.pch"; sourceTree = "<group>"; };
+		172EC8A4A54B97545CE0672F30ECA384 /* NMSFTPFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSFTPFile.h; path = NMSSH/NMSFTPFile.h; sourceTree = "<group>"; };
+		176BB8CE1CBF88FBEE36C98B87BCE3CD /* PVPMikrotikSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PVPMikrotikSSH.h; path = PVPMikrotikSSH/PVPMikrotikSSH.h; sourceTree = "<group>"; };
+		1BAFCCF685E09A5CC78F382A55F4A8EC /* PVPMikrotikSSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PVPMikrotikSSH.framework; path = PVPMikrotikSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2282B9115B20129ABD2BE1193FF0DC1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		228F0F9FDE137F8C8E192C10C3BD34B5 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		22A2B724F26C07CC09B4D352AD05F4EA /* socket_helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = socket_helper.m; path = NMSSH/Config/socket_helper.m; sourceTree = "<group>"; };
+		22A7129D1B39F0D74B1D29C0B4730F08 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		23AABBF238DE3131C69AF85A72690CD0 /* NMSSHSessionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHSessionDelegate.h; path = NMSSH/Protocols/NMSSHSessionDelegate.h; sourceTree = "<group>"; };
+		24905F767C5DDEFDFA13A034735A6286 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		25FD28353CFD48A43E0E75ABF4654A78 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		2703314C0B3F72A67D9BF6EE5A53BF8E /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		27807F7765F07B93BD5909EEF71A723C /* PVPMikrotikSSH.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PVPMikrotikSSH.modulemap; sourceTree = "<group>"; };
+		2805EEE0ADDF15BD56920F8AB4C564B0 /* NMSFTP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSFTP.m; path = NMSSH/NMSFTP.m; sourceTree = "<group>"; };
+		28B0D45DDA4C870A36D850A975AE2C1A /* Pods-SSHButton WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSHButton WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
+		2B46EA54657E06E9625B5350A3030CCE /* PVPSSHManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PVPSSHManager.swift; path = PVPMikrotikSSH/PVPSSHManager.swift; sourceTree = "<group>"; };
+		2C2A21DA7D8C756B05349B1FE21CD86F /* Pods-SSHButton WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSHButton WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		332E4BE288F14292E8150BF7BF01C226 /* NMSSHChannelDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHChannelDelegate.h; path = NMSSH/Protocols/NMSSHChannelDelegate.h; sourceTree = "<group>"; };
+		3B46758361172E24468EEE596FC19813 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		3CFC83149CE0C47941729E8147264BA0 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "NMSSH-iOS/Libraries/lib/libcrypto.a"; sourceTree = "<group>"; };
+		3D568DE6A3A416B61EB242F948A24607 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		3DC95D3469E8379DFEADB4BE2A37338B /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6DA29F17A66F85B0A3005DCA2755B3 /* NMSSHHostConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHHostConfig.m; path = NMSSH/NMSSHHostConfig.m; sourceTree = "<group>"; };
+		40EE2976D83C9CABA865E977D2A57660 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		43081853BE697BD659565E347A7A3FC2 /* Pods-SSHButton WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSHButton WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		449FA71E9F4A0B2C8F8EF9EA80DF314A /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		459438BFFA842C74DD5014C501423B39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		479145DAEF8258BDD26D5F9A1014DABB /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		47C902A46DF598577FF32A16C564A691 /* Pods-SSHButton WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SSHButton WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		48E8E020C8CC0C0C2DF30A5FE5B361EC /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		4D4074F2899012D3FC889543B7C9988E /* NMSSH-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NMSSH-dummy.m"; sourceTree = "<group>"; };
+		4EA09D4AABECE0E3ADF06017D0FFA198 /* PVPError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PVPError.swift; path = PVPMikrotikSSH/PVPError.swift; sourceTree = "<group>"; };
+		4FAC249A6FDEEAFA6431073615AFD28E /* PVPMikrotikSSH-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PVPMikrotikSSH-Info.plist"; sourceTree = "<group>"; };
+		4FBD8BEA29327CB1CBD6EE2AD70FF3FD /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		4FF13DC3B5E0D4556F58B0C7899FC4F9 /* Pods-SSHButton WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSHButton WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		502EEF10413CA63145301037FDB7DC02 /* Pods-SSHButton WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSHButton WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		551D9CCC1593B121D864C33A708E5FB5 /* NMSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSH.h; path = NMSSH/NMSSH.h; sourceTree = "<group>"; };
+		55C6AA4F710ED5FD47958C6A93D2E256 /* NMSSH.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NMSSH.modulemap; sourceTree = "<group>"; };
+		5E2C7616D7F174DA24C288626A4601FE /* Pods-SSHButton WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSHButton WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5F307B9805C8157E7BE71788CCE5D1BB /* libssh2_publickey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2_publickey.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2_publickey.h"; sourceTree = "<group>"; };
+		63EE036973AB439BA4D35A79BBF427E1 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		69FE7C225F9E0263F3A7CB33C91C687B /* NMSSH+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NMSSH+Protected.h"; path = "NMSSH/Config/NMSSH+Protected.h"; sourceTree = "<group>"; };
+		6A5BBC9C1ADF71085BFAD1AF912C66F6 /* Pods-SSHButton-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSHButton-acknowledgements.plist"; sourceTree = "<group>"; };
+		70F733CFADDCF0A02532E59D37547CBE /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		733684452CB63A6E2B87E860FB9197C1 /* libPods-SSHButton WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SSHButton WatchKit App.a"; path = "libPods-SSHButton WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75700E819CA88FDCB37E71481D403C9D /* NMSFTPFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSFTPFile.m; path = NMSSH/NMSFTPFile.m; sourceTree = "<group>"; };
+		765FDCBDA63D28C332D7F0C23449E2E5 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		767F5A66699DF5A6C245B7C1DA5D8781 /* NMSSH.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMSSH.xcconfig; sourceTree = "<group>"; };
+		76F400B2B80DF29B846B40D0102BD70B /* socket_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socket_helper.h; path = NMSSH/Config/socket_helper.h; sourceTree = "<group>"; };
+		7B6B34C39FFA7D2CB89833D02FCB95AE /* Pods-SSHButton WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSHButton WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		7C4A80ED10795F1AF987949C9A3637A2 /* NMSSHChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHChannel.m; path = NMSSH/NMSSHChannel.m; sourceTree = "<group>"; };
+		7D597C0AED4A5E31E02E5B9C328E1BB0 /* NMSSH-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NMSSH-Info.plist"; sourceTree = "<group>"; };
+		823E31E77EFFDCB110C33969BE23FC6C /* libssh2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2.h"; sourceTree = "<group>"; };
+		8257A451AE4085B93DEBFFB2DB534725 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		8455D9CF3FADEBBC48A26714ECA2F182 /* Pods-SSHButton WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSHButton WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		8ABAC06B6D607300A09E510C98BD7508 /* PVPMikrotikSSH.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PVPMikrotikSSH.xcconfig; sourceTree = "<group>"; };
+		931ABA13657F8C9819992BFA5857EF17 /* NMSSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EFDE1F02F6EEDF5A5BA561313B60D1 /* NMSFTP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSFTP.h; path = NMSSH/NMSFTP.h; sourceTree = "<group>"; };
+		96A6AAD57DCE65AB0BA3FEF5D45CBB37 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		974ECD9EA81858AEAACB248073A73531 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "NMSSH-iOS/Libraries/lib/libssl.a"; sourceTree = "<group>"; };
+		99BBC268D9B40F433A3EE82D27D782C8 /* PVPSSHSecure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PVPSSHSecure.swift; path = PVPMikrotikSSH/PVPSSHSecure.swift; sourceTree = "<group>"; };
+		9D4813955373A3B0E3E881B42E12A915 /* Pods-SSHButton WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSHButton WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A10E9A83D2E14F656971DC7F41C9313D /* NMSSHConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHConfig.h; path = NMSSH/NMSSHConfig.h; sourceTree = "<group>"; };
+		A25591E506D5C0896CE3C3EF32AFA8F9 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		A37DB5DFEF171A532CD9E6FF9201E0A2 /* Pods-SSHButton-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSHButton-frameworks.sh"; sourceTree = "<group>"; };
+		A428DD11A858FEE03FC21F4FF8ED5B88 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		A6DB9B1F526EB2BFB7E043BE2D17949E /* NMSSHSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHSession.h; path = NMSSH/NMSSHSession.h; sourceTree = "<group>"; };
+		A7778A865A8D972A317706802400B20B /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		AB828483F6BB32BC6C675D17F068E585 /* Pods-SSHButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSHButton-dummy.m"; sourceTree = "<group>"; };
+		ABE9BF376511F349FA8ABB7020585191 /* Pods-SSHButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSHButton.debug.xcconfig"; sourceTree = "<group>"; };
+		AC682813337C5820566116C8819BC3C7 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		AF32834AB288198D41C1A768855FA04F /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		AF6D1E9553C65CEC4E414A82572F3144 /* Pods-SSHButton WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSHButton WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		AFFEF40CDDA6417448560B18C0307B2B /* PVPMikrotikSSH-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PVPMikrotikSSH-dummy.m"; sourceTree = "<group>"; };
+		B0928D3CCA5EC0FBADC27C34667DB7FB /* NMSSHConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHConfig.m; path = NMSSH/NMSSHConfig.m; sourceTree = "<group>"; };
+		B327D9EA6C3EB6334364F58292B7C428 /* NMSSHChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHChannel.h; path = NMSSH/NMSSHChannel.h; sourceTree = "<group>"; };
+		B564CF9E3A141339AC06A5D0E5590BD2 /* Pods-SSHButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSHButton-Info.plist"; sourceTree = "<group>"; };
+		B84B4AE0DD7B89F5D32DAE3AE0B2C02E /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		B8F701EC6837746AE8DD3EF14FB49EAF /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		B9D08D50A599FC1F19E91D9D324A5DCE /* Pods-SSHButton WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSHButton WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		BA25C1F49C952A79991954E1750F5194 /* NMSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSH.h; path = "NMSSH-iOS/NMSSH.h"; sourceTree = "<group>"; };
+		BA5C761D44C49334F8CE7F2DEF4177E2 /* NMSSHHostConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHHostConfig.h; path = NMSSH/NMSSHHostConfig.h; sourceTree = "<group>"; };
+		BCFE762020EB7B388CF7E666148192F2 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		BDFB8D7DB8A32E8393889406AAAD5294 /* NMSSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NMSSH.framework; path = NMSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF82699FCEFCDCF7E32A3C57D80F8260 /* Pods-SSHButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SSHButton.modulemap"; sourceTree = "<group>"; };
+		BFD280DE3518CE0D4B28B2A957E341DB /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		C07B0F8390FE88C12D2038122587F669 /* Pods-SSHButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSHButton-umbrella.h"; sourceTree = "<group>"; };
+		C56BA902957C18F6E457467D73C03602 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		C8AD075ADEA9CCBA9FD92EB758A1503A /* Pods-SSHButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSHButton.release.xcconfig"; sourceTree = "<group>"; };
+		D1B19C731F042A475874E030FFCFB96F /* NMSSHLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHLogger.m; path = NMSSH/Config/NMSSHLogger.m; sourceTree = "<group>"; };
+		D2722EF5157803DF8835AC6AEBA5DA56 /* libssh2_sftp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2_sftp.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2_sftp.h"; sourceTree = "<group>"; };
+		D2F8AA47A1119D6A760D726FF6F987BC /* PVPMikrotikSSH-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PVPMikrotikSSH-umbrella.h"; sourceTree = "<group>"; };
+		D4817F65F32107EA623C48482EF86DEB /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		DA5AD399185FA3222E716A0A7DA25EFD /* Pods_SSHButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SSHButton.framework; path = "Pods-SSHButton.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB9E0088DF43B7E1049DEC5F485E96A4 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		DD681024D4C2A4B27F5B6AD3A730EFE9 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		E0FB4A4381321D96066A71B02066B60D /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		E17EEF4AD55AAEA5B429BAAE09AF85A6 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		E199A562F4950EC6E7A6C777A1C6140E /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		E1F9805932EC4E43FC0ADC5654830D97 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		E727F825F85A793278377960BCDE9D82 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		E8CB80018C55B1E0CD59FFCA97ECD5AD /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		EB87AA2823B9BA134F84D30C3D80AD13 /* Pods-SSHButton-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSHButton-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F467C8E1D66F08DEA3C817BC16EA582A /* libssh2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssh2.a; path = "NMSSH-iOS/Libraries/lib/libssh2.a"; sourceTree = "<group>"; };
+		F4B9E189E8413D5CB6C4855CA0B2B1E2 /* Pods_SSHButton_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SSHButton_WatchKit_Extension.framework; path = "Pods-SSHButton WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5709E7EA637CD205E621029B5D451E4 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C6D6ED27AED2CEF8A21417D7024CCD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1453E7CF9C5A9E2ACB569E8FB20DDAF7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EC78A444757D600C810A41867863BD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DF63516BF4CC70245E16EC0C6034A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729AEE836457AFA23A8FD1F707ACA539 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C354AAF589F50125BA6865521A5DC5A8 /* Foundation.framework in Frameworks */,
+				3B40A5D2AD87D73AC9A966698666C4D4 /* NMSSH.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9161837BF56636843EEACB07E6498B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D487A93D12D1FF972386AF1B097946 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D43FA024FDF84836B672895D5CEBDBB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C156AA8EA07D3623D156FE5484D2A892 /* CFNetwork.framework in Frameworks */,
+				763652823F2D8901055DBD4BDFE535BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF5F4D2E0D75E12CADEDB4985E8C2312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04E113A7B3ECE12C473AD00E692B75F4 /* PVPMikrotikSSH */ = {
+			isa = PBXGroup;
+			children = (
+				4EA09D4AABECE0E3ADF06017D0FFA198 /* PVPError.swift */,
+				176BB8CE1CBF88FBEE36C98B87BCE3CD /* PVPMikrotikSSH.h */,
+				2B46EA54657E06E9625B5350A3030CCE /* PVPSSHManager.swift */,
+				99BBC268D9B40F433A3EE82D27D782C8 /* PVPSSHSecure.swift */,
+				A3F2CE698421DD331C3D8169B49C948A /* Support Files */,
+			);
+			name = PVPMikrotikSSH;
+			path = PVPMikrotikSSH;
+			sourceTree = "<group>";
+		};
+		09C5C52D3F9FBE76FE4547E5E767B6BF /* Pods-SSHButton WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5E2C7616D7F174DA24C288626A4601FE /* Pods-SSHButton WatchKit App-acknowledgements.markdown */,
+				7B6B34C39FFA7D2CB89833D02FCB95AE /* Pods-SSHButton WatchKit App-acknowledgements.plist */,
+				8455D9CF3FADEBBC48A26714ECA2F182 /* Pods-SSHButton WatchKit App-dummy.m */,
+				006B81FF0E3A8FDA608F077DE4E53ED3 /* Pods-SSHButton WatchKit App.debug.xcconfig */,
+				AF6D1E9553C65CEC4E414A82572F3144 /* Pods-SSHButton WatchKit App.release.xcconfig */,
+			);
+			name = "Pods-SSHButton WatchKit App";
+			path = "Target Support Files/Pods-SSHButton WatchKit App";
+			sourceTree = "<group>";
+		};
+		109DE44AA908E43337EB40975FF6AC4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC765BCFEEDE6DA54B11F578832087B6 /* NMSSH */,
+				04E113A7B3ECE12C473AD00E692B75F4 /* PVPMikrotikSSH */,
+				C9C7C026478250556BDD1A791173BCB9 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		14FAA8F4A78CF2D5C4C04B2278FD5AB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CFC83149CE0C47941729E8147264BA0 /* libcrypto.a */,
+				F467C8E1D66F08DEA3C817BC16EA582A /* libssh2.a */,
+				974ECD9EA81858AEAACB248073A73531 /* libssl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20440E55923440DA157C8FFA5C7FC04F /* Pods-SSHButton */ = {
+			isa = PBXGroup;
+			children = (
+				BF82699FCEFCDCF7E32A3C57D80F8260 /* Pods-SSHButton.modulemap */,
+				EB87AA2823B9BA134F84D30C3D80AD13 /* Pods-SSHButton-acknowledgements.markdown */,
+				6A5BBC9C1ADF71085BFAD1AF912C66F6 /* Pods-SSHButton-acknowledgements.plist */,
+				AB828483F6BB32BC6C675D17F068E585 /* Pods-SSHButton-dummy.m */,
+				A37DB5DFEF171A532CD9E6FF9201E0A2 /* Pods-SSHButton-frameworks.sh */,
+				B564CF9E3A141339AC06A5D0E5590BD2 /* Pods-SSHButton-Info.plist */,
+				C07B0F8390FE88C12D2038122587F669 /* Pods-SSHButton-umbrella.h */,
+				ABE9BF376511F349FA8ABB7020585191 /* Pods-SSHButton.debug.xcconfig */,
+				C8AD075ADEA9CCBA9FD92EB758A1503A /* Pods-SSHButton.release.xcconfig */,
+			);
+			name = "Pods-SSHButton";
+			path = "Target Support Files/Pods-SSHButton";
+			sourceTree = "<group>";
+		};
+		3C5D1FE7E554B048765F96239385559A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2703314C0B3F72A67D9BF6EE5A53BF8E /* SnapKit.modulemap */,
+				D4817F65F32107EA623C48482EF86DEB /* SnapKit.xcconfig */,
+				8257A451AE4085B93DEBFFB2DB534725 /* SnapKit-dummy.m */,
+				A7778A865A8D972A317706802400B20B /* SnapKit-Info.plist */,
+				AC682813337C5820566116C8819BC3C7 /* SnapKit-prefix.pch */,
+				E8CB80018C55B1E0CD59FFCA97ECD5AD /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		59955F095C62FC06AAA114C9C16BB79E /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				2282B9115B20129ABD2BE1193FF0DC1A /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		8A9A709AFD57454942F8CCDBF38DDDAC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55C6AA4F710ED5FD47958C6A93D2E256 /* NMSSH.modulemap */,
+				767F5A66699DF5A6C245B7C1DA5D8781 /* NMSSH.xcconfig */,
+				4D4074F2899012D3FC889543B7C9988E /* NMSSH-dummy.m */,
+				7D597C0AED4A5E31E02E5B9C328E1BB0 /* NMSSH-Info.plist */,
+				0A56E36DCC1F5BBA81EB1347FE4CDB87 /* NMSSH-prefix.pch */,
+				15287560C4AA4EF938FC04D4A0A2492D /* NMSSH-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NMSSH";
+			sourceTree = "<group>";
+		};
+		A3F2CE698421DD331C3D8169B49C948A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				27807F7765F07B93BD5909EEF71A723C /* PVPMikrotikSSH.modulemap */,
+				8ABAC06B6D607300A09E510C98BD7508 /* PVPMikrotikSSH.xcconfig */,
+				AFFEF40CDDA6417448560B18C0307B2B /* PVPMikrotikSSH-dummy.m */,
+				4FAC249A6FDEEAFA6431073615AFD28E /* PVPMikrotikSSH-Info.plist */,
+				168877D3656A729C4D18A2E9B8D91BFF /* PVPMikrotikSSH-prefix.pch */,
+				D2F8AA47A1119D6A760D726FF6F987BC /* PVPMikrotikSSH-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PVPMikrotikSSH";
+			sourceTree = "<group>";
+		};
+		A42411AF349D9D13963E459BA086FBF3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3D568DE6A3A416B61EB242F948A24607 /* CFNetwork.framework */,
+				459438BFFA842C74DD5014C501423B39 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AC765BCFEEDE6DA54B11F578832087B6 /* NMSSH */ = {
+			isa = PBXGroup;
+			children = (
+				823E31E77EFFDCB110C33969BE23FC6C /* libssh2.h */,
+				5F307B9805C8157E7BE71788CCE5D1BB /* libssh2_publickey.h */,
+				D2722EF5157803DF8835AC6AEBA5DA56 /* libssh2_sftp.h */,
+				94EFDE1F02F6EEDF5A5BA561313B60D1 /* NMSFTP.h */,
+				2805EEE0ADDF15BD56920F8AB4C564B0 /* NMSFTP.m */,
+				172EC8A4A54B97545CE0672F30ECA384 /* NMSFTPFile.h */,
+				75700E819CA88FDCB37E71481D403C9D /* NMSFTPFile.m */,
+				BA25C1F49C952A79991954E1750F5194 /* NMSSH.h */,
+				551D9CCC1593B121D864C33A708E5FB5 /* NMSSH.h */,
+				69FE7C225F9E0263F3A7CB33C91C687B /* NMSSH+Protected.h */,
+				B327D9EA6C3EB6334364F58292B7C428 /* NMSSHChannel.h */,
+				7C4A80ED10795F1AF987949C9A3637A2 /* NMSSHChannel.m */,
+				332E4BE288F14292E8150BF7BF01C226 /* NMSSHChannelDelegate.h */,
+				A10E9A83D2E14F656971DC7F41C9313D /* NMSSHConfig.h */,
+				B0928D3CCA5EC0FBADC27C34667DB7FB /* NMSSHConfig.m */,
+				BA5C761D44C49334F8CE7F2DEF4177E2 /* NMSSHHostConfig.h */,
+				3F6DA29F17A66F85B0A3005DCA2755B3 /* NMSSHHostConfig.m */,
+				02CD80B41F18EB02B9F02F8220DEC478 /* NMSSHLogger.h */,
+				D1B19C731F042A475874E030FFCFB96F /* NMSSHLogger.m */,
+				A6DB9B1F526EB2BFB7E043BE2D17949E /* NMSSHSession.h */,
+				09AE09AAEE72D6A6F2300AC3489365EA /* NMSSHSession.m */,
+				23AABBF238DE3131C69AF85A72690CD0 /* NMSSHSessionDelegate.h */,
+				76F400B2B80DF29B846B40D0102BD70B /* socket_helper.h */,
+				22A2B724F26C07CC09B4D352AD05F4EA /* socket_helper.m */,
+				14FAA8F4A78CF2D5C4C04B2278FD5AB9 /* Frameworks */,
+				8A9A709AFD57454942F8CCDBF38DDDAC /* Support Files */,
+			);
+			name = NMSSH;
+			path = NMSSH;
+			sourceTree = "<group>";
+		};
+		C1DC72122589227CFDE25F52FC11D491 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				931ABA13657F8C9819992BFA5857EF17 /* NMSSH.framework */,
+				A42411AF349D9D13963E459BA086FBF3 /* iOS */,
+				59955F095C62FC06AAA114C9C16BB79E /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3BD6C8EFECF7B168B009E747BFAF5DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				733684452CB63A6E2B87E860FB9197C1 /* libPods-SSHButton WatchKit App.a */,
+				BDFB8D7DB8A32E8393889406AAAD5294 /* NMSSH.framework */,
+				DA5AD399185FA3222E716A0A7DA25EFD /* Pods_SSHButton.framework */,
+				F4B9E189E8413D5CB6C4855CA0B2B1E2 /* Pods_SSHButton_WatchKit_Extension.framework */,
+				1BAFCCF685E09A5CC78F382A55F4A8EC /* PVPMikrotikSSH.framework */,
+				3DC95D3469E8379DFEADB4BE2A37338B /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9C7C026478250556BDD1A791173BCB9 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				48E8E020C8CC0C0C2DF30A5FE5B361EC /* Constraint.swift */,
+				96A6AAD57DCE65AB0BA3FEF5D45CBB37 /* ConstraintAttributes.swift */,
+				63EE036973AB439BA4D35A79BBF427E1 /* ConstraintConfig.swift */,
+				DD681024D4C2A4B27F5B6AD3A730EFE9 /* ConstraintConstantTarget.swift */,
+				3B46758361172E24468EEE596FC19813 /* ConstraintDescription.swift */,
+				449FA71E9F4A0B2C8F8EF9EA80DF314A /* ConstraintDSL.swift */,
+				4FBD8BEA29327CB1CBD6EE2AD70FF3FD /* ConstraintInsets.swift */,
+				14FE64971DDBE4A2304A56DB4C59156E /* ConstraintInsetTarget.swift */,
+				A25591E506D5C0896CE3C3EF32AFA8F9 /* ConstraintItem.swift */,
+				0BC2608E112C80BBAF6CE428993AA6E9 /* ConstraintLayoutGuide.swift */,
+				AF32834AB288198D41C1A768855FA04F /* ConstraintLayoutGuide+Extensions.swift */,
+				24905F767C5DDEFDFA13A034735A6286 /* ConstraintLayoutGuideDSL.swift */,
+				F5709E7EA637CD205E621029B5D451E4 /* ConstraintLayoutSupport.swift */,
+				40EE2976D83C9CABA865E977D2A57660 /* ConstraintLayoutSupportDSL.swift */,
+				DB9E0088DF43B7E1049DEC5F485E96A4 /* ConstraintMaker.swift */,
+				C56BA902957C18F6E457467D73C03602 /* ConstraintMakerEditable.swift */,
+				765FDCBDA63D28C332D7F0C23449E2E5 /* ConstraintMakerExtendable.swift */,
+				BCFE762020EB7B388CF7E666148192F2 /* ConstraintMakerFinalizable.swift */,
+				70F733CFADDCF0A02532E59D37547CBE /* ConstraintMakerPriortizable.swift */,
+				22A7129D1B39F0D74B1D29C0B4730F08 /* ConstraintMakerRelatable.swift */,
+				B84B4AE0DD7B89F5D32DAE3AE0B2C02E /* ConstraintMultiplierTarget.swift */,
+				A428DD11A858FEE03FC21F4FF8ED5B88 /* ConstraintOffsetTarget.swift */,
+				228F0F9FDE137F8C8E192C10C3BD34B5 /* ConstraintPriority.swift */,
+				BFD280DE3518CE0D4B28B2A957E341DB /* ConstraintPriorityTarget.swift */,
+				E17EEF4AD55AAEA5B429BAAE09AF85A6 /* ConstraintRelatableTarget.swift */,
+				040F532877AB8153E374AC333D1020E1 /* ConstraintRelation.swift */,
+				0E3965C2D71844EB8AD19CBCD09399FD /* ConstraintView.swift */,
+				E1F9805932EC4E43FC0ADC5654830D97 /* ConstraintView+Extensions.swift */,
+				B8F701EC6837746AE8DD3EF14FB49EAF /* ConstraintViewDSL.swift */,
+				25FD28353CFD48A43E0E75ABF4654A78 /* Debugging.swift */,
+				E199A562F4950EC6E7A6C777A1C6140E /* LayoutConstraint.swift */,
+				E727F825F85A793278377960BCDE9D82 /* LayoutConstraintItem.swift */,
+				479145DAEF8258BDD26D5F9A1014DABB /* Typealiases.swift */,
+				E0FB4A4381321D96066A71B02066B60D /* UILayoutSupport+Extensions.swift */,
+				3C5D1FE7E554B048765F96239385559A /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		CABE6DED2F6D9BBD7B0E32832D1E57C6 /* Pods-SSHButton WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				47C902A46DF598577FF32A16C564A691 /* Pods-SSHButton WatchKit Extension.modulemap */,
+				4FF13DC3B5E0D4556F58B0C7899FC4F9 /* Pods-SSHButton WatchKit Extension-acknowledgements.markdown */,
+				9D4813955373A3B0E3E881B42E12A915 /* Pods-SSHButton WatchKit Extension-acknowledgements.plist */,
+				43081853BE697BD659565E347A7A3FC2 /* Pods-SSHButton WatchKit Extension-dummy.m */,
+				28B0D45DDA4C870A36D850A975AE2C1A /* Pods-SSHButton WatchKit Extension-Info.plist */,
+				502EEF10413CA63145301037FDB7DC02 /* Pods-SSHButton WatchKit Extension-umbrella.h */,
+				B9D08D50A599FC1F19E91D9D324A5DCE /* Pods-SSHButton WatchKit Extension.debug.xcconfig */,
+				2C2A21DA7D8C756B05349B1FE21CD86F /* Pods-SSHButton WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-SSHButton WatchKit Extension";
+			path = "Target Support Files/Pods-SSHButton WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C1DC72122589227CFDE25F52FC11D491 /* Frameworks */,
+				109DE44AA908E43337EB40975FF6AC4B /* Pods */,
+				C3BD6C8EFECF7B168B009E747BFAF5DF /* Products */,
+				DF48CCB74760DF18751A8DEAA1869B7C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DF48CCB74760DF18751A8DEAA1869B7C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20440E55923440DA157C8FFA5C7FC04F /* Pods-SSHButton */,
+				09C5C52D3F9FBE76FE4547E5E767B6BF /* Pods-SSHButton WatchKit App */,
+				CABE6DED2F6D9BBD7B0E32832D1E57C6 /* Pods-SSHButton WatchKit Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0B69C05E89CA377992317C414F3BF2CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9AD28A391E9618574F55D12F0CF1C5C /* PVPMikrotikSSH-umbrella.h in Headers */,
+				42DE578186DD80D640E0FAFE14622FDC /* PVPMikrotikSSH.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56AD9E739B10E6A84F5B946B0D823EDF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82B7FDF84E0A334B34C04082CFF243FA /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		614506865EB9BF0E91A4EB3C9E48BE26 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD29AD1460483AF31A02A197D80E8C99 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7370D7194472D8EAA742BB4227B81E /* Pods-SSHButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C63BAA0C80D4541AE89A2282F9A8C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6393F931F882C14DEB2D8B7D1D537CDE /* libssh2.h in Headers */,
+				26C1C0E2DDE064F2CD8CB8062B1FA527 /* libssh2_publickey.h in Headers */,
+				93DEACB88110CBC9F9E1468B30A26442 /* libssh2_sftp.h in Headers */,
+				FE88B84045F101F0100DE09880AD7011 /* NMSFTP.h in Headers */,
+				D8BFC6AC5E0F79C022EE3B52738ACEAD /* NMSFTPFile.h in Headers */,
+				C9EE512D1B54FE8F73457B3B4D977D05 /* NMSSH+Protected.h in Headers */,
+				D1668ED971DFB69F97BA6C65CC95D572 /* NMSSH-umbrella.h in Headers */,
+				CF87BA03FF053EC2C9E4E8634216AB32 /* NMSSH.h in Headers */,
+				6A6A1D8CD2E448236AD039C71841B88A /* NMSSH.h in Headers */,
+				C05696CD96727BB0F683AAEB3B066D79 /* NMSSHChannel.h in Headers */,
+				1A602E74C4D12FBEEB05DD308D31888B /* NMSSHChannelDelegate.h in Headers */,
+				0C2A1A5FBBB9FBFC8FD1DE64C711A525 /* NMSSHConfig.h in Headers */,
+				F36C4ED62947D6369F62A68AAA6B3D74 /* NMSSHHostConfig.h in Headers */,
+				8AF8EEF4044EFC483C2C448F53A52ECD /* NMSSHLogger.h in Headers */,
+				7D7A35A7979C2B321C455F68F527D3EE /* NMSSHSession.h in Headers */,
+				FF0E7DC39EF346395F682207D1D1AA6D /* NMSSHSessionDelegate.h in Headers */,
+				35890190F88D371A547BCA1CD937F744 /* socket_helper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F93F339827B4565939CB6192B4DC50CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C38713B94251E44D683F1D0DAD2ADD4B /* Pods-SSHButton WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		47CEC31A6C1F25798E34D20F525ECD13 /* Pods-SSHButton WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58F7FD669FCFBCC962633DBAEAEDFDEC /* Build configuration list for PBXNativeTarget "Pods-SSHButton WatchKit App" */;
+			buildPhases = (
+				614506865EB9BF0E91A4EB3C9E48BE26 /* Headers */,
+				5FE0991DA0B68BAEA2BADC24BFE88F79 /* Sources */,
+				DF5F4D2E0D75E12CADEDB4985E8C2312 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SSHButton WatchKit App";
+			productName = "Pods-SSHButton WatchKit App";
+			productReference = 733684452CB63A6E2B87E860FB9197C1 /* libPods-SSHButton WatchKit App.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		589CABD4F2AB8B2CB523DFBB6457CE9B /* PVPMikrotikSSH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADBEDE45A335E293E0D7A65F48B75277 /* Build configuration list for PBXNativeTarget "PVPMikrotikSSH" */;
+			buildPhases = (
+				0B69C05E89CA377992317C414F3BF2CF /* Headers */,
+				0F69AF4D44C882C731E5A460185A0100 /* Sources */,
+				729AEE836457AFA23A8FD1F707ACA539 /* Frameworks */,
+				D49447AEB2B1A0E22A44ECA20C401A54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A0991CBA67B03AE30045438925D4E0E /* PBXTargetDependency */,
+			);
+			name = PVPMikrotikSSH;
+			productName = PVPMikrotikSSH;
+			productReference = 1BAFCCF685E09A5CC78F382A55F4A8EC /* PVPMikrotikSSH.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5C49D346DE8933D79D6BB54132B806DE /* Pods-SSHButton WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C786F4A2531DA5899778D1A6A4E8A2F /* Build configuration list for PBXNativeTarget "Pods-SSHButton WatchKit Extension" */;
+			buildPhases = (
+				F93F339827B4565939CB6192B4DC50CA /* Headers */,
+				6B85A07CFE05981156EE3A9E92B09615 /* Sources */,
+				0C6D6ED27AED2CEF8A21417D7024CCD5 /* Frameworks */,
+				E1891F5FA4296EDEB38A62049759A28F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SSHButton WatchKit Extension";
+			productName = "Pods-SSHButton WatchKit Extension";
+			productReference = F4B9E189E8413D5CB6C4855CA0B2B1E2 /* Pods_SSHButton_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A0FD5D468A080914175D5786CD35F83 /* Pods-SSHButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6939F065DC48DCCFDF34B223FC68C552 /* Build configuration list for PBXNativeTarget "Pods-SSHButton" */;
+			buildPhases = (
+				AD29AD1460483AF31A02A197D80E8C99 /* Headers */,
+				492881A473CCEB60657D79B724E5A6D9 /* Sources */,
+				9B9161837BF56636843EEACB07E6498B /* Frameworks */,
+				20DFCFE058C23F5D7D2A3620A2F53E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				898B556FC39D46A40CF1F30F95F6D29A /* PBXTargetDependency */,
+				54A98E6D9354E2EBA83B56E4E9F423CD /* PBXTargetDependency */,
+				D3711F0B0DEC6AE21B2AFF81F3E16AA1 /* PBXTargetDependency */,
+			);
+			name = "Pods-SSHButton";
+			productName = "Pods-SSHButton";
+			productReference = DA5AD399185FA3222E716A0A7DA25EFD /* Pods_SSHButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		841EDF880EA3C4278E87D833CDCE36CA /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6413DAC49AC56A28B6EAAF53F2A8279 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				56AD9E739B10E6A84F5B946B0D823EDF /* Headers */,
+				8FE53A0FF0A8ED07CF3A300024B288CD /* Sources */,
+				0EC78A444757D600C810A41867863BD5 /* Frameworks */,
+				0A49E355F0B713152C3D1751CC3354EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 3DC95D3469E8379DFEADB4BE2A37338B /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4C38B058AD33DE1FABFEE379CF95262 /* NMSSH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C209A7A212394D2C17F84B1900A094D /* Build configuration list for PBXNativeTarget "NMSSH" */;
+			buildPhases = (
+				D4C63BAA0C80D4541AE89A2282F9A8C1 /* Headers */,
+				0D8B657A6996D0EF67F74B8A522C0570 /* Sources */,
+				D43FA024FDF84836B672895D5CEBDBB2 /* Frameworks */,
+				E381ECB7ECCA79994A01BE6FD2AD80CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NMSSH;
+			productName = NMSSH;
+			productReference = BDFB8D7DB8A32E8393889406AAAD5294 /* NMSSH.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C3BD6C8EFECF7B168B009E747BFAF5DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4C38B058AD33DE1FABFEE379CF95262 /* NMSSH */,
+				7A0FD5D468A080914175D5786CD35F83 /* Pods-SSHButton */,
+				47CEC31A6C1F25798E34D20F525ECD13 /* Pods-SSHButton WatchKit App */,
+				5C49D346DE8933D79D6BB54132B806DE /* Pods-SSHButton WatchKit Extension */,
+				589CABD4F2AB8B2CB523DFBB6457CE9B /* PVPMikrotikSSH */,
+				841EDF880EA3C4278E87D833CDCE36CA /* SnapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A49E355F0B713152C3D1751CC3354EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20DFCFE058C23F5D7D2A3620A2F53E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D49447AEB2B1A0E22A44ECA20C401A54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1891F5FA4296EDEB38A62049759A28F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E381ECB7ECCA79994A01BE6FD2AD80CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D8B657A6996D0EF67F74B8A522C0570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC21C3EC1B6DFCDD4E4B4CEF2A4B022B /* NMSFTP.m in Sources */,
+				54F3B621B8463D85E0CD9566F075E4A5 /* NMSFTPFile.m in Sources */,
+				7A21EEB8F8A87F0C5C581722519FE3C0 /* NMSSH-dummy.m in Sources */,
+				DFC37DD8A79EEC4B67ED240FF79FE50D /* NMSSHChannel.m in Sources */,
+				832695AD3BB75D2F465172711531EB6C /* NMSSHConfig.m in Sources */,
+				8BA5575FBD7FC88FB42646734B9D29EC /* NMSSHHostConfig.m in Sources */,
+				4E4622150E5FFFCEE7A9C1FF35A42AE8 /* NMSSHLogger.m in Sources */,
+				0E1BFEE90CE865B2DBDDB820B6974771 /* NMSSHSession.m in Sources */,
+				EB55FCEE8D2FC261D8502455C16BCE2F /* socket_helper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F69AF4D44C882C731E5A460185A0100 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90BECFDF43BF09F04E07EDA5C1E4CA7C /* PVPError.swift in Sources */,
+				6E99DF083EAFDCC1AF2E9CF9A35E8E34 /* PVPMikrotikSSH-dummy.m in Sources */,
+				BF3D681CBE9D3684F6F3E03BABD3D41F /* PVPSSHManager.swift in Sources */,
+				4C62EE70E37570AF7875E097362C5ED6 /* PVPSSHSecure.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492881A473CCEB60657D79B724E5A6D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AEF8CF2D9662CC57FA3B4CEC1AB9A6C /* Pods-SSHButton-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FE0991DA0B68BAEA2BADC24BFE88F79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A72BBC291AAA8A2826DA306CF6114F /* Pods-SSHButton WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B85A07CFE05981156EE3A9E92B09615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA1F90C1EB6044502C7F79A57CE45402 /* Pods-SSHButton WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE53A0FF0A8ED07CF3A300024B288CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1DD16566C72DAD0D3F5A24A0CA2741C /* Constraint.swift in Sources */,
+				66E92830836DFC67BE2A77E1E892C75E /* ConstraintAttributes.swift in Sources */,
+				826DAD8A12C146CD9806732E20B03E28 /* ConstraintConfig.swift in Sources */,
+				FCA1109C478E60169F2B5D44222AF28A /* ConstraintConstantTarget.swift in Sources */,
+				B1114C946D033184A7C95CA1BD63E562 /* ConstraintDescription.swift in Sources */,
+				17249EA6686D157E1FA9A86BEC49410E /* ConstraintDSL.swift in Sources */,
+				7A5DA1130BD5FF054D2E59DE6A8C7E84 /* ConstraintInsets.swift in Sources */,
+				C81DC3B059A9258E7571F520D91EB46C /* ConstraintInsetTarget.swift in Sources */,
+				AE858211FF10CE539E8DE4A309DC43F1 /* ConstraintItem.swift in Sources */,
+				DF52E3BAAF20922AF5E986EC2CA7DDD4 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				E64E3CB97C94449253B1D496D45250FD /* ConstraintLayoutGuide.swift in Sources */,
+				FF2F2E077471A4ACDFDBE692B106548E /* ConstraintLayoutGuideDSL.swift in Sources */,
+				1E6967B731FFCD1734391B269D4EC244 /* ConstraintLayoutSupport.swift in Sources */,
+				281376BF2238DC1C7B0E493F3A99D5DF /* ConstraintLayoutSupportDSL.swift in Sources */,
+				CA02FA8341D7F6A45E2B0FC7FB0737FB /* ConstraintMaker.swift in Sources */,
+				1C56F5E3287D7D74F0FDFB162118B936 /* ConstraintMakerEditable.swift in Sources */,
+				414B3E1827CAAE7FE55534F486ABFB14 /* ConstraintMakerExtendable.swift in Sources */,
+				73ADC775B7E4432E67E17DD946D38B74 /* ConstraintMakerFinalizable.swift in Sources */,
+				58D207A1AF7EF565B08C773C47A9D3E7 /* ConstraintMakerPriortizable.swift in Sources */,
+				13FBE45B034E4677593DC2F43D8F36F1 /* ConstraintMakerRelatable.swift in Sources */,
+				47347249023A60CA118CAAAC5D5075D0 /* ConstraintMultiplierTarget.swift in Sources */,
+				FC153CF6CFB4373CDB5320CBD14E9A41 /* ConstraintOffsetTarget.swift in Sources */,
+				E3048A413AA84F55A78E2B16A56A0926 /* ConstraintPriority.swift in Sources */,
+				271701785DA437FD1B7C27191E78FCF8 /* ConstraintPriorityTarget.swift in Sources */,
+				688E5833526EF29F02C9591FACDC1014 /* ConstraintRelatableTarget.swift in Sources */,
+				3497CE0BED53A019895C7735F60FF26E /* ConstraintRelation.swift in Sources */,
+				DAE3ED39954C6935ECB798DD2DA25015 /* ConstraintView+Extensions.swift in Sources */,
+				F5A1AFB5E3679BCB5FD9C1AB1E5B6331 /* ConstraintView.swift in Sources */,
+				CB085F80EBE330E515D7CA508BBC22A1 /* ConstraintViewDSL.swift in Sources */,
+				DC08640D9E34ECA70472FECD9F9C375C /* Debugging.swift in Sources */,
+				CD48E0593BD867F81B1A1EA19F6EFA51 /* LayoutConstraint.swift in Sources */,
+				7071C614BA76F5A267E861B8591184E7 /* LayoutConstraintItem.swift in Sources */,
+				DC4688D923983993B3BBC8C01E610F97 /* SnapKit-dummy.m in Sources */,
+				7F5BFEFED25B277BF330F48BBD1C4769 /* Typealiases.swift in Sources */,
+				BC90EC62A31EEA26C35CD996BD0B971A /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54A98E6D9354E2EBA83B56E4E9F423CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PVPMikrotikSSH;
+			target = 589CABD4F2AB8B2CB523DFBB6457CE9B /* PVPMikrotikSSH */;
+			targetProxy = 744A6C93EE6051C44EFACCE8B7F525A6 /* PBXContainerItemProxy */;
+		};
+		898B556FC39D46A40CF1F30F95F6D29A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NMSSH;
+			target = D4C38B058AD33DE1FABFEE379CF95262 /* NMSSH */;
+			targetProxy = 25846AC22A4740865CA14AC62EC1E631 /* PBXContainerItemProxy */;
+		};
+		8A0991CBA67B03AE30045438925D4E0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NMSSH;
+			target = D4C38B058AD33DE1FABFEE379CF95262 /* NMSSH */;
+			targetProxy = 74178245EF649A340CD529E9DB2DD018 /* PBXContainerItemProxy */;
+		};
+		D3711F0B0DEC6AE21B2AFF81F3E16AA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 841EDF880EA3C4278E87D833CDCE36CA /* SnapKit */;
+			targetProxy = 3D6E66CCDF6D1A59FDA688EA6F540E63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01A7C7C952FF37FFC7D9E7B59D94773B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		0746FEF421741182AD04E7463476B04F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8AD075ADEA9CCBA9FD92EB758A1503A /* Pods-SSHButton.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SSHButton/Pods-SSHButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SSHButton/Pods-SSHButton.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		26F6DD9E7428B5911F1A46FC3E8EF830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ABAC06B6D607300A09E510C98BD7508 /* PVPMikrotikSSH.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH.modulemap";
+				PRODUCT_MODULE_NAME = PVPMikrotikSSH;
+				PRODUCT_NAME = PVPMikrotikSSH;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2EE4ADF56FE4DBBDC615CC60FBAEB7DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ABAC06B6D607300A09E510C98BD7508 /* PVPMikrotikSSH.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH.modulemap";
+				PRODUCT_MODULE_NAME = PVPMikrotikSSH;
+				PRODUCT_NAME = PVPMikrotikSSH;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		35CDA5FC5D22B223B44B5E8ECDC26169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4817F65F32107EA623C48482EF86DEB /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		475BBE49C3F67CD1AE1695727AE114D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4817F65F32107EA623C48482EF86DEB /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84B7CDF59A5DF078855145D2792CA8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767F5A66699DF5A6C245B7C1DA5D8781 /* NMSSH.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NMSSH/NMSSH-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NMSSH/NMSSH-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NMSSH/NMSSH.modulemap";
+				PRODUCT_MODULE_NAME = NMSSH;
+				PRODUCT_NAME = NMSSH;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6C6E94021DCFDA9B38DF45CB02121C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF6D1E9553C65CEC4E414A82572F3144 /* Pods-SSHButton WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		CCE21FA8317B8A10A7D310E307F160E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 006B81FF0E3A8FDA608F077DE4E53ED3 /* Pods-SSHButton WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		CFBFC5DCB7C2C545980AC22678149472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767F5A66699DF5A6C245B7C1DA5D8781 /* NMSSH.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NMSSH/NMSSH-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NMSSH/NMSSH-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NMSSH/NMSSH.modulemap";
+				PRODUCT_MODULE_NAME = NMSSH;
+				PRODUCT_NAME = NMSSH;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFE3B020DFCE7CDBB4EF0E7912C70611 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9D08D50A599FC1F19E91D9D324A5DCE /* Pods-SSHButton WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SSHButton WatchKit Extension/Pods-SSHButton WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SSHButton WatchKit Extension/Pods-SSHButton WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		E51DA13F6FD84A7FD16F60EC263B3C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C2A21DA7D8C756B05349B1FE21CD86F /* Pods-SSHButton WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SSHButton WatchKit Extension/Pods-SSHButton WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SSHButton WatchKit Extension/Pods-SSHButton WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		F480B286F005596CF688ECEBE7835FC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		F82A6D6634EF5D4A6F5B09ED3948A6F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABE9BF376511F349FA8ABB7020585191 /* Pods-SSHButton.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SSHButton/Pods-SSHButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SSHButton/Pods-SSHButton.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01A7C7C952FF37FFC7D9E7B59D94773B /* Debug */,
+				F480B286F005596CF688ECEBE7835FC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C209A7A212394D2C17F84B1900A094D /* Build configuration list for PBXNativeTarget "NMSSH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFBFC5DCB7C2C545980AC22678149472 /* Debug */,
+				84B7CDF59A5DF078855145D2792CA8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58F7FD669FCFBCC962633DBAEAEDFDEC /* Build configuration list for PBXNativeTarget "Pods-SSHButton WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE21FA8317B8A10A7D310E307F160E9 /* Debug */,
+				B6C6E94021DCFDA9B38DF45CB02121C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6939F065DC48DCCFDF34B223FC68C552 /* Build configuration list for PBXNativeTarget "Pods-SSHButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82A6D6634EF5D4A6F5B09ED3948A6F0 /* Debug */,
+				0746FEF421741182AD04E7463476B04F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C786F4A2531DA5899778D1A6A4E8A2F /* Build configuration list for PBXNativeTarget "Pods-SSHButton WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE3B020DFCE7CDBB4EF0E7912C70611 /* Debug */,
+				E51DA13F6FD84A7FD16F60EC263B3C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6413DAC49AC56A28B6EAAF53F2A8279 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				475BBE49C3F67CD1AE1695727AE114D7 /* Debug */,
+				35CDA5FC5D22B223B44B5E8ECDC26169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADBEDE45A335E293E0D7A65F48B75277 /* Build configuration list for PBXNativeTarget "PVPMikrotikSSH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EE4ADF56FE4DBBDC615CC60FBAEB7DE /* Debug */,
+				26F6DD9E7428B5911F1A46FC3E8EF830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
