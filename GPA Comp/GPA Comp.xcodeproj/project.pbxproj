@@ -25,6 +25,7 @@
 		B85A07372237050500CCB039 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07362237050500CCB039 /* MainView.swift */; };
 		B85A07392237092A00CCB039 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07382237092A00CCB039 /* AppData.swift */; };
 		B85A073A2237092A00CCB039 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07382237092A00CCB039 /* AppData.swift */; };
+		B85A073C22370AAE00CCB039 /* PowerschoolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A073B22370AAE00CCB039 /* PowerschoolInfo.swift */; };
 		D0DE594DD267D3B0C75E32D0 /* Pods_GPA_Comp_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0FB6CE6AC3C390051C3503 /* Pods_GPA_Comp_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +97,7 @@
 		B85A0734223704FB00CCB039 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../../../Reused Files/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		B85A07362237050500CCB039 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B85A07382237092A00CCB039 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		B85A073B22370AAE00CCB039 /* PowerschoolInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerschoolInfo.swift; sourceTree = "<group>"; };
 		BB825B9CFB7BAC29A81A52B3 /* Pods-GPA Comp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPA Comp.release.xcconfig"; path = "Target Support Files/Pods-GPA Comp/Pods-GPA Comp.release.xcconfig"; sourceTree = "<group>"; };
 		C331D7CA51715E9ED49B26F5 /* Pods_GPA_Comp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPA_Comp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47280EA2009DDFD190BB6F1 /* libPods-GPA Comp WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPA Comp WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				B85A07382237092A00CCB039 /* AppData.swift */,
+				B85A073B22370AAE00CCB039 /* PowerschoolInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -379,14 +382,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GPA Comp/Pods-GPA Comp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+				"${BUILT_PRODUCTS_DIR}/WKZombie/WKZombie.framework",
+				"${BUILT_PRODUCTS_DIR}/hpple/hpple.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WKZombie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hpple.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -466,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B85A073C22370AAE00CCB039 /* PowerschoolInfo.swift in Sources */,
 				B85A06F82237028500CCB039 /* ViewController.swift in Sources */,
 				B85A07372237050500CCB039 /* MainView.swift in Sources */,
 				B85A06F62237028500CCB039 /* AppDelegate.swift in Sources */,
@@ -570,6 +576,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -624,6 +631,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -645,7 +653,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
@@ -668,7 +676,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
@@ -688,7 +696,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
@@ -708,7 +716,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
@@ -728,7 +736,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "LesGarcons.GPA-Comp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -747,7 +755,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "LesGarcons.GPA-Comp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

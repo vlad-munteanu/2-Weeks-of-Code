@@ -7,7 +7,7 @@ target 'GPA Comp' do
 
   # Pods for GPA Comp
   pod 'SnapKit'
-  pod 'SwiftSoup'
+  pod 'WKZombie'
 end
 
 target 'GPA Comp WatchKit App' do
