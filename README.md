@@ -12,7 +12,7 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 
 ## Lines of Code Written So Far This Month: 
 ```
-3,052
+3,313
 ```
 
 ## Day 1: Random Color Generator 
@@ -61,7 +61,14 @@ An app that makes decisions for the user by the flip of the coin. Has a cool fli
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day9.gif)
 
 ## Day 10: Apple Watch SSH
-An app that lets users send an SSH command from their Apple Watch with the press of a button.
+An app that lets users send an SSH command (defined in the iPhone app) from their Apple Watch with the press of a button. 
+
+![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day10.gif)
+
+## Day 11: TIL Apple Watch 
+An app that fetches the top post from r/TodayILearned on Reddit and pushes it to a complication. 
+
+
 
 ## App Ideas TO_DO 
 - [ ] Raspberry PI App 
