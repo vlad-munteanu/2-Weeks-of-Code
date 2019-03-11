@@ -8,11 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainVC: UIViewController {
+    let mainView = MainView()
+    
+    public override func loadView() {
+        self.view = mainView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
 
