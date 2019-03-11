@@ -17,6 +17,8 @@ class MainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Main"
+        self.navigationController?.navigationBar.layer.masksToBounds = false
     }
     
     override func viewDidAppear(_ animated: Bool) {

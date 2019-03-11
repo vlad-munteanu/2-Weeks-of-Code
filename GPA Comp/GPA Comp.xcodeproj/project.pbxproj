@@ -10,7 +10,7 @@
 		337D1A30CCE36AF9910E97D8 /* Pods_GPA_Comp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C331D7CA51715E9ED49B26F5 /* Pods_GPA_Comp.framework */; };
 		4504324F1024EA5143845910 /* libPods-GPA Comp WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F47280EA2009DDFD190BB6F1 /* libPods-GPA Comp WatchKit App.a */; };
 		B85A06F62237028500CCB039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A06F52237028500CCB039 /* AppDelegate.swift */; };
-		B85A06F82237028500CCB039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A06F72237028500CCB039 /* ViewController.swift */; };
+		B85A06F82237028500CCB039 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A06F72237028500CCB039 /* MainVC.swift */; };
 		B85A06FD2237028600CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A06FC2237028600CCB039 /* Assets.xcassets */; };
 		B85A07052237028600CCB039 /* GPA Comp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B85A07042237028600CCB039 /* GPA Comp WatchKit App.app */; };
 		B85A070B2237028600CCB039 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A07092237028600CCB039 /* Interface.storyboard */; };
@@ -26,6 +26,8 @@
 		B85A07392237092A00CCB039 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07382237092A00CCB039 /* AppData.swift */; };
 		B85A073A2237092A00CCB039 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07382237092A00CCB039 /* AppData.swift */; };
 		B85A073C22370AAE00CCB039 /* PowerschoolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A073B22370AAE00CCB039 /* PowerschoolInfo.swift */; };
+		B85A073F22371C6D00CCB039 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A073E22371C6D00CCB039 /* TabBarController.swift */; };
+		B85A074122371CA100CCB039 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A074022371CA100CCB039 /* SettingsVC.swift */; };
 		D0DE594DD267D3B0C75E32D0 /* Pods_GPA_Comp_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0FB6CE6AC3C390051C3503 /* Pods_GPA_Comp_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +81,7 @@
 		B55CDD5EA14501C3F3E6AEF9 /* Pods-GPA Comp WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPA Comp WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-GPA Comp WatchKit App/Pods-GPA Comp WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		B85A06F22237028400CCB039 /* GPA Comp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPA Comp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85A06F52237028500CCB039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B85A06F72237028500CCB039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B85A06F72237028500CCB039 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B85A06FC2237028600CCB039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B85A07012237028600CCB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B85A07042237028600CCB039 /* GPA Comp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPA Comp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,8 @@
 		B85A07362237050500CCB039 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B85A07382237092A00CCB039 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		B85A073B22370AAE00CCB039 /* PowerschoolInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerschoolInfo.swift; sourceTree = "<group>"; };
+		B85A073E22371C6D00CCB039 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B85A074022371CA100CCB039 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		BB825B9CFB7BAC29A81A52B3 /* Pods-GPA Comp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPA Comp.release.xcconfig"; path = "Target Support Files/Pods-GPA Comp/Pods-GPA Comp.release.xcconfig"; sourceTree = "<group>"; };
 		C331D7CA51715E9ED49B26F5 /* Pods_GPA_Comp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPA_Comp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47280EA2009DDFD190BB6F1 /* libPods-GPA Comp WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPA Comp WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,8 +206,10 @@
 		B85A0731223704BE00CCB039 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				B85A06F72237028500CCB039 /* ViewController.swift */,
+				B85A06F72237028500CCB039 /* MainVC.swift */,
+				B85A074022371CA100CCB039 /* SettingsVC.swift */,
 				B85A07362237050500CCB039 /* MainView.swift */,
+				B85A073E22371C6D00CCB039 /* TabBarController.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -472,10 +478,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B85A073C22370AAE00CCB039 /* PowerschoolInfo.swift in Sources */,
-				B85A06F82237028500CCB039 /* ViewController.swift in Sources */,
+				B85A06F82237028500CCB039 /* MainVC.swift in Sources */,
 				B85A07372237050500CCB039 /* MainView.swift in Sources */,
+				B85A073F22371C6D00CCB039 /* TabBarController.swift in Sources */,
 				B85A06F62237028500CCB039 /* AppDelegate.swift in Sources */,
 				B85A07392237092A00CCB039 /* AppData.swift in Sources */,
+				B85A074122371CA100CCB039 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
