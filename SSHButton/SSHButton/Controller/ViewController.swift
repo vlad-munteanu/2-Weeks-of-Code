@@ -95,19 +95,12 @@ class ViewController: UIViewController, WCSessionDelegate, NMSSHChannelDelegate 
             }
         }
     }
-    
-   
-
-
 }
-
 
 extension ViewController {
     @available(iOS 9.3, *)
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
         watchConnectionStatus()
-        
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
