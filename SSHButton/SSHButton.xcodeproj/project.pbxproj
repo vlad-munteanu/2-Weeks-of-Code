@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0160B2A9E070896DC017D3BE /* Pods_SSHButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9D06790497C15EF958AE03 /* Pods_SSHButton.framework */; };
+		78BF16DD789DE2EA2AA9A87C /* libPods-SSHButton WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E84FC88FFBA49BF732F0E070 /* libPods-SSHButton WatchKit App.a */; };
+		8F93999CFABCC437D8F6F7DC /* Pods_SSHButton_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A627B0D7E1F18E734A54A8BF /* Pods_SSHButton_WatchKit_Extension.framework */; };
 		B81F8F6F22355C52008CA309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8F6E22355C52008CA309 /* AppDelegate.swift */; };
 		B81F8F7122355C52008CA309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8F7022355C52008CA309 /* ViewController.swift */; };
-		B81F8F7422355C52008CA309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F7222355C52008CA309 /* Main.storyboard */; };
 		B81F8F7622355C53008CA309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F7522355C53008CA309 /* Assets.xcassets */; };
 		B81F8F7922355C53008CA309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F7722355C53008CA309 /* LaunchScreen.storyboard */; };
 		B81F8F7E22355C53008CA309 /* SSHButton WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B81F8F7D22355C53008CA309 /* SSHButton WatchKit App.app */; };
@@ -20,6 +22,8 @@
 		B81F8F9422355C54008CA309 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8F9322355C54008CA309 /* ExtensionDelegate.swift */; };
 		B81F8F9622355C54008CA309 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8F9522355C54008CA309 /* NotificationController.swift */; };
 		B81F8F9822355C54008CA309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F9722355C54008CA309 /* Assets.xcassets */; };
+		B81F8FAD2235863B008CA309 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8FAC2235863B008CA309 /* MainView.swift */; };
+		B81F8FAF2235D0FF008CA309 /* InjectorFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8FAE2235D0FF008CA309 /* InjectorFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,10 +69,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3CAEDCDCD6967D4A882AFFBB /* Pods-SSHButton WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSHButton WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-SSHButton WatchKit Extension/Pods-SSHButton WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		4ACD89FA2ACAD74FD3A26619 /* Pods-SSHButton WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSHButton WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-SSHButton WatchKit App/Pods-SSHButton WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		86DA3C77E5EF934380A94AF5 /* Pods-SSHButton WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSHButton WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-SSHButton WatchKit Extension/Pods-SSHButton WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		A627B0D7E1F18E734A54A8BF /* Pods_SSHButton_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSHButton_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A83F1024A44ADB763D73E029 /* Pods-SSHButton WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSHButton WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-SSHButton WatchKit App/Pods-SSHButton WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		A9CBE56706995BB049304598 /* Pods-SSHButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSHButton.debug.xcconfig"; path = "Target Support Files/Pods-SSHButton/Pods-SSHButton.debug.xcconfig"; sourceTree = "<group>"; };
 		B81F8F6B22355C52008CA309 /* SSHButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSHButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81F8F6E22355C52008CA309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B81F8F7022355C52008CA309 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B81F8F7322355C52008CA309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B81F8F7522355C53008CA309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B81F8F7822355C53008CA309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B81F8F7A22355C53008CA309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,13 +92,27 @@
 		B81F8F9722355C54008CA309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B81F8F9922355C55008CA309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B81F8F9A22355C55008CA309 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B81F8FAC2235863B008CA309 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B81F8FAE2235D0FF008CA309 /* InjectorFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectorFile.swift; sourceTree = "<group>"; };
+		BB9D06790497C15EF958AE03 /* Pods_SSHButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSHButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61967F364539AB2A8BD0D34 /* Pods-SSHButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSHButton.release.xcconfig"; path = "Target Support Files/Pods-SSHButton/Pods-SSHButton.release.xcconfig"; sourceTree = "<group>"; };
+		E84FC88FFBA49BF732F0E070 /* libPods-SSHButton WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SSHButton WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B309A23F617F811A1BB46D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78BF16DD789DE2EA2AA9A87C /* libPods-SSHButton WatchKit App.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B81F8F6822355C52008CA309 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0160B2A9E070896DC017D3BE /* Pods_SSHButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,12 +120,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F93999CFABCC437D8F6F7DC /* Pods_SSHButton_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FB973F0453B2526BCB06644 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9CBE56706995BB049304598 /* Pods-SSHButton.debug.xcconfig */,
+				D61967F364539AB2A8BD0D34 /* Pods-SSHButton.release.xcconfig */,
+				4ACD89FA2ACAD74FD3A26619 /* Pods-SSHButton WatchKit App.debug.xcconfig */,
+				A83F1024A44ADB763D73E029 /* Pods-SSHButton WatchKit App.release.xcconfig */,
+				86DA3C77E5EF934380A94AF5 /* Pods-SSHButton WatchKit Extension.debug.xcconfig */,
+				3CAEDCDCD6967D4A882AFFBB /* Pods-SSHButton WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A10EC97393AD9FF2531CD920 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB9D06790497C15EF958AE03 /* Pods_SSHButton.framework */,
+				E84FC88FFBA49BF732F0E070 /* libPods-SSHButton WatchKit App.a */,
+				A627B0D7E1F18E734A54A8BF /* Pods_SSHButton_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B81F8F6222355C52008CA309 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +157,8 @@
 				B81F8F8122355C53008CA309 /* SSHButton WatchKit App */,
 				B81F8F9022355C54008CA309 /* SSHButton WatchKit Extension */,
 				B81F8F6C22355C52008CA309 /* Products */,
+				9FB973F0453B2526BCB06644 /* Pods */,
+				A10EC97393AD9FF2531CD920 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,11 +175,10 @@
 		B81F8F6D22355C52008CA309 /* SSHButton */ = {
 			isa = PBXGroup;
 			children = (
-				B81F8F6E22355C52008CA309 /* AppDelegate.swift */,
-				B81F8F7022355C52008CA309 /* ViewController.swift */,
-				B81F8F7222355C52008CA309 /* Main.storyboard */,
-				B81F8F7522355C53008CA309 /* Assets.xcassets */,
-				B81F8F7722355C53008CA309 /* LaunchScreen.storyboard */,
+				B81F8FAA22355D3E008CA309 /* View */,
+				B81F8FA822355D39008CA309 /* Controller */,
+				B81F8FA922355D3B008CA309 /* Model */,
+				B81F8FAB22355D54008CA309 /* Supporting Files */,
 				B81F8F7A22355C53008CA309 /* Info.plist */,
 			);
 			path = SSHButton;
@@ -159,6 +207,40 @@
 			path = "SSHButton WatchKit Extension";
 			sourceTree = "<group>";
 		};
+		B81F8FA822355D39008CA309 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B81F8F7022355C52008CA309 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B81F8FA922355D3B008CA309 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B81F8FAE2235D0FF008CA309 /* InjectorFile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B81F8FAA22355D3E008CA309 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B81F8FAC2235863B008CA309 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B81F8FAB22355D54008CA309 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B81F8F6E22355C52008CA309 /* AppDelegate.swift */,
+				B81F8F7522355C53008CA309 /* Assets.xcassets */,
+				B81F8F7722355C53008CA309 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,10 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B81F8FA522355C55008CA309 /* Build configuration list for PBXNativeTarget "SSHButton" */;
 			buildPhases = (
+				18C278E4B06D47DE332C6AF3 /* [CP] Check Pods Manifest.lock */,
 				B81F8F6722355C52008CA309 /* Sources */,
 				B81F8F6822355C52008CA309 /* Frameworks */,
 				B81F8F6922355C52008CA309 /* Resources */,
 				B81F8FA422355C55008CA309 /* Embed Watch Content */,
+				9A217CE1CE4C198C86BF9EE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,8 +269,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B81F8FA122355C55008CA309 /* Build configuration list for PBXNativeTarget "SSHButton WatchKit App" */;
 			buildPhases = (
+				B39C68C9F5E6EC4956A438BE /* [CP] Check Pods Manifest.lock */,
 				B81F8F7B22355C53008CA309 /* Resources */,
 				B81F8FA022355C55008CA309 /* Embed App Extensions */,
+				B309A23F617F811A1BB46D9F /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,6 +288,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B81F8F9D22355C55008CA309 /* Build configuration list for PBXNativeTarget "SSHButton WatchKit Extension" */;
 			buildPhases = (
+				B7066B3E161FAC32333318BB /* [CP] Check Pods Manifest.lock */,
 				B81F8F8822355C54008CA309 /* Sources */,
 				B81F8F8922355C54008CA309 /* Frameworks */,
 				B81F8F8A22355C54008CA309 /* Resources */,
@@ -263,7 +350,6 @@
 			files = (
 				B81F8F7922355C53008CA309 /* LaunchScreen.storyboard in Resources */,
 				B81F8F7622355C53008CA309 /* Assets.xcassets in Resources */,
-				B81F8F7422355C52008CA309 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,13 +372,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18C278E4B06D47DE332C6AF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSHButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A217CE1CE4C198C86BF9EE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSHButton/Pods-SSHButton-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NMSSH/NMSSH.framework",
+				"${BUILT_PRODUCTS_DIR}/PVPMikrotikSSH/PVPMikrotikSSH.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NMSSH.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PVPMikrotikSSH.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSHButton/Pods-SSHButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B39C68C9F5E6EC4956A438BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSHButton WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7066B3E161FAC32333318BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSHButton WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B81F8F6722355C52008CA309 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B81F8F7122355C52008CA309 /* ViewController.swift in Sources */,
+				B81F8FAD2235863B008CA309 /* MainView.swift in Sources */,
 				B81F8F6F22355C52008CA309 /* AppDelegate.swift in Sources */,
+				B81F8FAF2235D0FF008CA309 /* InjectorFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,14 +505,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B81F8F7222355C52008CA309 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B81F8F7322355C52008CA309 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B81F8F7722355C53008CA309 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -400,7 +575,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -455,7 +630,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -467,6 +642,7 @@
 		};
 		B81F8F9E22355C55008CA309 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86DA3C77E5EF934380A94AF5 /* Pods-SSHButton WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -483,12 +659,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
 		B81F8F9F22355C55008CA309 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAEDCDCD6967D4A882AFFBB /* Pods-SSHButton WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -505,12 +682,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
 		B81F8FA222355C55008CA309 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ACD89FA2ACAD74FD3A26619 /* Pods-SSHButton WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -524,12 +702,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
 		B81F8FA322355C55008CA309 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A83F1024A44ADB763D73E029 /* Pods-SSHButton WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -543,12 +722,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
 		B81F8FA622355C55008CA309 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9CBE56706995BB049304598 /* Pods-SSHButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -567,6 +747,7 @@
 		};
 		B81F8FA722355C55008CA309 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D61967F364539AB2A8BD0D34 /* Pods-SSHButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
