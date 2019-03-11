@@ -73,6 +73,34 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     // MARK: - Placeholder Templates
     
+    func getPlaceholderTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
+        var template: CLKComplicationTemplate?
+        switch complication.family {
+        case .modularLarge:
+            let largeTemplate = CLKComplicationTemplateModularLargeColumns()
+            
+            //GPA
+            largeTemplate.row1Column1TextProvider = CLKSimpleTextProvider(text: "GPA")
+            largeTemplate.row1Column2TextProvider = CLKSimpleTextProvider(text: "--")
+            //Absences
+            largeTemplate.row2Column1TextProvider = CLKSimpleTextProvider(text: "Absences")
+            largeTemplate.row2Column2TextProvider = CLKSimpleTextProvider(text: "--")
+            //Tardies
+            largeTemplate.row3Column1TextProvider = CLKSimpleTextProvider(text: "Tardies")
+            largeTemplate.row3Column2TextProvider = CLKSimpleTextProvider(text: "--")
+            
+            template = largeTemplate
+            
+        case .modularSmall:
+            let smallTemplate = CLKComplicationTemplateModularSmallSimpleText()
+            smallTemplate.textProvider = CLKSimpleTextProvider(text: "--")
+            template = smallTemplate
+        default: break
+            
+        }
+        handler(template)
+    }
+    
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
         handler(nil)
