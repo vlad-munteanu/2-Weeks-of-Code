@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B85A06F62237028500CCB039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A06F52237028500CCB039 /* AppDelegate.swift */; };
+		B85A06F82237028500CCB039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A06F72237028500CCB039 /* ViewController.swift */; };
+		B85A06FD2237028600CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A06FC2237028600CCB039 /* Assets.xcassets */; };
+		B85A07052237028600CCB039 /* GPA Comp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B85A07042237028600CCB039 /* GPA Comp WatchKit App.app */; };
+		B85A070B2237028600CCB039 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A07092237028600CCB039 /* Interface.storyboard */; };
+		B85A070D2237028700CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A070C2237028700CCB039 /* Assets.xcassets */; };
+		B85A07142237028700CCB039 /* GPA Comp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B85A07132237028700CCB039 /* GPA Comp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B85A07192237028700CCB039 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07182237028700CCB039 /* InterfaceController.swift */; };
+		B85A071B2237028700CCB039 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A071A2237028700CCB039 /* ExtensionDelegate.swift */; };
+		B85A071D2237028700CCB039 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A071C2237028700CCB039 /* NotificationController.swift */; };
+		B85A071F2237028700CCB039 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A071E2237028700CCB039 /* ComplicationController.swift */; };
+		B85A07212237028700CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A07202237028700CCB039 /* Assets.xcassets */; };
+		B85A0735223704FB00CCB039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A0734223704FB00CCB039 /* LaunchScreen.storyboard */; };
+		B85A07372237050500CCB039 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07362237050500CCB039 /* MainView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B85A07062237028600CCB039 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B85A06EA2237028400CCB039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B85A07032237028600CCB039;
+			remoteInfo = "GPA Comp WatchKit App";
+		};
+		B85A07152237028700CCB039 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B85A06EA2237028400CCB039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B85A07122237028700CCB039;
+			remoteInfo = "GPA Comp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B85A07292237028700CCB039 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B85A07142237028700CCB039 /* GPA Comp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85A072D2237028700CCB039 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B85A07052237028600CCB039 /* GPA Comp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B85A06F22237028400CCB039 /* GPA Comp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPA Comp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85A06F52237028500CCB039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B85A06F72237028500CCB039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B85A06FC2237028600CCB039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B85A07012237028600CCB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B85A07042237028600CCB039 /* GPA Comp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPA Comp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85A070A2237028600CCB039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B85A070C2237028700CCB039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B85A070E2237028700CCB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B85A07132237028700CCB039 /* GPA Comp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GPA Comp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85A07182237028700CCB039 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B85A071A2237028700CCB039 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B85A071C2237028700CCB039 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B85A071E2237028700CCB039 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		B85A07202237028700CCB039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B85A07222237028700CCB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B85A07232237028700CCB039 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B85A0734223704FB00CCB039 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../../../Reused Files/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		B85A07362237050500CCB039 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B85A06EF2237028400CCB039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85A07102237028700CCB039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B85A06E92237028400CCB039 = {
+			isa = PBXGroup;
+			children = (
+				B85A06F42237028500CCB039 /* GPA Comp */,
+				B85A07082237028600CCB039 /* GPA Comp WatchKit App */,
+				B85A07172237028700CCB039 /* GPA Comp WatchKit Extension */,
+				B85A06F32237028400CCB039 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B85A06F32237028400CCB039 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B85A06F22237028400CCB039 /* GPA Comp.app */,
+				B85A07042237028600CCB039 /* GPA Comp WatchKit App.app */,
+				B85A07132237028700CCB039 /* GPA Comp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B85A06F42237028500CCB039 /* GPA Comp */ = {
+			isa = PBXGroup;
+			children = (
+				B85A0731223704BE00CCB039 /* MainView */,
+				B85A0733223704D600CCB039 /* Model */,
+				B85A0732223704C600CCB039 /* Supporting Files */,
+				B85A07012237028600CCB039 /* Info.plist */,
+			);
+			path = "GPA Comp";
+			sourceTree = "<group>";
+		};
+		B85A07082237028600CCB039 /* GPA Comp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B85A07092237028600CCB039 /* Interface.storyboard */,
+				B85A070C2237028700CCB039 /* Assets.xcassets */,
+				B85A070E2237028700CCB039 /* Info.plist */,
+			);
+			path = "GPA Comp WatchKit App";
+			sourceTree = "<group>";
+		};
+		B85A07172237028700CCB039 /* GPA Comp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B85A07182237028700CCB039 /* InterfaceController.swift */,
+				B85A071A2237028700CCB039 /* ExtensionDelegate.swift */,
+				B85A071C2237028700CCB039 /* NotificationController.swift */,
+				B85A071E2237028700CCB039 /* ComplicationController.swift */,
+				B85A07202237028700CCB039 /* Assets.xcassets */,
+				B85A07222237028700CCB039 /* Info.plist */,
+				B85A07232237028700CCB039 /* PushNotificationPayload.apns */,
+			);
+			path = "GPA Comp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B85A0731223704BE00CCB039 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				B85A06F72237028500CCB039 /* ViewController.swift */,
+				B85A07362237050500CCB039 /* MainView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		B85A0732223704C600CCB039 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B85A06F52237028500CCB039 /* AppDelegate.swift */,
+				B85A0734223704FB00CCB039 /* LaunchScreen.storyboard */,
+				B85A06FC2237028600CCB039 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B85A0733223704D600CCB039 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B85A06F12237028400CCB039 /* GPA Comp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B85A072E2237028700CCB039 /* Build configuration list for PBXNativeTarget "GPA Comp" */;
+			buildPhases = (
+				B85A06EE2237028400CCB039 /* Sources */,
+				B85A06EF2237028400CCB039 /* Frameworks */,
+				B85A06F02237028400CCB039 /* Resources */,
+				B85A072D2237028700CCB039 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B85A07072237028600CCB039 /* PBXTargetDependency */,
+			);
+			name = "GPA Comp";
+			productName = "GPA Comp";
+			productReference = B85A06F22237028400CCB039 /* GPA Comp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B85A07032237028600CCB039 /* GPA Comp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B85A072A2237028700CCB039 /* Build configuration list for PBXNativeTarget "GPA Comp WatchKit App" */;
+			buildPhases = (
+				B85A07022237028600CCB039 /* Resources */,
+				B85A07292237028700CCB039 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B85A07162237028700CCB039 /* PBXTargetDependency */,
+			);
+			name = "GPA Comp WatchKit App";
+			productName = "GPA Comp WatchKit App";
+			productReference = B85A07042237028600CCB039 /* GPA Comp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B85A07122237028700CCB039 /* GPA Comp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B85A07262237028700CCB039 /* Build configuration list for PBXNativeTarget "GPA Comp WatchKit Extension" */;
+			buildPhases = (
+				B85A070F2237028700CCB039 /* Sources */,
+				B85A07102237028700CCB039 /* Frameworks */,
+				B85A07112237028700CCB039 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GPA Comp WatchKit Extension";
+			productName = "GPA Comp WatchKit Extension";
+			productReference = B85A07132237028700CCB039 /* GPA Comp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B85A06EA2237028400CCB039 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Vlad Munteanu";
+				TargetAttributes = {
+					B85A06F12237028400CCB039 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					B85A07032237028600CCB039 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					B85A07122237028700CCB039 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = B85A06ED2237028400CCB039 /* Build configuration list for PBXProject "GPA Comp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B85A06E92237028400CCB039;
+			productRefGroup = B85A06F32237028400CCB039 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B85A06F12237028400CCB039 /* GPA Comp */,
+				B85A07032237028600CCB039 /* GPA Comp WatchKit App */,
+				B85A07122237028700CCB039 /* GPA Comp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B85A06F02237028400CCB039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85A06FD2237028600CCB039 /* Assets.xcassets in Resources */,
+				B85A0735223704FB00CCB039 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85A07022237028600CCB039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85A070D2237028700CCB039 /* Assets.xcassets in Resources */,
+				B85A070B2237028600CCB039 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85A07112237028700CCB039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85A07212237028700CCB039 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B85A06EE2237028400CCB039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85A06F82237028500CCB039 /* ViewController.swift in Sources */,
+				B85A07372237050500CCB039 /* MainView.swift in Sources */,
+				B85A06F62237028500CCB039 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85A070F2237028700CCB039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85A071D2237028700CCB039 /* NotificationController.swift in Sources */,
+				B85A071F2237028700CCB039 /* ComplicationController.swift in Sources */,
+				B85A071B2237028700CCB039 /* ExtensionDelegate.swift in Sources */,
+				B85A07192237028700CCB039 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B85A07072237028600CCB039 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B85A07032237028600CCB039 /* GPA Comp WatchKit App */;
+			targetProxy = B85A07062237028600CCB039 /* PBXContainerItemProxy */;
+		};
+		B85A07162237028700CCB039 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B85A07122237028700CCB039 /* GPA Comp WatchKit Extension */;
+			targetProxy = B85A07152237028700CCB039 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B85A07092237028600CCB039 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B85A070A2237028600CCB039 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B85A07242237028700CCB039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B85A07252237028700CCB039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B85A07272237028700CCB039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = "GPA Comp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "LesGarcons.GPA-Comp.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		B85A07282237028700CCB039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = "GPA Comp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "LesGarcons.GPA-Comp.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		B85A072B2237028700CCB039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				IBSC_MODULE = GPA_Comp_WatchKit_Extension;
+				INFOPLIST_FILE = "GPA Comp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "LesGarcons.GPA-Comp.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		B85A072C2237028700CCB039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				IBSC_MODULE = GPA_Comp_WatchKit_Extension;
+				INFOPLIST_FILE = "GPA Comp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "LesGarcons.GPA-Comp.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		B85A072F2237028700CCB039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = "GPA Comp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "LesGarcons.GPA-Comp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B85A07302237028700CCB039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = "GPA Comp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "LesGarcons.GPA-Comp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B85A06ED2237028400CCB039 /* Build configuration list for PBXProject "GPA Comp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85A07242237028700CCB039 /* Debug */,
+				B85A07252237028700CCB039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B85A07262237028700CCB039 /* Build configuration list for PBXNativeTarget "GPA Comp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85A07272237028700CCB039 /* Debug */,
+				B85A07282237028700CCB039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B85A072A2237028700CCB039 /* Build configuration list for PBXNativeTarget "GPA Comp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85A072B2237028700CCB039 /* Debug */,
+				B85A072C2237028700CCB039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B85A072E2237028700CCB039 /* Build configuration list for PBXNativeTarget "GPA Comp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85A072F2237028700CCB039 /* Debug */,
+				B85A07302237028700CCB039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B85A06EA2237028400CCB039 /* Project object */;
+}
