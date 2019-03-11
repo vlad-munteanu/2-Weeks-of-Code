@@ -8,8 +8,11 @@
 
 import UIKit
 import CDAlertView
+import WatchConnectivity
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WCSessionDelegate {
+    //AW stuff
+    var session : WCSession!
     //View
     let mainView = MainView()
     
@@ -43,7 +46,49 @@ class ViewController: UIViewController {
         }
     }
     
+    func watchConnectionStatus(){
+        
+        print("isPaired",session.isPaired)
+        print("session.isWatchAppInstalled",session.isWatchAppInstalled)
+        print(session.watchDirectoryURL as Any)
+        
+    }
+    
    
 
 
 }
+
+
+extension ViewController {
+    @available(iOS 9.3, *)
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+        watchConnectionStatus()
+        
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        let message = message["message"] as! String
+        print(message)
+        
+        playCatNoise()
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+    
+    //    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+    //
+    //
+    //
+    //
+    //    }
+}
+
+
