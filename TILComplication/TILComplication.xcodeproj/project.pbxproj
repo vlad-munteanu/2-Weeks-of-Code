@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B86EFBB52236156100FE3A8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EFBB42236156100FE3A8A /* AppDelegate.swift */; };
+		B86EFBB72236156100FE3A8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EFBB62236156100FE3A8A /* ViewController.swift */; };
+		B86EFBBC2236156300FE3A8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86EFBBB2236156300FE3A8A /* Assets.xcassets */; };
+		B86EFBBF2236156300FE3A8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86EFBBD2236156300FE3A8A /* LaunchScreen.storyboard */; };
+		B86EFBC42236156300FE3A8A /* TILComplication WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B86EFBC32236156300FE3A8A /* TILComplication WatchKit App.app */; };
+		B86EFBCA2236156300FE3A8A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86EFBC82236156300FE3A8A /* Interface.storyboard */; };
+		B86EFBCC2236156300FE3A8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86EFBCB2236156300FE3A8A /* Assets.xcassets */; };
+		B86EFBD32236156300FE3A8A /* TILComplication WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B86EFBD22236156300FE3A8A /* TILComplication WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B86EFBD82236156300FE3A8A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EFBD72236156300FE3A8A /* InterfaceController.swift */; };
+		B86EFBDA2236156300FE3A8A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EFBD92236156300FE3A8A /* ExtensionDelegate.swift */; };
+		B86EFBDC2236156300FE3A8A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EFBDB2236156300FE3A8A /* NotificationController.swift */; };
+		B86EFBDE2236156300FE3A8A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86EFBDD2236156300FE3A8A /* ComplicationController.swift */; };
+		B86EFBE02236156400FE3A8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B86EFBDF2236156400FE3A8A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B86EFBC52236156300FE3A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B86EFBA92236156100FE3A8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B86EFBC22236156300FE3A8A;
+			remoteInfo = "TILComplication WatchKit App";
+		};
+		B86EFBD42236156300FE3A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B86EFBA92236156100FE3A8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B86EFBD12236156300FE3A8A;
+			remoteInfo = "TILComplication WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B86EFBE82236156400FE3A8A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B86EFBD32236156300FE3A8A /* TILComplication WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B86EFBEC2236156400FE3A8A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B86EFBC42236156300FE3A8A /* TILComplication WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B86EFBB12236156100FE3A8A /* TILComplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TILComplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B86EFBB42236156100FE3A8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B86EFBB62236156100FE3A8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B86EFBBB2236156300FE3A8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B86EFBBE2236156300FE3A8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B86EFBC02236156300FE3A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B86EFBC32236156300FE3A8A /* TILComplication WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TILComplication WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B86EFBC92236156300FE3A8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B86EFBCB2236156300FE3A8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B86EFBCD2236156300FE3A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B86EFBD22236156300FE3A8A /* TILComplication WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TILComplication WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B86EFBD72236156300FE3A8A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B86EFBD92236156300FE3A8A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B86EFBDB2236156300FE3A8A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B86EFBDD2236156300FE3A8A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		B86EFBDF2236156400FE3A8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B86EFBE12236156400FE3A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B86EFBE22236156400FE3A8A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B86EFBAE2236156100FE3A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B86EFBCF2236156300FE3A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B86EFBA82236156100FE3A8A = {
+			isa = PBXGroup;
+			children = (
+				B86EFBB32236156100FE3A8A /* TILComplication */,
+				B86EFBC72236156300FE3A8A /* TILComplication WatchKit App */,
+				B86EFBD62236156300FE3A8A /* TILComplication WatchKit Extension */,
+				B86EFBB22236156100FE3A8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B86EFBB22236156100FE3A8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B86EFBB12236156100FE3A8A /* TILComplication.app */,
+				B86EFBC32236156300FE3A8A /* TILComplication WatchKit App.app */,
+				B86EFBD22236156300FE3A8A /* TILComplication WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B86EFBB32236156100FE3A8A /* TILComplication */ = {
+			isa = PBXGroup;
+			children = (
+				B86EFBB42236156100FE3A8A /* AppDelegate.swift */,
+				B86EFBB62236156100FE3A8A /* ViewController.swift */,
+				B86EFBBB2236156300FE3A8A /* Assets.xcassets */,
+				B86EFBBD2236156300FE3A8A /* LaunchScreen.storyboard */,
+				B86EFBC02236156300FE3A8A /* Info.plist */,
+			);
+			path = TILComplication;
+			sourceTree = "<group>";
+		};
+		B86EFBC72236156300FE3A8A /* TILComplication WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B86EFBC82236156300FE3A8A /* Interface.storyboard */,
+				B86EFBCB2236156300FE3A8A /* Assets.xcassets */,
+				B86EFBCD2236156300FE3A8A /* Info.plist */,
+			);
+			path = "TILComplication WatchKit App";
+			sourceTree = "<group>";
+		};
+		B86EFBD62236156300FE3A8A /* TILComplication WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B86EFBD72236156300FE3A8A /* InterfaceController.swift */,
+				B86EFBD92236156300FE3A8A /* ExtensionDelegate.swift */,
+				B86EFBDB2236156300FE3A8A /* NotificationController.swift */,
+				B86EFBDD2236156300FE3A8A /* ComplicationController.swift */,
+				B86EFBDF2236156400FE3A8A /* Assets.xcassets */,
+				B86EFBE12236156400FE3A8A /* Info.plist */,
+				B86EFBE22236156400FE3A8A /* PushNotificationPayload.apns */,
+			);
+			path = "TILComplication WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B86EFBB02236156100FE3A8A /* TILComplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B86EFBED2236156400FE3A8A /* Build configuration list for PBXNativeTarget "TILComplication" */;
+			buildPhases = (
+				B86EFBAD2236156100FE3A8A /* Sources */,
+				B86EFBAE2236156100FE3A8A /* Frameworks */,
+				B86EFBAF2236156100FE3A8A /* Resources */,
+				B86EFBEC2236156400FE3A8A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B86EFBC62236156300FE3A8A /* PBXTargetDependency */,
+			);
+			name = TILComplication;
+			productName = TILComplication;
+			productReference = B86EFBB12236156100FE3A8A /* TILComplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B86EFBC22236156300FE3A8A /* TILComplication WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B86EFBE92236156400FE3A8A /* Build configuration list for PBXNativeTarget "TILComplication WatchKit App" */;
+			buildPhases = (
+				B86EFBC12236156300FE3A8A /* Resources */,
+				B86EFBE82236156400FE3A8A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B86EFBD52236156300FE3A8A /* PBXTargetDependency */,
+			);
+			name = "TILComplication WatchKit App";
+			productName = "TILComplication WatchKit App";
+			productReference = B86EFBC32236156300FE3A8A /* TILComplication WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B86EFBD12236156300FE3A8A /* TILComplication WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B86EFBE52236156400FE3A8A /* Build configuration list for PBXNativeTarget "TILComplication WatchKit Extension" */;
+			buildPhases = (
+				B86EFBCE2236156300FE3A8A /* Sources */,
+				B86EFBCF2236156300FE3A8A /* Frameworks */,
+				B86EFBD02236156300FE3A8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TILComplication WatchKit Extension";
+			productName = "TILComplication WatchKit Extension";
+			productReference = B86EFBD22236156300FE3A8A /* TILComplication WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B86EFBA92236156100FE3A8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Vlad Munteanu";
+				TargetAttributes = {
+					B86EFBB02236156100FE3A8A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B86EFBC22236156300FE3A8A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B86EFBD12236156300FE3A8A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = B86EFBAC2236156100FE3A8A /* Build configuration list for PBXProject "TILComplication" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B86EFBA82236156100FE3A8A;
+			productRefGroup = B86EFBB22236156100FE3A8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B86EFBB02236156100FE3A8A /* TILComplication */,
+				B86EFBC22236156300FE3A8A /* TILComplication WatchKit App */,
+				B86EFBD12236156300FE3A8A /* TILComplication WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B86EFBAF2236156100FE3A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86EFBBF2236156300FE3A8A /* LaunchScreen.storyboard in Resources */,
+				B86EFBBC2236156300FE3A8A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B86EFBC12236156300FE3A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86EFBCC2236156300FE3A8A /* Assets.xcassets in Resources */,
+				B86EFBCA2236156300FE3A8A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B86EFBD02236156300FE3A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86EFBE02236156400FE3A8A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B86EFBAD2236156100FE3A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86EFBB72236156100FE3A8A /* ViewController.swift in Sources */,
+				B86EFBB52236156100FE3A8A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B86EFBCE2236156300FE3A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86EFBDC2236156300FE3A8A /* NotificationController.swift in Sources */,
+				B86EFBDE2236156300FE3A8A /* ComplicationController.swift in Sources */,
+				B86EFBDA2236156300FE3A8A /* ExtensionDelegate.swift in Sources */,
+				B86EFBD82236156300FE3A8A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B86EFBC62236156300FE3A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B86EFBC22236156300FE3A8A /* TILComplication WatchKit App */;
+			targetProxy = B86EFBC52236156300FE3A8A /* PBXContainerItemProxy */;
+		};
+		B86EFBD52236156300FE3A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B86EFBD12236156300FE3A8A /* TILComplication WatchKit Extension */;
+			targetProxy = B86EFBD42236156300FE3A8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B86EFBBD2236156300FE3A8A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B86EFBBE2236156300FE3A8A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B86EFBC82236156300FE3A8A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B86EFBC92236156300FE3A8A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B86EFBE32236156400FE3A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B86EFBE42236156400FE3A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B86EFBE62236156400FE3A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = "TILComplication WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.TILComplication.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		B86EFBE72236156400FE3A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = "TILComplication WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.TILComplication.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		B86EFBEA2236156400FE3A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				IBSC_MODULE = TILComplication_WatchKit_Extension;
+				INFOPLIST_FILE = "TILComplication WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.TILComplication.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		B86EFBEB2236156400FE3A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				IBSC_MODULE = TILComplication_WatchKit_Extension;
+				INFOPLIST_FILE = "TILComplication WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.TILComplication.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		B86EFBEE2236156400FE3A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = TILComplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.TILComplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B86EFBEF2236156400FE3A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = TILComplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.TILComplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B86EFBAC2236156100FE3A8A /* Build configuration list for PBXProject "TILComplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B86EFBE32236156400FE3A8A /* Debug */,
+				B86EFBE42236156400FE3A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B86EFBE52236156400FE3A8A /* Build configuration list for PBXNativeTarget "TILComplication WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B86EFBE62236156400FE3A8A /* Debug */,
+				B86EFBE72236156400FE3A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B86EFBE92236156400FE3A8A /* Build configuration list for PBXNativeTarget "TILComplication WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B86EFBEA2236156400FE3A8A /* Debug */,
+				B86EFBEB2236156400FE3A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B86EFBED2236156400FE3A8A /* Build configuration list for PBXNativeTarget "TILComplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B86EFBEE2236156400FE3A8A /* Debug */,
+				B86EFBEF2236156400FE3A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B86EFBA92236156100FE3A8A /* Project object */;
+}
