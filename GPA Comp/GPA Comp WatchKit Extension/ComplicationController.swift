@@ -38,13 +38,13 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             
             //GPA
             template.row1Column1TextProvider = CLKSimpleTextProvider(text: "GPA")
-            template.row1Column2TextProvider = CLKSimpleTextProvider(text: "")
+            template.row1Column2TextProvider = CLKSimpleTextProvider(text: "\(AppData.sharedInstance.GPA ?? "0")")
             //Absences
             template.row2Column1TextProvider = CLKSimpleTextProvider(text: "Absences")
-            template.row2Column2TextProvider = CLKSimpleTextProvider(text: "")
+            template.row2Column2TextProvider = CLKSimpleTextProvider(text: "\(AppData.sharedInstance.Absences ?? "0")")
             //Tardies
             template.row3Column1TextProvider = CLKSimpleTextProvider(text: "Tardies")
-            template.row3Column2TextProvider = CLKSimpleTextProvider(text: "")
+            template.row3Column2TextProvider = CLKSimpleTextProvider(text: "\(AppData.sharedInstance.Tardies ?? "0")")
             
             //template.textProvider = CLKSimpleTextProvider(text: "\(ApplicationDatas.sharedInstance.todayDataCount ?? 0)")
             
@@ -52,7 +52,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             handler(timelineEntry)
         case .modularSmall:
             let template = CLKComplicationTemplateModularSmallSimpleText()
-            template.textProvider = CLKSimpleTextProvider(text: "")
+            template.textProvider = CLKSimpleTextProvider(text: "\(AppData.sharedInstance.Absences ?? "0")")
             
             let timelineEntry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
             handler(timelineEntry)

@@ -23,6 +23,8 @@
 		B85A07212237028700CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A07202237028700CCB039 /* Assets.xcassets */; };
 		B85A0735223704FB00CCB039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A0734223704FB00CCB039 /* LaunchScreen.storyboard */; };
 		B85A07372237050500CCB039 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07362237050500CCB039 /* MainView.swift */; };
+		B85A07392237092A00CCB039 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07382237092A00CCB039 /* AppData.swift */; };
+		B85A073A2237092A00CCB039 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07382237092A00CCB039 /* AppData.swift */; };
 		D0DE594DD267D3B0C75E32D0 /* Pods_GPA_Comp_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0FB6CE6AC3C390051C3503 /* Pods_GPA_Comp_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +95,7 @@
 		B85A07232237028700CCB039 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		B85A0734223704FB00CCB039 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../../../Reused Files/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		B85A07362237050500CCB039 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B85A07382237092A00CCB039 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		BB825B9CFB7BAC29A81A52B3 /* Pods-GPA Comp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPA Comp.release.xcconfig"; path = "Target Support Files/Pods-GPA Comp/Pods-GPA Comp.release.xcconfig"; sourceTree = "<group>"; };
 		C331D7CA51715E9ED49B26F5 /* Pods_GPA_Comp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPA_Comp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47280EA2009DDFD190BB6F1 /* libPods-GPA Comp WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPA Comp WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +219,7 @@
 		B85A0733223704D600CCB039 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B85A07382237092A00CCB039 /* AppData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -465,6 +469,7 @@
 				B85A06F82237028500CCB039 /* ViewController.swift in Sources */,
 				B85A07372237050500CCB039 /* MainView.swift in Sources */,
 				B85A06F62237028500CCB039 /* AppDelegate.swift in Sources */,
+				B85A07392237092A00CCB039 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +481,7 @@
 				B85A071F2237028700CCB039 /* ComplicationController.swift in Sources */,
 				B85A071B2237028700CCB039 /* ExtensionDelegate.swift in Sources */,
 				B85A07192237028700CCB039 /* InterfaceController.swift in Sources */,
+				B85A073A2237092A00CCB039 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
