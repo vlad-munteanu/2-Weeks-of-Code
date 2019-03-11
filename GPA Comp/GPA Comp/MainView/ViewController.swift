@@ -36,7 +36,7 @@ class MainVC: UIViewController {
             let passwordTF = alertController.textFields![1] as UITextField
             
             if usernameTF.text != "" || passwordTF.text != ""{
-                PowerschoolInfo.setUpAuth(username: usernameTF.text!, password: passwordTF.text!)
+                PowerschoolInfo.setUpAuth(url: URL(string: "https://ps.fccps.org/public/home.html")!,username: usernameTF.text!, password: passwordTF.text!)
             }else{
                print("nil")
             }
