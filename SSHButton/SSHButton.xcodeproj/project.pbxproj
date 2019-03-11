@@ -10,10 +10,10 @@
 		0160B2A9E070896DC017D3BE /* Pods_SSHButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9D06790497C15EF958AE03 /* Pods_SSHButton.framework */; };
 		78BF16DD789DE2EA2AA9A87C /* libPods-SSHButton WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E84FC88FFBA49BF732F0E070 /* libPods-SSHButton WatchKit App.a */; };
 		8F93999CFABCC437D8F6F7DC /* Pods_SSHButton_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A627B0D7E1F18E734A54A8BF /* Pods_SSHButton_WatchKit_Extension.framework */; };
+		B810DB7C2235F44100945372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B810DB7B2235F44100945372 /* LaunchScreen.storyboard */; };
 		B81F8F6F22355C52008CA309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8F6E22355C52008CA309 /* AppDelegate.swift */; };
 		B81F8F7122355C52008CA309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F8F7022355C52008CA309 /* ViewController.swift */; };
 		B81F8F7622355C53008CA309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F7522355C53008CA309 /* Assets.xcassets */; };
-		B81F8F7922355C53008CA309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F7722355C53008CA309 /* LaunchScreen.storyboard */; };
 		B81F8F7E22355C53008CA309 /* SSHButton WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B81F8F7D22355C53008CA309 /* SSHButton WatchKit App.app */; };
 		B81F8F8422355C53008CA309 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F8222355C53008CA309 /* Interface.storyboard */; };
 		B81F8F8622355C54008CA309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81F8F8522355C54008CA309 /* Assets.xcassets */; };
@@ -75,11 +75,11 @@
 		A627B0D7E1F18E734A54A8BF /* Pods_SSHButton_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSHButton_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83F1024A44ADB763D73E029 /* Pods-SSHButton WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSHButton WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-SSHButton WatchKit App/Pods-SSHButton WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		A9CBE56706995BB049304598 /* Pods-SSHButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSHButton.debug.xcconfig"; path = "Target Support Files/Pods-SSHButton/Pods-SSHButton.debug.xcconfig"; sourceTree = "<group>"; };
+		B810DB7B2235F44100945372 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../../../Reused Files/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		B81F8F6B22355C52008CA309 /* SSHButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSHButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81F8F6E22355C52008CA309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B81F8F7022355C52008CA309 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B81F8F7522355C53008CA309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B81F8F7822355C53008CA309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B81F8F7A22355C53008CA309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B81F8F7D22355C53008CA309 /* SSHButton WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSHButton WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81F8F8322355C53008CA309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -235,8 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				B81F8F6E22355C52008CA309 /* AppDelegate.swift */,
+				B810DB7B2235F44100945372 /* LaunchScreen.storyboard */,
 				B81F8F7522355C53008CA309 /* Assets.xcassets */,
-				B81F8F7722355C53008CA309 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -348,8 +348,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B81F8F7922355C53008CA309 /* LaunchScreen.storyboard in Resources */,
 				B81F8F7622355C53008CA309 /* Assets.xcassets in Resources */,
+				B810DB7C2235F44100945372 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,14 +507,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B81F8F7722355C53008CA309 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B81F8F7822355C53008CA309 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		B81F8F8222355C53008CA309 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
