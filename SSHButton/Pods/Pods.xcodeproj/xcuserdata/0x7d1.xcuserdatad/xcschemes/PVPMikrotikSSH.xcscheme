@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "589CABD4F2AB8B2CB523DFBB6457CE9B"
+               BlueprintIdentifier = "218CDDB0AA4F07EEADF2AFD82BAB0800"
                BuildableName = "PVPMikrotikSSH.framework"
                BlueprintName = "PVPMikrotikSSH"
                ReferencedContainer = "container:Pods.xcodeproj">

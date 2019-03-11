@@ -8,6 +8,7 @@ target 'SSHButton' do
   # Pods for SSHButton
   pod 'SnapKit'
   pod 'PVPMikrotikSSH', :git => 'https://github.com/BlindDev/PVPMikrotikSSH.git’
+  pod 'CDAlertView'
 end
 
 target 'SSHButton WatchKit App' do

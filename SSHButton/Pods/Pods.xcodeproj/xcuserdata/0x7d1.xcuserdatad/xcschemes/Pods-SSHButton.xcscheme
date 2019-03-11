@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7A0FD5D468A080914175D5786CD35F83"
+               BlueprintIdentifier = "3612C595BDEA5B8B5B9E3A99630DF2FB"
                BuildableName = "Pods_SSHButton.framework"
                BlueprintName = "Pods-SSHButton"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7A0FD5D468A080914175D5786CD35F83"
+            BlueprintIdentifier = "3612C595BDEA5B8B5B9E3A99630DF2FB"
             BuildableName = "Pods_SSHButton.framework"
             BlueprintName = "Pods-SSHButton"
             ReferencedContainer = "container:Pods.xcodeproj">

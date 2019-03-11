@@ -23,5 +23,5 @@ target 'SSHButton WatchKit Extension' do
   use_frameworks!
 
   # Pods for SSHButton WatchKit Extension
-  pod 'PVPMikrotikSSH', :git => 'https://github.com/BlindDev/PVPMikrotikSSH.git’
+  
 end
