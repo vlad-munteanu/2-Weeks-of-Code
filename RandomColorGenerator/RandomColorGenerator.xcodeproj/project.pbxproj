@@ -13,8 +13,6 @@
 		B8BBECD42228FCBC0017FFB9 /* ColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECD32228FCBC0017FFB9 /* ColorVC.swift */; };
 		B8BBECD92228FCBD0017FFB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BBECD82228FCBD0017FFB9 /* Assets.xcassets */; };
 		B8BBECE42229037F0017FFB9 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECE32229037F0017FFB9 /* ColorView.swift */; };
-		B8BBECEB2229195F0017FFB9 /* SavedColorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECEA2229195F0017FFB9 /* SavedColorsVC.swift */; };
-		B8BBECED222919C10017FFB9 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECEC222919C10017FFB9 /* PageVC.swift */; };
 		B8BBECF0222A0DD80017FFB9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BBECEF222A0DD80017FFB9 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,8 +27,6 @@
 		B8BBECD82228FCBD0017FFB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8BBECDD2228FCBD0017FFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8BBECE32229037F0017FFB9 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
-		B8BBECEA2229195F0017FFB9 /* SavedColorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedColorsVC.swift; sourceTree = "<group>"; };
-		B8BBECEC222919C10017FFB9 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		B8BBECEF222A0DD80017FFB9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,8 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				B8BBECD32228FCBC0017FFB9 /* ColorVC.swift */,
-				B8BBECEA2229195F0017FFB9 /* SavedColorsVC.swift */,
-				B8BBECEC222919C10017FFB9 /* PageVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -248,8 +242,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8BBECEB2229195F0017FFB9 /* SavedColorsVC.swift in Sources */,
-				B8BBECED222919C10017FFB9 /* PageVC.swift in Sources */,
 				B8BBECD42228FCBC0017FFB9 /* ColorVC.swift in Sources */,
 				B8BBECE42229037F0017FFB9 /* ColorView.swift in Sources */,
 				B8BBECD22228FCBC0017FFB9 /* AppDelegate.swift in Sources */,

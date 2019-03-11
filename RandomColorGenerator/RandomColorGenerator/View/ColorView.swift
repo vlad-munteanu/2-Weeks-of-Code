@@ -30,7 +30,6 @@ public class ColorView: UIView {
         addSubview(hexLabel)
         addSubview(rgbLabel)
         addSubview(randomButton)
-       // addSubview(saveButton)
     }
     
     internal func createConstraints(){
@@ -56,12 +55,6 @@ public class ColorView: UIView {
             make.centerX.equalToSuperview()
             make.bottom.equalToSuperview().multipliedBy(0.9)
         }
-//        saveButton.snp.makeConstraints { make in
-//            make.height.equalToSuperview().multipliedBy(0.05)
-//            make.width.equalToSuperview().multipliedBy(0.2)
-//            make.right.equalToSuperview().multipliedBy(0.95)
-//            make.centerY.equalToSuperview().multipliedBy(0.2)
-//        }
     }
     
     

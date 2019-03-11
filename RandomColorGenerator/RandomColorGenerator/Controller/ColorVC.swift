@@ -15,8 +15,7 @@ class ColorVC: UIViewController {
     let colorView = ColorView()
     //random button
     unowned var randomButton: UIButton {return colorView.randomButton}
-    //save button
-    unowned var saveButton: UIButton {return colorView.saveButton}
+    
     
     public override func loadView() {
         self.view = colorView
@@ -26,16 +25,10 @@ class ColorVC: UIViewController {
         super.viewDidLoad()
         self.becomeFirstResponder()
         self.randomButton.addTarget(self, action: #selector(randomize), for: UIControl.Event.touchUpInside)
-        self.saveButton.addTarget(self, action: #selector(saveColor), for: UIControl.Event.touchUpInside)
+       
         
     }
-    //Save Color
-    @objc private func saveColor() {
-        colorView.currentHexCode = colorView.backgroundView.backgroundColor!.toHexString()
-        savedColors.append(colorView.currentHexCode)
-        //SavedColorsVC.reloadTable()
-        print(savedColors)
-    }
+  
     //Randomize Color
     @objc private func randomize() {
         let backColor: UIColor = .random()
