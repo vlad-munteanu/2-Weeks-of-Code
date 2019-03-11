@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		337D1A30CCE36AF9910E97D8 /* Pods_GPA_Comp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C331D7CA51715E9ED49B26F5 /* Pods_GPA_Comp.framework */; };
+		4504324F1024EA5143845910 /* libPods-GPA Comp WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F47280EA2009DDFD190BB6F1 /* libPods-GPA Comp WatchKit App.a */; };
 		B85A06F62237028500CCB039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A06F52237028500CCB039 /* AppDelegate.swift */; };
 		B85A06F82237028500CCB039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A06F72237028500CCB039 /* ViewController.swift */; };
 		B85A06FD2237028600CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A06FC2237028600CCB039 /* Assets.xcassets */; };
@@ -21,6 +23,7 @@
 		B85A07212237028700CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A07202237028700CCB039 /* Assets.xcassets */; };
 		B85A0735223704FB00CCB039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A0734223704FB00CCB039 /* LaunchScreen.storyboard */; };
 		B85A07372237050500CCB039 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07362237050500CCB039 /* MainView.swift */; };
+		D0DE594DD267D3B0C75E32D0 /* Pods_GPA_Comp_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0FB6CE6AC3C390051C3503 /* Pods_GPA_Comp_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		016CD03265D29AE1FBCE80C4 /* Pods-GPA Comp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPA Comp.debug.xcconfig"; path = "Target Support Files/Pods-GPA Comp/Pods-GPA Comp.debug.xcconfig"; sourceTree = "<group>"; };
+		4712699F93A2AE528B243813 /* Pods-GPA Comp WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPA Comp WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-GPA Comp WatchKit Extension/Pods-GPA Comp WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		871B3DE6D772F99B220A45F9 /* Pods-GPA Comp WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPA Comp WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-GPA Comp WatchKit App/Pods-GPA Comp WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		8891C1053730069216C0A07C /* Pods-GPA Comp WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPA Comp WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-GPA Comp WatchKit Extension/Pods-GPA Comp WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		B55CDD5EA14501C3F3E6AEF9 /* Pods-GPA Comp WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPA Comp WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-GPA Comp WatchKit App/Pods-GPA Comp WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		B85A06F22237028400CCB039 /* GPA Comp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPA Comp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85A06F52237028500CCB039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B85A06F72237028500CCB039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,13 +93,26 @@
 		B85A07232237028700CCB039 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		B85A0734223704FB00CCB039 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../../../Reused Files/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		B85A07362237050500CCB039 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BB825B9CFB7BAC29A81A52B3 /* Pods-GPA Comp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPA Comp.release.xcconfig"; path = "Target Support Files/Pods-GPA Comp/Pods-GPA Comp.release.xcconfig"; sourceTree = "<group>"; };
+		C331D7CA51715E9ED49B26F5 /* Pods_GPA_Comp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPA_Comp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47280EA2009DDFD190BB6F1 /* libPods-GPA Comp WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPA Comp WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0FB6CE6AC3C390051C3503 /* Pods_GPA_Comp_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPA_Comp_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7B904A24EF82432AE7AF584E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4504324F1024EA5143845910 /* libPods-GPA Comp WatchKit App.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B85A06EF2237028400CCB039 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				337D1A30CCE36AF9910E97D8 /* Pods_GPA_Comp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +120,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DE594DD267D3B0C75E32D0 /* Pods_GPA_Comp_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57EFC4F3CA256703062E3242 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C331D7CA51715E9ED49B26F5 /* Pods_GPA_Comp.framework */,
+				F47280EA2009DDFD190BB6F1 /* libPods-GPA Comp WatchKit App.a */,
+				FA0FB6CE6AC3C390051C3503 /* Pods_GPA_Comp_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B85A06E92237028400CCB039 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +144,8 @@
 				B85A07082237028600CCB039 /* GPA Comp WatchKit App */,
 				B85A07172237028700CCB039 /* GPA Comp WatchKit Extension */,
 				B85A06F32237028400CCB039 /* Products */,
+				E57921EB84FA869AE429F7DB /* Pods */,
+				57EFC4F3CA256703062E3242 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,6 +220,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E57921EB84FA869AE429F7DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				016CD03265D29AE1FBCE80C4 /* Pods-GPA Comp.debug.xcconfig */,
+				BB825B9CFB7BAC29A81A52B3 /* Pods-GPA Comp.release.xcconfig */,
+				B55CDD5EA14501C3F3E6AEF9 /* Pods-GPA Comp WatchKit App.debug.xcconfig */,
+				871B3DE6D772F99B220A45F9 /* Pods-GPA Comp WatchKit App.release.xcconfig */,
+				4712699F93A2AE528B243813 /* Pods-GPA Comp WatchKit Extension.debug.xcconfig */,
+				8891C1053730069216C0A07C /* Pods-GPA Comp WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,10 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B85A072E2237028700CCB039 /* Build configuration list for PBXNativeTarget "GPA Comp" */;
 			buildPhases = (
+				CA3D2359DC8B2F2E434BA2F6 /* [CP] Check Pods Manifest.lock */,
 				B85A06EE2237028400CCB039 /* Sources */,
 				B85A06EF2237028400CCB039 /* Frameworks */,
 				B85A06F02237028400CCB039 /* Resources */,
 				B85A072D2237028700CCB039 /* Embed Watch Content */,
+				3818008061567252EF5372C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,8 +261,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B85A072A2237028700CCB039 /* Build configuration list for PBXNativeTarget "GPA Comp WatchKit App" */;
 			buildPhases = (
+				631A0C488E00D8F0D797BE3B /* [CP] Check Pods Manifest.lock */,
 				B85A07022237028600CCB039 /* Resources */,
 				B85A07292237028700CCB039 /* Embed App Extensions */,
+				7B904A24EF82432AE7AF584E /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,6 +280,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B85A07262237028700CCB039 /* Build configuration list for PBXNativeTarget "GPA Comp WatchKit Extension" */;
 			buildPhases = (
+				C68001B1826A296601630E0E /* [CP] Check Pods Manifest.lock */,
 				B85A070F2237028700CCB039 /* Sources */,
 				B85A07102237028700CCB039 /* Frameworks */,
 				B85A07112237028700CCB039 /* Resources */,
@@ -311,6 +363,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3818008061567252EF5372C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GPA Comp/Pods-GPA Comp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GPA Comp/Pods-GPA Comp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		631A0C488E00D8F0D797BE3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPA Comp WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C68001B1826A296601630E0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPA Comp WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA3D2359DC8B2F2E434BA2F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPA Comp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B85A06EE2237028400CCB039 /* Sources */ = {
@@ -479,6 +624,7 @@
 		};
 		B85A07272237028700CCB039 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4712699F93A2AE528B243813 /* Pods-GPA Comp WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -501,6 +647,7 @@
 		};
 		B85A07282237028700CCB039 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8891C1053730069216C0A07C /* Pods-GPA Comp WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +670,7 @@
 		};
 		B85A072B2237028700CCB039 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B55CDD5EA14501C3F3E6AEF9 /* Pods-GPA Comp WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -542,6 +690,7 @@
 		};
 		B85A072C2237028700CCB039 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 871B3DE6D772F99B220A45F9 /* Pods-GPA Comp WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -561,6 +710,7 @@
 		};
 		B85A072F2237028700CCB039 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 016CD03265D29AE1FBCE80C4 /* Pods-GPA Comp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -579,6 +729,7 @@
 		};
 		B85A07302237028700CCB039 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB825B9CFB7BAC29A81A52B3 /* Pods-GPA Comp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

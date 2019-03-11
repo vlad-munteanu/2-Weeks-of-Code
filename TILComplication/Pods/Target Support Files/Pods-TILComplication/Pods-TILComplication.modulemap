@@ -1,6 +1,0 @@
-framework module Pods_TILComplication {
-  umbrella header "Pods-TILComplication-umbrella.h"
-
-  export *
-  module * { export * }
-}

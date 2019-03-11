@@ -1,0 +1,6 @@
+framework module Pods_GPA_Comp {
+  umbrella header "Pods-GPA Comp-umbrella.h"
+
+  export *
+  module * { export * }
+}
