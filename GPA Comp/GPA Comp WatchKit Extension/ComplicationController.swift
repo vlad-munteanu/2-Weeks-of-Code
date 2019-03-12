@@ -38,7 +38,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             
             //GPA
             template.row1Column1TextProvider = CLKSimpleTextProvider(text: "GPA")
-            template.row1Column2TextProvider = CLKSimpleTextProvider(text: "\(AppData.sharedInstance.GPA ?? "0")")
+            template.row1Column2TextProvider = CLKSimpleTextProvider(text: "\(AppData.sharedInstance.GPA ?? "4.0")")
             //Absences
             template.row2Column1TextProvider = CLKSimpleTextProvider(text: "Absences")
             template.row2Column2TextProvider = CLKSimpleTextProvider(text: "\(AppData.sharedInstance.Absences ?? "0")")
