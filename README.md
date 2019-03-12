@@ -56,7 +56,7 @@ Allows user to calculate approximate blood alcohol concentration (BAC) using the
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day8.gif)
 
 ## Day 9: Coin Flip 
-An app that makes decisions for the user by the flip of the coin. Has a cool flip animation. ~Also has an Apple Watch companion app.~ 
+An app that makes decisions for the user by the flip of the coin. Has a cool flip animation. 
 
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day9.gif)
 
@@ -69,6 +69,9 @@ An app that lets users send an SSH command (defined in the iPhone app) from thei
 An app that fetches the number of absences and GPA from PowerSchool and pushes it to an Apple Watch complication. PowerSchool doesn't have an open mobile API that I could use, so I had to do some manual parsing through the iPhone app.
 
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Day11.PNG)
+
+## Day 12: Coin Flip (Apple Watch) 
+An app that allows users to flip a coin on their Apple Watch. Also has a complication.
 
 ## App Ideas TO_DO 
 - [ ] Raspberry PI App 
