@@ -76,7 +76,7 @@ An app that allows users to flip a coin on their Apple Watch. Also has a complic
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day12.gif)
 
 ## Day 13: Running Game 
-An spritekit based game. 
+A spritekit based game. 
 
 
 ## App Ideas TO_DO 
