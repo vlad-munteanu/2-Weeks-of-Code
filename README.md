@@ -66,9 +66,9 @@ An app that lets users send an SSH command (defined in the iPhone app) from thei
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day10.gif)
 
 ## Day 11: School App (Apple Watch)
-An app that fetches the number of absences and GPA and pushes it to a complication.  
+An app that fetches the number of absences and GPA from PowerSchool and pushes it to an Apple Watch complication. PowerSchool doesn't have an open mobile API that I could use, so I had to do some manual parsing through the iPhone app.
 
-
+![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Day11.PNG)
 
 ## App Ideas TO_DO 
 - [ ] Raspberry PI App 
