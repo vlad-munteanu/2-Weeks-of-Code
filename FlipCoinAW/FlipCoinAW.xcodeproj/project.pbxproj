@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B85A07572237D97D00CCB039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07562237D97D00CCB039 /* AppDelegate.swift */; };
+		B85A07592237D97D00CCB039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07582237D97D00CCB039 /* ViewController.swift */; };
+		B85A075C2237D97D00CCB039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A075A2237D97D00CCB039 /* Main.storyboard */; };
+		B85A075E2237D97E00CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A075D2237D97E00CCB039 /* Assets.xcassets */; };
+		B85A07612237D97E00CCB039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A075F2237D97E00CCB039 /* LaunchScreen.storyboard */; };
+		B85A07662237D97E00CCB039 /* FlipCoinAW WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B85A07652237D97E00CCB039 /* FlipCoinAW WatchKit App.app */; };
+		B85A076C2237D97E00CCB039 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A076A2237D97E00CCB039 /* Interface.storyboard */; };
+		B85A076E2237D97F00CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A076D2237D97F00CCB039 /* Assets.xcassets */; };
+		B85A07752237D97F00CCB039 /* FlipCoinAW WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B85A07742237D97F00CCB039 /* FlipCoinAW WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B85A077A2237D97F00CCB039 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07792237D97F00CCB039 /* InterfaceController.swift */; };
+		B85A077C2237D97F00CCB039 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A077B2237D97F00CCB039 /* ExtensionDelegate.swift */; };
+		B85A077E2237D97F00CCB039 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A077D2237D97F00CCB039 /* NotificationController.swift */; };
+		B85A07802237D97F00CCB039 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A077F2237D97F00CCB039 /* ComplicationController.swift */; };
+		B85A07822237D97F00CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A07812237D97F00CCB039 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B85A07672237D97E00CCB039 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B85A074B2237D97D00CCB039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B85A07642237D97E00CCB039;
+			remoteInfo = "FlipCoinAW WatchKit App";
+		};
+		B85A07762237D97F00CCB039 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B85A074B2237D97D00CCB039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B85A07732237D97F00CCB039;
+			remoteInfo = "FlipCoinAW WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B85A078A2237D97F00CCB039 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B85A07752237D97F00CCB039 /* FlipCoinAW WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85A078E2237D97F00CCB039 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B85A07662237D97E00CCB039 /* FlipCoinAW WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B85A07532237D97D00CCB039 /* FlipCoinAW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipCoinAW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85A07562237D97D00CCB039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B85A07582237D97D00CCB039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B85A075B2237D97D00CCB039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B85A075D2237D97E00CCB039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B85A07602237D97E00CCB039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B85A07622237D97E00CCB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B85A07652237D97E00CCB039 /* FlipCoinAW WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlipCoinAW WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85A076B2237D97E00CCB039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B85A076D2237D97F00CCB039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B85A076F2237D97F00CCB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B85A07742237D97F00CCB039 /* FlipCoinAW WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FlipCoinAW WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85A07792237D97F00CCB039 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B85A077B2237D97F00CCB039 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B85A077D2237D97F00CCB039 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B85A077F2237D97F00CCB039 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		B85A07812237D97F00CCB039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B85A07832237D97F00CCB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B85A07842237D97F00CCB039 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B85A07502237D97D00CCB039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85A07712237D97F00CCB039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B85A074A2237D97D00CCB039 = {
+			isa = PBXGroup;
+			children = (
+				B85A07552237D97D00CCB039 /* FlipCoinAW */,
+				B85A07692237D97E00CCB039 /* FlipCoinAW WatchKit App */,
+				B85A07782237D97F00CCB039 /* FlipCoinAW WatchKit Extension */,
+				B85A07542237D97D00CCB039 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B85A07542237D97D00CCB039 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B85A07532237D97D00CCB039 /* FlipCoinAW.app */,
+				B85A07652237D97E00CCB039 /* FlipCoinAW WatchKit App.app */,
+				B85A07742237D97F00CCB039 /* FlipCoinAW WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B85A07552237D97D00CCB039 /* FlipCoinAW */ = {
+			isa = PBXGroup;
+			children = (
+				B85A07562237D97D00CCB039 /* AppDelegate.swift */,
+				B85A07582237D97D00CCB039 /* ViewController.swift */,
+				B85A075A2237D97D00CCB039 /* Main.storyboard */,
+				B85A075D2237D97E00CCB039 /* Assets.xcassets */,
+				B85A075F2237D97E00CCB039 /* LaunchScreen.storyboard */,
+				B85A07622237D97E00CCB039 /* Info.plist */,
+			);
+			path = FlipCoinAW;
+			sourceTree = "<group>";
+		};
+		B85A07692237D97E00CCB039 /* FlipCoinAW WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B85A076A2237D97E00CCB039 /* Interface.storyboard */,
+				B85A076D2237D97F00CCB039 /* Assets.xcassets */,
+				B85A076F2237D97F00CCB039 /* Info.plist */,
+			);
+			path = "FlipCoinAW WatchKit App";
+			sourceTree = "<group>";
+		};
+		B85A07782237D97F00CCB039 /* FlipCoinAW WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B85A07792237D97F00CCB039 /* InterfaceController.swift */,
+				B85A077B2237D97F00CCB039 /* ExtensionDelegate.swift */,
+				B85A077D2237D97F00CCB039 /* NotificationController.swift */,
+				B85A077F2237D97F00CCB039 /* ComplicationController.swift */,
+				B85A07812237D97F00CCB039 /* Assets.xcassets */,
+				B85A07832237D97F00CCB039 /* Info.plist */,
+				B85A07842237D97F00CCB039 /* PushNotificationPayload.apns */,
+			);
+			path = "FlipCoinAW WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B85A07522237D97D00CCB039 /* FlipCoinAW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B85A078F2237D97F00CCB039 /* Build configuration list for PBXNativeTarget "FlipCoinAW" */;
+			buildPhases = (
+				B85A074F2237D97D00CCB039 /* Sources */,
+				B85A07502237D97D00CCB039 /* Frameworks */,
+				B85A07512237D97D00CCB039 /* Resources */,
+				B85A078E2237D97F00CCB039 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B85A07682237D97E00CCB039 /* PBXTargetDependency */,
+			);
+			name = FlipCoinAW;
+			productName = FlipCoinAW;
+			productReference = B85A07532237D97D00CCB039 /* FlipCoinAW.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B85A07642237D97E00CCB039 /* FlipCoinAW WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B85A078B2237D97F00CCB039 /* Build configuration list for PBXNativeTarget "FlipCoinAW WatchKit App" */;
+			buildPhases = (
+				B85A07632237D97E00CCB039 /* Resources */,
+				B85A078A2237D97F00CCB039 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B85A07772237D97F00CCB039 /* PBXTargetDependency */,
+			);
+			name = "FlipCoinAW WatchKit App";
+			productName = "FlipCoinAW WatchKit App";
+			productReference = B85A07652237D97E00CCB039 /* FlipCoinAW WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B85A07732237D97F00CCB039 /* FlipCoinAW WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B85A07872237D97F00CCB039 /* Build configuration list for PBXNativeTarget "FlipCoinAW WatchKit Extension" */;
+			buildPhases = (
+				B85A07702237D97F00CCB039 /* Sources */,
+				B85A07712237D97F00CCB039 /* Frameworks */,
+				B85A07722237D97F00CCB039 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FlipCoinAW WatchKit Extension";
+			productName = "FlipCoinAW WatchKit Extension";
+			productReference = B85A07742237D97F00CCB039 /* FlipCoinAW WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B85A074B2237D97D00CCB039 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Vlad Munteanu";
+				TargetAttributes = {
+					B85A07522237D97D00CCB039 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					B85A07642237D97E00CCB039 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					B85A07732237D97F00CCB039 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = B85A074E2237D97D00CCB039 /* Build configuration list for PBXProject "FlipCoinAW" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B85A074A2237D97D00CCB039;
+			productRefGroup = B85A07542237D97D00CCB039 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B85A07522237D97D00CCB039 /* FlipCoinAW */,
+				B85A07642237D97E00CCB039 /* FlipCoinAW WatchKit App */,
+				B85A07732237D97F00CCB039 /* FlipCoinAW WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B85A07512237D97D00CCB039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85A07612237D97E00CCB039 /* LaunchScreen.storyboard in Resources */,
+				B85A075E2237D97E00CCB039 /* Assets.xcassets in Resources */,
+				B85A075C2237D97D00CCB039 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85A07632237D97E00CCB039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85A076E2237D97F00CCB039 /* Assets.xcassets in Resources */,
+				B85A076C2237D97E00CCB039 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85A07722237D97F00CCB039 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85A07822237D97F00CCB039 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B85A074F2237D97D00CCB039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85A07592237D97D00CCB039 /* ViewController.swift in Sources */,
+				B85A07572237D97D00CCB039 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85A07702237D97F00CCB039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85A077E2237D97F00CCB039 /* NotificationController.swift in Sources */,
+				B85A07802237D97F00CCB039 /* ComplicationController.swift in Sources */,
+				B85A077C2237D97F00CCB039 /* ExtensionDelegate.swift in Sources */,
+				B85A077A2237D97F00CCB039 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B85A07682237D97E00CCB039 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B85A07642237D97E00CCB039 /* FlipCoinAW WatchKit App */;
+			targetProxy = B85A07672237D97E00CCB039 /* PBXContainerItemProxy */;
+		};
+		B85A07772237D97F00CCB039 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B85A07732237D97F00CCB039 /* FlipCoinAW WatchKit Extension */;
+			targetProxy = B85A07762237D97F00CCB039 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B85A075A2237D97D00CCB039 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B85A075B2237D97D00CCB039 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B85A075F2237D97E00CCB039 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B85A07602237D97E00CCB039 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B85A076A2237D97E00CCB039 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B85A076B2237D97E00CCB039 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B85A07852237D97F00CCB039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B85A07862237D97F00CCB039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B85A07882237D97F00CCB039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = "FlipCoinAW WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.FlipCoinAW.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		B85A07892237D97F00CCB039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = "FlipCoinAW WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.FlipCoinAW.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		B85A078C2237D97F00CCB039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				IBSC_MODULE = FlipCoinAW_WatchKit_Extension;
+				INFOPLIST_FILE = "FlipCoinAW WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.FlipCoinAW.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		B85A078D2237D97F00CCB039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				IBSC_MODULE = FlipCoinAW_WatchKit_Extension;
+				INFOPLIST_FILE = "FlipCoinAW WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.FlipCoinAW.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		B85A07902237D97F00CCB039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = FlipCoinAW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.FlipCoinAW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B85A07912237D97F00CCB039 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8C8RXSHKT;
+				INFOPLIST_FILE = FlipCoinAW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LesGarcons.FlipCoinAW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B85A074E2237D97D00CCB039 /* Build configuration list for PBXProject "FlipCoinAW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85A07852237D97F00CCB039 /* Debug */,
+				B85A07862237D97F00CCB039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B85A07872237D97F00CCB039 /* Build configuration list for PBXNativeTarget "FlipCoinAW WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85A07882237D97F00CCB039 /* Debug */,
+				B85A07892237D97F00CCB039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B85A078B2237D97F00CCB039 /* Build configuration list for PBXNativeTarget "FlipCoinAW WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85A078C2237D97F00CCB039 /* Debug */,
+				B85A078D2237D97F00CCB039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B85A078F2237D97F00CCB039 /* Build configuration list for PBXNativeTarget "FlipCoinAW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85A07902237D97F00CCB039 /* Debug */,
+				B85A07912237D97F00CCB039 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B85A074B2237D97D00CCB039 /* Project object */;
+}
