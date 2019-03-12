@@ -14,19 +14,19 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FlipCoinAW_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <imageView height="105" alignment="left" image="coin0" contentMode="scaleAspectFit" id="Ze9-y6-BPe"/>
+                        <imageView height="117" alignment="left" image="coin0" contentMode="scaleAspectFit" id="Ze9-y6-BPe"/>
                         <button width="1" alignment="left" title="Flip" id="nnd-53-qwg">
                             <connections>
-                                <action selector="flipPressed" destination="AgC-eL-Hgc" id="VKe-n6-AKb"/>
+                                <action selector="flipPressed" destination="AgC-eL-Hgc" id="VS7-d9-SQY"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
-                        <outlet property="coinImage" destination="Ze9-y6-BPe" id="TSx-Xd-qHy"/>
+                        <outlet property="coinImage" destination="Ze9-y6-BPe" id="ZyJ-uj-Fms"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="349"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

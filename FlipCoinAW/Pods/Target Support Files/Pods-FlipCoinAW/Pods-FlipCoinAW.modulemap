@@ -1,0 +1,6 @@
+framework module Pods_FlipCoinAW {
+  umbrella header "Pods-FlipCoinAW-umbrella.h"
+
+  export *
+  module * { export * }
+}
