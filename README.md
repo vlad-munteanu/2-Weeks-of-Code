@@ -12,7 +12,7 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 
 ## Lines of Code Written So Far This Month: 
 ```
-3,827
+3,964
 ```
 
 ## Day 1: Random Color Generator 
@@ -71,7 +71,13 @@ An app that fetches the number of absences and GPA from PowerSchool and pushes i
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Day11.PNG)
 
 ## Day 12: Coin Flip (Apple Watch) 
-An app that allows users to flip a coin on their Apple Watch. Also has a complication.
+An app that allows users to flip a coin on their Apple Watch. Also has a complication that randomly generates a coin flip throughout the day. 
+
+![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day12.gif)
+
+## Day 13: Running Game 
+An spritekit based game. 
+
 
 ## App Ideas TO_DO 
 - [ ] Raspberry PI App 
