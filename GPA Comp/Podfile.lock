@@ -1,20 +1,24 @@
 PODS:
+  - hpple (0.2.0)
   - SnapKit (4.2.0)
-  - SwiftSoup (1.7.4)
+  - WKZombie (1.1.0):
+    - hpple (= 0.2.0)
 
 DEPENDENCIES:
   - SnapKit
-  - SwiftSoup
+  - WKZombie
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - hpple
     - SnapKit
-    - SwiftSoup
+    - WKZombie
 
 SPEC CHECKSUMS:
+  hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  SwiftSoup: 92f5b348c131aed8af04f4326db1579ab19fa08c
+  WKZombie: bde6786b3c76f4336959d849b365c274d61d8286
 
-PODFILE CHECKSUM: db0a4991d89919b52a6c503c65183b417de582f3
+PODFILE CHECKSUM: 89ffd99e64a050e77363cb6b53ffea1677e99d5a
 
 COCOAPODS: 1.6.1
