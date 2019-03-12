@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B465DE76685A9D51A0EEC19 /* Pods_FlipCoinAW_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91F5C91C4C9A50C26B7734A /* Pods_FlipCoinAW_WatchKit_Extension.framework */; };
+		B3852BA536F810B20FBEAD7A /* libPods-FlipCoinAW WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DF00F5108EC04A5A5A5E5 /* libPods-FlipCoinAW WatchKit App.a */; };
 		B85A07572237D97D00CCB039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07562237D97D00CCB039 /* AppDelegate.swift */; };
 		B85A07592237D97D00CCB039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07582237D97D00CCB039 /* ViewController.swift */; };
-		B85A075C2237D97D00CCB039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A075A2237D97D00CCB039 /* Main.storyboard */; };
 		B85A075E2237D97E00CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A075D2237D97E00CCB039 /* Assets.xcassets */; };
-		B85A07612237D97E00CCB039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A075F2237D97E00CCB039 /* LaunchScreen.storyboard */; };
 		B85A07662237D97E00CCB039 /* FlipCoinAW WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B85A07652237D97E00CCB039 /* FlipCoinAW WatchKit App.app */; };
 		B85A076C2237D97E00CCB039 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A076A2237D97E00CCB039 /* Interface.storyboard */; };
 		B85A076E2237D97F00CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A076D2237D97F00CCB039 /* Assets.xcassets */; };
@@ -21,6 +21,8 @@
 		B85A077E2237D97F00CCB039 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A077D2237D97F00CCB039 /* NotificationController.swift */; };
 		B85A07802237D97F00CCB039 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A077F2237D97F00CCB039 /* ComplicationController.swift */; };
 		B85A07822237D97F00CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A07812237D97F00CCB039 /* Assets.xcassets */; };
+		B85A07972237DE3D00CCB039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A07962237DE3D00CCB039 /* LaunchScreen.storyboard */; };
+		FB2D6A2E0B06D641506F6F7A /* Pods_FlipCoinAW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956252E108F9D771D7D4F817 /* Pods_FlipCoinAW.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,12 +68,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		08DC2995BCA151141AFFDD7A /* Pods-FlipCoinAW WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipCoinAW WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-FlipCoinAW WatchKit App/Pods-FlipCoinAW WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		093DF00F5108EC04A5A5A5E5 /* libPods-FlipCoinAW WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlipCoinAW WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E469A7B5E303CD24DC95BDA /* Pods-FlipCoinAW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipCoinAW.release.xcconfig"; path = "Target Support Files/Pods-FlipCoinAW/Pods-FlipCoinAW.release.xcconfig"; sourceTree = "<group>"; };
+		727500A81C1294E3CE977BED /* Pods-FlipCoinAW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipCoinAW.debug.xcconfig"; path = "Target Support Files/Pods-FlipCoinAW/Pods-FlipCoinAW.debug.xcconfig"; sourceTree = "<group>"; };
+		7BB36DE46EA868B2907F65D7 /* Pods-FlipCoinAW WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipCoinAW WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-FlipCoinAW WatchKit App/Pods-FlipCoinAW WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		956252E108F9D771D7D4F817 /* Pods_FlipCoinAW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlipCoinAW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		973C7A941C7E9E11C43F95D7 /* Pods-FlipCoinAW WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipCoinAW WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-FlipCoinAW WatchKit Extension/Pods-FlipCoinAW WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		B85A07532237D97D00CCB039 /* FlipCoinAW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipCoinAW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85A07562237D97D00CCB039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B85A07582237D97D00CCB039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B85A075B2237D97D00CCB039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B85A075D2237D97E00CCB039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B85A07602237D97E00CCB039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B85A07622237D97E00CCB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B85A07652237D97E00CCB039 /* FlipCoinAW WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlipCoinAW WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85A076B2237D97E00CCB039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -85,6 +92,9 @@
 		B85A07812237D97F00CCB039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B85A07832237D97F00CCB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B85A07842237D97F00CCB039 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B85A07962237DE3D00CCB039 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../../Reused Files/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		D91F5C91C4C9A50C26B7734A /* Pods_FlipCoinAW_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlipCoinAW_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0569ECE56B6CF79D8D4216 /* Pods-FlipCoinAW WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipCoinAW WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-FlipCoinAW WatchKit Extension/Pods-FlipCoinAW WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2D6A2E0B06D641506F6F7A /* Pods_FlipCoinAW.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +110,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B465DE76685A9D51A0EEC19 /* Pods_FlipCoinAW_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6313E62B94388E4534451D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3852BA536F810B20FBEAD7A /* libPods-FlipCoinAW WatchKit App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67C076943F589D1F937C2399 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				956252E108F9D771D7D4F817 /* Pods_FlipCoinAW.framework */,
+				093DF00F5108EC04A5A5A5E5 /* libPods-FlipCoinAW WatchKit App.a */,
+				D91F5C91C4C9A50C26B7734A /* Pods_FlipCoinAW_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77B1E99240B5057229A11CA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				727500A81C1294E3CE977BED /* Pods-FlipCoinAW.debug.xcconfig */,
+				6E469A7B5E303CD24DC95BDA /* Pods-FlipCoinAW.release.xcconfig */,
+				08DC2995BCA151141AFFDD7A /* Pods-FlipCoinAW WatchKit App.debug.xcconfig */,
+				7BB36DE46EA868B2907F65D7 /* Pods-FlipCoinAW WatchKit App.release.xcconfig */,
+				FE0569ECE56B6CF79D8D4216 /* Pods-FlipCoinAW WatchKit Extension.debug.xcconfig */,
+				973C7A941C7E9E11C43F95D7 /* Pods-FlipCoinAW WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B85A074A2237D97D00CCB039 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +155,8 @@
 				B85A07692237D97E00CCB039 /* FlipCoinAW WatchKit App */,
 				B85A07782237D97F00CCB039 /* FlipCoinAW WatchKit Extension */,
 				B85A07542237D97D00CCB039 /* Products */,
+				77B1E99240B5057229A11CA6 /* Pods */,
+				67C076943F589D1F937C2399 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,11 +173,10 @@
 		B85A07552237D97D00CCB039 /* FlipCoinAW */ = {
 			isa = PBXGroup;
 			children = (
-				B85A07562237D97D00CCB039 /* AppDelegate.swift */,
-				B85A07582237D97D00CCB039 /* ViewController.swift */,
-				B85A075A2237D97D00CCB039 /* Main.storyboard */,
-				B85A075D2237D97E00CCB039 /* Assets.xcassets */,
-				B85A075F2237D97E00CCB039 /* LaunchScreen.storyboard */,
+				B85A07942237DC9C00CCB039 /* Controller */,
+				B85A07932237DC9800CCB039 /* Model */,
+				B85A07922237DC8F00CCB039 /* View */,
+				B85A07952237DDEC00CCB039 /* Supporting Files */,
 				B85A07622237D97E00CCB039 /* Info.plist */,
 			);
 			path = FlipCoinAW;
@@ -162,6 +206,38 @@
 			path = "FlipCoinAW WatchKit Extension";
 			sourceTree = "<group>";
 		};
+		B85A07922237DC8F00CCB039 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B85A07932237DC9800CCB039 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B85A07942237DC9C00CCB039 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B85A07582237D97D00CCB039 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B85A07952237DDEC00CCB039 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B85A07562237D97D00CCB039 /* AppDelegate.swift */,
+				B85A07962237DE3D00CCB039 /* LaunchScreen.storyboard */,
+				B85A075D2237D97E00CCB039 /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,10 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B85A078F2237D97F00CCB039 /* Build configuration list for PBXNativeTarget "FlipCoinAW" */;
 			buildPhases = (
+				14745685340E7618448B09E6 /* [CP] Check Pods Manifest.lock */,
 				B85A074F2237D97D00CCB039 /* Sources */,
 				B85A07502237D97D00CCB039 /* Frameworks */,
 				B85A07512237D97D00CCB039 /* Resources */,
 				B85A078E2237D97F00CCB039 /* Embed Watch Content */,
+				D5793D9BBD38524802DA8663 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,8 +266,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B85A078B2237D97F00CCB039 /* Build configuration list for PBXNativeTarget "FlipCoinAW WatchKit App" */;
 			buildPhases = (
+				889F034827FAE06ABE420354 /* [CP] Check Pods Manifest.lock */,
 				B85A07632237D97E00CCB039 /* Resources */,
 				B85A078A2237D97F00CCB039 /* Embed App Extensions */,
+				E6313E62B94388E4534451D7 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,6 +285,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B85A07872237D97F00CCB039 /* Build configuration list for PBXNativeTarget "FlipCoinAW WatchKit Extension" */;
 			buildPhases = (
+				84D1304CEF78AA58C6439B6F /* [CP] Check Pods Manifest.lock */,
 				B85A07702237D97F00CCB039 /* Sources */,
 				B85A07712237D97F00CCB039 /* Frameworks */,
 				B85A07722237D97F00CCB039 /* Resources */,
@@ -264,9 +345,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B85A07612237D97E00CCB039 /* LaunchScreen.storyboard in Resources */,
 				B85A075E2237D97E00CCB039 /* Assets.xcassets in Resources */,
-				B85A075C2237D97D00CCB039 /* Main.storyboard in Resources */,
+				B85A07972237DE3D00CCB039 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +368,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14745685340E7618448B09E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlipCoinAW-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84D1304CEF78AA58C6439B6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlipCoinAW WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		889F034827FAE06ABE420354 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlipCoinAW WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5793D9BBD38524802DA8663 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlipCoinAW/Pods-FlipCoinAW-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlipCoinAW/Pods-FlipCoinAW-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B85A074F2237D97D00CCB039 /* Sources */ = {
@@ -326,22 +497,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B85A075A2237D97D00CCB039 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B85A075B2237D97D00CCB039 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B85A075F2237D97E00CCB039 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B85A07602237D97E00CCB039 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		B85A076A2237D97E00CCB039 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -471,6 +626,7 @@
 		};
 		B85A07882237D97F00CCB039 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE0569ECE56B6CF79D8D4216 /* Pods-FlipCoinAW WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -493,6 +649,7 @@
 		};
 		B85A07892237D97F00CCB039 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 973C7A941C7E9E11C43F95D7 /* Pods-FlipCoinAW WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -515,6 +672,7 @@
 		};
 		B85A078C2237D97F00CCB039 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08DC2995BCA151141AFFDD7A /* Pods-FlipCoinAW WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -534,6 +692,7 @@
 		};
 		B85A078D2237D97F00CCB039 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB36DE46EA868B2907F65D7 /* Pods-FlipCoinAW WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -553,6 +712,7 @@
 		};
 		B85A07902237D97F00CCB039 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 727500A81C1294E3CE977BED /* Pods-FlipCoinAW.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -571,6 +731,7 @@
 		};
 		B85A07912237D97F00CCB039 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E469A7B5E303CD24DC95BDA /* Pods-FlipCoinAW.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

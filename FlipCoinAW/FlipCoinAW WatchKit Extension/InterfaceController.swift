@@ -12,6 +12,15 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    
+    var imgListArray :NSMutableArray = []
+    
+    @IBOutlet var coinImage: WKInterfaceImage!
+    
+    
+    @IBAction func flipPressed() {
+        
+    }
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
