@@ -23,10 +23,10 @@ class InterfaceController: WKInterfaceController {
        // self.coinImage.setImageNamed("coin10")
         
         if headsTails == 1 {
-            coinImage.startAnimatingWithImages(in: NSMakeRange(0,11), duration: 2.0, repeatCount: 1)
+            coinImage.startAnimatingWithImages(in: NSMakeRange(0,11), duration: 1.0, repeatCount: 1)
             
         } else {
-           coinImage.startAnimatingWithImages(in: NSMakeRange(0,6), duration: 2.5, repeatCount: 1)
+           coinImage.startAnimatingWithImages(in: NSMakeRange(0,6), duration: 1.0, repeatCount: 1)
         }
         
 //        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {

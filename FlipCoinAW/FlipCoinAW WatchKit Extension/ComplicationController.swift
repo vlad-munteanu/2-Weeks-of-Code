@@ -32,18 +32,26 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
+        let headsTails = Int(arc4random_uniform(2))
+        var coinString = "Heads"
+        if headsTails == 1 {
+            coinString = "Heads"
+            
+        } else {
+            coinString = "Tails"
+        }
         switch complication.family {
         case .modularLarge:
-            let template = CLKComplicationTemplateModularLargeColumns()
+            let template = CLKComplicationTemplateModularLargeTallBody()
             
-            //GPA
-            template.row1Column1TextProvider = CLKSimpleTextProvider(text: "GPA")
-            template.row1Column2TextProvider = CLKSimpleTextProvider(text: "\(AppData.sharedInstance.GPA ?? "4.0")")
+            template.headerTextProvider = CLKSimpleTextProvider(text: "CoinFlip")
+            template.bodyTextProvider = CLKSimpleTextProvider(text: coinString)
+           
              let timelineEntry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
             handler(timelineEntry)
         case .modularSmall:
             let template = CLKComplicationTemplateModularSmallSimpleText()
-            template.textProvider = CLKSimpleTextProvider(text: "\(AppData.sharedInstance.Absences ?? "0")")
+            template.textProvider = CLKSimpleTextProvider(text: coinString)
             
             let timelineEntry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
             handler(timelineEntry)
