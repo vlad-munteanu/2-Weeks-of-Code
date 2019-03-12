@@ -32,8 +32,24 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
-        // Call the handler with the current timeline entry
-        handler(nil)
+        switch complication.family {
+        case .modularLarge:
+            let template = CLKComplicationTemplateModularLargeColumns()
+            
+            //GPA
+            template.row1Column1TextProvider = CLKSimpleTextProvider(text: "GPA")
+            template.row1Column2TextProvider = CLKSimpleTextProvider(text: "\(AppData.sharedInstance.GPA ?? "4.0")")
+             let timelineEntry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+            handler(timelineEntry)
+        case .modularSmall:
+            let template = CLKComplicationTemplateModularSmallSimpleText()
+            template.textProvider = CLKSimpleTextProvider(text: "\(AppData.sharedInstance.Absences ?? "0")")
+            
+            let timelineEntry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+            handler(timelineEntry)
+        default:
+            handler(nil)
+        }
     }
     
     func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
