@@ -6,6 +6,8 @@
 //  Copyright © 2019 Vlad Munteanu. All rights reserved.
 //
 
+var touchePos = [CGPoint]()
+
 import UIKit
 import SpriteKit
 import ARKit
@@ -68,12 +70,8 @@ class GameViewController: UIViewController, ARSKViewDelegate {
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let path = UIBezierPath()
-        path.move(to: CGPoint(x: 0.0, y: 50.0))
-        path.addLine(to: CGPoint(x: 50.0, y: -36.6))
-        path.addLine(to: CGPoint(x: -50.0, y: -36.6))
-        path.addLine(to: CGPoint(x: 0.0, y: 50.0))
-        let spriteNode = SKShapeNode(path: path.cgPath)
+       
+        let spriteNode = createShape()
         spriteNode.fillColor = UIColor.blue
         
       //let spriteNode = SKSpriteNode(imageNamed: "boolChris.png")
@@ -83,6 +81,30 @@ class GameViewController: UIViewController, ARSKViewDelegate {
        
         
         return spriteNode;
+    }
+    
+    func createShape() -> SKShapeNode {
+        
+        if(touchePos.count <= 1 ) {
+            //if(touchePos.count == 0) { self.removeAllChildren() }
+            let point = SKShapeNode(circleOfRadius: 5.0)
+            point.fillColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+            point.position = touchePos.last!
+            return point
+        } else if(touchePos.count >= 2) {
+            
+            let Triangle = SKShapeNode(points: &touchePos, count: touchePos.count)
+            
+            Triangle.fillColor = .random()
+            touchePos.removeAll()
+            return Triangle
+        }
+        
+        let pointy = SKShapeNode(circleOfRadius: 5.0)
+        pointy.fillColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        
+        return pointy
+        
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {
@@ -103,4 +125,22 @@ class GameViewController: UIViewController, ARSKViewDelegate {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+}
+
+
+extension CGFloat {
+    static func random() -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UInt32.max)
+    }
+}
+
+extension UIColor {
+    static func random() -> UIColor {
+        
+        return UIColor(red: .random(),
+                       green: .random(),
+                       blue: .random(),
+                       alpha: 1.0)
+    }
+    
 }

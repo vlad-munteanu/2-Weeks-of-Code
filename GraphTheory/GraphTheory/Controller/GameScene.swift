@@ -9,6 +9,7 @@
 import SpriteKit
 import ARKit
 
+
 class GameScene: SKScene {
     
     let triangleLabel = SKLabelNode(text: "Triangles")
@@ -50,6 +51,7 @@ class GameScene: SKScene {
         // Get location in the scene
         let location = touch.location(in: self)
         
+        touchePos.append(location)
         // Get the nodes at the clicked location
         let clicked = nodes(at: location)
         
@@ -66,7 +68,7 @@ class GameScene: SKScene {
                 
                 // Create a transform with a translation of 0.4 meters in front of the camera
                 var translation = matrix_identity_float4x4
-                translation.columns.3.z = -1.5
+                translation.columns.3.z = -3.0
                 let transform = simd_mul(currentFrame.camera.transform, translation)
                 
                 // Add a new anchor to the session
