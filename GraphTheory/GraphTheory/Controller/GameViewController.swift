@@ -63,7 +63,28 @@ class GameViewController: UIViewController, ARSKViewDelegate {
 //        
 //        return node
 //    }
-//    
+//
+    
+    
+    func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
+        // Create and configure a node for the anchor added to the view's session.
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x: 0.0, y: 50.0))
+        path.addLine(to: CGPoint(x: 50.0, y: -36.6))
+        path.addLine(to: CGPoint(x: -50.0, y: -36.6))
+        path.addLine(to: CGPoint(x: 0.0, y: 50.0))
+        let spriteNode = SKShapeNode(path: path.cgPath)
+        spriteNode.fillColor = UIColor.blue
+        
+      //let spriteNode = SKSpriteNode(imageNamed: "boolChris.png")
+        
+      
+        //execute both actions simultaneously
+       
+        
+        return spriteNode;
+    }
+    
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
         
