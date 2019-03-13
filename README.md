@@ -75,7 +75,11 @@ An app that allows users to flip a coin on their Apple Watch. Also has a complic
 
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day12.gif)
 
-## Day 13: Running Game 
+## Day 13: Graph Theory 
+A spritekite based app that creates bordering triangles, assigns them either red, white, yellow, blue, green, or black. The point of the program is to use least amount of colors possible; bordering triangles cannot be assigned the same color. Basically a visual representation of basic Graph theory in discrete mathematics. 
+
+
+## Day 14: Running Game 
 A spritekit based game. 
 
 
