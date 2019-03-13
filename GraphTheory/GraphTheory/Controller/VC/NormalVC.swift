@@ -17,15 +17,14 @@ class NormalVC: UIViewController {
     //current View
     let currentView = NormalView()
     
+
+    
     public override func loadView() {
         self.view = currentView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-        
         // Show statistics such as fps and node count
         currentView.mainView.showsFPS = true
         currentView.mainView.showsNodeCount = true
@@ -33,6 +32,10 @@ class NormalVC: UIViewController {
         let scene = MainMenuScene(size: currentView.bounds.size)
         scene.scaleMode = .resizeFill
         currentView.mainView.presentScene(scene)
+    }
+    
+    func presentButtons() {
+        
     }
     
     override var shouldAutorotate: Bool {

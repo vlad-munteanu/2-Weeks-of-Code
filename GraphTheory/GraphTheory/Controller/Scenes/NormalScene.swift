@@ -17,7 +17,11 @@ class NormalScene: SKScene {
         
         
         self.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        
+      
     }
+    
+    
     
     
     func touchDown(atPoint pos : CGPoint) {
@@ -46,14 +50,10 @@ class NormalScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
         for t in touches { self.touchDown(atPoint: t.location(in: self)) }
+        
     }
-    
-    //    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-    //        for t in touches { self.touchesMoved(toPoint: t.location(in: self)) }
-    //    }
-    //
-    
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
