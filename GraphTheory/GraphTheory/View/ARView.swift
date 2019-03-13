@@ -28,7 +28,7 @@ class ARView: UIView {
     }
     
     internal func createConstraints(){
-        mainScene.snp.makeConstraints{
+        mainScene.snp.makeConstraints{ make in
             make.height.equalToSuperview()
             make.width.equalToSuperview()
         }

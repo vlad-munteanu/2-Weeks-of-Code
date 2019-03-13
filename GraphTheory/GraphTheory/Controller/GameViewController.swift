@@ -10,38 +10,73 @@ import UIKit
 import SpriteKit
 import ARKit
 
-class GameViewController: UIViewController {
+class GameViewController: UIViewController, ARSKViewDelegate {
 
+    //Current View
+    let currentView = ARView()
+    
+    
+    public override func loadView() {
+        self.view = currentView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Set the view's delegate
+        currentView.mainScene.delegate = self
         
-        if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
-        }
+        // Show statistics such as fps and node count
+        currentView.mainScene.showsFPS = true
+        currentView.mainScene.showsNodeCount = true
+        
+        let scene = GameScene(size: currentView.bounds.size)
+        scene.scaleMode = .resizeFill
+        currentView.mainScene.presentScene(scene)
     }
 
-    override var shouldAutorotate: Bool {
-        return true
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Create a session configuration
+        let configuration = ARWorldTrackingConfiguration()
+        //configuration.planeDetection = .horizontal
+        
+        // Run the view's session
+        currentView.mainScene.session.run(configuration)
     }
-
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
-        }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Pause the view's session
+        currentView.mainScene.session.pause()
+    }
+    
+    
+    // MARK: - ARSKViewDelegate
+    
+//    func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
+//        //let ghostId = randomInt(min: 1, max: 6)
+//        
+//        //let node = SKSpriteNode(imageNamed: "ghost\(ghostId)")
+//        node.name = "ghost"
+//        
+//        return node
+//    }
+//    
+    func session(_ session: ARSession, didFailWithError error: Error) {
+        // Present an error message to the user
+        
+    }
+    
+    func sessionWasInterrupted(_ session: ARSession) {
+        // Inform the user that the session has been interrupted, for example, by presenting an overlay
+        
+    }
+    
+    func sessionInterruptionEnded(_ session: ARSession) {
+        // Reset tracking and/or remove existing anchors if consistent tracking is required
+        
     }
 
     override var prefersStatusBarHidden: Bool {
