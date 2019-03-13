@@ -46,14 +46,14 @@ class NormalView: UIView {
         ColorButton.snp.makeConstraints{ make in
             make.height.equalToSuperview().multipliedBy(0.1)
             make.width.equalToSuperview().multipliedBy(0.4)
-            make.right.equalToSuperview().inset(20)
-            make.centerY.equalToSuperview().multipliedBy(1.4)
+            make.left.equalToSuperview().inset(20)
+            make.centerY.equalToSuperview().multipliedBy(1.8)
         }
         ResetButton.snp.makeConstraints{ make in
             make.height.equalToSuperview().multipliedBy(0.1)
             make.width.equalToSuperview().multipliedBy(0.4)
-            make.left.equalToSuperview().inset(20)
-            make.centerY.equalToSuperview().multipliedBy(1.4)
+            make.right.equalToSuperview().inset(20)
+            make.centerY.equalToSuperview().multipliedBy(1.8)
         }
     }
     
