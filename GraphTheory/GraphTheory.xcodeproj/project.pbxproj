@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D4F583C3846CBA1B15ED121 /* Pods_GraphTheory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5289C46C7A08B8269CCFC3D7 /* Pods_GraphTheory.framework */; };
 		B85A07FC22392D2300CCB039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07FB22392D2300CCB039 /* AppDelegate.swift */; };
 		B85A080222392D2300CCB039 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A080122392D2300CCB039 /* GameScene.swift */; };
 		B85A080422392D2300CCB039 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A080322392D2300CCB039 /* GameViewController.swift */; };
-		B85A080722392D2300CCB039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A080522392D2300CCB039 /* Main.storyboard */; };
 		B85A080922392D2400CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A080822392D2400CCB039 /* Assets.xcassets */; };
 		B85A08182239330400CCB039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A08172239330400CCB039 /* LaunchScreen.storyboard */; };
+		B85A081A2239335900CCB039 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A08192239335900CCB039 /* ARView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10073D792D5C95A47F812514 /* Pods-GraphTheory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphTheory.debug.xcconfig"; path = "Target Support Files/Pods-GraphTheory/Pods-GraphTheory.debug.xcconfig"; sourceTree = "<group>"; };
+		5289C46C7A08B8269CCFC3D7 /* Pods_GraphTheory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraphTheory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AF0D82313DB1679DD2899F0 /* Pods-GraphTheory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphTheory.release.xcconfig"; path = "Target Support Files/Pods-GraphTheory/Pods-GraphTheory.release.xcconfig"; sourceTree = "<group>"; };
 		B85A07F822392D2300CCB039 /* GraphTheory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphTheory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85A07FB22392D2300CCB039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B85A080122392D2300CCB039 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		B85A080322392D2300CCB039 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		B85A080622392D2300CCB039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B85A080822392D2400CCB039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B85A080D22392D2400CCB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B85A08172239330400CCB039 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../../../Reused Files/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		B85A08192239335900CCB039 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4F583C3846CBA1B15ED121 /* Pods_GraphTheory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24E2B04B90DC7079899578CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10073D792D5C95A47F812514 /* Pods-GraphTheory.debug.xcconfig */,
+				9AF0D82313DB1679DD2899F0 /* Pods-GraphTheory.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B85A07EF22392D2300CCB039 = {
 			isa = PBXGroup;
 			children = (
 				B85A07FA22392D2300CCB039 /* GraphTheory */,
 				B85A07F922392D2300CCB039 /* Products */,
+				24E2B04B90DC7079899578CE /* Pods */,
+				E5BD26C092BD2A9F3224A816 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,7 +75,6 @@
 				B85A08152239326900CCB039 /* View */,
 				B85A08142239326700CCB039 /* Model */,
 				B85A08132239326500CCB039 /* Controller */,
-				B85A07FB22392D2300CCB039 /* AppDelegate.swift */,
 				B85A08162239327600CCB039 /* Supporting Files */,
 				B85A080D22392D2400CCB039 /* Info.plist */,
 			);
@@ -85,6 +100,7 @@
 		B85A08152239326900CCB039 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B85A08192239335900CCB039 /* ARView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,11 +108,19 @@
 		B85A08162239327600CCB039 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B85A080522392D2300CCB039 /* Main.storyboard */,
 				B85A08172239330400CCB039 /* LaunchScreen.storyboard */,
+				B85A07FB22392D2300CCB039 /* AppDelegate.swift */,
 				B85A080822392D2400CCB039 /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5BD26C092BD2A9F3224A816 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5289C46C7A08B8269CCFC3D7 /* Pods_GraphTheory.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B85A081022392D2400CCB039 /* Build configuration list for PBXNativeTarget "GraphTheory" */;
 			buildPhases = (
+				1CCD03B1F2BFA8D08AFB542C /* [CP] Check Pods Manifest.lock */,
 				B85A07F422392D2300CCB039 /* Sources */,
 				B85A07F522392D2300CCB039 /* Frameworks */,
 				B85A07F622392D2300CCB039 /* Resources */,
+				FEC711314987CF38D6E36AB9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,12 +184,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				B85A08182239330400CCB039 /* LaunchScreen.storyboard in Resources */,
-				B85A080722392D2300CCB039 /* Main.storyboard in Resources */,
 				B85A080922392D2400CCB039 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CCD03B1F2BFA8D08AFB542C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GraphTheory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEC711314987CF38D6E36AB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GraphTheory/Pods-GraphTheory-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GraphTheory/Pods-GraphTheory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B85A07F422392D2300CCB039 /* Sources */ = {
@@ -171,23 +243,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B85A080222392D2300CCB039 /* GameScene.swift in Sources */,
+				B85A081A2239335900CCB039 /* ARView.swift in Sources */,
 				B85A080422392D2300CCB039 /* GameViewController.swift in Sources */,
 				B85A07FC22392D2300CCB039 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B85A080522392D2300CCB039 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B85A080622392D2300CCB039 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B85A080E22392D2400CCB039 /* Debug */ = {
@@ -241,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -296,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -308,6 +370,7 @@
 		};
 		B85A081122392D2400CCB039 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10073D792D5C95A47F812514 /* Pods-GraphTheory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -326,6 +389,7 @@
 		};
 		B85A081222392D2400CCB039 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF0D82313DB1679DD2899F0 /* Pods-GraphTheory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
