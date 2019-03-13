@@ -12,30 +12,12 @@ import ARKit
 
 class ARScene: SKScene {
     
-    let triangleLabel = SKLabelNode(text: "Triangles")
-    let numberOfTrianglesLabel = SKLabelNode(text: "0")
-    var creationTime : TimeInterval = 0
+  
     
-    var triangleCount = 0 {
-        didSet{
-            self.numberOfTrianglesLabel.text = "\(triangleCount)"
-        }
-    }
-    
-    let killSound = SKAction.playSoundFileNamed("ghost", waitForCompletion: false)
+  
     
     override func didMove(to view: SKView) {
-        triangleLabel.fontSize = 20
-        triangleLabel.fontName = "Futura"
-        triangleLabel.color = .white
-        triangleLabel.position = CGPoint(x: 40, y: 50)
-        addChild(triangleLabel)
-        
-        numberOfTrianglesLabel.fontSize = 30
-        numberOfTrianglesLabel.fontName = "Futura"
-        numberOfTrianglesLabel.color = .white
-        numberOfTrianglesLabel.position = CGPoint(x: 40, y: 10)
-        addChild(numberOfTrianglesLabel)
+     
     }
     
     

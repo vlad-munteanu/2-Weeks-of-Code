@@ -44,7 +44,7 @@ class MainMenuScene : SKScene {
                       CGPoint(x: 0.0, y: length),
                       CGPoint(x:length, y:-length / 2.0)]
         let Triangle = SKShapeNode(points: &points, count: points.count)
-        Triangle.fillColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
+        Triangle.fillColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
         Triangle.position = CGPoint(x: 190, y: 500)
         self.addChild(Triangle)
     }

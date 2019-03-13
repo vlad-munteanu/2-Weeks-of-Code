@@ -71,17 +71,6 @@ class ARVC: UIViewController, ARSKViewDelegate {
     }
     
     
-    // MARK: - ARSKViewDelegate
-    
-    //    func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
-    //        //let ghostId = randomInt(min: 1, max: 6)
-    //
-    //        //let node = SKSpriteNode(imageNamed: "ghost\(ghostId)")
-    //        node.name = "ghost"
-    //
-    //        return node
-    //    }
-    //
     
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
@@ -90,7 +79,7 @@ class ARVC: UIViewController, ARSKViewDelegate {
         let spriteNode = createShape()
         spriteNode.fillColor = UIColor.blue
         
-        //let spriteNode = SKSpriteNode(imageNamed: "boolChris.png")
+        
         
         
         //execute both actions simultaneously
@@ -102,26 +91,11 @@ class ARVC: UIViewController, ARSKViewDelegate {
     
     func createShape() -> SKShapeNode {
         
-        if(touchePos.count <= 1 ) {
-            //if(touchePos.count == 0) { self.removeAllChildren() }
-            let point = SKShapeNode(circleOfRadius: 5.0)
-            point.fillColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
-            return point
-        }
-        //        } else if(touchePos.count >= 2) {
-        //
-        //
-        //            let Triangle = SKShapeNode(points: &touchePos, count: touchePos.count)
-        //
-        //            Triangle.fillColor = .random()
-        //            touchePos.removeAll()
-        //            return Triangle
-        //        }
         
-        let pointy = SKShapeNode(circleOfRadius: 5.0)
-        pointy.fillColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        let point = SKShapeNode(circleOfRadius: 10.0)
+        point.fillColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        return point
         
-        return pointy
         
     }
     
