@@ -26,6 +26,8 @@ class NormalView: UIView {
     
     internal func intializeUI() {
         addSubview(mainView)
+        addSubview(ColorButton)
+        addSubview(HomeButton)
     }
     
     internal func createConstraints(){
@@ -33,13 +35,6 @@ class NormalView: UIView {
             make.height.equalToSuperview()
             make.width.equalToSuperview()
         }
-        
-    }
-    
-    func addButtons() {
-        addSubview(ColorButton)
-        addSubview(HomeButton)
-        
         HomeButton.snp.makeConstraints{ make in
             make.height.equalToSuperview().multipliedBy(0.1)
             make.width.equalToSuperview().multipliedBy(0.4)

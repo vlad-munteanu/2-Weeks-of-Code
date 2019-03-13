@@ -11,10 +11,13 @@ import SpriteKit
 
 class MainMenuScene : SKScene {
     
+     var myDelegate: MainMenuDelegate?
+    
     let ARView = SKLabelNode()
     let normalView = SKLabelNode()
     
     override func didMove(to view: SKView) {
+        
         
         self.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         
@@ -69,8 +72,10 @@ class MainMenuScene : SKScene {
                 let scene = NormalScene(size: size)
                 self.view?.presentScene(scene)
             } else if name == "ARPlay" {
-                let scene = ARScene(size: size)
-                self.view?.presentScene(scene)
+//                let scene = ARScene(size: size)
+//                self.view?.presentScene(scene)
+                
+                myDelegate?.moveToAR()
             }
             
         }

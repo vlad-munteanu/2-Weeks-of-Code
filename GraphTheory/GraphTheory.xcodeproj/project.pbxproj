@@ -13,6 +13,9 @@
 		B81013E72239835700C65875 /* NormalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81013E62239835700C65875 /* NormalScene.swift */; };
 		B81013E92239922100C65875 /* NormalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81013E82239922100C65875 /* NormalVC.swift */; };
 		B81013EB223992F700C65875 /* NormalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81013EA223992F700C65875 /* NormalView.swift */; };
+		B81013EE22399DFE00C65875 /* MainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81013ED22399DFE00C65875 /* MainMenuVC.swift */; };
+		B81013F022399E2C00C65875 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81013EF22399E2C00C65875 /* MainMenuView.swift */; };
+		B81013F222399EFA00C65875 /* MainMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81013F122399EFA00C65875 /* MainMenuDelegate.swift */; };
 		B85A07FC22392D2300CCB039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07FB22392D2300CCB039 /* AppDelegate.swift */; };
 		B85A080222392D2300CCB039 /* ARScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A080122392D2300CCB039 /* ARScene.swift */; };
 		B85A080422392D2300CCB039 /* ARVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A080322392D2300CCB039 /* ARVC.swift */; };
@@ -31,6 +34,9 @@
 		B81013E62239835700C65875 /* NormalScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalScene.swift; sourceTree = "<group>"; };
 		B81013E82239922100C65875 /* NormalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalVC.swift; sourceTree = "<group>"; };
 		B81013EA223992F700C65875 /* NormalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalView.swift; sourceTree = "<group>"; };
+		B81013ED22399DFE00C65875 /* MainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
+		B81013EF22399E2C00C65875 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		B81013F122399EFA00C65875 /* MainMenuDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuDelegate.swift; sourceTree = "<group>"; };
 		B85A07F822392D2300CCB039 /* GraphTheory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphTheory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85A07FB22392D2300CCB039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B85A080122392D2300CCB039 /* ARScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARScene.swift; sourceTree = "<group>"; };
@@ -78,6 +84,7 @@
 			children = (
 				B85A080322392D2300CCB039 /* ARVC.swift */,
 				B81013E82239922100C65875 /* NormalVC.swift */,
+				B81013ED22399DFE00C65875 /* MainMenuVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -85,9 +92,18 @@
 		B81013E3223982B800C65875 /* Helper Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B81013EC22399DE600C65875 /* Protocols */,
 				B81013E4223982C500C65875 /* Alertable.swift */,
 			);
 			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		B81013EC22399DE600C65875 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B81013F122399EFA00C65875 /* MainMenuDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		B85A07EF22392D2300CCB039 = {
@@ -143,6 +159,7 @@
 			children = (
 				B85A08192239335900CCB039 /* ARView.swift */,
 				B81013EA223992F700C65875 /* NormalView.swift */,
+				B81013EF22399E2C00C65875 /* MainMenuView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,11 +303,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B81013EB223992F700C65875 /* NormalView.swift in Sources */,
+				B81013F022399E2C00C65875 /* MainMenuView.swift in Sources */,
 				B81013E5223982C500C65875 /* Alertable.swift in Sources */,
 				B81013E2223982AB00C65875 /* MainMenuScene.swift in Sources */,
 				B85A080222392D2300CCB039 /* ARScene.swift in Sources */,
 				B81013E92239922100C65875 /* NormalVC.swift in Sources */,
+				B81013F222399EFA00C65875 /* MainMenuDelegate.swift in Sources */,
 				B81013E72239835700C65875 /* NormalScene.swift in Sources */,
+				B81013EE22399DFE00C65875 /* MainMenuVC.swift in Sources */,
 				B85A081A2239335900CCB039 /* ARView.swift in Sources */,
 				B85A080422392D2300CCB039 /* ARVC.swift in Sources */,
 				B85A07FC22392D2300CCB039 /* AppDelegate.swift in Sources */,

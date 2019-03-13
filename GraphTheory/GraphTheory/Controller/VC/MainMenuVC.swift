@@ -1,22 +1,21 @@
 //
-//  NormalVC.swift
+//  MainMenuVC.swift
 //  GraphTheory
 //
 //  Created by Vlad Munteanu on 3/13/19.
 //  Copyright © 2019 Vlad Munteanu. All rights reserved.
 //
 
-
 import UIKit
 import SpriteKit
 import GameplayKit
 
-class NormalVC: UIViewController {
+class MainMenuVC: UIViewController, MainMenuDelegate {
     
     
     //current View
-    let currentView = NormalView()
-
+    let currentView = MainMenuView()
+  
     public override func loadView() {
         self.view = currentView
     }
@@ -27,13 +26,22 @@ class NormalVC: UIViewController {
         currentView.mainView.showsFPS = true
         currentView.mainView.showsNodeCount = true
         
-        let scene = NormalScene(size: currentView.bounds.size)
+        let scene = MainMenuScene(size: currentView.bounds.size)
+        scene.myDelegate = self
         scene.scaleMode = .resizeFill
         currentView.mainView.presentScene(scene)
     }
     
+    func moveToNormalScene() {
+        let vc = NormalVC()
+        self.present(vc, animated: true, completion: nil)
+    }
     
-  
+    func moveToAR() {
+        let vc =  ARVC()
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     override var shouldAutorotate: Bool {
         return true
     }
