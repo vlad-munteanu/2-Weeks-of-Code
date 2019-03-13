@@ -79,7 +79,7 @@
 		B81013FE2239A70B00C65875 /* ARPaintball */ = {
 			isa = PBXGroup;
 			children = (
-				B810141B2239A74E00C65875 /* Portocols */,
+				B81014352239AB6300C65875 /* Supporting Files */,
 				B810141A2239A74C00C65875 /* View */,
 				B81014192239A74A00C65875 /* Controller */,
 				B81014172239A74500C65875 /* Supporting Files */,
@@ -142,13 +142,21 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		B81014352239AB6300C65875 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B810141B2239A74E00C65875 /* Portocols */,
+			);
+			name = "Supporting Files";
+			path = S;
+			sourceTree = "<group>";
+		};
 		BD2D0C183999B12DBC1D4CBD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				3BFA16D4C08764755F367017 /* Pods-ARPaintball.debug.xcconfig */,
 				09E26E93E0C5C8FCA816A5DD /* Pods-ARPaintball.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

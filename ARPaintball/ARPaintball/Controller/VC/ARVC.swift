@@ -13,7 +13,10 @@ import UIKit
 import SpriteKit
 import ARKit
 
-class ARVC: UIViewController, ARSKViewDelegate {
+class ARVC: UIViewController, ARSKViewDelegate{
+    
+    //Color
+    var paintBallColor: UIColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
     
     //Current View
     let currentView = ARView()
@@ -21,6 +24,7 @@ class ARVC: UIViewController, ARSKViewDelegate {
     //button
     unowned var homeBttn: UIButton {return currentView.HomeButton}
     unowned var colorBttn: UIButton {return currentView.ColorButton}
+    unowned var sizeBttn: UIButton {return currentView.SizeButton}
     
     public override func loadView() {
         self.view = currentView
@@ -41,6 +45,7 @@ class ARVC: UIViewController, ARSKViewDelegate {
         
         homeBttn.addTarget(self, action: #selector(goHome), for: UIControl.Event.touchUpInside)
         colorBttn.addTarget(self, action: #selector(addColor), for: UIControl.Event.touchUpInside)
+        sizeBttn.addTarget(self, action: #selector(addColor), for: UIControl.Event.touchUpInside)
         
     }
     
@@ -49,7 +54,7 @@ class ARVC: UIViewController, ARSKViewDelegate {
         self.present(vc, animated: true, completion: nil)
     }
     @objc func addColor() {
-        //TODO: Add Color Code
+       setColor()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -77,7 +82,7 @@ class ARVC: UIViewController, ARSKViewDelegate {
         // Create and configure a node for the anchor added to the view's session.
         
         let spriteNode = createShape()
-        spriteNode.fillColor = UIColor.blue
+        spriteNode.fillColor = paintBallColor
         
         
         
@@ -93,11 +98,16 @@ class ARVC: UIViewController, ARSKViewDelegate {
         
         
         let point = SKShapeNode(circleOfRadius: 10.0)
-        point.fillColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        point.fillColor = paintBallColor
         return point
         
         
     }
+    
+    func setColor () {
+        paintBallColor = .random()
+    }
+    
     
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
