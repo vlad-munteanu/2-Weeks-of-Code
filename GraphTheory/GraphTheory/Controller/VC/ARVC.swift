@@ -18,6 +18,8 @@ class ARVC: UIViewController, ARSKViewDelegate {
     //Current View
     let currentView = ARView()
     
+    //button
+    unowned var homeBttn: UIButton {return currentView.HomeButton}
     
     public override func loadView() {
         self.view = currentView
@@ -32,12 +34,17 @@ class ARVC: UIViewController, ARSKViewDelegate {
         currentView.mainScene.showsFPS = true
         currentView.mainScene.showsNodeCount = true
         
-        let scene = MainMenuScene(size: currentView.bounds.size)
+        let scene = ARScene(size: currentView.bounds.size)
         scene.scaleMode = .resizeFill
         currentView.mainScene.presentScene(scene)
         
-        
-        
+        homeBttn.addTarget(self, action: #selector(goHome), for: UIControl.Event.touchUpInside)
+    
+    }
+    
+    @objc func goHome() {
+        let vc = MainMenuVC()
+        self.present(vc, animated: true, completion: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -45,7 +52,7 @@ class ARVC: UIViewController, ARSKViewDelegate {
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
-        //configuration.planeDetection = .horizontal
+        configuration.planeDetection = .horizontal
         
         // Run the view's session
         currentView.mainScene.session.run(configuration)

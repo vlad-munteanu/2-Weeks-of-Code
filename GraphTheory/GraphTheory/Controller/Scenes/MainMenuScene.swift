@@ -69,12 +69,8 @@ class MainMenuScene : SKScene {
         let touchedNode = self.atPoint(positionInScene)
         if let name = touchedNode.name {
             if name == "NormalPlay" {
-                let scene = NormalScene(size: size)
-                self.view?.presentScene(scene)
+                myDelegate?.moveToNormalScene()
             } else if name == "ARPlay" {
-//                let scene = ARScene(size: size)
-//                self.view?.presentScene(scene)
-                
                 myDelegate?.moveToAR()
             }
             
