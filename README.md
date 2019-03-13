@@ -5,14 +5,14 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 
 ## Rules
 1. Fresh Xcode Project created after 12AM of each day 
-2. Re-use as little code as possible 
+2. Reuse as little code as possible 
 3. No storyboards: everything must be 100% in code
-3. Commit MVP of each app to GitHub by 11:59 PM each day
-4. Rinse & Repeat
+4. Commit MVP of each app to GitHub by 11:59 PM each day
+5. Rinse & Repeat
 
 ## Lines of Code Written So Far This Month: 
 ```
-3,964
+4,455
 ```
 
 ## Day 1: Random Color Generator 
@@ -51,7 +51,7 @@ A spritekit based app that allows users to draw on the screen with an uploaded p
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day7.gif) 
 
 ## Day 8: BAC Calculator 
-Allows user to calculate approximate blood alcohol concentration (BAC) using the Widmark formula. Used Eureka to create form view. Also created a new sick launchscreen for my future apps.
+Allows user to calculate approximate blood alcohol concentration (BAC) using the Widmark formula. Used Eureka to create form view. Also created a new launch screen for my future apps.
 
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day8.gif)
 
@@ -75,9 +75,10 @@ An app that allows users to flip a coin on their Apple Watch. Also has a complic
 
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day12.gif)
 
-## Day 13: Graph Theory 
-A spritekite based app that creates bordering triangles, assigns them either red, white, yellow, blue, green, or black. The point of the program is to use least amount of colors possible; bordering triangles cannot be assigned the same color. Basically a visual representation of basic Graph theory in discrete mathematics. 
+## Day 13: ARPaintball 
+An augmented reality "paintball" app, that allows users to paint on surfaces using the camera. The app is ARKit based, but also implements spritekit to draw sprites. Has the option to change size of paintball and to randomize the color. (The camera on the app runs as smooth as the normal camera view on the device, but it appears more laggy on the gif below as a result of the gif framerate). 
 
+![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day13.gif)
 
 ## Day 14: Running Game 
 A spritekit based game. 
@@ -87,6 +88,7 @@ A spritekit based game.
 - [ ] Raspberry PI App 
 - [ ] Snow day chance calculator 
 - [ ] Restaurant chooser (for lunch)
+- [ ] Graph Theory
 
 ## Apps I Might Do Further Development On 
 - Day 4: Study App 
