@@ -12,11 +12,13 @@ var pointsJaunt = [SKNode]()
 import UIKit
 import SpriteKit
 import ARKit
+import CDAlertView
 
 class ARVC: UIViewController, ARSKViewDelegate{
     
     //Color
     var paintBallColor: UIColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+    var paintBallSize: CGFloat = 10.0
     
     //Current View
     let currentView = ARView()
@@ -45,7 +47,7 @@ class ARVC: UIViewController, ARSKViewDelegate{
         
         homeBttn.addTarget(self, action: #selector(goHome), for: UIControl.Event.touchUpInside)
         colorBttn.addTarget(self, action: #selector(addColor), for: UIControl.Event.touchUpInside)
-        sizeBttn.addTarget(self, action: #selector(addColor), for: UIControl.Event.touchUpInside)
+        sizeBttn.addTarget(self, action: #selector(changeSize), for: UIControl.Event.touchUpInside)
         
     }
     
@@ -55,6 +57,26 @@ class ARVC: UIViewController, ARSKViewDelegate{
     }
     @objc func addColor() {
        setColor()
+    }
+    
+    @objc func changeSize() {
+        let alert = CDAlertView(title: "", message: "Enter Size",type: .alarm)
+        alert.alertBackgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        alert.isTextFieldHidden = false
+        let okAction = CDAlertViewAction(title: "Ok 👍🏼")
+        okAction.buttonTextColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        
+        alert.add(action: okAction)
+        alert.show() { (alert) in
+            print("completed")
+            print(alert.textFieldText!)
+            
+            if let size = alert.textFieldText {
+                if let n = NumberFormatter().number(from: size) {
+                    self.paintBallSize = CGFloat(truncating: n)
+                }
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -97,7 +119,7 @@ class ARVC: UIViewController, ARSKViewDelegate{
     func createShape() -> SKShapeNode {
         
         
-        let point = SKShapeNode(circleOfRadius: 10.0)
+        let point = SKShapeNode(circleOfRadius: paintBallSize)
         point.fillColor = paintBallColor
         return point
         
