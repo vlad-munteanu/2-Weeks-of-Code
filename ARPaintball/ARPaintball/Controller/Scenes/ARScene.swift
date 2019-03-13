@@ -11,11 +11,7 @@ import ARKit
 
 
 class ARScene: SKScene {
-    
-  
-    
-  
-    
+
     override func didMove(to view: SKView) {
      
     }

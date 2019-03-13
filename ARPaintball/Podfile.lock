@@ -1,16 +1,20 @@
 PODS:
+  - CDAlertView (0.9.1)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
+  - CDAlertView
   - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CDAlertView
     - SnapKit
 
 SPEC CHECKSUMS:
+  CDAlertView: 89450acbd8d882868f2fc4ec6d2b6f128710c779
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: b0ecdc8bbed928afe3ec4ce7109612eb66a8ee4c
+PODFILE CHECKSUM: f6baf9d1536c30fc4dc58f706bf292ba8214a2cd
 
 COCOAPODS: 1.6.1

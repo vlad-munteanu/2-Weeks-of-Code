@@ -7,4 +7,5 @@ target 'ARPaintball' do
 
   # Pods for ARPaintball
   pod 'SnapKit'
+  pod 'CDAlertView'
 end
