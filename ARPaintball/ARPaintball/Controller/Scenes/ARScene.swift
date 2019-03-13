@@ -34,7 +34,7 @@ class ARScene: SKScene {
         let clicked = nodes(at: location)
         
         // Get the first node
-        if let node = clicked.first {
+        if clicked.first != nil {
             
         } else {
             guard let sceneView = self.view as? ARSKView else {
