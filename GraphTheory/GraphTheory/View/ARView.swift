@@ -28,6 +28,7 @@ class ARView: UIView {
         addSubview(HomeButton)
         addSubview(ColorButton)
         addSubview(ResetButton)
+        addSubview(targetImage)
     }
     
     
@@ -55,6 +56,11 @@ class ARView: UIView {
             make.width.equalToSuperview().multipliedBy(0.4)
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview().multipliedBy(0.2)
+        }
+        targetImage.snp.makeConstraints{ make in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
+            
         }
     }
     
@@ -104,6 +110,13 @@ class ARView: UIView {
         randButton.layer.cornerRadius = cornerRadius
         
         return randButton
+    }()
+    
+    //image
+    public let targetImage: UIImageView = {
+        let img = UIImageView()
+        img.image = UIImage(named: "target")
+        return img
     }()
     
     
