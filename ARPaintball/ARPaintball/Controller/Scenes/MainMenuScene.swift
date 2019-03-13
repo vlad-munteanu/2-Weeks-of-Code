@@ -38,7 +38,7 @@ class MainMenuScene : SKScene {
     }
     
     func createTri() {
-        let length: CGFloat = 200
+        let length: CGFloat = 150
         var points = [CGPoint(x:length, y:-length / 2.0),
                       CGPoint(x:-length, y:-length / 2.0),
                       CGPoint(x: 0.0, y: length),
