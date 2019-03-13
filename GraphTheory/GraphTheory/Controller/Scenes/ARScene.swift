@@ -10,7 +10,7 @@ import SpriteKit
 import ARKit
 
 
-class GameScene: SKScene {
+class ARScene: SKScene {
     
     let triangleLabel = SKLabelNode(text: "Triangles")
     let numberOfTrianglesLabel = SKLabelNode(text: "0")

@@ -32,7 +32,7 @@ class GameViewController: UIViewController, ARSKViewDelegate {
         currentView.mainScene.showsFPS = true
         currentView.mainScene.showsNodeCount = true
         
-        let scene = GameScene(size: currentView.bounds.size)
+        let scene = ARScene(size: currentView.bounds.size)
         scene.scaleMode = .resizeFill
         currentView.mainScene.presentScene(scene)
     }
