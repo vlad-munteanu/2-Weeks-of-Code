@@ -28,6 +28,7 @@ class NormalView: UIView {
         addSubview(mainView)
         addSubview(ColorButton)
         addSubview(HomeButton)
+        addSubview(ResetButton)
     }
     
     internal func createConstraints(){
@@ -36,15 +37,22 @@ class NormalView: UIView {
             make.width.equalToSuperview()
         }
         HomeButton.snp.makeConstraints{ make in
-            make.height.equalToSuperview().multipliedBy(0.1)
-            make.width.equalToSuperview().multipliedBy(0.4)
-            make.left.equalToSuperview().offset(20)
-            make.centerY.equalToSuperview().multipliedBy(1.4)
+            make.height.equalToSuperview().multipliedBy(0.05)
+            make.width.equalToSuperview().multipliedBy(0.2)
+            make.left.equalToSuperview().inset(20)
+            make.centerY.equalToSuperview().multipliedBy(0.2)
+            
         }
         ColorButton.snp.makeConstraints{ make in
-            make.height.equalToSuperview()
+            make.height.equalToSuperview().multipliedBy(0.1)
             make.width.equalToSuperview().multipliedBy(0.4)
             make.right.equalToSuperview().inset(20)
+            make.centerY.equalToSuperview().multipliedBy(1.4)
+        }
+        ResetButton.snp.makeConstraints{ make in
+            make.height.equalToSuperview().multipliedBy(0.1)
+            make.width.equalToSuperview().multipliedBy(0.4)
+            make.left.equalToSuperview().inset(20)
             make.centerY.equalToSuperview().multipliedBy(1.4)
         }
     }
@@ -74,6 +82,21 @@ class NormalView: UIView {
         let cornerRadius : CGFloat = 5.0
         
         randButton.setTitle("Color", for: UIControl.State.normal)
+        randButton.setTitleColor(UIColor.white, for: UIControl.State.normal)
+        randButton.backgroundColor = UIColor.clear
+        randButton.layer.borderWidth = 1.0
+        randButton.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+        randButton.layer.cornerRadius = cornerRadius
+        
+        return randButton
+    }()
+    
+    public let ResetButton: UIButton = {
+        let randButton = UIButton()
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 5.0
+        
+        randButton.setTitle("Reset", for: UIControl.State.normal)
         randButton.setTitleColor(UIColor.white, for: UIControl.State.normal)
         randButton.backgroundColor = UIColor.clear
         randButton.layer.borderWidth = 1.0

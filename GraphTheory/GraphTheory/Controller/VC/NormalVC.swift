@@ -16,7 +16,12 @@ class NormalVC: UIViewController {
     
     //current View
     let currentView = NormalView()
-
+    
+    //buttons
+    unowned var homeBttn: UIButton {return currentView.HomeButton}
+    unowned var colorBttn: UIButton {return currentView.ColorButton}
+    unowned var resetBttn: UIButton {return currentView.ResetButton}
+   
     public override func loadView() {
         self.view = currentView
     }
@@ -30,6 +35,21 @@ class NormalVC: UIViewController {
         let scene = NormalScene(size: currentView.bounds.size)
         scene.scaleMode = .resizeFill
         currentView.mainView.presentScene(scene)
+        
+        homeBttn.addTarget(self, action: #selector(goHome), for: UIControl.Event.touchUpInside)
+        colorBttn.addTarget(self, action: #selector(addColor), for: UIControl.Event.touchUpInside)
+        resetBttn.addTarget(self, action: #selector(resetScene), for: UIControl.Event.touchUpInside)
+    }
+    
+    @objc func goHome() {
+        let vc = MainMenuVC()
+        self.present(vc, animated: true, completion: nil)
+    }
+    @objc func addColor() {
+        //TODO: Add Color Code
+    }
+    @objc func resetScene() {
+        //TODO: Reset Code
     }
     
     

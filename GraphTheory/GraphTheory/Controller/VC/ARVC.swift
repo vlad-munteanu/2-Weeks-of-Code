@@ -20,6 +20,7 @@ class ARVC: UIViewController, ARSKViewDelegate {
     
     //button
     unowned var homeBttn: UIButton {return currentView.HomeButton}
+    unowned var colorBttn: UIButton {return currentView.ColorButton}
     
     public override func loadView() {
         self.view = currentView
@@ -39,12 +40,16 @@ class ARVC: UIViewController, ARSKViewDelegate {
         currentView.mainScene.presentScene(scene)
         
         homeBttn.addTarget(self, action: #selector(goHome), for: UIControl.Event.touchUpInside)
+        colorBttn.addTarget(self, action: #selector(addColor), for: UIControl.Event.touchUpInside)
     
     }
     
     @objc func goHome() {
         let vc = MainMenuVC()
         self.present(vc, animated: true, completion: nil)
+    }
+    @objc func addColor() {
+        //TODO: Add Color Code
     }
 
     override func viewWillAppear(_ animated: Bool) {
