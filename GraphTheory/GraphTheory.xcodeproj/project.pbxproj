@@ -12,6 +12,7 @@
 		B85A080422392D2300CCB039 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A080322392D2300CCB039 /* GameViewController.swift */; };
 		B85A080722392D2300CCB039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A080522392D2300CCB039 /* Main.storyboard */; };
 		B85A080922392D2400CCB039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85A080822392D2400CCB039 /* Assets.xcassets */; };
+		B85A08182239330400CCB039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85A08172239330400CCB039 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B85A080622392D2300CCB039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B85A080822392D2400CCB039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B85A080D22392D2400CCB039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B85A08172239330400CCB039 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../../../Reused Files/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				B85A080522392D2300CCB039 /* Main.storyboard */,
+				B85A08172239330400CCB039 /* LaunchScreen.storyboard */,
 				B85A080822392D2400CCB039 /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
@@ -154,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B85A08182239330400CCB039 /* LaunchScreen.storyboard in Resources */,
 				B85A080722392D2300CCB039 /* Main.storyboard in Resources */,
 				B85A080922392D2400CCB039 /* Assets.xcassets in Resources */,
 			);
