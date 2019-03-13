@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6D4F583C3846CBA1B15ED121 /* Pods_GraphTheory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5289C46C7A08B8269CCFC3D7 /* Pods_GraphTheory.framework */; };
+		B81013E2223982AB00C65875 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81013E1223982AB00C65875 /* MainMenuScene.swift */; };
+		B81013E5223982C500C65875 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81013E4223982C500C65875 /* Alertable.swift */; };
 		B85A07FC22392D2300CCB039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A07FB22392D2300CCB039 /* AppDelegate.swift */; };
 		B85A080222392D2300CCB039 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A080122392D2300CCB039 /* GameScene.swift */; };
 		B85A080422392D2300CCB039 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85A080322392D2300CCB039 /* GameViewController.swift */; };
@@ -21,6 +23,8 @@
 		10073D792D5C95A47F812514 /* Pods-GraphTheory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphTheory.debug.xcconfig"; path = "Target Support Files/Pods-GraphTheory/Pods-GraphTheory.debug.xcconfig"; sourceTree = "<group>"; };
 		5289C46C7A08B8269CCFC3D7 /* Pods_GraphTheory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraphTheory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF0D82313DB1679DD2899F0 /* Pods-GraphTheory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphTheory.release.xcconfig"; path = "Target Support Files/Pods-GraphTheory/Pods-GraphTheory.release.xcconfig"; sourceTree = "<group>"; };
+		B81013E1223982AB00C65875 /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		B81013E4223982C500C65875 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
 		B85A07F822392D2300CCB039 /* GraphTheory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphTheory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85A07FB22392D2300CCB039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B85A080122392D2300CCB039 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -53,6 +57,31 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B81013DF2239828700C65875 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B81013E1223982AB00C65875 /* MainMenuScene.swift */,
+				B85A080122392D2300CCB039 /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B81013E02239829000C65875 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				B85A080322392D2300CCB039 /* GameViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		B81013E3223982B800C65875 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B81013E4223982C500C65875 /* Alertable.swift */,
+			);
+			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
 		B85A07EF22392D2300CCB039 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +103,7 @@
 		B85A07FA22392D2300CCB039 /* GraphTheory */ = {
 			isa = PBXGroup;
 			children = (
+				B81013E3223982B800C65875 /* Helper Classes */,
 				B85A08152239326900CCB039 /* View */,
 				B85A08142239326700CCB039 /* Model */,
 				B85A08132239326500CCB039 /* Controller */,
@@ -86,9 +116,9 @@
 		B85A08132239326500CCB039 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B85A080322392D2300CCB039 /* GameViewController.swift */,
+				B81013E02239829000C65875 /* VC */,
+				B81013DF2239828700C65875 /* Scenes */,
 				B85A081B22393A7600CCB039 /* boolChris.png */,
-				B85A080122392D2300CCB039 /* GameScene.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -246,6 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B81013E5223982C500C65875 /* Alertable.swift in Sources */,
+				B81013E2223982AB00C65875 /* MainMenuScene.swift in Sources */,
 				B85A080222392D2300CCB039 /* GameScene.swift in Sources */,
 				B85A081A2239335900CCB039 /* ARView.swift in Sources */,
 				B85A080422392D2300CCB039 /* GameViewController.swift in Sources */,

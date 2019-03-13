@@ -51,7 +51,7 @@ class GameScene: SKScene {
         // Get location in the scene
         let location = touch.location(in: self)
         
-        touchePos.append(location)
+        //touchePos.append(location)
         // Get the nodes at the clicked location
         let clicked = nodes(at: location)
         
@@ -73,6 +73,7 @@ class GameScene: SKScene {
                 
                 // Add a new anchor to the session
                 let anchor = ARAnchor(transform: transform)
+                touchePos.append(anchor)
                 sceneView.session.add(anchor: anchor)
             }
         }

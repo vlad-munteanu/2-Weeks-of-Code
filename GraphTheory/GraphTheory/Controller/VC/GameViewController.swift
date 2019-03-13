@@ -6,7 +6,8 @@
 //  Copyright © 2019 Vlad Munteanu. All rights reserved.
 //
 
-var touchePos = [CGPoint]()
+var touchePos = [ARAnchor]()
+var pointsJaunt = [SKNode]()
 
 import UIKit
 import SpriteKit
@@ -79,6 +80,7 @@ class GameViewController: UIViewController, ARSKViewDelegate {
       
         //execute both actions simultaneously
        
+        pointsJaunt.append(spriteNode)
         
         return spriteNode;
     }
@@ -89,9 +91,9 @@ class GameViewController: UIViewController, ARSKViewDelegate {
             //if(touchePos.count == 0) { self.removeAllChildren() }
             let point = SKShapeNode(circleOfRadius: 5.0)
             point.fillColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
-            point.position = touchePos.last!
             return point
         } else if(touchePos.count >= 2) {
+            
             
             let Triangle = SKShapeNode(points: &touchePos, count: touchePos.count)
             
