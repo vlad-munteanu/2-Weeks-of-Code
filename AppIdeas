@@ -4,4 +4,6 @@ Daily App Ideas
  3. Need to be picked up app (sends text to predefined contacts to come pick you up with address) 
  4. Resturant Chooser (For lunch)
  5. Snow day calculator
- 6. SSH into Raspberry Pi 
+ 6. SSH into Raspberry Pi
+ 7. Graph Theory 
+ A spritekite based app that creates bordering triangles, assigns them either red, white, yellow, blue, green, or black. The point of the program is to use least amount of colors possible; bordering triangles cannot be assigned the same color. Basically a visual representation of basic Graph theory in discrete mathematics.
