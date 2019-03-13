@@ -9,60 +9,37 @@
 
 import SpriteKit
 
-
-//TODO: Fix button for playing, make more comprehensive
-
 class MainMenuScene : SKScene {
     
-    let playLabel = SKLabelNode()
-    let highScoreLabel = SKLabelNode(fontNamed: "Pixel Miners")
-    
-    let instructionLabel = SKLabelNode()
-    let mainLabel = SKSpriteNode(imageNamed: "Martian-Runner")
-    var musicButton = SKSpriteNode()
-    let background = SKSpriteNode(imageNamed: "bg")
+    let ARView = SKLabelNode()
+    let normalView = SKLabelNode()
     
     override func didMove(to view: SKView) {
         
-        // set size, color, position and text of the tapStartLabel
-        playLabel.fontSize = 42
-        playLabel.fontColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        playLabel.position = CGPoint(x: size.width / 2, y: size.height * 0.32)
-        playLabel.text = "Play Game"
-        playLabel.name = "play"
-        playLabel.zPosition = 1
+        self.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         
-        highScoreLabel.fontSize = 15
-        highScoreLabel.fontColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        highScoreLabel.position = CGPoint(x: size.width * 0.26 , y: size.height * 0.015 )
+        //normalView
+        normalView.fontSize = 42
+        normalView.fontColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        normalView.position = CGPoint(x: size.width / 2, y: size.height * 0.75)
+        normalView.text = "Normal Mode"
+        normalView.name = "NormalPlay"
+        normalView.zPosition = 1
         
-      
-        highScoreLabel.zPosition = 1
         
-        mainLabel.size = CGSize(width: size.width , height: 60)
-        mainLabel.position = CGPoint(x: size.width / 2, y: size.height * 0.75 )
-        mainLabel.name = "sicko"
-        mainLabel.zPosition = 1
-        
-        musicButton.texture = SKTexture(imageNamed: "musicOff")
-        musicButton.size = CGSize(width: 40, height: 40)
-        musicButton.position = CGPoint(x: size.width - 40, y: size.height*0.93)
-        musicButton.zPosition = 1
-        musicButton.name = "music"
-        addChild(musicButton)
-        
+        //ARView
+        ARView.fontSize = 42
+        ARView.fontColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        ARView.position = CGPoint(x: size.width / 2, y: size.height * 0.52)
+        ARView.text = "AR Mode"
+        ARView.fontName = "Futura"
+        ARView.name = "ARPlay"
+        ARView.zPosition = 1
         
         // add the label to the scene
-        addChild(playLabel)
+        addChild(normalView)
+        addChild(ARView)
         
-        addChild(highScoreLabel)
-        addChild(mainLabel)
-        
-        // set the background
-        background.size = CGSize(width: size.width, height: size.height)
-        background.position = CGPoint(x: frame.size.width / 2, y: frame.size.height / 2)
-        
-        addChild(background)
     }
     
     //TODO: Fix transitions to new scenes
@@ -72,9 +49,12 @@ class MainMenuScene : SKScene {
         let positionInScene = touch.location(in: self)
         let touchedNode = self.atPoint(positionInScene)
         if let name = touchedNode.name {
-            if name == "play" {
-               // let scene = NormalGameScene(size: size)
-                //self.view?.presentScene(scene)
+            if name == "NormalPlay" {
+                let scene = NormalScene(size: size)
+                self.view?.presentScene(scene)
+            } else if name == "ARPlay" {
+                let scene = ARScene(size: size)
+                self.view?.presentScene(scene)
             }
             
         }

@@ -13,7 +13,7 @@ import UIKit
 import SpriteKit
 import ARKit
 
-class GameViewController: UIViewController, ARSKViewDelegate {
+class ARVC: UIViewController, ARSKViewDelegate {
 
     //Current View
     let currentView = ARView()
@@ -32,9 +32,12 @@ class GameViewController: UIViewController, ARSKViewDelegate {
         currentView.mainScene.showsFPS = true
         currentView.mainScene.showsNodeCount = true
         
-        let scene = ARScene(size: currentView.bounds.size)
+        let scene = MainMenuScene(size: currentView.bounds.size)
         scene.scaleMode = .resizeFill
         currentView.mainScene.presentScene(scene)
+        
+        
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -92,15 +95,16 @@ class GameViewController: UIViewController, ARSKViewDelegate {
             let point = SKShapeNode(circleOfRadius: 5.0)
             point.fillColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
             return point
-        } else if(touchePos.count >= 2) {
-            
-            
-            let Triangle = SKShapeNode(points: &touchePos, count: touchePos.count)
-            
-            Triangle.fillColor = .random()
-            touchePos.removeAll()
-            return Triangle
         }
+//        } else if(touchePos.count >= 2) {
+//
+//
+//            let Triangle = SKShapeNode(points: &touchePos, count: touchePos.count)
+//
+//            Triangle.fillColor = .random()
+//            touchePos.removeAll()
+//            return Triangle
+//        }
         
         let pointy = SKShapeNode(circleOfRadius: 5.0)
         pointy.fillColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
