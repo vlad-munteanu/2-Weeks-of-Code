@@ -59,7 +59,7 @@ class ARView: UIView {
         }
         targetImage.snp.makeConstraints{ make in
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview()
+            make.centerY.equalToSuperview().multipliedBy(0.98)
             
         }
     }
