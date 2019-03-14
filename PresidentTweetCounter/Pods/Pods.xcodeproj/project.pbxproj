@@ -1,0 +1,1246 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		36A140D06ED2D9C812F0D53723AE53E2 /* TwitterKit */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F5898E1167BEBC59AC432E7C665CAD8F /* Build configuration list for PBXAggregateTarget "TwitterKit" */;
+			buildPhases = (
+			);
+			dependencies = (
+				9B17F4C70AAABB15075A1597224C536E /* PBXTargetDependency */,
+			);
+			name = TwitterKit;
+		};
+		AE3866BE3AC377EBAC49CCF7E18F707F /* TwitterCore */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EA059E7BBE7BC6E51F6690BDF5940CE6 /* Build configuration list for PBXAggregateTarget "TwitterCore" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = TwitterCore;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		03E8FDC366DFD8D1749B74864875112B /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB46DF3A2EEE30EC525DD3C02EAD26E /* UILayoutSupport+Extensions.swift */; };
+		137B178337EC945D53E53B9CC2566916 /* Pods-PresidentTweetCounter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A04D72D65D0622FCAE6C24EF799C85D1 /* Pods-PresidentTweetCounter-dummy.m */; };
+		1392D6E2AC9F441B584178475FE74EBC /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E5FA715ECB4411294C9F50459DD99 /* ConstraintLayoutGuideDSL.swift */; };
+		14606EF0CF9C87BD53A6D5F86F50EA06 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5862B44713138A54D2F4045B77850DBA /* ConstraintPriorityTarget.swift */; };
+		17915B82A650889D02F473BE7023ADD4 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8748E0B9E95D1A591D211CBD5A06729 /* ConstraintMakerRelatable.swift */; };
+		1DBB1AD1755B504746418D10A982A61B /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4682FC2B19BA8A41B8894F570D21875 /* ConstraintMakerPriortizable.swift */; };
+		21DF440A10D7AF9CE1F27853EAB9135B /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AE68CE1C3FA7B86AF077A0791877FD /* ConstraintMultiplierTarget.swift */; };
+		28CBC9F501D5E2E32CB341D62C43CDAA /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD1E10564C41F3134769C94B00F3FB7 /* ConstraintOffsetTarget.swift */; };
+		2ABB6259A3E8E10B824010CDEC553735 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079D0D73C3629E5FEE68C608D5700FF7 /* Foundation.framework */; };
+		3688BEDB79EB0FACE93FA76D809CA0AE /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11A3D8E7EDC8EBAB157F6C6555E8E5B /* ConstraintConstantTarget.swift */; };
+		3BF5000D9A773FBF9FC353703BAF54AD /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70425A1BE430B2D5C523F7DBE5FBD581 /* SnapKit-dummy.m */; };
+		3C9D80C3E7AC1028158A4757D8F3E53F /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9685F4D0438324FF577E074AFD0B4BC3 /* ConstraintLayoutSupportDSL.swift */; };
+		4F31526CADADA0C797458086F48C13BA /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A45A072878F54BFA18DDBE2D29A322 /* ConstraintDescription.swift */; };
+		51EF9B96983FDACC02E9064DA408C51C /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373C5917C9685EE4C42338BAB8F06C1 /* ConstraintView.swift */; };
+		52B99C3782FD8FE546F3D9246069C43A /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2BDD54A35B9FD181CC69DB1E945E25 /* ConstraintInsets.swift */; };
+		53F73FD985DBBDD4AF5D92B41830B676 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4514D4F3375DE569707D9E8167DE7717 /* ConstraintMakerFinalizable.swift */; };
+		64A4C9D1D2D7EBDBB417F2FDB87B1BF8 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C7FD8FB31675B2DFC54A53C7755694 /* LayoutConstraintItem.swift */; };
+		68005578C3D2E87CCC9B042210831D10 /* Pods-PresidentTweetCounter WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75667930633A962B535899E85F82FBD6 /* Pods-PresidentTweetCounter WatchKit Extension-dummy.m */; };
+		6970AE17F75F950B34157BD7DD83ED89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079D0D73C3629E5FEE68C608D5700FF7 /* Foundation.framework */; };
+		6F4707937BC95CABA77A60D091D11521 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2E6C910A9A2C8B9A5ABE8D50F1DE56 /* Typealiases.swift */; };
+		71F2890149ACC6E893D2523E4B1D9503 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0710085FD316D95C0695CF8463184B /* ConstraintInsetTarget.swift */; };
+		735E616E11F3E4F8C635C6903691B5E8 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDB054459C789683F6ADEE74D06396D /* ConstraintLayoutGuide+Extensions.swift */; };
+		75C10E14563F5B9EFAD3D814F34CD1F1 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D521C292DC38BBA06BD01952ABBD33 /* ConstraintConfig.swift */; };
+		7A444A8737D3C32B814720FCD993AEA1 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967274A1AEDDA4D016E9C97DD46F5C33 /* ConstraintAttributes.swift */; };
+		8F0D0EAF2BF9D0E5C168C1B1A14B7DD4 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCC16EB643628C6046AAE535EFDFD91 /* ConstraintViewDSL.swift */; };
+		908DDB090F8DBA852498546279860FCD /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978EDA2CD14973938DE9ED9BDB4715D9 /* ConstraintItem.swift */; };
+		93A67857BBF9B77BD7B129F7E46C451C /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CDAFCA506119BCB8F39F204D12E35AE /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99057F9C670A3D8A7395FC7CF4370C5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */; };
+		A18B28C15E06A2EA78AAB87FCF9B97E0 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E24E94D560066762E8B2E19D75B266A /* ConstraintRelatableTarget.swift */; };
+		AED93A81A8B076CFD579E8C06C9A4304 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BA560827B67F43E4727B743B769833 /* Debugging.swift */; };
+		BCBC14EE2578C7761FB5B23C1D8C79F9 /* Pods-PresidentTweetCounter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33EC6F5EA3EBBAB3AC4A87A8ED6B0287 /* Pods-PresidentTweetCounter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCF6975CB95AB54C3768CDAC2F953F3B /* Pods-PresidentTweetCounter WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA9053D4FD71C40F8B87B483F3ED2336 /* Pods-PresidentTweetCounter WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C11C1E21E7D383557D577F21DB8F38D4 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6375FF11E1E97812D749BECCAE841486 /* ConstraintMakerExtendable.swift */; };
+		C208999FFE013228C1342826375B1FA9 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7291411671A7B76A10AD2882848C4E /* ConstraintLayoutGuide.swift */; };
+		C32C0811B6781BF3090C05AFF9419962 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734883D779E1C69F56A3EE1A03B13A84 /* LayoutConstraint.swift */; };
+		D41DC36FF98F711E2F5D4A79EDFC1CC8 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA151DA196B5ECA1796DDEFADCD03CC /* ConstraintRelation.swift */; };
+		D45521B2932B409C18A4A5FA3622B9DE /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B67307D58DD56DAF98A818040D560A /* Constraint.swift */; };
+		D552B7B82AA31B79A6D7FFA7B7DB0F32 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7918589734A14A00B95E0CDAD8A216 /* ConstraintPriority.swift */; };
+		E515AFF997426D05A25A05BFD27C7EA4 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B9096C458C88DBB76EDB979E32F87F /* ConstraintLayoutSupport.swift */; };
+		EFC91E333B66E943797C482B23711EE6 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11308C1B1490A485AB382F68B328A485 /* ConstraintDSL.swift */; };
+		F5B98FD020F31EB8DF757509EF8CAB89 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0738B69E093F59D62E54908B7EB0F6DE /* ConstraintView+Extensions.swift */; };
+		F8FAA62CF63E2DDCB09ABA7A9A76633B /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF9FFF9B864C7E7E535124AE01BE94 /* ConstraintMaker.swift */; };
+		FD8B75C1D1F71036A611C8981D6DD15F /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DABC38EBD40BA8DD96A09B87F23B5D8 /* ConstraintMakerEditable.swift */; };
+		FE7B37F4ADB7AB08DB5D3A86A92BBF32 /* Pods-PresidentTweetCounter WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3318235B2C45D29F3FCCCB7F31DB63D5 /* Pods-PresidentTweetCounter WatchKit App-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A7279DB8CF76862108CD356F178FF48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE3866BE3AC377EBAC49CCF7E18F707F;
+			remoteInfo = TwitterCore;
+		};
+		6ADEAAB254AD69D932BC90C696D837FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36A140D06ED2D9C812F0D53723AE53E2;
+			remoteInfo = TwitterKit;
+		};
+		C9C91F51A7E826B0291D9BB987E0E8FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE3866BE3AC377EBAC49CCF7E18F707F;
+			remoteInfo = TwitterCore;
+		};
+		CBEF9199DBB29C24EDA533DF93ADCC4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28AC902A57FBAB4D5778D244E148E62D;
+			remoteInfo = SnapKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		012AE39681A661C13040FB0DA380ABE5 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = iOS/TwitterCore.framework; sourceTree = "<group>"; };
+		01BE36B37B15E55735ADB1B8039D5123 /* TwitterKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwitterKit.xcconfig; sourceTree = "<group>"; };
+		0738B69E093F59D62E54908B7EB0F6DE /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		079D0D73C3629E5FEE68C608D5700FF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0B2BDD54A35B9FD181CC69DB1E945E25 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		0CDAFCA506119BCB8F39F204D12E35AE /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		0E24E94D560066762E8B2E19D75B266A /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		11308C1B1490A485AB382F68B328A485 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		1373C5917C9685EE4C42338BAB8F06C1 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		14786668CEF87B31F818B9582CFA4B71 /* Pods-PresidentTweetCounter WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PresidentTweetCounter WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		16D521C292DC38BBA06BD01952ABBD33 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		1B0710085FD316D95C0695CF8463184B /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		1DABC38EBD40BA8DD96A09B87F23B5D8 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		22D12559E2A59636BE5B09D752E85462 /* Pods-PresidentTweetCounter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PresidentTweetCounter-frameworks.sh"; sourceTree = "<group>"; };
+		3318235B2C45D29F3FCCCB7F31DB63D5 /* Pods-PresidentTweetCounter WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PresidentTweetCounter WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		33EC6F5EA3EBBAB3AC4A87A8ED6B0287 /* Pods-PresidentTweetCounter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PresidentTweetCounter-umbrella.h"; sourceTree = "<group>"; };
+		37BA560827B67F43E4727B743B769833 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		3A2E6C910A9A2C8B9A5ABE8D50F1DE56 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		3CA6861FA7213C8EF78238152AEA38E9 /* Pods-PresidentTweetCounter WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PresidentTweetCounter WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3FDFD5079F8607A2F89E791F49860C0B /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		4098D0A06BD57155C8E96121C7765A54 /* Pods-PresidentTweetCounter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PresidentTweetCounter-acknowledgements.plist"; sourceTree = "<group>"; };
+		424DD7717B2D5CF5D8F5CDB374826C37 /* Pods_PresidentTweetCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PresidentTweetCounter.framework; path = "Pods-PresidentTweetCounter.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4514D4F3375DE569707D9E8167DE7717 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		46963CEC116DAAA0A87A4391DFADF8DA /* Pods-PresidentTweetCounter WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PresidentTweetCounter WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		47AAE42D067144A2B8C2844FDCFB27A9 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FCF4B6B8FA2B95AD52A0D9D94E48B8 /* Pods-PresidentTweetCounter WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PresidentTweetCounter WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
+		5291151E66E439430AC40EAA4715159E /* Pods-PresidentTweetCounter WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PresidentTweetCounter WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		56D624FFE50F5744F1FB470E4FE75C3E /* Pods-PresidentTweetCounter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PresidentTweetCounter.modulemap"; sourceTree = "<group>"; };
+		57CEE1D0982C780B38087DBA8DCB9889 /* Pods-PresidentTweetCounter-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PresidentTweetCounter-resources.sh"; sourceTree = "<group>"; };
+		5862B44713138A54D2F4045B77850DBA /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		59DBC12D30A93B1075C883B9727B2CD0 /* TwitterCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TwitterCore.xcconfig; sourceTree = "<group>"; };
+		5A9466D41D502718D91980706A299780 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		5AB5CC37E628001B36B7B6ADD31B08D2 /* Pods-PresidentTweetCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PresidentTweetCounter.debug.xcconfig"; sourceTree = "<group>"; };
+		5EC425CB39A43C474D6CE433B5D50363 /* Pods-PresidentTweetCounter WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PresidentTweetCounter WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		6375FF11E1E97812D749BECCAE841486 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		66B67307D58DD56DAF98A818040D560A /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		6B4F35D81DA748FC591F663F7146212B /* Pods-PresidentTweetCounter WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PresidentTweetCounter WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6FCC16EB643628C6046AAE535EFDFD91 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		703057FAA015D43E5879D1560BA3292E /* Pods-PresidentTweetCounter WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PresidentTweetCounter WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		70425A1BE430B2D5C523F7DBE5FBD581 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		7074C197706D5E02AE9219EC416FC23E /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
+		734883D779E1C69F56A3EE1A03B13A84 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		75667930633A962B535899E85F82FBD6 /* Pods-PresidentTweetCounter WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PresidentTweetCounter WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		7CA151DA196B5ECA1796DDEFADCD03CC /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		8A195F70E7C22FCA7A0B7355A4C83C31 /* Pods-PresidentTweetCounter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PresidentTweetCounter-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C3EFA4D2564C37EB82766C9C46BBBDE /* Pods-PresidentTweetCounter WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PresidentTweetCounter WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		8C7291411671A7B76A10AD2882848C4E /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		8CAF9FFF9B864C7E7E535124AE01BE94 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		8EDB054459C789683F6ADEE74D06396D /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		967274A1AEDDA4D016E9C97DD46F5C33 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		9685F4D0438324FF577E074AFD0B4BC3 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		978EDA2CD14973938DE9ED9BDB4715D9 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		98A45A072878F54BFA18DDBE2D29A322 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		99C7FD8FB31675B2DFC54A53C7755694 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EED888F47417A327C7A2791D5BE79CB /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		A04D72D65D0622FCAE6C24EF799C85D1 /* Pods-PresidentTweetCounter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PresidentTweetCounter-dummy.m"; sourceTree = "<group>"; };
+		AA9053D4FD71C40F8B87B483F3ED2336 /* Pods-PresidentTweetCounter WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PresidentTweetCounter WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		AAB46DF3A2EEE30EC525DD3C02EAD26E /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		B8AE68CE1C3FA7B86AF077A0791877FD /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		BAD1E10564C41F3134769C94B00F3FB7 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		BB90EE57446CFDE6DB054E359B486439 /* Pods_PresidentTweetCounter_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PresidentTweetCounter_WatchKit_Extension.framework; path = "Pods-PresidentTweetCounter WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11A3D8E7EDC8EBAB157F6C6555E8E5B /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		C2A824FBC6E99E2DC435CB1CC16615D6 /* Pods-PresidentTweetCounter WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PresidentTweetCounter WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		C93E5FA715ECB4411294C9F50459DD99 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		CB7918589734A14A00B95E0CDAD8A216 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		E348913F69FD5F51493678B639E7155E /* libPods-PresidentTweetCounter WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PresidentTweetCounter WatchKit App.a"; path = "libPods-PresidentTweetCounter WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4682FC2B19BA8A41B8894F570D21875 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		ED5FDA5CB94DD26661BD8A646C435D7B /* Pods-PresidentTweetCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PresidentTweetCounter.release.xcconfig"; sourceTree = "<group>"; };
+		F196D4AAA617FE299F028C93DA0D1CC8 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		F5B9096C458C88DBB76EDB979E32F87F /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		F7B6120C371C9EB19CF59936E2F6E8AE /* Pods-PresidentTweetCounter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PresidentTweetCounter-Info.plist"; sourceTree = "<group>"; };
+		F8748E0B9E95D1A591D211CBD5A06729 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FBA6EBC35D2E73F3215ABE3D521D7B64 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		639E0E5FF0E43D6CBEA83B19A3BCE143 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99057F9C670A3D8A7395FC7CF4370C5F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7124F3843346909A64C1F281AA196459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6970AE17F75F950B34157BD7DD83ED89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A15DB71DB3852D5027476517A648667E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABB6259A3E8E10B824010CDEC553735 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F794ACBA13B187F1DBF282BA748BBE10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00B66A40A75552741C03BFF98EBF508C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				59DBC12D30A93B1075C883B9727B2CD0 /* TwitterCore.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TwitterCore";
+			sourceTree = "<group>";
+		};
+		0444D2915AF645810C79194BF3893DB4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				079D0D73C3629E5FEE68C608D5700FF7 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		098851CEB81BD82155D79C9F84059B36 /* TwitterCore */ = {
+			isa = PBXGroup;
+			children = (
+				CA8888CC60A983CC7C66A0901B756C70 /* Frameworks */,
+				00B66A40A75552741C03BFF98EBF508C /* Support Files */,
+			);
+			name = TwitterCore;
+			path = TwitterCore;
+			sourceTree = "<group>";
+		};
+		0F291CD27ED43AA9397D84E8A3E6AF3F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3FDFD5079F8607A2F89E791F49860C0B /* TwitterKitResources.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0F4EC400171F9AA79DD1D37250D137CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE711E0DED5234B06C9D6CF5D5BCDE3F /* SnapKit */,
+				098851CEB81BD82155D79C9F84059B36 /* TwitterCore */,
+				1AD8B848B34C8DB94DD0E587AF17FC5A /* TwitterKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1AD8B848B34C8DB94DD0E587AF17FC5A /* TwitterKit */ = {
+			isa = PBXGroup;
+			children = (
+				2845AA1A59300B42180ED0CEFD686832 /* Frameworks */,
+				0F291CD27ED43AA9397D84E8A3E6AF3F /* Resources */,
+				67BEA728A824A59A86F6E240EF3778AD /* Support Files */,
+			);
+			name = TwitterKit;
+			path = TwitterKit;
+			sourceTree = "<group>";
+		};
+		25B7BC792C51B1FC3482260C480A2BFA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				823FDF57D213EE30FA22990C9A65C3C1 /* Pods-PresidentTweetCounter */,
+				D0E55A88C89CD0F77C8DCC8C71718540 /* Pods-PresidentTweetCounter WatchKit App */,
+				D4E10F5832263FA8EA839FE7F7756274 /* Pods-PresidentTweetCounter WatchKit Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2845AA1A59300B42180ED0CEFD686832 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7074C197706D5E02AE9219EC416FC23E /* TwitterKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C93E1ADB60F5A9CEF07230E92128A7B /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0444D2915AF645810C79194BF3893DB4 /* iOS */,
+				3C93E1ADB60F5A9CEF07230E92128A7B /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67BEA728A824A59A86F6E240EF3778AD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				01BE36B37B15E55735ADB1B8039D5123 /* TwitterKit.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TwitterKit";
+			sourceTree = "<group>";
+		};
+		823FDF57D213EE30FA22990C9A65C3C1 /* Pods-PresidentTweetCounter */ = {
+			isa = PBXGroup;
+			children = (
+				56D624FFE50F5744F1FB470E4FE75C3E /* Pods-PresidentTweetCounter.modulemap */,
+				8A195F70E7C22FCA7A0B7355A4C83C31 /* Pods-PresidentTweetCounter-acknowledgements.markdown */,
+				4098D0A06BD57155C8E96121C7765A54 /* Pods-PresidentTweetCounter-acknowledgements.plist */,
+				A04D72D65D0622FCAE6C24EF799C85D1 /* Pods-PresidentTweetCounter-dummy.m */,
+				22D12559E2A59636BE5B09D752E85462 /* Pods-PresidentTweetCounter-frameworks.sh */,
+				F7B6120C371C9EB19CF59936E2F6E8AE /* Pods-PresidentTweetCounter-Info.plist */,
+				57CEE1D0982C780B38087DBA8DCB9889 /* Pods-PresidentTweetCounter-resources.sh */,
+				33EC6F5EA3EBBAB3AC4A87A8ED6B0287 /* Pods-PresidentTweetCounter-umbrella.h */,
+				5AB5CC37E628001B36B7B6ADD31B08D2 /* Pods-PresidentTweetCounter.debug.xcconfig */,
+				ED5FDA5CB94DD26661BD8A646C435D7B /* Pods-PresidentTweetCounter.release.xcconfig */,
+			);
+			name = "Pods-PresidentTweetCounter";
+			path = "Target Support Files/Pods-PresidentTweetCounter";
+			sourceTree = "<group>";
+		};
+		A4900B4DCADBF4D31D1F18849C9228C1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A9466D41D502718D91980706A299780 /* SnapKit.modulemap */,
+				F196D4AAA617FE299F028C93DA0D1CC8 /* SnapKit.xcconfig */,
+				70425A1BE430B2D5C523F7DBE5FBD581 /* SnapKit-dummy.m */,
+				FBA6EBC35D2E73F3215ABE3D521D7B64 /* SnapKit-Info.plist */,
+				9EED888F47417A327C7A2791D5BE79CB /* SnapKit-prefix.pch */,
+				0CDAFCA506119BCB8F39F204D12E35AE /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		CA8888CC60A983CC7C66A0901B756C70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				012AE39681A661C13040FB0DA380ABE5 /* TwitterCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE711E0DED5234B06C9D6CF5D5BCDE3F /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				66B67307D58DD56DAF98A818040D560A /* Constraint.swift */,
+				967274A1AEDDA4D016E9C97DD46F5C33 /* ConstraintAttributes.swift */,
+				16D521C292DC38BBA06BD01952ABBD33 /* ConstraintConfig.swift */,
+				C11A3D8E7EDC8EBAB157F6C6555E8E5B /* ConstraintConstantTarget.swift */,
+				98A45A072878F54BFA18DDBE2D29A322 /* ConstraintDescription.swift */,
+				11308C1B1490A485AB382F68B328A485 /* ConstraintDSL.swift */,
+				0B2BDD54A35B9FD181CC69DB1E945E25 /* ConstraintInsets.swift */,
+				1B0710085FD316D95C0695CF8463184B /* ConstraintInsetTarget.swift */,
+				978EDA2CD14973938DE9ED9BDB4715D9 /* ConstraintItem.swift */,
+				8C7291411671A7B76A10AD2882848C4E /* ConstraintLayoutGuide.swift */,
+				8EDB054459C789683F6ADEE74D06396D /* ConstraintLayoutGuide+Extensions.swift */,
+				C93E5FA715ECB4411294C9F50459DD99 /* ConstraintLayoutGuideDSL.swift */,
+				F5B9096C458C88DBB76EDB979E32F87F /* ConstraintLayoutSupport.swift */,
+				9685F4D0438324FF577E074AFD0B4BC3 /* ConstraintLayoutSupportDSL.swift */,
+				8CAF9FFF9B864C7E7E535124AE01BE94 /* ConstraintMaker.swift */,
+				1DABC38EBD40BA8DD96A09B87F23B5D8 /* ConstraintMakerEditable.swift */,
+				6375FF11E1E97812D749BECCAE841486 /* ConstraintMakerExtendable.swift */,
+				4514D4F3375DE569707D9E8167DE7717 /* ConstraintMakerFinalizable.swift */,
+				E4682FC2B19BA8A41B8894F570D21875 /* ConstraintMakerPriortizable.swift */,
+				F8748E0B9E95D1A591D211CBD5A06729 /* ConstraintMakerRelatable.swift */,
+				B8AE68CE1C3FA7B86AF077A0791877FD /* ConstraintMultiplierTarget.swift */,
+				BAD1E10564C41F3134769C94B00F3FB7 /* ConstraintOffsetTarget.swift */,
+				CB7918589734A14A00B95E0CDAD8A216 /* ConstraintPriority.swift */,
+				5862B44713138A54D2F4045B77850DBA /* ConstraintPriorityTarget.swift */,
+				0E24E94D560066762E8B2E19D75B266A /* ConstraintRelatableTarget.swift */,
+				7CA151DA196B5ECA1796DDEFADCD03CC /* ConstraintRelation.swift */,
+				1373C5917C9685EE4C42338BAB8F06C1 /* ConstraintView.swift */,
+				0738B69E093F59D62E54908B7EB0F6DE /* ConstraintView+Extensions.swift */,
+				6FCC16EB643628C6046AAE535EFDFD91 /* ConstraintViewDSL.swift */,
+				37BA560827B67F43E4727B743B769833 /* Debugging.swift */,
+				734883D779E1C69F56A3EE1A03B13A84 /* LayoutConstraint.swift */,
+				99C7FD8FB31675B2DFC54A53C7755694 /* LayoutConstraintItem.swift */,
+				3A2E6C910A9A2C8B9A5ABE8D50F1DE56 /* Typealiases.swift */,
+				AAB46DF3A2EEE30EC525DD3C02EAD26E /* UILayoutSupport+Extensions.swift */,
+				A4900B4DCADBF4D31D1F18849C9228C1 /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */,
+				0F4EC400171F9AA79DD1D37250D137CF /* Pods */,
+				FE70960CB10F6678DCA3373329D1C3F6 /* Products */,
+				25B7BC792C51B1FC3482260C480A2BFA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D0E55A88C89CD0F77C8DCC8C71718540 /* Pods-PresidentTweetCounter WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3CA6861FA7213C8EF78238152AEA38E9 /* Pods-PresidentTweetCounter WatchKit App-acknowledgements.markdown */,
+				8C3EFA4D2564C37EB82766C9C46BBBDE /* Pods-PresidentTweetCounter WatchKit App-acknowledgements.plist */,
+				3318235B2C45D29F3FCCCB7F31DB63D5 /* Pods-PresidentTweetCounter WatchKit App-dummy.m */,
+				46963CEC116DAAA0A87A4391DFADF8DA /* Pods-PresidentTweetCounter WatchKit App.debug.xcconfig */,
+				14786668CEF87B31F818B9582CFA4B71 /* Pods-PresidentTweetCounter WatchKit App.release.xcconfig */,
+			);
+			name = "Pods-PresidentTweetCounter WatchKit App";
+			path = "Target Support Files/Pods-PresidentTweetCounter WatchKit App";
+			sourceTree = "<group>";
+		};
+		D4E10F5832263FA8EA839FE7F7756274 /* Pods-PresidentTweetCounter WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5291151E66E439430AC40EAA4715159E /* Pods-PresidentTweetCounter WatchKit Extension.modulemap */,
+				6B4F35D81DA748FC591F663F7146212B /* Pods-PresidentTweetCounter WatchKit Extension-acknowledgements.markdown */,
+				703057FAA015D43E5879D1560BA3292E /* Pods-PresidentTweetCounter WatchKit Extension-acknowledgements.plist */,
+				75667930633A962B535899E85F82FBD6 /* Pods-PresidentTweetCounter WatchKit Extension-dummy.m */,
+				50FCF4B6B8FA2B95AD52A0D9D94E48B8 /* Pods-PresidentTweetCounter WatchKit Extension-Info.plist */,
+				AA9053D4FD71C40F8B87B483F3ED2336 /* Pods-PresidentTweetCounter WatchKit Extension-umbrella.h */,
+				5EC425CB39A43C474D6CE433B5D50363 /* Pods-PresidentTweetCounter WatchKit Extension.debug.xcconfig */,
+				C2A824FBC6E99E2DC435CB1CC16615D6 /* Pods-PresidentTweetCounter WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-PresidentTweetCounter WatchKit Extension";
+			path = "Target Support Files/Pods-PresidentTweetCounter WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		FE70960CB10F6678DCA3373329D1C3F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E348913F69FD5F51493678B639E7155E /* libPods-PresidentTweetCounter WatchKit App.a */,
+				424DD7717B2D5CF5D8F5CDB374826C37 /* Pods_PresidentTweetCounter.framework */,
+				BB90EE57446CFDE6DB054E359B486439 /* Pods_PresidentTweetCounter_WatchKit_Extension.framework */,
+				47AAE42D067144A2B8C2844FDCFB27A9 /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2EBA455B5558A34642C7090E3F28746C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5F092252F070BFB2379D623CD5B182 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93A67857BBF9B77BD7B129F7E46C451C /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51985BFA0571D603F2957518212E04CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBC14EE2578C7761FB5B23C1D8C79F9 /* Pods-PresidentTweetCounter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1BF1EA68BE7BF8493D856CCDAB59BCC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF6975CB95AB54C3768CDAC2F953F3B /* Pods-PresidentTweetCounter WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		28AC902A57FBAB4D5778D244E148E62D /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F63BE1868DEC6B08F6A3EDBE5A8F065 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				3F5F092252F070BFB2379D623CD5B182 /* Headers */,
+				DB71F59564F94BD593D3536CC7FF6252 /* Sources */,
+				A15DB71DB3852D5027476517A648667E /* Frameworks */,
+				4CA33F62903D4631AD8A54B5C1197E21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 47AAE42D067144A2B8C2844FDCFB27A9 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		33B744D9D025A738FD14E55EA7AE5C31 /* Pods-PresidentTweetCounter WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3937F8379F45B0FBB6B24FC7CA1EA3FF /* Build configuration list for PBXNativeTarget "Pods-PresidentTweetCounter WatchKit Extension" */;
+			buildPhases = (
+				E1BF1EA68BE7BF8493D856CCDAB59BCC /* Headers */,
+				ECF57C8F6724C3B1B1573010432E99FB /* Sources */,
+				639E0E5FF0E43D6CBEA83B19A3BCE143 /* Frameworks */,
+				7F86777B81082183FC92EFCEDC8D8FFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PresidentTweetCounter WatchKit Extension";
+			productName = "Pods-PresidentTweetCounter WatchKit Extension";
+			productReference = BB90EE57446CFDE6DB054E359B486439 /* Pods_PresidentTweetCounter_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97C38C79CC04FDA63540A29CDF2B3A64 /* Pods-PresidentTweetCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C36704CAC9EBDFAA6CB3956A9D7F890E /* Build configuration list for PBXNativeTarget "Pods-PresidentTweetCounter" */;
+			buildPhases = (
+				51985BFA0571D603F2957518212E04CC /* Headers */,
+				BACAAAABA15F8750DCF3699D16F6E42F /* Sources */,
+				7124F3843346909A64C1F281AA196459 /* Frameworks */,
+				B7617FF90261E107EB761372EAF5A3A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E99F00830A78C9A9152C1005EDE900D /* PBXTargetDependency */,
+				D499A2188A7F4A577F267F39ADA77A6F /* PBXTargetDependency */,
+				67F04737E18675C9D5A03A642337EC78 /* PBXTargetDependency */,
+			);
+			name = "Pods-PresidentTweetCounter";
+			productName = "Pods-PresidentTweetCounter";
+			productReference = 424DD7717B2D5CF5D8F5CDB374826C37 /* Pods_PresidentTweetCounter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6733A233B52D4D7DB015785853ABB84 /* Pods-PresidentTweetCounter WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73E9B92E02AAF5865EAAB36B09EDB318 /* Build configuration list for PBXNativeTarget "Pods-PresidentTweetCounter WatchKit App" */;
+			buildPhases = (
+				2EBA455B5558A34642C7090E3F28746C /* Headers */,
+				C4D02A98CAA63B695F1725188BCFB5D9 /* Sources */,
+				F794ACBA13B187F1DBF282BA748BBE10 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PresidentTweetCounter WatchKit App";
+			productName = "Pods-PresidentTweetCounter WatchKit App";
+			productReference = E348913F69FD5F51493678B639E7155E /* libPods-PresidentTweetCounter WatchKit App.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FE70960CB10F6678DCA3373329D1C3F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97C38C79CC04FDA63540A29CDF2B3A64 /* Pods-PresidentTweetCounter */,
+				D6733A233B52D4D7DB015785853ABB84 /* Pods-PresidentTweetCounter WatchKit App */,
+				33B744D9D025A738FD14E55EA7AE5C31 /* Pods-PresidentTweetCounter WatchKit Extension */,
+				28AC902A57FBAB4D5778D244E148E62D /* SnapKit */,
+				AE3866BE3AC377EBAC49CCF7E18F707F /* TwitterCore */,
+				36A140D06ED2D9C812F0D53723AE53E2 /* TwitterKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CA33F62903D4631AD8A54B5C1197E21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F86777B81082183FC92EFCEDC8D8FFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7617FF90261E107EB761372EAF5A3A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BACAAAABA15F8750DCF3699D16F6E42F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137B178337EC945D53E53B9CC2566916 /* Pods-PresidentTweetCounter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4D02A98CAA63B695F1725188BCFB5D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE7B37F4ADB7AB08DB5D3A86A92BBF32 /* Pods-PresidentTweetCounter WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB71F59564F94BD593D3536CC7FF6252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45521B2932B409C18A4A5FA3622B9DE /* Constraint.swift in Sources */,
+				7A444A8737D3C32B814720FCD993AEA1 /* ConstraintAttributes.swift in Sources */,
+				75C10E14563F5B9EFAD3D814F34CD1F1 /* ConstraintConfig.swift in Sources */,
+				3688BEDB79EB0FACE93FA76D809CA0AE /* ConstraintConstantTarget.swift in Sources */,
+				4F31526CADADA0C797458086F48C13BA /* ConstraintDescription.swift in Sources */,
+				EFC91E333B66E943797C482B23711EE6 /* ConstraintDSL.swift in Sources */,
+				52B99C3782FD8FE546F3D9246069C43A /* ConstraintInsets.swift in Sources */,
+				71F2890149ACC6E893D2523E4B1D9503 /* ConstraintInsetTarget.swift in Sources */,
+				908DDB090F8DBA852498546279860FCD /* ConstraintItem.swift in Sources */,
+				735E616E11F3E4F8C635C6903691B5E8 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				C208999FFE013228C1342826375B1FA9 /* ConstraintLayoutGuide.swift in Sources */,
+				1392D6E2AC9F441B584178475FE74EBC /* ConstraintLayoutGuideDSL.swift in Sources */,
+				E515AFF997426D05A25A05BFD27C7EA4 /* ConstraintLayoutSupport.swift in Sources */,
+				3C9D80C3E7AC1028158A4757D8F3E53F /* ConstraintLayoutSupportDSL.swift in Sources */,
+				F8FAA62CF63E2DDCB09ABA7A9A76633B /* ConstraintMaker.swift in Sources */,
+				FD8B75C1D1F71036A611C8981D6DD15F /* ConstraintMakerEditable.swift in Sources */,
+				C11C1E21E7D383557D577F21DB8F38D4 /* ConstraintMakerExtendable.swift in Sources */,
+				53F73FD985DBBDD4AF5D92B41830B676 /* ConstraintMakerFinalizable.swift in Sources */,
+				1DBB1AD1755B504746418D10A982A61B /* ConstraintMakerPriortizable.swift in Sources */,
+				17915B82A650889D02F473BE7023ADD4 /* ConstraintMakerRelatable.swift in Sources */,
+				21DF440A10D7AF9CE1F27853EAB9135B /* ConstraintMultiplierTarget.swift in Sources */,
+				28CBC9F501D5E2E32CB341D62C43CDAA /* ConstraintOffsetTarget.swift in Sources */,
+				D552B7B82AA31B79A6D7FFA7B7DB0F32 /* ConstraintPriority.swift in Sources */,
+				14606EF0CF9C87BD53A6D5F86F50EA06 /* ConstraintPriorityTarget.swift in Sources */,
+				A18B28C15E06A2EA78AAB87FCF9B97E0 /* ConstraintRelatableTarget.swift in Sources */,
+				D41DC36FF98F711E2F5D4A79EDFC1CC8 /* ConstraintRelation.swift in Sources */,
+				F5B98FD020F31EB8DF757509EF8CAB89 /* ConstraintView+Extensions.swift in Sources */,
+				51EF9B96983FDACC02E9064DA408C51C /* ConstraintView.swift in Sources */,
+				8F0D0EAF2BF9D0E5C168C1B1A14B7DD4 /* ConstraintViewDSL.swift in Sources */,
+				AED93A81A8B076CFD579E8C06C9A4304 /* Debugging.swift in Sources */,
+				C32C0811B6781BF3090C05AFF9419962 /* LayoutConstraint.swift in Sources */,
+				64A4C9D1D2D7EBDBB417F2FDB87B1BF8 /* LayoutConstraintItem.swift in Sources */,
+				3BF5000D9A773FBF9FC353703BAF54AD /* SnapKit-dummy.m in Sources */,
+				6F4707937BC95CABA77A60D091D11521 /* Typealiases.swift in Sources */,
+				03E8FDC366DFD8D1749B74864875112B /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF57C8F6724C3B1B1573010432E99FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68005578C3D2E87CCC9B042210831D10 /* Pods-PresidentTweetCounter WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67F04737E18675C9D5A03A642337EC78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwitterKit;
+			target = 36A140D06ED2D9C812F0D53723AE53E2 /* TwitterKit */;
+			targetProxy = 6ADEAAB254AD69D932BC90C696D837FF /* PBXContainerItemProxy */;
+		};
+		8E99F00830A78C9A9152C1005EDE900D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 28AC902A57FBAB4D5778D244E148E62D /* SnapKit */;
+			targetProxy = CBEF9199DBB29C24EDA533DF93ADCC4D /* PBXContainerItemProxy */;
+		};
+		9B17F4C70AAABB15075A1597224C536E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwitterCore;
+			target = AE3866BE3AC377EBAC49CCF7E18F707F /* TwitterCore */;
+			targetProxy = C9C91F51A7E826B0291D9BB987E0E8FC /* PBXContainerItemProxy */;
+		};
+		D499A2188A7F4A577F267F39ADA77A6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwitterCore;
+			target = AE3866BE3AC377EBAC49CCF7E18F707F /* TwitterCore */;
+			targetProxy = 3A7279DB8CF76862108CD356F178FF48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14CBBABD0CF5C2BE9BAACE9C3AAB5066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		2592A3A6D0D630A20281CBC06EF76EA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		2B67A62F411B7B5AFA5F3E4D4DFB0705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC425CB39A43C474D6CE433B5D50363 /* Pods-PresidentTweetCounter WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PresidentTweetCounter WatchKit Extension/Pods-PresidentTweetCounter WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PresidentTweetCounter WatchKit Extension/Pods-PresidentTweetCounter WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		2ED312511A5FFF58DC3807B363503859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2A824FBC6E99E2DC435CB1CC16615D6 /* Pods-PresidentTweetCounter WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PresidentTweetCounter WatchKit Extension/Pods-PresidentTweetCounter WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PresidentTweetCounter WatchKit Extension/Pods-PresidentTweetCounter WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		494ABAACE2F5EC8B647FA80354DB061D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED5FDA5CB94DD26661BD8A646C435D7B /* Pods-PresidentTweetCounter.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PresidentTweetCounter/Pods-PresidentTweetCounter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PresidentTweetCounter/Pods-PresidentTweetCounter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6D71681BE833106964976FCFE7D7726F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46963CEC116DAAA0A87A4391DFADF8DA /* Pods-PresidentTweetCounter WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		80A32AE21037A9440DC1E91D9F3348AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14786668CEF87B31F818B9582CFA4B71 /* Pods-PresidentTweetCounter WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		9C04724A12DC79ED5C2B8D58F9FE5D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F196D4AAA617FE299F028C93DA0D1CC8 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4F1A6C0A358E94BAC340777276EDD81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AB5CC37E628001B36B7B6ADD31B08D2 /* Pods-PresidentTweetCounter.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PresidentTweetCounter/Pods-PresidentTweetCounter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PresidentTweetCounter/Pods-PresidentTweetCounter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C82BDA06A6B6BE8E052FCCD2E43C2B1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F196D4AAA617FE299F028C93DA0D1CC8 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D80BA865C36570C35E6A82F8C5947F20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59DBC12D30A93B1075C883B9727B2CD0 /* TwitterCore.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E177C4479D064682D7F4A94FDD8A868E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59DBC12D30A93B1075C883B9727B2CD0 /* TwitterCore.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE09833C11EC50AB83876DBDA9F89F73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01BE36B37B15E55735ADB1B8039D5123 /* TwitterKit.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF673B3909D5DB19535B6A05D1F5F8B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01BE36B37B15E55735ADB1B8039D5123 /* TwitterKit.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3937F8379F45B0FBB6B24FC7CA1EA3FF /* Build configuration list for PBXNativeTarget "Pods-PresidentTweetCounter WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B67A62F411B7B5AFA5F3E4D4DFB0705 /* Debug */,
+				2ED312511A5FFF58DC3807B363503859 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2592A3A6D0D630A20281CBC06EF76EA5 /* Debug */,
+				14CBBABD0CF5C2BE9BAACE9C3AAB5066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F63BE1868DEC6B08F6A3EDBE5A8F065 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C82BDA06A6B6BE8E052FCCD2E43C2B1B /* Debug */,
+				9C04724A12DC79ED5C2B8D58F9FE5D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73E9B92E02AAF5865EAAB36B09EDB318 /* Build configuration list for PBXNativeTarget "Pods-PresidentTweetCounter WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D71681BE833106964976FCFE7D7726F /* Debug */,
+				80A32AE21037A9440DC1E91D9F3348AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C36704CAC9EBDFAA6CB3956A9D7F890E /* Build configuration list for PBXNativeTarget "Pods-PresidentTweetCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4F1A6C0A358E94BAC340777276EDD81 /* Debug */,
+				494ABAACE2F5EC8B647FA80354DB061D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA059E7BBE7BC6E51F6690BDF5940CE6 /* Build configuration list for PBXAggregateTarget "TwitterCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E177C4479D064682D7F4A94FDD8A868E /* Debug */,
+				D80BA865C36570C35E6A82F8C5947F20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5898E1167BEBC59AC432E7C665CAD8F /* Build configuration list for PBXAggregateTarget "TwitterKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF673B3909D5DB19535B6A05D1F5F8B4 /* Debug */,
+				FE09833C11EC50AB83876DBDA9F89F73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
