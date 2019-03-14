@@ -80,8 +80,8 @@ An augmented reality "paintball" app, that allows users to paint on surfaces usi
 
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day13.gif)
 
-## Day 14: Running Game 
-A spritekit based game. 
+## Day 14: Presidential Tweet Counter
+An app that counts the number of times President Trump has tweeted so far in that day; runs analytics to: find the most common words used, earliest tweet, latest tweet, etc. Also has an Apple Watch companion app that displays the tweet count as a complication. 
 
 
 ## App Ideas TO_DO 
@@ -89,6 +89,7 @@ A spritekit based game.
 - [ ] Snow day chance calculator 
 - [ ] Restaurant chooser (for lunch)
 - [ ] Graph Theory
+- [ ] Running Spritekit Game 
 
 ## Apps I Might Do Further Development On 
 - Day 4: Study App 
