@@ -94,7 +94,7 @@ public class MainView: UIView {
         highscoreLb.numberOfLines = 1
         highscoreLb.minimumScaleFactor = 0.5
         highscoreLb.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        highscoreLb.text = "High Score: "
+        highscoreLb.text = "High Score: 10"
         
         highscoreLb.adjustsFontSizeToFitWidth = true
         highscoreLb.textAlignment = .left
