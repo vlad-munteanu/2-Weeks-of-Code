@@ -21,6 +21,7 @@
 		B8604E2D223A1DC6006F0B95 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8604E2C223A1DC6006F0B95 /* NotificationController.swift */; };
 		B8604E2F223A1DC7006F0B95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8604E2E223A1DC7006F0B95 /* Assets.xcassets */; };
 		B8604E44223A233D006F0B95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8604E43223A233D006F0B95 /* LaunchScreen.storyboard */; };
+		B8604E46223A9823006F0B95 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8604E45223A9823006F0B95 /* MainView.swift */; };
 		B98E56D2C968FF8DF01D3073 /* libPods-PresidentTweetCounter WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8E144E1C7E435A360DAFC4 /* libPods-PresidentTweetCounter WatchKit App.a */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		B8604E30223A1DC7006F0B95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8604E31223A1DC7006F0B95 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		B8604E43223A233D006F0B95 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../../../Reused Files/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		B8604E45223A9823006F0B95 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 		B8604E41223A223B006F0B95 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B8604E45223A9823006F0B95 /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8604E08223A1DC4006F0B95 /* MainVC.swift in Sources */,
+				B8604E46223A9823006F0B95 /* MainView.swift in Sources */,
 				B8604E06223A1DC4006F0B95 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
