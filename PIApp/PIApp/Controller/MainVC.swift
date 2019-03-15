@@ -8,8 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainVC: UIViewController {
 
+    //main view
+    let mainView = MainView()
+    //random button
+   // unowned var randomButton: UIButton {return colorView.randomButton}
+    
+    
+    public override func loadView() {
+        self.view = mainView
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
