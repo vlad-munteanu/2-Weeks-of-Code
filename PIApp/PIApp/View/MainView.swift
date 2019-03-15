@@ -26,7 +26,7 @@ public class MainView: UIView {
         addSubview(backgroundView)
         addSubview(piLabel)
         addSubview(highscoreLbl)
-        addSubview(goBttn)
+        //addSubview(goBttn)
         addSubview(textTF)
         
     }
@@ -50,17 +50,17 @@ public class MainView: UIView {
             make.left.equalToSuperview().inset(20)
             make.centerY.equalToSuperview().multipliedBy(0.2)
         }
-        goBttn.snp.makeConstraints{ make in
-            make.height.equalToSuperview().multipliedBy(0.1)
-            make.width.equalToSuperview().multipliedBy(0.45)
-            make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().multipliedBy(0.85)
-        }
+//        goBttn.snp.makeConstraints{ make in
+//            make.height.equalToSuperview().multipliedBy(0.1)
+//            make.width.equalToSuperview().multipliedBy(0.45)
+//            make.centerX.equalToSuperview()
+//            make.bottom.equalToSuperview().multipliedBy(0.85)
+//        }
         textTF.snp.makeConstraints{ make in
             make.height.equalToSuperview().multipliedBy(0.05)
             make.width.equalToSuperview().multipliedBy(0.9)
             make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().multipliedBy(0.7)
+            make.centerY.equalToSuperview().multipliedBy(0.9)
             
         }
     }
@@ -107,6 +107,7 @@ public class MainView: UIView {
         let tf = UITextField()
         let borderAlpha : CGFloat = 0.7
         let cornerRadius : CGFloat = 5.0
+        tf.keyboardType = UIKeyboardType.decimalPad
         
         tf.layer.borderWidth = 1.0
         tf.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
@@ -116,19 +117,19 @@ public class MainView: UIView {
     }()
     
     
-    //Button
-    public let goBttn: UIButton = {
-        let randButton = UIButton()
-        let borderAlpha : CGFloat = 0.7
-        let cornerRadius : CGFloat = 5.0
-        
-        randButton.setTitle("Go", for: UIControl.State.normal)
-        randButton.setTitleColor(UIColor.white, for: UIControl.State.normal)
-        randButton.backgroundColor = UIColor.clear
-        randButton.layer.borderWidth = 1.0
-        randButton.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
-        randButton.layer.cornerRadius = cornerRadius
-        
-        return randButton
-    }()
+//    //Button
+//    public let goBttn: UIButton = {
+//        let randButton = UIButton()
+//        let borderAlpha : CGFloat = 0.7
+//        let cornerRadius : CGFloat = 5.0
+//
+//        randButton.setTitle("Go", for: UIControl.State.normal)
+//        randButton.setTitleColor(UIColor.white, for: UIControl.State.normal)
+//        randButton.backgroundColor = UIColor.clear
+//        randButton.layer.borderWidth = 1.0
+//        randButton.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+//        randButton.layer.cornerRadius = cornerRadius
+//
+//        return randButton
+//    }()
 }
