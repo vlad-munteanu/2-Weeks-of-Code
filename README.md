@@ -10,6 +10,11 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 4. Commit MVP of each app to GitHub by 11:59 PM each day
 5. Rinse & Repeat
 
+## Note 
+```
+Ended this on Day 14 due to having to work on WWDC scholarship and other projects. 
+```
+
 ## Lines of Code Written So Far This Month: 
 ```
 4,455
