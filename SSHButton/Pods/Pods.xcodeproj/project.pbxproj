@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -202,7 +202,7 @@
 		38DC36D26C4F199CB17FD503684A121C /* warningFilled@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningFilled@3x.png"; path = "CDAlertView/Resources/Assets/warningFilled@3x.png"; sourceTree = "<group>"; };
 		3A6555A7F11E59D3176217E31D37AB69 /* socket_helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = socket_helper.m; path = NMSSH/Config/socket_helper.m; sourceTree = "<group>"; };
 		3B41AD547C7044A337E19416E4273207 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
-		3B60771B2BF647C6584FF967596F408D /* CDAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CDAlertView.framework; path = CDAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B60771B2BF647C6584FF967596F408D /* CDAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CDAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9E40B82A5CD1712768D12E87283438 /* PVPMikrotikSSH-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PVPMikrotikSSH-umbrella.h"; sourceTree = "<group>"; };
 		3DB3C4F49B384EE0D76B2012A5AF2A0E /* error@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "error@3x.png"; path = "CDAlertView/Resources/Assets/error@3x.png"; sourceTree = "<group>"; };
 		3E9B851D80761C4A85D514EEB1DE0670 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
@@ -211,7 +211,7 @@
 		43081853BE697BD659565E347A7A3FC2 /* Pods-SSHButton WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSHButton WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
 		45195BC125A7F045EB7A51A3ABF8B1FF /* socket_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socket_helper.h; path = NMSSH/Config/socket_helper.h; sourceTree = "<group>"; };
 		45DC0D00C7FCBFEBEAD34016528D7A24 /* NMSSHChannelDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHChannelDelegate.h; path = NMSSH/Protocols/NMSSHChannelDelegate.h; sourceTree = "<group>"; };
-		45EA0D0AB8A546FECB9CC4C80CDBEAA5 /* NMSSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NMSSH.framework; path = NMSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EA0D0AB8A546FECB9CC4C80CDBEAA5 /* NMSSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NMSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E2263BB709277A615DA7C21BA5E2B1 /* NMSSHHostConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHHostConfig.h; path = NMSSH/NMSSHHostConfig.h; sourceTree = "<group>"; };
 		47C902A46DF598577FF32A16C564A691 /* Pods-SSHButton WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SSHButton WatchKit Extension.modulemap"; sourceTree = "<group>"; };
 		482FC09A80A138819C1041D145ED0446 /* NMSSHSessionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHSessionDelegate.h; path = NMSSH/Protocols/NMSSHSessionDelegate.h; sourceTree = "<group>"; };
@@ -247,7 +247,7 @@
 		7461298713A44174B93412E87E012A36 /* NMSSHSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHSession.m; path = NMSSH/NMSSHSession.m; sourceTree = "<group>"; };
 		746B9A49094A32AE0A310B1393E1D7CC /* alarmOutline@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmOutline@3x.png"; path = "CDAlertView/Resources/Assets/alarmOutline@3x.png"; sourceTree = "<group>"; };
 		75580A78DC7A43E0FCB9C228092393AF /* PVPMikrotikSSH.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PVPMikrotikSSH.modulemap; sourceTree = "<group>"; };
-		78AC9D508237526EC7CC995B8AFF31B4 /* Pods_SSHButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SSHButton.framework; path = "Pods-SSHButton.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78AC9D508237526EC7CC995B8AFF31B4 /* Pods_SSHButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSHButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A9E97D760D2DEBFA89D99B92836864 /* PVPMikrotikSSH-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PVPMikrotikSSH-prefix.pch"; sourceTree = "<group>"; };
 		7AC26E11764AC2E13CCC6EC453907A11 /* CDAlertView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CDAlertView-Info.plist"; sourceTree = "<group>"; };
 		7B6B34C39FFA7D2CB89833D02FCB95AE /* Pods-SSHButton WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSHButton WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -263,11 +263,11 @@
 		904938CA49EE1A990B616EE72FBDB9E9 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		94DBA33A30E04A39A6E9AB9EFC18A7B1 /* PVPMikrotikSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PVPMikrotikSSH.h; path = PVPMikrotikSSH/PVPMikrotikSSH.h; sourceTree = "<group>"; };
 		9831DD9DF100B938EF1EDF32D58208C4 /* error@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "error@1x.png"; path = "CDAlertView/Resources/Assets/error@1x.png"; sourceTree = "<group>"; };
-		98EC233EAC9E62DFFC8AA4E5F7C069B7 /* CDAlertView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CDAlertView.bundle; path = "CDAlertView-CDAlertView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98EC233EAC9E62DFFC8AA4E5F7C069B7 /* CDAlertView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDAlertView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB1E60EDA4D4B1C3A239E8F7BC8D58D /* PVPError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PVPError.swift; path = PVPMikrotikSSH/PVPError.swift; sourceTree = "<group>"; };
-		9B1E1EBE976FCE4DF0443E0D40F0E424 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B1E1EBE976FCE4DF0443E0D40F0E424 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4813955373A3B0E3E881B42E12A915 /* Pods-SSHButton WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSHButton WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DD245F4C7D24BB07E97DACD4F2FDD34 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
 		9EA9E95AC1A56E297A95B5EBCC8027BD /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		A01D45BFDCCA0343F7AD5A5B9E63CD77 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
@@ -280,9 +280,9 @@
 		ABE9BF376511F349FA8ABB7020585191 /* Pods-SSHButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSHButton.debug.xcconfig"; sourceTree = "<group>"; };
 		AF6857A5219576004D5B43BBC9681B2A /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		AF6D1E9553C65CEC4E414A82572F3144 /* Pods-SSHButton WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSHButton WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
-		B1D71D4F1DEAA1D452C5DC21F618757E /* Pods_SSHButton_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SSHButton_WatchKit_Extension.framework; path = "Pods-SSHButton WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1D71D4F1DEAA1D452C5DC21F618757E /* Pods_SSHButton_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSHButton_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B564CF9E3A141339AC06A5D0E5590BD2 /* Pods-SSHButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSHButton-Info.plist"; sourceTree = "<group>"; };
-		B58877ACEB0513D99E604E63AD9A854F /* PVPMikrotikSSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PVPMikrotikSSH.framework; path = PVPMikrotikSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B58877ACEB0513D99E604E63AD9A854F /* PVPMikrotikSSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PVPMikrotikSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D426732AF26D64EA90208914919046 /* CDAlertHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDAlertHeaderView.swift; path = CDAlertView/Classes/CDAlertHeaderView.swift; sourceTree = "<group>"; };
 		B8EC7E72186036E648C18200896BCA38 /* warningFilled@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningFilled@1x.png"; path = "CDAlertView/Resources/Assets/warningFilled@1x.png"; sourceTree = "<group>"; };
 		B9228F3D68F2242E9EA87E951D465D6A /* CDAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CDAlertView.modulemap; sourceTree = "<group>"; };
@@ -296,7 +296,7 @@
 		C24F70DB8C7D82CE210CBDEE95F31D02 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		C253B77B70031F457DD2A06362249680 /* PVPMikrotikSSH-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PVPMikrotikSSH-dummy.m"; sourceTree = "<group>"; };
 		C3125C6F481DEA9E6B5206BE4F3201A2 /* NMSSH-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NMSSH-dummy.m"; sourceTree = "<group>"; };
-		C793A5B83EB3EA257446EEC4489FFA04 /* libPods-SSHButton WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SSHButton WatchKit App.a"; path = "libPods-SSHButton WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C793A5B83EB3EA257446EEC4489FFA04 /* libPods-SSHButton WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SSHButton WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83140152CA321DC5E64C9F63EC9A2EC /* alarmFilled@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmFilled@1x.png"; path = "CDAlertView/Resources/Assets/alarmFilled@1x.png"; sourceTree = "<group>"; };
 		C8AD075ADEA9CCBA9FD92EB758A1503A /* Pods-SSHButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSHButton.release.xcconfig"; sourceTree = "<group>"; };
 		C9073B831359EA934A98D731A0D99321 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
@@ -450,7 +450,6 @@
 				4B05F83DE1C93C4F1AB98B0814A35132 /* PVPSSHSecure.swift */,
 				F28B838861F7ACADD6411C652132FEC0 /* Support Files */,
 			);
-			name = PVPMikrotikSSH;
 			path = PVPMikrotikSSH;
 			sourceTree = "<group>";
 		};
@@ -505,7 +504,6 @@
 				024A60B86565EEC1F8F37F60AFD2FD32 /* Frameworks */,
 				D2F31F9953322208003059D2026518ED /* Support Files */,
 			);
-			name = NMSSH;
 			path = NMSSH;
 			sourceTree = "<group>";
 		};
@@ -589,7 +587,6 @@
 				82194AB018240CDF69FF3ECA67CBE107 /* Resources */,
 				90E4582C99BFF2065D2F6691F7A4ABA6 /* Support Files */,
 			);
-			name = CDAlertView;
 			path = CDAlertView;
 			sourceTree = "<group>";
 		};
@@ -632,7 +629,6 @@
 				17B05DC808F175FBABB2D4453F447273 /* UILayoutSupport+Extensions.swift */,
 				8FE2B8F7FF5AF6C58A7A59967D2C6CA9 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -1290,11 +1286,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-SSHButton/Pods-SSHButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SSHButton/Pods-SSHButton.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1344,11 +1336,7 @@
 				INFOPLIST_FILE = "Target Support Files/CDAlertView/CDAlertView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CDAlertView/CDAlertView.modulemap";
 				PRODUCT_MODULE_NAME = CDAlertView;
 				PRODUCT_NAME = CDAlertView;
@@ -1379,18 +1367,14 @@
 				INFOPLIST_FILE = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH.modulemap";
 				PRODUCT_MODULE_NAME = PVPMikrotikSSH;
 				PRODUCT_NAME = PVPMikrotikSSH;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1414,11 +1398,7 @@
 				INFOPLIST_FILE = "Target Support Files/NMSSH/NMSSH-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NMSSH/NMSSH.modulemap";
 				PRODUCT_MODULE_NAME = NMSSH;
 				PRODUCT_NAME = NMSSH;
@@ -1450,11 +1430,7 @@
 				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
 				PRODUCT_MODULE_NAME = SnapKit;
 				PRODUCT_NAME = SnapKit;
@@ -1507,11 +1483,7 @@
 				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
 				PRODUCT_MODULE_NAME = SnapKit;
 				PRODUCT_NAME = SnapKit;
@@ -1542,18 +1514,14 @@
 				INFOPLIST_FILE = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/PVPMikrotikSSH/PVPMikrotikSSH.modulemap";
 				PRODUCT_MODULE_NAME = PVPMikrotikSSH;
 				PRODUCT_NAME = PVPMikrotikSSH;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1598,11 +1566,7 @@
 				INFOPLIST_FILE = "Target Support Files/NMSSH/NMSSH-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NMSSH/NMSSH.modulemap";
 				PRODUCT_MODULE_NAME = NMSSH;
 				PRODUCT_NAME = NMSSH;
@@ -1634,11 +1598,7 @@
 				INFOPLIST_FILE = "Target Support Files/CDAlertView/CDAlertView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CDAlertView/CDAlertView.modulemap";
 				PRODUCT_MODULE_NAME = CDAlertView;
 				PRODUCT_NAME = CDAlertView;
@@ -1670,11 +1630,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SSHButton WatchKit Extension/Pods-SSHButton WatchKit Extension-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SSHButton WatchKit Extension/Pods-SSHButton WatchKit Extension.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1708,11 +1664,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SSHButton WatchKit Extension/Pods-SSHButton WatchKit Extension-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SSHButton WatchKit Extension/Pods-SSHButton WatchKit Extension.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1748,11 +1700,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-SSHButton/Pods-SSHButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SSHButton/Pods-SSHButton.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1822,8 +1770,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;

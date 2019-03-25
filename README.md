@@ -12,7 +12,7 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 
 ## Note 
 ```
-Ended this on Day 14 due to having to work on WWDC scholarship and other projects. 
+Took a 10 day break on Day 14 due to having to work on WWDC scholarship and other projects. 
 ```
 
 ## Lines of Code Written So Far This Month: 
@@ -90,8 +90,8 @@ An app that allows you to test your knowledge of pi.
 
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day14.gif)
 
-## Day 15: Presidential Tweet Counter
-An app that counts the number of times President Trump has tweeted so far in that day; runs analytics to: find the most common words used, earliest tweet, latest tweet, etc. Also has an Apple Watch companion app that displays the tweet count as a complication. 
+## Day 15: Pick up App 
+Sends text to predefined contacts to come pick you up with address.
 
 
 ## App Ideas TO_DO 
