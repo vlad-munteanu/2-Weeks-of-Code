@@ -1,7 +1,6 @@
 # 30 Day App Challenge
-This challenge was inspired by Gareth Jones's Medium article (https://medium.com/@gpj/30-apps-in-30-days-6686a570e90) where he created a mobile app everyday for a month. I wanted to challenge myself to improve my iOS development skills and do the same thing, so I'm going to be making an app everyday in the month of March 2019. 
+This challenge was inspired by Gareth Jones's Medium article (https://medium.com/@gpj/30-apps-in-30-days-6686a570e90) where he created a mobile app everyday for a month. I wanted to challenge myself to improve my iOS development skills and do the same thing, so I'm going to be making an app everyday for two weeks.
 
-![alt text](https://cdn-images-1.medium.com/max/2560/1*HrhwTIbp2hchH0-GmbKusg.jpeg)
 
 ## Rules
 1. Fresh Xcode Project created after 12AM of each day 
@@ -10,10 +9,6 @@ This challenge was inspired by Gareth Jones's Medium article (https://medium.com
 4. Commit MVP of each app to GitHub by 11:59 PM each day
 5. Rinse & Repeat
 
-## Note 
-```
-Took a 10 day break on Day 14 due to having to work on WWDC scholarship and other projects. 
-```
 
 ## Lines of Code Written So Far This Month: 
 ```
@@ -90,16 +85,6 @@ An app that allows you to test your knowledge of pi.
 
 ![alt text](https://github.com/vlad-munteanu/30Apps_30Days/blob/master/Screenshots/Gifs/Day14.gif)
 
-## Day 15: Pick up App 
-Sends text to predefined contacts to come pick you up with address.
-
-
-## App Ideas TO_DO 
-- [ ] Raspberry PI App 
-- [ ] Snow day chance calculator 
-- [ ] Restaurant chooser (for lunch)
-- [ ] Graph Theory
-- [ ] Running Spritekit Game 
 
 ## Apps I Might Do Further Development On 
 - Day 4: Study App 
